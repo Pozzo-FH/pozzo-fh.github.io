@@ -1,0 +1,300 @@
+:mod:`fh2ad_plug`
+=================
+
+.. py:module:: fh2ad_plug
+
+.. autoapi-nested-parse::
+
+   Plugin to init the admin framework
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   fh2ad_plug.BangBang
+   fh2ad_plug.BookKeeper
+   fh2ad_plug.SteamRoller
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   fh2ad_plug.can_execute
+
+
+.. data:: BANG_COMMANDS
+   
+
+   
+
+.. py:class:: BangBang(command_symbol='!')
+
+
+
+   Provide !bang commands
+
+
+   :Parameters:
+
+       **command_symbol: str**
+           prefix for chat commands. default: "!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: bf2_init(self, hooker)
+
+
+   .. method:: hook_chat_message(self, invoker_id, msg, channel, _flags)
+
+      Hook to act on chat messages
+
+
+      :Parameters:
+
+          **invoker_id: int**
+              ..
+
+          **msg: str**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+
+.. py:class:: BookKeeper
+
+
+
+   Keep track of connected players
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: bf2_deinit(_hooker)
+      :staticmethod:
+
+
+   .. method:: bf2_init(self, hooker)
+
+
+   .. method:: hook_game_status_change(new_status)
+      :staticmethod:
+
+
+   .. method:: hook_player_connect(bf2_ply)
+      :staticmethod:
+
+
+   .. method:: hook_player_disconnect(bf2_ply)
+      :staticmethod:
+
+
+
+.. data:: COMMAND_TIERS
+   
+
+   
+
+.. data:: LOG
+   
+
+   
+
+.. data:: LOG_CHAT
+   
+
+   
+
+.. data:: PROTECT_COMMANDER
+   
+
+   
+
+.. data:: PROTECT_SQUADLEADER
+   
+
+   
+
+.. data:: PROTECT_SQUADMEMBERS
+   
+
+   
+
+.. data:: SHUFFLE_ON_START
+   
+
+   
+
+.. data:: SWAP_ON_START
+   
+
+   
+
+.. py:class:: SteamRoller(shuffle_on_start=SHUFFLE_ON_START, swap_on_start=SWAP_ON_START, protect_commander=PROTECT_COMMANDER, protect_squadmembers=PROTECT_SQUADMEMBERS, protect_squadleader=PROTECT_SQUADLEADER)
+
+
+
+   Autobalance teams and swap/shuffle on round start
+
+   Note that the protect_X options have nothing to do with teamswap/-shuffle
+   and are ignored for those purposes. they only are used when a player
+   dies during the round
+
+   Note to self:
+
+   Overall Game State Change Pattern
+
+   1. StatusChange (to "PreGame")
+   2. Reset (doesn't happen in the first round after a server starts)
+   3. StatusChange (to "Playing"; stay here until enough players connect)
+   4. StatusChange (to "PreGame", once enough players have connected)
+   5. Reset
+   6. StatusChange (to "Playing"--the real game round now begins)
+   7. (play game, beginning with players spawning in)
+   8. StatusChange (to "EndGame")
+   9. DropKit (for each player still in game at end)
+
+   :Parameters:
+
+       **shuffle_on_start: bool**
+           Reshuffle the teams for each round?
+
+       **swap_on_start: bool**
+           Swap the teams for each round? Ignored if Shuffle is enabled already
+
+       **protect_squadmembers: bool**
+           Exclude players in squad from autobalance?
+
+       **protect_squadleader: bool**
+           Exclude squadleader from autobalance? (ignored if protect_squadmembers
+           is True)
+
+       **protect_commander: bool**
+           Exclude commander from autobalance?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: bf2_init(self, hooker)
+
+
+   .. method:: hook_game_status_change(self, new_status)
+
+
+   .. method:: hook_player_connect(self, bf2_ply)
+
+
+   .. method:: hook_player_death(self, bf2_victim, _bf2_vehicle)
+
+
+   .. method:: hook_team_change(self, bf2_ply, _human_has_spawned)
+
+
+
+.. data:: WELCOME_MSG
+   
+
+   
+
+.. function:: can_execute(cmd, invoker)
+
+   Check if player is allowed to execute a command
+
+
+   :Parameters:
+
+       **cmd: str**
+           ..
+
+       **invoker: fh2ad.core.FHPlayer**
+           ..
+
+   :Returns:
+
+       can_execute: bool
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+

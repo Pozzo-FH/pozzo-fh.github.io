@@ -1,0 +1,1359 @@
+:mod:`fh2ad.bang`
+=================
+
+.. py:module:: fh2ad.bang
+
+.. autoapi-nested-parse::
+
+   !Bang commands, to run in the game chat
+
+   All functions callable from ingame chat commands need to follow the pattern
+   `func(invoker, words)`, where `words` is a `list(str)`, and `invoker` a
+   `fh2ad.core.FHPlayer` instance.
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   fh2ad.bang.ban
+   fh2ad.bang.cap_flag
+   fh2ad.bang.dissolve_squad
+   fh2ad.bang.first_person
+   fh2ad.bang.free_camera
+   fh2ad.bang.give_me
+   fh2ad.bang.hash_player
+   fh2ad.bang.help_atgun
+   fh2ad.bang.help_para
+   fh2ad.bang.help_voice
+   fh2ad.bang.kick
+   fh2ad.bang.kill
+   fh2ad.bang.num_kicks
+   fh2ad.bang.report
+   fh2ad.bang.resign
+   fh2ad.bang.restart
+   fh2ad.bang.run_next
+   fh2ad.bang.say
+   fh2ad.bang.say_enemy
+   fh2ad.bang.say_team
+   fh2ad.bang.scramble
+   fh2ad.bang.set_bleed
+   fh2ad.bang.set_next
+   fh2ad.bang.set_spawn_time
+   fh2ad.bang.set_tickets
+   fh2ad.bang.show_admins
+   fh2ad.bang.show_coord
+   fh2ad.bang.show_maplist
+   fh2ad.bang.show_next
+   fh2ad.bang.swap
+   fh2ad.bang.switch
+   fh2ad.bang.switch_allies
+   fh2ad.bang.switch_axis
+   fh2ad.bang.test_all
+   fh2ad.bang.third_person
+   fh2ad.bang.tk_hist
+   fh2ad.bang.unban
+   fh2ad.bang.warn
+   fh2ad.bang.whisper
+
+
+.. data:: LOG
+   
+
+   
+
+.. function:: ban(invoker, words)
+
+   Ban player
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !ban Pozzo troll
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: cap_flag(invoker, words)
+
+   Cap flag for team/grey
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of flag to cap, and newteam
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !cap bridge_fla
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: dissolve_squad(invoker, words)
+
+   Dissolve a squad, like a locked/naziname one
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           squad number
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !dissolve 2
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: first_person(_invoker, _words)
+
+   Enable first person camera
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !1p
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: free_camera(invoker, words)
+
+   Switch to free camera
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of object to spawn
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !camera
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: give_me(invoker, words)
+
+   Spawn GPO next the invoker
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of GPO to spawn
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !giveme panth
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: hash_player(invoker, words)
+
+   Warn player
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !hash Pozzo
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: help_atgun(_invoker, _words=None)
+
+   Print help message to fix broken AT gun controls
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !help_atgun
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: help_para(_invoker, _words=None)
+
+   Print help message to fix broken AT gun controls
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !help_para
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: help_voice(_invoker, _words=None)
+
+   Print help message to fix broken voice commands
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !help_voice
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: kick(invoker, words)
+
+   Kick player
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !kick Pozzo
+   >>> !kick Pozzo nazi
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: kill(invoker, words)
+
+   Kill a player
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !kill Pozzo
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: num_kicks(_invoker, _words)
+
+   Show how many times a player has been kicked
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: report(invoker, words)
+
+   Report player to admins
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           report text
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !r Pozzo fc
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: resign(invoker, words)
+
+   Resign commander/squaddie
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !resign Pozzo
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: restart(invoker, _words)
+
+   Re-run current map
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           mapname, layer, gamemode
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !restart
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: run_next(invoker, _words=None)
+
+   Run next map in rotation
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !runnext
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: say(_invoker, words)
+
+   Send ingame message to everyone
+
+
+   :Parameters:
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !say Hi there
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: say_enemy(invoker, words)
+
+   Send ingame message to enemy team
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !se you suck
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: say_team(invoker, words)
+
+   Send ingame message to own team
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !st Careful guys!
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: scramble(invoker, _words=None)
+
+   Assign each player to a random team
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !scramble
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: set_bleed(invoker, words)
+
+   Set ticket bleed
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !bleed BLEED_AXIS BLEED_ALLIES
+   >>> !bleed TEAMNAME BLEED
+   >>> !bleed both BLEED
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: set_next(invoker, words)
+
+   Set next map in rotation
+
+   If layer or gamemode are not specified, default to 64 and gpm_cq
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           mapname, layer, gamemode
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !setnext tunis 32
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: set_spawn_time(invoker, words)
+
+   Set spawn time
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           spawn time in seconds
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !spawntime 2
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: set_tickets(invoker, words)
+
+   Set team tickets
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !tickets 999
+   >>> !tickets 900 800
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: show_admins(_invoker, _words=None)
+
+   Show connected admins
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !admins
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: show_coord(invoker, words)
+
+   Show current coordinates of a player
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           spawn time in seconds
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !coord
+   >>> !coord Pozzo
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: show_maplist(_invoker, _words)
+
+   Show the maplist
+
+   Output like: "Maps: lenino (16, 64), ramelle (32), arad (64)"
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !maps
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: show_next(_invoker, _words=None)
+
+   Show next map in rotation
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !shownext
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: swap(invoker, _words=None)
+
+   Swap every player to their opposite team
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !swap
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: switch(invoker, words)
+
+   Move player to other team
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !switch Pozzo
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: switch_allies(invoker, words)
+
+   Move player to Allies team
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !allies Pozzo
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: switch_axis(invoker, words)
+
+   Move player to Axis team
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !axis Pozzo
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: test_all(invoker, _words)
+
+   Run multiple commands at once
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !test
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: third_person(_invoker, _words)
+
+   Enable third person camera
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !3p
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: tk_hist(_invoker, _words)
+
+   Show how many times a player has been kicked
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: unban(invoker, words)
+
+   Unban player
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !unban Pozzo
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: warn(invoker, words)
+
+   Warn player
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !warn Pozzo
+   >>> !warn Pozzo tk
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: whisper(invoker, words)
+
+   Send message to one player only
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           message
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !whisper Pozzo hi cutie
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+

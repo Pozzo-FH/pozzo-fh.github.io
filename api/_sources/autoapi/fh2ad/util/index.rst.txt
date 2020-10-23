@@ -1,0 +1,345 @@
+:mod:`fh2ad.util`
+=================
+
+.. py:module:: fh2ad.util
+
+.. autoapi-nested-parse::
+
+   General utilities not using the bf2 python bindings
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   fh2ad.util.filter_maps
+   fh2ad.util.format_message
+   fh2ad.util.has_shared
+   fh2ad.util.in_range
+   fh2ad.util.insert_elems
+   fh2ad.util.parse_reason
+   fh2ad.util.recommend_layer
+   fh2ad.util.strip_message
+   fh2ad.util.vector_len
+   fh2ad.util.vector_normed
+
+
+.. data:: LOG
+   
+
+   
+
+.. function:: filter_maps(maps, needed_layer, last_maps, last_cats=None, check_categories=True)
+
+   Keep only valid maps:
+
+   - Correct layer
+   - Not in the last X played
+   - Not the same category as the last Y played (except theme is active)
+   - If server full, supports 100 ppl (except theme is active)
+
+   :Parameters:
+
+       **maps: dict int->(str, int, str)**
+           idx -> name, layer, gamemode
+
+       **needed_layer: int**
+           ..
+
+       **n_connected: int**
+           ..
+
+       **last_maps: list(str)**
+           ..
+
+       **check_categories: bool**
+           if true, last_cats argument must be given
+
+       **last_cats: list(str)**
+           must be given if check_categories is true
+
+       **MAPS_ALL: dict**
+           the big map list
+
+   :Returns:
+
+       dict int->(str, int, str)
+           idx -> name, layer, gamemode
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: format_message(msg, big=False, color=None, latin=True)
+
+   Format and clean text message.
+
+   The `rcon(game.say MESSAGE)` expects latin-1 formatting, but
+   latin-1 needs to be disabled for `sgl_sendTextMessage` (when encoding
+   the "Section Sign" '§' which serves as format character)
+
+   :Parameters:
+
+       **msg: str**
+           ..
+
+       **big: bool**
+           ..
+
+       **color: bool**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: has_shared(col_1, col_2)
+
+   Check if two collections have a shared element
+
+
+   :Parameters:
+
+       **col_1: iterable**
+           ..
+
+       **col_2: iterable**
+           ..
+
+   :Returns:
+
+       bool
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: in_range(num, interval)
+
+   Check if a number is in the range
+
+
+   :Parameters:
+
+       **num: int**
+           ..
+
+       **interval: 2-tuple(int)**
+           ..
+
+   :Returns:
+
+       bool
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: insert_elems(to_extend, new, marker='!$')
+
+   Insert + expand list at position of a marker in another list
+
+
+   :Parameters:
+
+       **to_extend: list-like**
+           ..
+
+       **new: list_like**
+           ..
+
+       **marker**
+           ..
+
+   :Returns:
+
+       list
+           ..
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> old = [0, 1, 2, '!$', 4, 5, 6, 7, 8, 9]
+   >>> new = ['a', 'b', 'c']
+   >>> insert_elems(old, new, marker='!$')
+   [0, 1, 2, 'a', 'b', 'c', 4, 5, 6, 7, 8, 9]
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: parse_reason(message)
+
+   Try to find a reason from the message, which might be a shortcut
+
+
+   :Parameters:
+
+       **message: str**
+           reason
+
+   :Returns:
+
+       str
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: recommend_layer(n_players, threshold_upper=45, threshold_lower=22.5)
+
+   Give viable map size for current player number
+
+
+   :Parameters:
+
+       **n_players: int**
+           ..
+
+       **threshold_upper: int**
+           separation between 32 and 64
+
+       **threshold_lower: int**
+           separation between 16 and 32
+
+   :Returns:
+
+       int
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: strip_message(msg)
+
+   strip down chat message to actual words
+
+
+   :Parameters:
+
+       **msg: str**
+           ..
+
+   :Returns:
+
+       str
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: vector_len(vec)
+
+
+.. function:: vector_normed(vec)
+
+

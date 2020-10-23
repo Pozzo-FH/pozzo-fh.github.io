@@ -1,0 +1,182 @@
+:mod:`carousel_plug`
+====================
+
+.. py:module:: carousel_plug
+
+.. autoapi-nested-parse::
+
+   Plugin for map rotation
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   carousel_plug.Carousel
+
+
+
+.. py:class:: Carousel(n_last_played=N_LAST_PLAYED, n_last_categories=N_LAST_CATEGORIES)
+
+
+
+   Map rotation, picking random maps with filtering
+
+   New maps are rolled during the *start* of each round, so the next map
+   can be overridden by the ``!setnext`` command.
+
+   The layer (size) of a map is chosen at the **end** of a map, since
+   during a round, alot of players might (dis-)connect
+
+   :Parameters:
+
+       **n_last_played: int**
+           number of last played maps to use in mapname filter
+
+       **n_last_categories: int**
+           number of last maps to use in category filter
+
+
+
+
+
+
+
+
+
+
+
+
+   :Attributes:
+
+       **n_connected: int**
+           ..
+
+       **last_maps: list(str)**
+           names of last maps
+
+       **last_cats: list(list(str))**
+           list of category-lists from last maps
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: at_end_map(self)
+
+
+   .. method:: at_start_map(self)
+
+
+   .. method:: bf2_init(self, hooker)
+
+
+   .. method:: hook_game_status_change(self, new_status)
+
+
+   .. method:: hook_player_connect(self, _bf2_ply)
+
+      Increase n_connected by one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: hook_player_disconnect(self, _bf2_ply)
+
+      Decreate n_connected by one
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: random_map(self)
+
+      Pick a random nextmap
+
+      Map start:
+      - roll a map
+      - reroll if duplicate theatre
+      - reroll if not supporting current playernumber
+      - pick layer based on current player num
+
+      Map end:
+      - pick new layer based on endgame playernum
+      - if not possible, keep previous
+
+
+      :Returns:
+
+          int, str, int, str
+              idx, mapname, layer, gamemode
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+
+.. data:: LOG
+   
+
+   
+
+.. data:: N_LAST_CATEGORIES
+   
+
+   
+
+.. data:: N_LAST_PLAYED
+   
+
+   
+

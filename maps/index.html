@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>FH2 Maps</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="../style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">FH2 Maps</h1>
+</header>
+<h2 id="legend">Legend</h2>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Category</th>
+<th>Icon</th>
+<th></th>
+<th>Category</th>
+<th>Icon</th>
+<th></th>
+<th>Category</th>
+<th>Icon</th>
+<th></th>
+<th>Category</th>
+<th>Icon</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Commando Kit</td>
+<td><img src="img/ico/sword.webp" alt="Commando Kit" /></td>
+<td></td>
+<td>Engineer Kit</td>
+<td><img src="img/ico/engineer.webp" alt="Engineer Kit" /></td>
+<td></td>
+<td>Artillery</td>
+<td><img src="img/ico/arty.webp" alt="Artillery" /></td>
+<td></td>
+<td>Airplane</td>
+<td><img src="img/ico/plane.webp" alt="Airplane" /></td>
+</tr>
+<tr class="even">
+<td>AT Rifle</td>
+<td><img src="img/ico/todo.webp" alt="AT Rifle" /></td>
+<td></td>
+<td>MG Kit</td>
+<td><img src="img/ico/todo.webp" alt="MG Kit" /></td>
+<td></td>
+<td>Anti-tank Gun</td>
+<td><img src="img/ico/pak.webp" alt="Anti-tank Gun" /></td>
+<td></td>
+<td>Ship</td>
+<td><img src="img/ico/boat.webp" alt="Ship" /></td>
+</tr>
+<tr class="odd">
+<td>FIXME UNASSIGNED</td>
+<td><img src="img/ico/todo.webp" alt="FIXME UNASSIGNED" /></td>
+<td></td>
+<td>Deployable MG</td>
+<td><img src="img/ico/todo.webp" alt="Deployable MG" /></td>
+<td></td>
+<td>Static MG</td>
+<td><img src="img/ico/todo.webp" alt="Static MG" /></td>
+<td></td>
+<td>Mobile Arty</td>
+<td><img src="img/ico/arty.webp" alt="Mobile Arty" /></td>
+</tr>
+<tr class="even">
+<td>Static Ammo Crate</td>
+<td><img src="img/ico/ammo.webp" alt="Static Ammo Crate" /></td>
+<td></td>
+<td>Sniper Kit</td>
+<td><img src="img/ico/sniper.webp" alt="Sniper Kit" /></td>
+<td></td>
+<td>Anti-aircraft Gun</td>
+<td><img src="img/ico/flak.webp" alt="Anti-aircraft Gun" /></td>
+<td></td>
+<td>Mobile PaK</td>
+<td><img src="img/ico/pak.webp" alt="Mobile PaK" /></td>
+</tr>
+<tr class="odd">
+<td>Ammo Kit</td>
+<td><img src="img/ico/ammo.webp" alt="Ammo Kit" /></td>
+<td></td>
+<td>Medic Kit</td>
+<td><img src="img/ico/medic.webp" alt="Medic Kit" /></td>
+<td></td>
+<td>Radio</td>
+<td><img src="img/ico/todo.webp" alt="Radio" /></td>
+<td></td>
+<td>Mobile FlaK</td>
+<td><img src="img/ico/flak.webp" alt="Mobile FlaK" /></td>
+</tr>
+<tr class="even">
+<td>Tankhunter Kit</td>
+<td><img src="img/ico/boom.webp" alt="Tankhunter Kit" /></td>
+<td></td>
+<td>Parachute Kit</td>
+<td><img src="img/ico/para.webp" alt="Parachute Kit" /></td>
+<td></td>
+<td>Car</td>
+<td><img src="img/ico/car.webp" alt="Car" /></td>
+<td></td>
+<td>Supply Vehicle</td>
+<td><img src="img/ico/engineer.webp" alt="Supply Vehicle" /></td>
+</tr>
+<tr class="odd">
+<td>Deployable Arty</td>
+<td><img src="img/ico/arty_dep.webp" alt="Deployable Arty" /></td>
+<td></td>
+<td>Flamethrower Kit</td>
+<td><img src="img/ico/flame.webp" alt="Flamethrower Kit" /></td>
+<td></td>
+<td>APC</td>
+<td><img src="img/ico/apc.webp" alt="APC" /></td>
+<td></td>
+<td>Civilian Vehicle</td>
+<td><img src="img/ico/car.webp" alt="Civilian Vehicle" /></td>
+</tr>
+<tr class="even">
+<td>Assault Kit</td>
+<td><img src="img/ico/assault.webp" alt="Assault Kit" /></td>
+<td></td>
+<td>HEAT Thrower</td>
+<td><img src="img/ico/rocket.webp" alt="HEAT Thrower" /></td>
+<td></td>
+<td>Tank</td>
+<td><img src="img/ico/tank.webp" alt="Tank" /></td>
+<td></td>
+<td>Scout Vehicle</td>
+<td><img src="img/ico/binoc.webp" alt="Scout Vehicle" /></td>
+</tr>
+<tr class="odd">
+<td>Easteregg</td>
+<td><img src="img/ico/easteregg.webp" alt="Easteregg" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="map-list">Map list</h2>
+<ul>
+<li><a href="./alam_halfa_16.html">./alam_halfa_16.html</a></li>
+<li><a href="./alam_halfa_32.html">./alam_halfa_32.html</a></li>
+<li><a href="./alam_halfa_64.html">./alam_halfa_64.html</a></li>
+<li><a href="./anctoville_1944_16.html">./anctoville_1944_16.html</a></li>
+<li><a href="./anctoville_1944_32.html">./anctoville_1944_32.html</a></li>
+<li><a href="./anctoville_1944_64.html">./anctoville_1944_64.html</a></li>
+<li><a href="./arad_16.html">./arad_16.html</a></li>
+<li><a href="./arad_32.html">./arad_32.html</a></li>
+<li><a href="./arad_64.html">./arad_64.html</a></li>
+<li><a href="./bardia_16.html">./bardia_16.html</a></li>
+<li><a href="./bardia_64.html">./bardia_64.html</a></li>
+<li><a href="./bastogne_16.html">./bastogne_16.html</a></li>
+<li><a href="./bastogne_32.html">./bastogne_32.html</a></li>
+<li><a href="./bastogne_64.html">./bastogne_64.html</a></li>
+<li><a href="./battle_of_brest_16.html">./battle_of_brest_16.html</a></li>
+<li><a href="./battle_of_brest_64.html">./battle_of_brest_64.html</a></li>
+<li><a href="./battle_of_keren_16.html">./battle_of_keren_16.html</a></li>
+<li><a href="./battle_of_keren_32.html">./battle_of_keren_32.html</a></li>
+<li><a href="./battle_of_keren_64.html">./battle_of_keren_64.html</a></li>
+<li><a href="./cmp_berlin_16.html">./cmp_berlin_16.html</a></li>
+<li><a href="./cmp_berlin_32.html">./cmp_berlin_32.html</a></li>
+<li><a href="./cmp_berlin_64.html">./cmp_berlin_64.html</a></li>
+<li><a href="./cmp_firing_range_32.html">./cmp_firing_range_32.html</a></li>
+<li><a href="./cmp_firing_range_64.html">./cmp_firing_range_64.html</a></li>
+<li><a href="./cmp_irrawaddy_river_16.html">./cmp_irrawaddy_river_16.html</a></li>
+<li><a href="./cmp_irrawaddy_river_32.html">./cmp_irrawaddy_river_32.html</a></li>
+<li><a href="./cmp_irrawaddy_river_64.html">./cmp_irrawaddy_river_64.html</a></li>
+<li><a href="./cmp_midway_1942_64.html">./cmp_midway_1942_64.html</a></li>
+<li><a href="./cmp_raid_on_cabantuan_16.html">./cmp_raid_on_cabantuan_16.html</a></li>
+<li><a href="./cmp_raid_on_cabantuan_32.html">./cmp_raid_on_cabantuan_32.html</a></li>
+<li><a href="./cmp_raid_on_cabantuan_64.html">./cmp_raid_on_cabantuan_64.html</a></li>
+<li><a href="./cmp_tarawa_16.html">./cmp_tarawa_16.html</a></li>
+<li><a href="./cmp_tarawa_32.html">./cmp_tarawa_32.html</a></li>
+<li><a href="./cmp_tarawa_64.html">./cmp_tarawa_64.html</a></li>
+<li><a href="./cmp_tulagi_16.html">./cmp_tulagi_16.html</a></li>
+<li><a href="./cmp_tulagi_32.html">./cmp_tulagi_32.html</a></li>
+<li><a href="./cmp_tulagi_64.html">./cmp_tulagi_64.html</a></li>
+<li><a href="./cmp_wake_island_16.html">./cmp_wake_island_16.html</a></li>
+<li><a href="./cmp_wake_island_32.html">./cmp_wake_island_32.html</a></li>
+<li><a href="./cmp_wake_island_64.html">./cmp_wake_island_64.html</a></li>
+<li><a href="./crete_1941_16.html">./crete_1941_16.html</a></li>
+<li><a href="./crete_1941_32.html">./crete_1941_32.html</a></li>
+<li><a href="./crete_1941_64.html">./crete_1941_64.html</a></li>
+<li><a href="./dukla_pass_16.html">./dukla_pass_16.html</a></li>
+<li><a href="./dukla_pass_32.html">./dukla_pass_32.html</a></li>
+<li><a href="./dukla_pass_64.html">./dukla_pass_64.html</a></li>
+<li><a href="./el_alamein_16.html">./el_alamein_16.html</a></li>
+<li><a href="./el_alamein_32.html">./el_alamein_32.html</a></li>
+<li><a href="./el_alamein_64.html">./el_alamein_64.html</a></li>
+<li><a href="./eppeldorf_16.html">./eppeldorf_16.html</a></li>
+<li><a href="./eppeldorf_32.html">./eppeldorf_32.html</a></li>
+<li><a href="./eppeldorf_64.html">./eppeldorf_64.html</a></li>
+<li><a href="./falaise_pocket_16.html">./falaise_pocket_16.html</a></li>
+<li><a href="./falaise_pocket_64.html">./falaise_pocket_64.html</a></li>
+<li><a href="./fall_of_tobruk_16.html">./fall_of_tobruk_16.html</a></li>
+<li><a href="./fall_of_tobruk_64.html">./fall_of_tobruk_64.html</a></li>
+<li><a href="./firing_range_16.html">./firing_range_16.html</a></li>
+<li><a href="./firing_range_32.html">./firing_range_32.html</a></li>
+<li><a href="./firing_range_64.html">./firing_range_64.html</a></li>
+<li><a href="./gazala_16.html">./gazala_16.html</a></li>
+<li><a href="./gazala_32.html">./gazala_32.html</a></li>
+<li><a href="./gazala_64.html">./gazala_64.html</a></li>
+<li><a href="./giarabub_16.html">./giarabub_16.html</a></li>
+<li><a href="./giarabub_32.html">./giarabub_32.html</a></li>
+<li><a href="./giarabub_64.html">./giarabub_64.html</a></li>
+<li><a href="./gold_beach_64.html">./gold_beach_64.html</a></li>
+<li><a href="./hurtgen_forest_16.html">./hurtgen_forest_16.html</a></li>
+<li><a href="./hurtgen_forest_32.html">./hurtgen_forest_32.html</a></li>
+<li><a href="./hurtgen_forest_64.html">./hurtgen_forest_64.html</a></li>
+<li><a href="./ihantala_16.html">./ihantala_16.html</a></li>
+<li><a href="./ihantala_32.html">./ihantala_32.html</a></li>
+<li><a href="./ihantala_64.html">./ihantala_64.html</a></li>
+<li><a href="./lebisey_16.html">./lebisey_16.html</a></li>
+<li><a href="./lebisey_64.html">./lebisey_64.html</a></li>
+<li><a href="./lenino_16.html">./lenino_16.html</a></li>
+<li><a href="./lenino_32.html">./lenino_32.html</a></li>
+<li><a href="./lenino_64.html">./lenino_64.html</a></li>
+<li><a href="./mareth_line_16.html">./mareth_line_16.html</a></li>
+<li><a href="./mareth_line_32.html">./mareth_line_32.html</a></li>
+<li><a href="./mareth_line_64.html">./mareth_line_64.html</a></li>
+<li><a href="./mersa_matruh_16.html">./mersa_matruh_16.html</a></li>
+<li><a href="./mersa_matruh_32.html">./mersa_matruh_32.html</a></li>
+<li><a href="./mersa_matruh_64.html">./mersa_matruh_64.html</a></li>
+<li><a href="./meuse_river_64.html">./meuse_river_64.html</a></li>
+<li><a href="./motovskiy_bay_16.html">./motovskiy_bay_16.html</a></li>
+<li><a href="./motovskiy_bay_32.html">./motovskiy_bay_32.html</a></li>
+<li><a href="./motovskiy_bay_64.html">./motovskiy_bay_64.html</a></li>
+<li><a href="./mount_olympus_16.html">./mount_olympus_16.html</a></li>
+<li><a href="./mount_olympus_32.html">./mount_olympus_32.html</a></li>
+<li><a href="./mount_olympus_64.html">./mount_olympus_64.html</a></li>
+<li><a href="./ogledow_16.html">./ogledow_16.html</a></li>
+<li><a href="./ogledow_32.html">./ogledow_32.html</a></li>
+<li><a href="./ogledow_64.html">./ogledow_64.html</a></li>
+<li><a href="./omaha_beach_16.html">./omaha_beach_16.html</a></li>
+<li><a href="./omaha_beach_64.html">./omaha_beach_64.html</a></li>
+<li><a href="./operation_cobra_16.html">./operation_cobra_16.html</a></li>
+<li><a href="./operation_cobra_32.html">./operation_cobra_32.html</a></li>
+<li><a href="./operation_cobra_64.html">./operation_cobra_64.html</a></li>
+<li><a href="./operation_goodwood_16.html">./operation_goodwood_16.html</a></li>
+<li><a href="./operation_goodwood_64.html">./operation_goodwood_64.html</a></li>
+<li><a href="./operation_hyacinth_16.html">./operation_hyacinth_16.html</a></li>
+<li><a href="./operation_hyacinth_64.html">./operation_hyacinth_64.html</a></li>
+<li><a href="./operation_luttich_16.html">./operation_luttich_16.html</a></li>
+<li><a href="./operation_luttich_64.html">./operation_luttich_64.html</a></li>
+<li><a href="./operation_totalize_16.html">./operation_totalize_16.html</a></li>
+<li><a href="./operation_totalize_32.html">./operation_totalize_32.html</a></li>
+<li><a href="./operation_totalize_64.html">./operation_totalize_64.html</a></li>
+<li><a href="./pegasus_16.html">./pegasus_16.html</a></li>
+<li><a href="./pegasus_32.html">./pegasus_32.html</a></li>
+<li><a href="./pegasus_64.html">./pegasus_64.html</a></li>
+<li><a href="./pointe_du_hoc_32.html">./pointe_du_hoc_32.html</a></li>
+<li><a href="./pointe_du_hoc_64.html">./pointe_du_hoc_64.html</a></li>
+<li><a href="./port_en_bessin_16.html">./port_en_bessin_16.html</a></li>
+<li><a href="./port_en_bessin_64.html">./port_en_bessin_64.html</a></li>
+<li><a href="./purple_heart_lane_16.html">./purple_heart_lane_16.html</a></li>
+<li><a href="./purple_heart_lane_64.html">./purple_heart_lane_64.html</a></li>
+<li><a href="./ramelle_64.html">./ramelle_64.html</a></li>
+<li><a href="./sammatus_16.html">./sammatus_16.html</a></li>
+<li><a href="./sammatus_64.html">./sammatus_64.html</a></li>
+<li><a href="./seelow_16.html">./seelow_16.html</a></li>
+<li><a href="./seelow_32.html">./seelow_32.html</a></li>
+<li><a href="./seelow_64.html">./seelow_64.html</a></li>
+<li><a href="./sidi_bou_zid_16.html">./sidi_bou_zid_16.html</a></li>
+<li><a href="./sidi_bou_zid_32.html">./sidi_bou_zid_32.html</a></li>
+<li><a href="./sidi_bou_zid_64.html">./sidi_bou_zid_64.html</a></li>
+<li><a href="./sidi_rezegh_16.html">./sidi_rezegh_16.html</a></li>
+<li><a href="./sidi_rezegh_32.html">./sidi_rezegh_32.html</a></li>
+<li><a href="./sidi_rezegh_64.html">./sidi_rezegh_64.html</a></li>
+<li><a href="./siege_of_tobruk_16.html">./siege_of_tobruk_16.html</a></li>
+<li><a href="./siege_of_tobruk_32.html">./siege_of_tobruk_32.html</a></li>
+<li><a href="./siege_of_tobruk_64.html">./siege_of_tobruk_64.html</a></li>
+<li><a href="./st_lo_breakthrough_32.html">./st_lo_breakthrough_32.html</a></li>
+<li><a href="./st_lo_breakthrough_64.html">./st_lo_breakthrough_64.html</a></li>
+<li><a href="./studienka_16.html">./studienka_16.html</a></li>
+<li><a href="./studienka_32.html">./studienka_32.html</a></li>
+<li><a href="./studienka_64.html">./studienka_64.html</a></li>
+<li><a href="./st_vith_16.html">./st_vith_16.html</a></li>
+<li><a href="./st_vith_32.html">./st_vith_32.html</a></li>
+<li><a href="./st_vith_64.html">./st_vith_64.html</a></li>
+<li><a href="./supercharge_16.html">./supercharge_16.html</a></li>
+<li><a href="./supercharge_32.html">./supercharge_32.html</a></li>
+<li><a href="./supercharge_64.html">./supercharge_64.html</a></li>
+<li><a href="./tali_16.html">./tali_16.html</a></li>
+<li><a href="./tali_32.html">./tali_32.html</a></li>
+<li><a href="./tali_64.html">./tali_64.html</a></li>
+<li><a href="./the_battle_for_sfakia_16.html">./the_battle_for_sfakia_16.html</a></li>
+<li><a href="./the_battle_for_sfakia_64.html">./the_battle_for_sfakia_64.html</a></li>
+<li><a href="./tunis_1943_16.html">./tunis_1943_16.html</a></li>
+<li><a href="./tunis_1943_64.html">./tunis_1943_64.html</a></li>
+<li><a href="./villers_bocage_32.html">./villers_bocage_32.html</a></li>
+<li><a href="./villers_bocage_64.html">./villers_bocage_64.html</a></li>
+<li><a href="./vossenack_16.html">./vossenack_16.html</a></li>
+<li><a href="./vossenack_64.html">./vossenack_64.html</a></li>
+</ul>
+</body>
+</html>

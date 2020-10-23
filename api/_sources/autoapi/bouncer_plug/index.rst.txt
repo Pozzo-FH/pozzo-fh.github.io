@@ -1,0 +1,138 @@
+:mod:`bouncer_plug`
+===================
+
+.. py:module:: bouncer_plug
+
+.. autoapi-nested-parse::
+
+   Plugin for banning nazis
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   bouncer_plug.Bouncer
+
+
+
+.. py:class:: Bouncer(bad_words=None)
+
+
+
+   Ban all the nazis
+
+
+   :Parameters:
+
+       **bad_words: list(str)**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: bf2_init(self, hooker)
+
+
+   .. method:: check_banlist(self, ply)
+
+
+   .. method:: check_name(self, ply)
+
+
+   .. method:: hook_player_connect(self, bf2_ply)
+
+
+   .. method:: is_forbidden(self, name)
+
+      Check if name is forbidden
+
+
+      :Parameters:
+
+          **name: str**
+              name to check
+
+      :Returns:
+
+          bool, matching_badword
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: is_on_banlist(self, player)
+
+      Check if player is on banlist
+
+
+      :Parameters:
+
+          **player: FHPlayer**
+              ..
+
+      :Returns:
+
+          bool, str, list(str)
+              is_bad, keyhash, names
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: purge_player(ply, announce_to_admin=False)
+      :staticmethod:
+
+
+
+.. data:: LOG
+   
+
+   
+

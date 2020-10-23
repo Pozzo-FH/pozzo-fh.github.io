@@ -1,0 +1,212 @@
+:mod:`fh2ad`
+============
+
+.. py:module:: fh2ad
+
+.. autoapi-nested-parse::
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Submodules
+----------
+.. toctree::
+   :titlesonly:
+   :maxdepth: 1
+
+   bang/index.rst
+   core/index.rst
+   util/index.rst
+
+
+Package Contents
+----------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   fh2ad.read_config
+   fh2ad.setup_logger
+
+
+.. data:: ADMIN_REASONS
+   
+
+   
+
+.. data:: BANTIME
+   
+
+   
+
+.. data:: CONFIG
+   
+
+   
+
+.. data:: CONFIG_FILE
+   
+
+   
+
+.. data:: CONFIG_FILE
+   
+
+   
+
+.. data:: CONF_FNAME
+   :annotation: = config.toml
+
+   
+
+.. data:: DEBUG
+   :annotation: = False
+
+   
+
+.. data:: DEBUG
+   :annotation: = True
+
+   
+
+.. data:: EVERYTHING_ALLOWED
+   :annotation: = False
+
+   
+
+.. data:: EVERYTHING_ALLOWED
+   :annotation: = True
+
+   
+
+.. data:: IS_BETA
+   :annotation: = False
+
+   
+
+.. data:: IS_BETA
+   :annotation: = True
+
+   
+
+.. data:: LEVEL_DIR
+   
+
+   
+
+.. data:: LOGLEVEL
+   
+
+   
+
+.. data:: LOG_DIR
+   
+
+   
+
+.. data:: LOG_FNAME
+   
+
+   
+
+.. data:: LOG_FNAME_CHAT
+   
+
+   
+
+.. data:: LOG_FORMAT
+   :annotation: = %(asctime)s - %(levelname)s: %(message)s
+
+   
+
+.. data:: MAP_SHORTNAMES
+   
+
+   
+
+.. data:: MAX_MSG_LEN
+   :annotation: = 239
+
+   
+
+.. data:: MOD_DIR
+   
+
+   
+
+.. data:: NUM2TEAM
+   
+
+   
+
+.. data:: RANDOM_SEED
+   
+
+   
+
+.. data:: SGL_TEXT_ARG2NUM
+   
+
+   
+
+.. data:: SGL_TEXT_NUM2ARG
+   
+
+   
+
+.. data:: TEAM2NUM
+   
+
+   
+
+.. data:: TIME_NOW
+   
+
+   
+
+.. data:: TIME_NOW
+   
+
+   
+
+.. data:: logger_chat
+   
+
+   
+
+.. data:: logger_fh2ad
+   
+
+   
+
+.. function:: read_config(fname=CONFIG_FILE)
+
+
+.. function:: setup_logger(name, log_file, level=logging.WARNING, is_chat=False)
+
+   To setup as many loggers as you want
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+

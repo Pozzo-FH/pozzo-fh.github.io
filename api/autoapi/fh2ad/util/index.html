@@ -1,0 +1,342 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fh2ad.util &#8212; fh2ad  documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-fh2ad.util">
+<span id="fh2ad-util"></span><h1><a class="reference internal" href="#module-fh2ad.util" title="fh2ad.util"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.util</span></code></a><a class="headerlink" href="#module-fh2ad.util" title="Permalink to this headline">¶</a></h1>
+<p>General utilities not using the bf2 python bindings</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.filter_maps" title="fh2ad.util.filter_maps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">filter_maps</span></code></a>(maps, needed_layer, last_maps, last_cats=None, check_categories=True)</p></td>
+<td><p>Keep only valid maps:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.format_message" title="fh2ad.util.format_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_message</span></code></a>(msg, big=False, color=None, latin=True)</p></td>
+<td><p>Format and clean text message.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.has_shared" title="fh2ad.util.has_shared"><code class="xref py py-obj docutils literal notranslate"><span class="pre">has_shared</span></code></a>(col_1, col_2)</p></td>
+<td><p>Check if two collections have a shared element</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.in_range" title="fh2ad.util.in_range"><code class="xref py py-obj docutils literal notranslate"><span class="pre">in_range</span></code></a>(num, interval)</p></td>
+<td><p>Check if a number is in the range</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.insert_elems" title="fh2ad.util.insert_elems"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert_elems</span></code></a>(to_extend, new, marker='!$')</p></td>
+<td><p>Insert + expand list at position of a marker in another list</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.parse_reason" title="fh2ad.util.parse_reason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_reason</span></code></a>(message)</p></td>
+<td><p>Try to find a reason from the message, which might be a shortcut</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.recommend_layer" title="fh2ad.util.recommend_layer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">recommend_layer</span></code></a>(n_players, threshold_upper=45, threshold_lower=22.5)</p></td>
+<td><p>Give viable map size for current player number</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.strip_message" title="fh2ad.util.strip_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strip_message</span></code></a>(msg)</p></td>
+<td><p>strip down chat message to actual words</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.vector_len" title="fh2ad.util.vector_len"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vector_len</span></code></a>(vec)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.vector_normed" title="fh2ad.util.vector_normed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">vector_normed</span></code></a>(vec)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py data">
+<dt id="fh2ad.util.LOG">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">LOG</code><a class="headerlink" href="#fh2ad.util.LOG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.filter_maps">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">filter_maps</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">maps</span></em>, <em class="sig-param"><span class="n">needed_layer</span></em>, <em class="sig-param"><span class="n">last_maps</span></em>, <em class="sig-param"><span class="n">last_cats</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">check_categories</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.filter_maps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Keep only valid maps:</p>
+<ul class="simple">
+<li><p>Correct layer</p></li>
+<li><p>Not in the last X played</p></li>
+<li><p>Not the same category as the last Y played (except theme is active)</p></li>
+<li><p>If server full, supports 100 ppl (except theme is active)</p></li>
+</ul>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>maps: dict int-&gt;(str, int, str)</strong></dt><dd><p>idx -&gt; name, layer, gamemode</p>
+</dd>
+<dt><strong>needed_layer: int</strong></dt><dd></dd>
+<dt><strong>n_connected: int</strong></dt><dd></dd>
+<dt><strong>last_maps: list(str)</strong></dt><dd></dd>
+<dt><strong>check_categories: bool</strong></dt><dd><p>if true, last_cats argument must be given</p>
+</dd>
+<dt><strong>last_cats: list(str)</strong></dt><dd><p>must be given if check_categories is true</p>
+</dd>
+<dt><strong>MAPS_ALL: dict</strong></dt><dd><p>the big map list</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>dict int-&gt;(str, int, str)</dt><dd><p>idx -&gt; name, layer, gamemode</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.format_message">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">format_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span></em>, <em class="sig-param"><span class="n">big</span><span class="o">=</span><span class="default_value">False</span></em>, <em class="sig-param"><span class="n">color</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">latin</span><span class="o">=</span><span class="default_value">True</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.format_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Format and clean text message.</p>
+<p>The <cite>rcon(game.say MESSAGE)</cite> expects latin-1 formatting, but
+latin-1 needs to be disabled for <cite>sgl_sendTextMessage</cite> (when encoding
+the “Section Sign” ‘§’ which serves as format character)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>msg: str</strong></dt><dd></dd>
+<dt><strong>big: bool</strong></dt><dd></dd>
+<dt><strong>color: bool</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.has_shared">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">has_shared</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">col_1</span></em>, <em class="sig-param"><span class="n">col_2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.has_shared" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if two collections have a shared element</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>col_1: iterable</strong></dt><dd></dd>
+<dt><strong>col_2: iterable</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>bool</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.in_range">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">in_range</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num</span></em>, <em class="sig-param"><span class="n">interval</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.in_range" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if a number is in the range</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>num: int</strong></dt><dd></dd>
+<dt><strong>interval: 2-tuple(int)</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>bool</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.insert_elems">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">insert_elems</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">to_extend</span></em>, <em class="sig-param"><span class="n">new</span></em>, <em class="sig-param"><span class="n">marker</span><span class="o">=</span><span class="default_value">'!$'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.insert_elems" title="Permalink to this definition">¶</a></dt>
+<dd><p>Insert + expand list at position of a marker in another list</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>to_extend: list-like</strong></dt><dd></dd>
+<dt><strong>new: list_like</strong></dt><dd></dd>
+<dt><strong>marker</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>list</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">old</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="s1">&#39;!$&#39;</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">new</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">insert_elems</span><span class="p">(</span><span class="n">old</span><span class="p">,</span> <span class="n">new</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;!$&#39;</span><span class="p">)</span>
+<span class="go">[0, 1, 2, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, 4, 5, 6, 7, 8, 9]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.parse_reason">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">parse_reason</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.parse_reason" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to find a reason from the message, which might be a shortcut</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>message: str</strong></dt><dd><p>reason</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>str</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.recommend_layer">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">recommend_layer</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_players</span></em>, <em class="sig-param"><span class="n">threshold_upper</span><span class="o">=</span><span class="default_value">45</span></em>, <em class="sig-param"><span class="n">threshold_lower</span><span class="o">=</span><span class="default_value">22.5</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.recommend_layer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Give viable map size for current player number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>n_players: int</strong></dt><dd></dd>
+<dt><strong>threshold_upper: int</strong></dt><dd><p>separation between 32 and 64</p>
+</dd>
+<dt><strong>threshold_lower: int</strong></dt><dd><p>separation between 16 and 32</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>int</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.strip_message">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">strip_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">msg</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.strip_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>strip down chat message to actual words</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>msg: str</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>str</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.vector_len">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">vector_len</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.vector_len" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.vector_normed">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">vector_normed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">vec</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.vector_normed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">fh2ad</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pozzo for the FH2 community.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/autoapi/fh2ad/util/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

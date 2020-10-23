@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fh2ad_plug &#8212; fh2ad  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-fh2ad_plug">
+<span id="fh2ad-plug"></span><h1><a class="reference internal" href="#module-fh2ad_plug" title="fh2ad_plug"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad_plug</span></code></a><a class="headerlink" href="#module-fh2ad_plug" title="Permalink to this headline">¶</a></h1>
+<p>Plugin to init the admin framework</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad_plug.BangBang" title="fh2ad_plug.BangBang"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BangBang</span></code></a></p></td>
+<td><p>Provide !bang commands</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad_plug.BookKeeper" title="fh2ad_plug.BookKeeper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BookKeeper</span></code></a></p></td>
+<td><p>Keep track of connected players</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad_plug.SteamRoller" title="fh2ad_plug.SteamRoller"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SteamRoller</span></code></a></p></td>
+<td><p>Autobalance teams and swap/shuffle on round start</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad_plug.can_execute" title="fh2ad_plug.can_execute"><code class="xref py py-obj docutils literal notranslate"><span class="pre">can_execute</span></code></a>(cmd, invoker)</p></td>
+<td><p>Check if player is allowed to execute a command</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py data">
+<dt id="fh2ad_plug.BANG_COMMANDS">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">BANG_COMMANDS</code><a class="headerlink" href="#fh2ad_plug.BANG_COMMANDS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="fh2ad_plug.BangBang">
+<em class="property">class </em><code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">BangBang</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">command_symbol</span><span class="o">=</span><span class="default_value">'!'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.BangBang" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provide !bang commands</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>command_symbol: str</strong></dt><dd><p>prefix for chat commands. default: “!”</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="fh2ad_plug.BangBang.bf2_init">
+<code class="sig-name descname">bf2_init</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">hooker</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.BangBang.bf2_init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad_plug.BangBang.hook_chat_message">
+<code class="sig-name descname">hook_chat_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">invoker_id</span></em>, <em class="sig-param"><span class="n">msg</span></em>, <em class="sig-param"><span class="n">channel</span></em>, <em class="sig-param"><span class="n">_flags</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.BangBang.hook_chat_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Hook to act on chat messages</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker_id: int</strong></dt><dd></dd>
+<dt><strong>msg: str</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fh2ad_plug.BookKeeper">
+<em class="property">class </em><code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">BookKeeper</code><a class="headerlink" href="#fh2ad_plug.BookKeeper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Keep track of connected players</p>
+<dl class="py method">
+<dt id="fh2ad_plug.BookKeeper.bf2_deinit">
+<em class="property">static </em><code class="sig-name descname">bf2_deinit</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_hooker</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.BookKeeper.bf2_deinit" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad_plug.BookKeeper.bf2_init">
+<code class="sig-name descname">bf2_init</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">hooker</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.BookKeeper.bf2_init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad_plug.BookKeeper.hook_game_status_change">
+<em class="property">static </em><code class="sig-name descname">hook_game_status_change</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">new_status</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.BookKeeper.hook_game_status_change" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad_plug.BookKeeper.hook_player_connect">
+<em class="property">static </em><code class="sig-name descname">hook_player_connect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bf2_ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.BookKeeper.hook_player_connect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad_plug.BookKeeper.hook_player_disconnect">
+<em class="property">static </em><code class="sig-name descname">hook_player_disconnect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bf2_ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.BookKeeper.hook_player_disconnect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad_plug.COMMAND_TIERS">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">COMMAND_TIERS</code><a class="headerlink" href="#fh2ad_plug.COMMAND_TIERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad_plug.LOG">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">LOG</code><a class="headerlink" href="#fh2ad_plug.LOG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad_plug.LOG_CHAT">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">LOG_CHAT</code><a class="headerlink" href="#fh2ad_plug.LOG_CHAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad_plug.PROTECT_COMMANDER">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">PROTECT_COMMANDER</code><a class="headerlink" href="#fh2ad_plug.PROTECT_COMMANDER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad_plug.PROTECT_SQUADLEADER">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">PROTECT_SQUADLEADER</code><a class="headerlink" href="#fh2ad_plug.PROTECT_SQUADLEADER" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad_plug.PROTECT_SQUADMEMBERS">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">PROTECT_SQUADMEMBERS</code><a class="headerlink" href="#fh2ad_plug.PROTECT_SQUADMEMBERS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad_plug.SHUFFLE_ON_START">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">SHUFFLE_ON_START</code><a class="headerlink" href="#fh2ad_plug.SHUFFLE_ON_START" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad_plug.SWAP_ON_START">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">SWAP_ON_START</code><a class="headerlink" href="#fh2ad_plug.SWAP_ON_START" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="fh2ad_plug.SteamRoller">
+<em class="property">class </em><code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">SteamRoller</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">shuffle_on_start</span><span class="o">=</span><span class="default_value">SHUFFLE_ON_START</span></em>, <em class="sig-param"><span class="n">swap_on_start</span><span class="o">=</span><span class="default_value">SWAP_ON_START</span></em>, <em class="sig-param"><span class="n">protect_commander</span><span class="o">=</span><span class="default_value">PROTECT_COMMANDER</span></em>, <em class="sig-param"><span class="n">protect_squadmembers</span><span class="o">=</span><span class="default_value">PROTECT_SQUADMEMBERS</span></em>, <em class="sig-param"><span class="n">protect_squadleader</span><span class="o">=</span><span class="default_value">PROTECT_SQUADLEADER</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.SteamRoller" title="Permalink to this definition">¶</a></dt>
+<dd><p>Autobalance teams and swap/shuffle on round start</p>
+<p>Note that the protect_X options have nothing to do with teamswap/-shuffle
+and are ignored for those purposes. they only are used when a player
+dies during the round</p>
+<p>Note to self:</p>
+<p>Overall Game State Change Pattern</p>
+<ol class="arabic simple">
+<li><p>StatusChange (to “PreGame”)</p></li>
+<li><p>Reset (doesn’t happen in the first round after a server starts)</p></li>
+<li><p>StatusChange (to “Playing”; stay here until enough players connect)</p></li>
+<li><p>StatusChange (to “PreGame”, once enough players have connected)</p></li>
+<li><p>Reset</p></li>
+<li><p>StatusChange (to “Playing”–the real game round now begins)</p></li>
+<li><p>(play game, beginning with players spawning in)</p></li>
+<li><p>StatusChange (to “EndGame”)</p></li>
+<li><p>DropKit (for each player still in game at end)</p></li>
+</ol>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>shuffle_on_start: bool</strong></dt><dd><p>Reshuffle the teams for each round?</p>
+</dd>
+<dt><strong>swap_on_start: bool</strong></dt><dd><p>Swap the teams for each round? Ignored if Shuffle is enabled already</p>
+</dd>
+<dt><strong>protect_squadmembers: bool</strong></dt><dd><p>Exclude players in squad from autobalance?</p>
+</dd>
+<dt><strong>protect_squadleader: bool</strong></dt><dd><p>Exclude squadleader from autobalance? (ignored if protect_squadmembers
+is True)</p>
+</dd>
+<dt><strong>protect_commander: bool</strong></dt><dd><p>Exclude commander from autobalance?</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="fh2ad_plug.SteamRoller.bf2_init">
+<code class="sig-name descname">bf2_init</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">hooker</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.SteamRoller.bf2_init" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad_plug.SteamRoller.hook_game_status_change">
+<code class="sig-name descname">hook_game_status_change</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">new_status</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.SteamRoller.hook_game_status_change" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad_plug.SteamRoller.hook_player_connect">
+<code class="sig-name descname">hook_player_connect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">bf2_ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.SteamRoller.hook_player_connect" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad_plug.SteamRoller.hook_player_death">
+<code class="sig-name descname">hook_player_death</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">bf2_victim</span></em>, <em class="sig-param"><span class="n">_bf2_vehicle</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.SteamRoller.hook_player_death" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad_plug.SteamRoller.hook_team_change">
+<code class="sig-name descname">hook_team_change</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">bf2_ply</span></em>, <em class="sig-param"><span class="n">_human_has_spawned</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.SteamRoller.hook_team_change" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad_plug.WELCOME_MSG">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">WELCOME_MSG</code><a class="headerlink" href="#fh2ad_plug.WELCOME_MSG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad_plug.can_execute">
+<code class="sig-prename descclassname">fh2ad_plug.</code><code class="sig-name descname">can_execute</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmd</span></em>, <em class="sig-param"><span class="n">invoker</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad_plug.can_execute" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if player is allowed to execute a command</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>cmd: str</strong></dt><dd></dd>
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>can_execute: bool</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">fh2ad</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pozzo for the FH2 community.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/autoapi/fh2ad_plug/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

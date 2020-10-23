@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Pegasus (64p)</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Pegasus (64p)</h1>
+</header>
+<div class="gallery">
+<a target="_blank" href="img/pegasus_64_ammo_crate.webp"> <img src="img/pegasus_64_ammo_crate.webp" alt="Static Ammo Crate" width="900" height="600"> </a>
+<div class="desc">
+Static Ammo Crate
+</div>
+</div>
+<div class="gallery">
+<a target="_blank" href="img/pegasus_64_kit.webp"> <img src="img/pegasus_64_kit.webp" alt="Pickup Kit" width="900" height="600"> </a>
+<div class="desc">
+Pickup Kit
+</div>
+</div>
+<div class="gallery">
+<a target="_blank" href="img/pegasus_64_static.webp"> <img src="img/pegasus_64_static.webp" alt="Static Emplacement" width="900" height="600"> </a>
+<div class="desc">
+Static Emplacement
+</div>
+</div>
+<div class="gallery">
+<a target="_blank" href="img/pegasus_64_vehicle.webp"> <img src="img/pegasus_64_vehicle.webp" alt="Vehicle" width="900" height="600"> </a>
+<div class="desc">
+Vehicle
+</div>
+</div>
+<table>
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 14%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 21%" />
+<col style="width: 10%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">gpo_subcat</th>
+<th style="text-align: left;">gpo_cat</th>
+<th style="text-align: left;">gpo_name</th>
+<th style="text-align: right;">pos_x</th>
+<th style="text-align: right;">pos_y</th>
+<th style="text-align: right;">pos_z</th>
+<th style="text-align: right;">flag</th>
+<th style="text-align: left;">is_locked</th>
+<th style="text-align: right;">team</th>
+<th style="text-align: left;">instance</th>
+<th style="text-align: left;">gpo_cat_disp</th>
+<th style="text-align: left;">gpo_subcat_disp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">141.859</td>
+<td style="text-align: right;">25.373</td>
+<td style="text-align: right;">-204.044</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_0</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">198.139</td>
+<td style="text-align: right;">25.167</td>
+<td style="text-align: right;">-66.805</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_1</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">113.795</td>
+<td style="text-align: right;">25.484</td>
+<td style="text-align: right;">-32.196</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_2</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">93.857</td>
+<td style="text-align: right;">30.185</td>
+<td style="text-align: right;">-290.8</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_3</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">164.032</td>
+<td style="text-align: right;">31.837</td>
+<td style="text-align: right;">-379.861</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_4</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-290.793</td>
+<td style="text-align: right;">32.823</td>
+<td style="text-align: right;">-435.327</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_5</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-169.07</td>
+<td style="text-align: right;">36.254</td>
+<td style="text-align: right;">-445.833</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_6</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-185.18</td>
+<td style="text-align: right;">35.652</td>
+<td style="text-align: right;">-356.317</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_7</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-297.97</td>
+<td style="text-align: right;">30.638</td>
+<td style="text-align: right;">-332.215</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_8</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">167.256</td>
+<td style="text-align: right;">32.061</td>
+<td style="text-align: right;">-439.204</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_9</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">260.157</td>
+<td style="text-align: right;">31.881</td>
+<td style="text-align: right;">-456.233</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_10</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">278.773</td>
+<td style="text-align: right;">33.52</td>
+<td style="text-align: right;">-429.977</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_11</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-53.091</td>
+<td style="text-align: right;">23.659</td>
+<td style="text-align: right;">103.015</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_12</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-73.974</td>
+<td style="text-align: right;">23.082</td>
+<td style="text-align: right;">93.678</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_13</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-14.279</td>
+<td style="text-align: right;">23.409</td>
+<td style="text-align: right;">132.972</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_14</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">32.669</td>
+<td style="text-align: right;">25.02</td>
+<td style="text-align: right;">218.903</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_15</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-257.551</td>
+<td style="text-align: right;">27.663</td>
+<td style="text-align: right;">357.646</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_16</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">55.186</td>
+<td style="text-align: right;">27.981</td>
+<td style="text-align: right;">-134.701</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_17</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpAmmokit</td>
+<td style="text-align: right;">27.575</td>
+<td style="text-align: right;">24.917</td>
+<td style="text-align: right;">163.985</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_pegasus_bridge_ammo</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Ammo Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">arty_dep</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpMortar</td>
+<td style="text-align: right;">487.968</td>
+<td style="text-align: right;">36.339</td>
+<td style="text-align: right;">726.129</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_reinforcements_mortar</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Deployable Arty</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">arty_dep</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BA_PickUpMortar</td>
+<td style="text-align: right;">-76.967</td>
+<td style="text-align: right;">23.646</td>
+<td style="text-align: right;">92.978</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_pegasus_bridge_mortargb</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Deployable Arty</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpAssaultK98hZf41</td>
+<td style="text-align: right;">-11.026</td>
+<td style="text-align: right;">28.538</td>
+<td style="text-align: right;">417.056</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_crossroads_assaultger</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpAssaultG43</td>
+<td style="text-align: right;">489.134</td>
+<td style="text-align: right;">37.231</td>
+<td style="text-align: right;">724.44</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_reinforcements_assault</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpAssaultCarbine</td>
+<td style="text-align: right;">-50.279</td>
+<td style="text-align: right;">23.55</td>
+<td style="text-align: right;">103.816</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_pegasus_bridge_glider</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpAssaultG43</td>
+<td style="text-align: right;">-185.733</td>
+<td style="text-align: right;">31.413</td>
+<td style="text-align: right;">-283.429</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_ranville_le_bas_assaultger</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpAssaultCarbine</td>
+<td style="text-align: right;">-113.88</td>
+<td style="text-align: right;">35.155</td>
+<td style="text-align: right;">-585.353</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_ranville_assaultgb</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpAssaultCarbine</td>
+<td style="text-align: right;">164.052</td>
+<td style="text-align: right;">32.104</td>
+<td style="text-align: right;">-379.723</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_longueville_glider</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpAssaultG43</td>
+<td style="text-align: right;">109.81</td>
+<td style="text-align: right;">33.015</td>
+<td style="text-align: right;">-370.061</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_longueville_assaultger</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">commando</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpCommandoPegasus</td>
+<td style="text-align: right;">34.866</td>
+<td style="text-align: right;">35.833</td>
+<td style="text-align: right;">199.115</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_pegasus_bridge_lordlovat</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Commando Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_dep</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpMG42Lafette</td>
+<td style="text-align: right;">-268.224</td>
+<td style="text-align: right;">27.662</td>
+<td style="text-align: right;">395.562</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_chateau_benouville_lafette</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Deployable MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_dep</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BA_PickUpVickers303</td>
+<td style="text-align: right;">-138.07</td>
+<td style="text-align: right;">34.833</td>
+<td style="text-align: right;">-606.04</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_ranville_mggb</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Deployable MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_dep</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BA_PickUpVickers303</td>
+<td style="text-align: right;">93.899</td>
+<td style="text-align: right;">30.464</td>
+<td style="text-align: right;">-290.683</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_longueville_MGGB</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Deployable MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_dep</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpMG42Lafette</td>
+<td style="text-align: right;">-361.885</td>
+<td style="text-align: right;">33.122</td>
+<td style="text-align: right;">-564.69</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_mariquet_mgger</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Deployable MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sniper</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpSniperK98</td>
+<td style="text-align: right;">-269.305</td>
+<td style="text-align: right;">28.461</td>
+<td style="text-align: right;">393.521</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_chateau_benouville_sniper</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Sniper Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sniper</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpSniperK98</td>
+<td style="text-align: right;">198.631</td>
+<td style="text-align: right;">44.82</td>
+<td style="text-align: right;">365.723</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_port_sniperger</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Sniper Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sniper</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpSniperNo4_colt</td>
+<td style="text-align: right;">-76.171</td>
+<td style="text-align: right;">23.119</td>
+<td style="text-align: right;">94.075</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_pegasus_bridge_snipergb</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Sniper Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sniper</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GW_PickUpSniperK98</td>
+<td style="text-align: right;">-185.568</td>
+<td style="text-align: right;">31.409</td>
+<td style="text-align: right;">-284.607</td>
+<td style="text-align: right;">102</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_ranville_le_bas_sniperger</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Sniper Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sniper</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpSniperNo4_colt</td>
+<td style="text-align: right;">113.688</td>
+<td style="text-align: right;">25.759</td>
+<td style="text-align: right;">-32.1</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_horsa_bridge_snipergb</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Sniper Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sniper</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpSniperNo4_colt</td>
+<td style="text-align: right;">-129.576</td>
+<td style="text-align: right;">52.792</td>
+<td style="text-align: right;">-435.646</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_church_snipergb</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Sniper Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zooka</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpAntitankPiat_colt</td>
+<td style="text-align: right;">-151.123</td>
+<td style="text-align: right;">27.938</td>
+<td style="text-align: right;">456.904</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_benouville_piat</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">HEAT Thrower</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zooka</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpPanzerfaust30m</td>
+<td style="text-align: right;">39.799</td>
+<td style="text-align: right;">25.315</td>
+<td style="text-align: right;">297.407</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_crossroads_faustgb</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">HEAT Thrower</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zooka</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpAntitankPiat_colt</td>
+<td style="text-align: right;">190.223</td>
+<td style="text-align: right;">28.309</td>
+<td style="text-align: right;">329.417</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_port_piat</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">HEAT Thrower</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zooka</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpPanzerfaust30m</td>
+<td style="text-align: right;">32.464</td>
+<td style="text-align: right;">25.655</td>
+<td style="text-align: right;">197.205</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_pegasus_bridge_faustgb</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">HEAT Thrower</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">zooka</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpAntitankPiat_colt</td>
+<td style="text-align: right;">196.023</td>
+<td style="text-align: right;">25.404</td>
+<td style="text-align: right;">-70.614</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_horsa_bridge_piat</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">HEAT Thrower</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">zooka</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BW_PickUpPanzerfaust30m</td>
+<td style="text-align: right;">-90.797</td>
+<td style="text-align: right;">36.673</td>
+<td style="text-align: right;">-487.588</td>
+<td style="text-align: right;">104</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_church_faustgb</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">HEAT Thrower</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">FH_explosion_spawnable</td>
+<td style="text-align: right;">232.791</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">145.585</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_pegasus_bombimpact1</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">FH_explosion_spawnable</td>
+<td style="text-align: right;">-164.59</td>
+<td style="text-align: right;">24.208</td>
+<td style="text-align: right;">72.903</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">bomb2</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">FH_explosion_spawnable</td>
+<td style="text-align: right;">-159.149</td>
+<td style="text-align: right;">24.094</td>
+<td style="text-align: right;">143.021</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">bomb3</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">FH_explosion_spawnable</td>
+<td style="text-align: right;">-37.418</td>
+<td style="text-align: right;">22.472</td>
+<td style="text-align: right;">188.499</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">bomb5</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">FH_explosion_spawnable</td>
+<td style="text-align: right;">92.706</td>
+<td style="text-align: right;">22.772</td>
+<td style="text-align: right;">191.259</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">bomb6</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">FH_explosion_spawnable</td>
+<td style="text-align: right;">206.366</td>
+<td style="text-align: right;">23.672</td>
+<td style="text-align: right;">-167.4</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">bomb7</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">FH_explosion_spawnable</td>
+<td style="text-align: right;">-41.078</td>
+<td style="text-align: right;">22.444</td>
+<td style="text-align: right;">-168.022</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">bomb8</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">FH_explosion_spawnable</td>
+<td style="text-align: right;">-52.483</td>
+<td style="text-align: right;">24.701</td>
+<td style="text-align: right;">-93.481</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">bomb9</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">FH_explosion_spawnable</td>
+<td style="text-align: right;">281.845</td>
+<td style="text-align: right;">22.835</td>
+<td style="text-align: right;">-103.448</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">bomb10</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">typhoon_mk1b_late_flyover</td>
+<td style="text-align: right;">193.667</td>
+<td style="text-align: right;">57.436</td>
+<td style="text-align: right;">1014.57</td>
+<td style="text-align: right;">114</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CP_64_pegasus_flyovertyphoon</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">46.643</td>
+<td style="text-align: right;">29.288</td>
+<td style="text-align: right;">195.276</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_pegasus_bridge_mg</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">kwk_5cm_fr</td>
+<td style="text-align: right;">19.161</td>
+<td style="text-align: right;">24.117</td>
+<td style="text-align: right;">179.654</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_pegasus_bridge_kwk</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">6pdr_mkiv</td>
+<td style="text-align: right;">169.754</td>
+<td style="text-align: right;">31.116</td>
+<td style="text-align: right;">-367.792</td>
+<td style="text-align: right;">103</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_longueville_at</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">6pdr_mkiv</td>
+<td style="text-align: right;">-131.596</td>
+<td style="text-align: right;">27.772</td>
+<td style="text-align: right;">479.773</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_benouville_at</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">6pdr_mkiv</td>
+<td style="text-align: right;">215.754</td>
+<td style="text-align: right;">27.444</td>
+<td style="text-align: right;">350.245</td>
+<td style="text-align: right;">109</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_port_at</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">apc</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">sdkfz251_d</td>
+<td style="text-align: right;">-288.53</td>
+<td style="text-align: right;">27.499</td>
+<td style="text-align: right;">380.994</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_chateau_benouville_apc1</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">APC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">apc</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">sdkfz251_d</td>
+<td style="text-align: right;">-289.77</td>
+<td style="text-align: right;">27.557</td>
+<td style="text-align: right;">371.02</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_chateau_benouville_apc2</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">APC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">apc</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">sdkfz251_d</td>
+<td style="text-align: right;">468.296</td>
+<td style="text-align: right;">36.256</td>
+<td style="text-align: right;">721.008</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_reinforcements_apc</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">APC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">arty_sp</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">renault_ue_zu_fuss</td>
+<td style="text-align: right;">-395.879</td>
+<td style="text-align: right;">32.649</td>
+<td style="text-align: right;">-553.748</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_mariquet_arti</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Mobile Arty</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">opelblitz_fr</td>
+<td style="text-align: right;">472.214</td>
+<td style="text-align: right;">36.447</td>
+<td style="text-align: right;">729.863</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_reinforcements_truck1</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">opelblitz_fr</td>
+<td style="text-align: right;">-312.269</td>
+<td style="text-align: right;">31.81</td>
+<td style="text-align: right;">-693.078</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_mariquet_truck1</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">opelblitz_fr</td>
+<td style="text-align: right;">-319.483</td>
+<td style="text-align: right;">32.025</td>
+<td style="text-align: right;">-705.311</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_mariquet_truck2</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">opelblitz_fr</td>
+<td style="text-align: right;">-385.372</td>
+<td style="text-align: right;">33.344</td>
+<td style="text-align: right;">-560.237</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_mariquet_truck3</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">willysmb_france</td>
+<td style="text-align: right;">199.806</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">-61.804</td>
+<td style="text-align: right;">105</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_horsa_bridge_jeep</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">flak_sp</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">opelblitz_flak38</td>
+<td style="text-align: right;">476.418</td>
+<td style="text-align: right;">36.611</td>
+<td style="text-align: right;">739.794</td>
+<td style="text-align: right;">110</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_reinforcements_truck2</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Mobile FlaK</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">pzivh</td>
+<td style="text-align: right;">-285.703</td>
+<td style="text-align: right;">27.585</td>
+<td style="text-align: right;">392.086</td>
+<td style="text-align: right;">111</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_chateau_benouville_piv</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">somuas35</td>
+<td style="text-align: right;">-374.679</td>
+<td style="text-align: right;">32.86</td>
+<td style="text-align: right;">-579.894</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_mariquet_s35</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">pzivh</td>
+<td style="text-align: right;">-311.49</td>
+<td style="text-align: right;">31.77</td>
+<td style="text-align: right;">-642.037</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_mariquet_piv</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">marder1_39</td>
+<td style="text-align: right;">-378.277</td>
+<td style="text-align: right;">32.237</td>
+<td style="text-align: right;">-569.436</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_64_pegasus_le_mariquet_marder</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Supercharge 1942 (32p)</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Supercharge 1942 (32p)</h1>
+</header>
+<div class="gallery">
+<a target="_blank" href="img/supercharge_32_ammo_crate.webp"> <img src="img/supercharge_32_ammo_crate.webp" alt="Static Ammo Crate" width="900" height="600"> </a>
+<div class="desc">
+Static Ammo Crate
+</div>
+</div>
+<div class="gallery">
+<a target="_blank" href="img/supercharge_32_kit.webp"> <img src="img/supercharge_32_kit.webp" alt="Pickup Kit" width="900" height="600"> </a>
+<div class="desc">
+Pickup Kit
+</div>
+</div>
+<div class="gallery">
+<a target="_blank" href="img/supercharge_32_static.webp"> <img src="img/supercharge_32_static.webp" alt="Static Emplacement" width="900" height="600"> </a>
+<div class="desc">
+Static Emplacement
+</div>
+</div>
+<div class="gallery">
+<a target="_blank" href="img/supercharge_32_vehicle.webp"> <img src="img/supercharge_32_vehicle.webp" alt="Vehicle" width="900" height="600"> </a>
+<div class="desc">
+Vehicle
+</div>
+</div>
+<table>
+<colgroup>
+<col style="width: 6%" />
+<col style="width: 5%" />
+<col style="width: 13%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 4%" />
+<col style="width: 3%" />
+<col style="width: 6%" />
+<col style="width: 3%" />
+<col style="width: 28%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">gpo_subcat</th>
+<th style="text-align: left;">gpo_cat</th>
+<th style="text-align: left;">gpo_name</th>
+<th style="text-align: right;">pos_x</th>
+<th style="text-align: right;">pos_y</th>
+<th style="text-align: right;">pos_z</th>
+<th style="text-align: right;">flag</th>
+<th style="text-align: left;">is_locked</th>
+<th style="text-align: right;">team</th>
+<th style="text-align: left;">instance</th>
+<th style="text-align: left;">gpo_cat_disp</th>
+<th style="text-align: left;">gpo_subcat_disp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-754.357</td>
+<td style="text-align: right;">40.356</td>
+<td style="text-align: right;">511.317</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_0</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-784.616</td>
+<td style="text-align: right;">33.903</td>
+<td style="text-align: right;">506.867</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_1</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-246.261</td>
+<td style="text-align: right;">29.608</td>
+<td style="text-align: right;">307.449</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_2</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">342.257</td>
+<td style="text-align: right;">25.355</td>
+<td style="text-align: right;">316.067</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_3</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">768.59</td>
+<td style="text-align: right;">34.267</td>
+<td style="text-align: right;">-79.423</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_4</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">481.92</td>
+<td style="text-align: right;">39.106</td>
+<td style="text-align: right;">-213.511</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_5</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">793.728</td>
+<td style="text-align: right;">14.963</td>
+<td style="text-align: right;">280.739</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_6</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BA_PickUpSupportBrenMK1</td>
+<td style="text-align: right;">804.999</td>
+<td style="text-align: right;">15.548</td>
+<td style="text-align: right;">279.821</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_Support</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">MG Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GA_PickUpSupportMG34</td>
+<td style="text-align: right;">342.757</td>
+<td style="text-align: right;">25.344</td>
+<td style="text-align: right;">315.261</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Sidi_Abd_el_Rahman_Support</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">MG Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">GA_PickUpSupportMG34</td>
+<td style="text-align: right;">-243.579</td>
+<td style="text-align: right;">29.624</td>
+<td style="text-align: right;">307.173</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_Support</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">MG Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">sniper</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BA_PickUpSniperNo4</td>
+<td style="text-align: right;">783.681</td>
+<td style="text-align: right;">16.706</td>
+<td style="text-align: right;">259.067</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_Sniper</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Sniper Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sniper</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">BA_PickUpSniperNo4</td>
+<td style="text-align: right;">-234.533</td>
+<td style="text-align: right;">28.368</td>
+<td style="text-align: right;">319.532</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_Sniper</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Sniper Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">misc</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">britcommradio</td>
+<td style="text-align: right;">769.456</td>
+<td style="text-align: right;">15.116</td>
+<td style="text-align: right;">256.294</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_CommRadio</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">MISCELLANEOUS</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">misc</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">britcommradio</td>
+<td style="text-align: right;">347.134</td>
+<td style="text-align: right;">28.284</td>
+<td style="text-align: right;">314.944</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Sidi_Abd_el_Rahman_CommRadio</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">MISCELLANEOUS</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">misc</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">britcommradio</td>
+<td style="text-align: right;">501.078</td>
+<td style="text-align: right;">44.519</td>
+<td style="text-align: right;">-177.252</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Tell_el_Aqqaqir_CommRadio</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">MISCELLANEOUS</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">misc</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">britcommradio</td>
+<td style="text-align: right;">-222.982</td>
+<td style="text-align: right;">33.444</td>
+<td style="text-align: right;">363.201</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_CommRadio</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">MISCELLANEOUS</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">commander_artillery_allied</td>
+<td style="text-align: right;">912.876</td>
+<td style="text-align: right;">41.992</td>
+<td style="text-align: right;">-877.03</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_CommArtillery</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">commander_artillery_allied</td>
+<td style="text-align: right;">908.042</td>
+<td style="text-align: right;">42.009</td>
+<td style="text-align: right;">-882.204</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_0_7</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">commander_artillery_allied</td>
+<td style="text-align: right;">912.184</td>
+<td style="text-align: right;">41.948</td>
+<td style="text-align: right;">-882.056</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_1_0</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">commander_smoke_allied</td>
+<td style="text-align: right;">914.668</td>
+<td style="text-align: right;">42.453</td>
+<td style="text-align: right;">-886.732</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_CommSmoke</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">commander_artillery_allied</td>
+<td style="text-align: right;">-712.669</td>
+<td style="text-align: right;">31.152</td>
+<td style="text-align: right;">294.82</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_DE_GB_CommArtillery</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">commander_artillery_allied</td>
+<td style="text-align: right;">-712.249</td>
+<td style="text-align: right;">31.279</td>
+<td style="text-align: right;">285.765</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_DE_GB_CommArtillery_0</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">commander_artillery_allied</td>
+<td style="text-align: right;">-711.559</td>
+<td style="text-align: right;">30.926</td>
+<td style="text-align: right;">274.55</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_DE_GB_CommArtillery_1</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">commander_smoke_allied</td>
+<td style="text-align: right;">-720.856</td>
+<td style="text-align: right;">31.158</td>
+<td style="text-align: right;">284.332</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_DE_GB_CommSmoke</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">arty</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">3inchmortar</td>
+<td style="text-align: right;">777.616</td>
+<td style="text-align: right;">16.305</td>
+<td style="text-align: right;">292.531</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_LightMortar</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Artillery</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">arty</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">25pdr</td>
+<td style="text-align: right;">844.933</td>
+<td style="text-align: right;">15.722</td>
+<td style="text-align: right;">251.788</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_Howitzer</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Artillery</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">arty</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">lefh18</td>
+<td style="text-align: right;">-228.213</td>
+<td style="text-align: right;">31.051</td>
+<td style="text-align: right;">273.301</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Sidi_Abd_el_Rahman_DE_GB_Howitzer</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Artillery</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">flak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">flak18</td>
+<td style="text-align: right;">564.683</td>
+<td style="text-align: right;">28.217</td>
+<td style="text-align: right;">-211.397</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Tell_el_Aqqaqir_HeavyArtillery</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-aircraft Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">flak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">flak18</td>
+<td style="text-align: right;">536.526</td>
+<td style="text-align: right;">24.869</td>
+<td style="text-align: right;">-125.24</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Tell_el_Aqqaqir_0_0</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-aircraft Gun</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">340.244</td>
+<td style="text-align: right;">29.349</td>
+<td style="text-align: right;">310.207</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Sidi_Abd_el_Rahman_LightMG</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">526.019</td>
+<td style="text-align: right;">43.536</td>
+<td style="text-align: right;">-200.889</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Tell_el_Aqqaqir_LightMG</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">505.99</td>
+<td style="text-align: right;">45.942</td>
+<td style="text-align: right;">-180.551</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Tell_el_Aqqaqir_0</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">567.478</td>
+<td style="text-align: right;">28.965</td>
+<td style="text-align: right;">-210.204</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Tell_el_Aqqaqir_1_0</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg15_bipod</td>
+<td style="text-align: right;">-227.303</td>
+<td style="text-align: right;">32.783</td>
+<td style="text-align: right;">282.708</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_MedMG</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-217.216</td>
+<td style="text-align: right;">34.867</td>
+<td style="text-align: right;">363.697</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_LightMG</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">6pdr_static</td>
+<td style="text-align: right;">776.614</td>
+<td style="text-align: right;">16.442</td>
+<td style="text-align: right;">300.285</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_LightArtillery</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">pak38_static</td>
+<td style="text-align: right;">380.381</td>
+<td style="text-align: right;">22.713</td>
+<td style="text-align: right;">364.952</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Sidi_Abd_el_Rahman_0</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">pak38_static</td>
+<td style="text-align: right;">-238.641</td>
+<td style="text-align: right;">30.095</td>
+<td style="text-align: right;">318.139</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_StaticArtillery</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">6pdr</td>
+<td style="text-align: right;">-261.397</td>
+<td style="text-align: right;">28.041</td>
+<td style="text-align: right;">330.351</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_LightArtillery</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">6pdr</td>
+<td style="text-align: right;">324.008</td>
+<td style="text-align: right;">25.576</td>
+<td style="text-align: right;">286.118</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Sidi_Abd_el_Rahman_DE_GB_LightArtillery</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">apc</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">sdkfz251_1</td>
+<td style="text-align: right;">-263.183</td>
+<td style="text-align: right;">30.173</td>
+<td style="text-align: right;">276.191</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_DE_GB_PersonelCarrier2</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">APC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">apc</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">universalcarrier_bren</td>
+<td style="text-align: right;">791.797</td>
+<td style="text-align: right;">15.028</td>
+<td style="text-align: right;">283.069</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_DE_GB_PersonelCarrier2</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">APC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">apc</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">universalcarrier_bren</td>
+<td style="text-align: right;">460.674</td>
+<td style="text-align: right;">40.569</td>
+<td style="text-align: right;">-219.453</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Tell_el_Aqqaqir_DE_GB_PersonelCarrier2</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">APC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">chevy30cwt</td>
+<td style="text-align: right;">797.335</td>
+<td style="text-align: right;">15.112</td>
+<td style="text-align: right;">272.842</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_Truck2</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">chevy30cwt</td>
+<td style="text-align: right;">829.842</td>
+<td style="text-align: right;">14.997</td>
+<td style="text-align: right;">235.276</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_TruckAA</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">civtruck</td>
+<td style="text-align: right;">378.314</td>
+<td style="text-align: right;">26.228</td>
+<td style="text-align: right;">320.468</td>
+<td style="text-align: right;">302</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Sidi_Abd_el_Rahman_CivTruck</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">bedfordoyd</td>
+<td style="text-align: right;">476.822</td>
+<td style="text-align: right;">38.916</td>
+<td style="text-align: right;">-215.197</td>
+<td style="text-align: right;">303</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Tell_el_Aqqaqir_Truck</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">bedfordoyd</td>
+<td style="text-align: right;">-255.657</td>
+<td style="text-align: right;">28.968</td>
+<td style="text-align: right;">297.349</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_Truck</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">bedfordoyd</td>
+<td style="text-align: right;">829.368</td>
+<td style="text-align: right;">14.868</td>
+<td style="text-align: right;">259.78</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_DE_GB_Truck</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">crusadermk3</td>
+<td style="text-align: right;">776.18</td>
+<td style="text-align: right;">15.039</td>
+<td style="text-align: right;">257.028</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_MediumTank</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">m4a1</td>
+<td style="text-align: right;">819.472</td>
+<td style="text-align: right;">13.87</td>
+<td style="text-align: right;">269.489</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_HeavyTank</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">M3Grant</td>
+<td style="text-align: right;">820.751</td>
+<td style="text-align: right;">14.274</td>
+<td style="text-align: right;">241.414</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_LightTank</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">m4a1</td>
+<td style="text-align: right;">795.638</td>
+<td style="text-align: right;">14.331</td>
+<td style="text-align: right;">254.524</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_0_6</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">crusadermk3</td>
+<td style="text-align: right;">823.772</td>
+<td style="text-align: right;">13.924</td>
+<td style="text-align: right;">266.029</td>
+<td style="text-align: right;">301</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">CP_32_Supercharge_British_HQ_1</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">pzivf2</td>
+<td style="text-align: right;">-260.96</td>
+<td style="text-align: right;">28.238</td>
+<td style="text-align: right;">293.061</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_HeavyTank2</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">pziii_jl_dak</td>
+<td style="text-align: right;">-256.207</td>
+<td style="text-align: right;">27.351</td>
+<td style="text-align: right;">341.677</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_HeavyTank</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">pziii_jl_dak</td>
+<td style="text-align: right;">-253.671</td>
+<td style="text-align: right;">29.211</td>
+<td style="text-align: right;">301.407</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_DE_GB_MediumTank3</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">pziii_je_dak</td>
+<td style="text-align: right;">-259.721</td>
+<td style="text-align: right;">29.705</td>
+<td style="text-align: right;">266.212</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_DE_GB_MediumTank3_0</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">pziii_je_dak</td>
+<td style="text-align: right;">-259.701</td>
+<td style="text-align: right;">27.805</td>
+<td style="text-align: right;">336.46</td>
+<td style="text-align: right;">304</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_Supercharge_Ghazal_DE_GB_MediumTank3_1</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

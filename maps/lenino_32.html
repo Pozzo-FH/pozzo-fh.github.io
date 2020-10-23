@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Lenino (32p)</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Lenino (32p)</h1>
+</header>
+<div class="gallery">
+<a target="_blank" href="img/lenino_32_ammo_crate.webp"> <img src="img/lenino_32_ammo_crate.webp" alt="Static Ammo Crate" width="900" height="600"> </a>
+<div class="desc">
+Static Ammo Crate
+</div>
+</div>
+<div class="gallery">
+<a target="_blank" href="img/lenino_32_kit.webp"> <img src="img/lenino_32_kit.webp" alt="Pickup Kit" width="900" height="600"> </a>
+<div class="desc">
+Pickup Kit
+</div>
+</div>
+<div class="gallery">
+<a target="_blank" href="img/lenino_32_static.webp"> <img src="img/lenino_32_static.webp" alt="Static Emplacement" width="900" height="600"> </a>
+<div class="desc">
+Static Emplacement
+</div>
+</div>
+<div class="gallery">
+<a target="_blank" href="img/lenino_32_vehicle.webp"> <img src="img/lenino_32_vehicle.webp" alt="Vehicle" width="900" height="600"> </a>
+<div class="desc">
+Vehicle
+</div>
+</div>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 6%" />
+<col style="width: 15%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 5%" />
+<col style="width: 4%" />
+<col style="width: 6%" />
+<col style="width: 4%" />
+<col style="width: 19%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">gpo_subcat</th>
+<th style="text-align: left;">gpo_cat</th>
+<th style="text-align: left;">gpo_name</th>
+<th style="text-align: right;">pos_x</th>
+<th style="text-align: right;">pos_y</th>
+<th style="text-align: right;">pos_z</th>
+<th style="text-align: right;">flag</th>
+<th style="text-align: left;">is_locked</th>
+<th style="text-align: right;">team</th>
+<th style="text-align: left;">instance</th>
+<th style="text-align: left;">gpo_cat_disp</th>
+<th style="text-align: left;">gpo_subcat_disp</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">416.681</td>
+<td style="text-align: right;">23.287</td>
+<td style="text-align: right;">408.442</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_0</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-460.215</td>
+<td style="text-align: right;">27.28</td>
+<td style="text-align: right;">-62.6</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_1</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-403.39</td>
+<td style="text-align: right;">29.888</td>
+<td style="text-align: right;">-87.279</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_2</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-362.059</td>
+<td style="text-align: right;">28.8</td>
+<td style="text-align: right;">189.305</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_3</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-388.07</td>
+<td style="text-align: right;">29.918</td>
+<td style="text-align: right;">232.084</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_4</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-7.152</td>
+<td style="text-align: right;">27.196</td>
+<td style="text-align: right;">288.547</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_5</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-52.931</td>
+<td style="text-align: right;">27.911</td>
+<td style="text-align: right;">234.685</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_6</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">159.304</td>
+<td style="text-align: right;">30.668</td>
+<td style="text-align: right;">110.232</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_7</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">195.79</td>
+<td style="text-align: right;">29.286</td>
+<td style="text-align: right;">70.117</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_8</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-0.246</td>
+<td style="text-align: right;">24.808</td>
+<td style="text-align: right;">-113.243</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_9</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-47.238</td>
+<td style="text-align: right;">26.176</td>
+<td style="text-align: right;">-182.481</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_10</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-264.452</td>
+<td style="text-align: right;">37.35</td>
+<td style="text-align: right;">-10.391</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_11</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-174.497</td>
+<td style="text-align: right;">32.723</td>
+<td style="text-align: right;">-6.097</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_12</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: left;">ammo_crate</td>
+<td style="text-align: right;">-757.506</td>
+<td style="text-align: right;">26.163</td>
+<td style="text-align: right;">-236.385</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">ammo_crate_13</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+<td style="text-align: left;">Static Ammo Crate</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickUpAmmokit</td>
+<td style="text-align: right;">-213.745</td>
+<td style="text-align: right;">38.192</td>
+<td style="text-align: right;">-8.113</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_Ammo</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Ammo Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">ammo</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickUpAmmokit</td>
+<td style="text-align: right;">175.822</td>
+<td style="text-align: right;">29.789</td>
+<td style="text-align: right;">97.935</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_moiseevo_Ammo</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Ammo Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">ammo</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickUpAmmokit</td>
+<td style="text-align: right;">-29.795</td>
+<td style="text-align: right;">28.663</td>
+<td style="text-align: right;">269.463</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_sysoevo_Ammo</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Ammo Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">antitank</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickupTankhunter</td>
+<td style="text-align: right;">-372.525</td>
+<td style="text-align: right;">30.253</td>
+<td style="text-align: right;">200.738</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_polzuhy_tankhunter</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Tankhunter Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">antitank</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickupTankhunter</td>
+<td style="text-align: right;">-43.985</td>
+<td style="text-align: right;">29.51</td>
+<td style="text-align: right;">255.814</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_sysoevo_0_4</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Tankhunter Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickupAssaultSVT40</td>
+<td style="text-align: right;">-436.404</td>
+<td style="text-align: right;">28.137</td>
+<td style="text-align: right;">-65.625</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_trigubova_Assault</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickupAssaultSVT40</td>
+<td style="text-align: right;">163.791</td>
+<td style="text-align: right;">31.056</td>
+<td style="text-align: right;">96.324</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_moiseevo_Assault</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickUpAssaultPps43</td>
+<td style="text-align: right;">-45.365</td>
+<td style="text-align: right;">29.379</td>
+<td style="text-align: right;">-131.604</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_lenino_Assault</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickupAssaultSVT40</td>
+<td style="text-align: right;">-377.568</td>
+<td style="text-align: right;">30.581</td>
+<td style="text-align: right;">189.906</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_polzuhy_DE_RE_Assault</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickupAssaultSVT40</td>
+<td style="text-align: right;">-15.162</td>
+<td style="text-align: right;">27.727</td>
+<td style="text-align: right;">-123.761</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_lenino_DE_RE_Assault</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">assault</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickUpAssaultPps43</td>
+<td style="text-align: right;">-423.286</td>
+<td style="text-align: right;">29.032</td>
+<td style="text-align: right;">-69.558</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_trigubova_DE_RE_Pilot</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Assault Kit</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">at_rifle</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickUpAntitankPTRD</td>
+<td style="text-align: right;">-16.422</td>
+<td style="text-align: right;">28.945</td>
+<td style="text-align: right;">280.886</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_sysoevo_Antitank</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">AT Rifle</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">at_rifle</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickUpAntitankPTRD</td>
+<td style="text-align: right;">176.463</td>
+<td style="text-align: right;">29.734</td>
+<td style="text-align: right;">82.249</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_moiseevo_Antitank</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">AT Rifle</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">sniper</td>
+<td style="text-align: left;">kit</td>
+<td style="text-align: left;">RE_PickUpSniperSVT40_lenino</td>
+<td style="text-align: right;">-216.505</td>
+<td style="text-align: right;">38.898</td>
+<td style="text-align: right;">-9.03</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_Sniper</td>
+<td style="text-align: left;">Pickup Kit</td>
+<td style="text-align: left;">Sniper Kit</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">misc</td>
+<td style="text-align: left;">noidea</td>
+<td style="text-align: left;">sf14_periscope</td>
+<td style="text-align: right;">-214.904</td>
+<td style="text-align: right;">38.242</td>
+<td style="text-align: right;">-5.966</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_bino</td>
+<td style="text-align: left;">FIXME UNASSIGNED</td>
+<td style="text-align: left;">MISCELLANEOUS</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">arty</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">sgwr34</td>
+<td style="text-align: right;">-200.182</td>
+<td style="text-align: right;">35.718</td>
+<td style="text-align: right;">-40.018</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_flak</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Artillery</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-313.021</td>
+<td style="text-align: right;">26.253</td>
+<td style="text-align: right;">117.963</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_polzuhy_mg1</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-321.508</td>
+<td style="text-align: right;">24.95</td>
+<td style="text-align: right;">295.505</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_polzuhy_mg2</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-323.345</td>
+<td style="text-align: right;">26.348</td>
+<td style="text-align: right;">350.335</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_polzuhy_mg3</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-180.078</td>
+<td style="text-align: right;">32.383</td>
+<td style="text-align: right;">26.738</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_mg4</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-386.404</td>
+<td style="text-align: right;">28.507</td>
+<td style="text-align: right;">-49.414</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_trigubova_mg1</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-460.006</td>
+<td style="text-align: right;">24.374</td>
+<td style="text-align: right;">-36.306</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_trigubova_mg2</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-420.444</td>
+<td style="text-align: right;">25.747</td>
+<td style="text-align: right;">-161.735</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_trigubova_mg3</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-162.593</td>
+<td style="text-align: right;">33.395</td>
+<td style="text-align: right;">-0.961</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_mg3</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-167.646</td>
+<td style="text-align: right;">34.715</td>
+<td style="text-align: right;">-33.918</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_mg5</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_lafette</td>
+<td style="text-align: right;">14.003</td>
+<td style="text-align: right;">23.324</td>
+<td style="text-align: right;">-81.898</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_lenino_mg2</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">12.23</td>
+<td style="text-align: right;">22.994</td>
+<td style="text-align: right;">-192.643</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_lenino_mg3</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">mg34_bipod</td>
+<td style="text-align: right;">-241.769</td>
+<td style="text-align: right;">39.653</td>
+<td style="text-align: right;">3.068</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_0_2</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">mg_nest</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">maxim_mg_sandbag</td>
+<td style="text-align: right;">107.415</td>
+<td style="text-align: right;">29.807</td>
+<td style="text-align: right;">79.286</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_moiseevo_maxim</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Static MG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">pak40_static</td>
+<td style="text-align: right;">-190.699</td>
+<td style="text-align: right;">37.324</td>
+<td style="text-align: right;">-21.4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_at1</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">pak40</td>
+<td style="text-align: right;">-362.924</td>
+<td style="text-align: right;">33.536</td>
+<td style="text-align: right;">59.825</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_trigubova_at1</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">pak40</td>
+<td style="text-align: right;">-340.149</td>
+<td style="text-align: right;">28.074</td>
+<td style="text-align: right;">360.593</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_polzuhy_at1</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">pak40_static</td>
+<td style="text-align: right;">-201.067</td>
+<td style="text-align: right;">35.659</td>
+<td style="text-align: right;">8.73</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_hill_215_at2</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">pak40</td>
+<td style="text-align: right;">9.386</td>
+<td style="text-align: right;">24.177</td>
+<td style="text-align: right;">-165.393</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_lenino_at1</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">pak40</td>
+<td style="text-align: right;">-31.816</td>
+<td style="text-align: right;">25.405</td>
+<td style="text-align: right;">-101.926</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_lenino_mg1</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">m1942_45mm</td>
+<td style="text-align: right;">148.156</td>
+<td style="text-align: right;">30.621</td>
+<td style="text-align: right;">93.193</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_moiseevo_gun1</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">m1942_45mm</td>
+<td style="text-align: right;">-66.487</td>
+<td style="text-align: right;">27.137</td>
+<td style="text-align: right;">238.617</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_sysoevo_gun1</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">pak</td>
+<td style="text-align: left;">static</td>
+<td style="text-align: left;">pak40</td>
+<td style="text-align: right;">-439.952</td>
+<td style="text-align: right;">27.644</td>
+<td style="text-align: right;">-171.902</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_trigubova_atGun</td>
+<td style="text-align: left;">Static Emplacement</td>
+<td style="text-align: left;">Anti-tank Gun</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">apc</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">sdkfz251_10</td>
+<td style="text-align: right;">-45.446</td>
+<td style="text-align: right;">28.002</td>
+<td style="text-align: right;">-154.33</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_lenino_truck</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">APC</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">opelblitz_fr_slats</td>
+<td style="text-align: right;">-444.218</td>
+<td style="text-align: right;">27.14</td>
+<td style="text-align: right;">-69.991</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_trigubova_truck</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">opelblitz_fr_slats</td>
+<td style="text-align: right;">-370.71</td>
+<td style="text-align: right;">28.379</td>
+<td style="text-align: right;">223.198</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_polzuhy_truck</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">studebaker_us6</td>
+<td style="text-align: right;">190.093</td>
+<td style="text-align: right;">27.47</td>
+<td style="text-align: right;">82.322</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_moiseevo_truck</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">car</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">studebaker_us6</td>
+<td style="text-align: right;">-27.292</td>
+<td style="text-align: right;">28.714</td>
+<td style="text-align: right;">279.481</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">False</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_sysoevo_truck</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Car</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">t34_76_m41</td>
+<td style="text-align: right;">215.351</td>
+<td style="text-align: right;">25.527</td>
+<td style="text-align: right;">149.857</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_moiseevo_tank1</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">t34_76_m41</td>
+<td style="text-align: right;">207.992</td>
+<td style="text-align: right;">26.552</td>
+<td style="text-align: right;">138.288</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_moiseevo_tank3</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">t34_76_m41</td>
+<td style="text-align: right;">37.725</td>
+<td style="text-align: right;">25.785</td>
+<td style="text-align: right;">302.186</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_sysoevo_tank4</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">t34_76_m41</td>
+<td style="text-align: right;">26.871</td>
+<td style="text-align: right;">25.761</td>
+<td style="text-align: right;">300.113</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_sysoevo_tank6</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">pzivh</td>
+<td style="text-align: right;">-494.711</td>
+<td style="text-align: right;">24.923</td>
+<td style="text-align: right;">-69.213</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_trigubova_pzIVh</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">tank</td>
+<td style="text-align: left;">vehicle</td>
+<td style="text-align: left;">pziii_m</td>
+<td style="text-align: right;">-397.539</td>
+<td style="text-align: right;">30.433</td>
+<td style="text-align: right;">207.636</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: left;">True</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: left;">CP_32_lenino_polzuhy_pzIIIm</td>
+<td style="text-align: left;">Vehicle</td>
+<td style="text-align: left;">Tank</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

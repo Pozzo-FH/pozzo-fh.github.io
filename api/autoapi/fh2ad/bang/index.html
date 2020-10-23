@@ -1,0 +1,1022 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fh2ad.bang &#8212; fh2ad  documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-fh2ad.bang">
+<span id="fh2ad-bang"></span><h1><a class="reference internal" href="#module-fh2ad.bang" title="fh2ad.bang"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.bang</span></code></a><a class="headerlink" href="#module-fh2ad.bang" title="Permalink to this headline">¶</a></h1>
+<p>!Bang commands, to run in the game chat</p>
+<p>All functions callable from ingame chat commands need to follow the pattern
+<cite>func(invoker, words)</cite>, where <cite>words</cite> is a <cite>list(str)</cite>, and <cite>invoker</cite> a
+<cite>fh2ad.core.FHPlayer</cite> instance.</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.ban" title="fh2ad.bang.ban"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ban</span></code></a>(invoker, words)</p></td>
+<td><p>Ban player</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.cap_flag" title="fh2ad.bang.cap_flag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">cap_flag</span></code></a>(invoker, words)</p></td>
+<td><p>Cap flag for team/grey</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.dissolve_squad" title="fh2ad.bang.dissolve_squad"><code class="xref py py-obj docutils literal notranslate"><span class="pre">dissolve_squad</span></code></a>(invoker, words)</p></td>
+<td><p>Dissolve a squad, like a locked/naziname one</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.first_person" title="fh2ad.bang.first_person"><code class="xref py py-obj docutils literal notranslate"><span class="pre">first_person</span></code></a>(_invoker, _words)</p></td>
+<td><p>Enable first person camera</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.free_camera" title="fh2ad.bang.free_camera"><code class="xref py py-obj docutils literal notranslate"><span class="pre">free_camera</span></code></a>(invoker, words)</p></td>
+<td><p>Switch to free camera</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.give_me" title="fh2ad.bang.give_me"><code class="xref py py-obj docutils literal notranslate"><span class="pre">give_me</span></code></a>(invoker, words)</p></td>
+<td><p>Spawn GPO next the invoker</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.hash_player" title="fh2ad.bang.hash_player"><code class="xref py py-obj docutils literal notranslate"><span class="pre">hash_player</span></code></a>(invoker, words)</p></td>
+<td><p>Warn player</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.help_atgun" title="fh2ad.bang.help_atgun"><code class="xref py py-obj docutils literal notranslate"><span class="pre">help_atgun</span></code></a>(_invoker, _words=None)</p></td>
+<td><p>Print help message to fix broken AT gun controls</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.help_para" title="fh2ad.bang.help_para"><code class="xref py py-obj docutils literal notranslate"><span class="pre">help_para</span></code></a>(_invoker, _words=None)</p></td>
+<td><p>Print help message to fix broken AT gun controls</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.help_voice" title="fh2ad.bang.help_voice"><code class="xref py py-obj docutils literal notranslate"><span class="pre">help_voice</span></code></a>(_invoker, _words=None)</p></td>
+<td><p>Print help message to fix broken voice commands</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.kick" title="fh2ad.bang.kick"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kick</span></code></a>(invoker, words)</p></td>
+<td><p>Kick player</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.kill" title="fh2ad.bang.kill"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kill</span></code></a>(invoker, words)</p></td>
+<td><p>Kill a player</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.num_kicks" title="fh2ad.bang.num_kicks"><code class="xref py py-obj docutils literal notranslate"><span class="pre">num_kicks</span></code></a>(_invoker, _words)</p></td>
+<td><p>Show how many times a player has been kicked</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.report" title="fh2ad.bang.report"><code class="xref py py-obj docutils literal notranslate"><span class="pre">report</span></code></a>(invoker, words)</p></td>
+<td><p>Report player to admins</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.resign" title="fh2ad.bang.resign"><code class="xref py py-obj docutils literal notranslate"><span class="pre">resign</span></code></a>(invoker, words)</p></td>
+<td><p>Resign commander/squaddie</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.restart" title="fh2ad.bang.restart"><code class="xref py py-obj docutils literal notranslate"><span class="pre">restart</span></code></a>(invoker, _words)</p></td>
+<td><p>Re-run current map</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.run_next" title="fh2ad.bang.run_next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">run_next</span></code></a>(invoker, _words=None)</p></td>
+<td><p>Run next map in rotation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.say" title="fh2ad.bang.say"><code class="xref py py-obj docutils literal notranslate"><span class="pre">say</span></code></a>(_invoker, words)</p></td>
+<td><p>Send ingame message to everyone</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.say_enemy" title="fh2ad.bang.say_enemy"><code class="xref py py-obj docutils literal notranslate"><span class="pre">say_enemy</span></code></a>(invoker, words)</p></td>
+<td><p>Send ingame message to enemy team</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.say_team" title="fh2ad.bang.say_team"><code class="xref py py-obj docutils literal notranslate"><span class="pre">say_team</span></code></a>(invoker, words)</p></td>
+<td><p>Send ingame message to own team</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.scramble" title="fh2ad.bang.scramble"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scramble</span></code></a>(invoker, _words=None)</p></td>
+<td><p>Assign each player to a random team</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.set_bleed" title="fh2ad.bang.set_bleed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_bleed</span></code></a>(invoker, words)</p></td>
+<td><p>Set ticket bleed</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.set_next" title="fh2ad.bang.set_next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_next</span></code></a>(invoker, words)</p></td>
+<td><p>Set next map in rotation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.set_spawn_time" title="fh2ad.bang.set_spawn_time"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_spawn_time</span></code></a>(invoker, words)</p></td>
+<td><p>Set spawn time</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.set_tickets" title="fh2ad.bang.set_tickets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_tickets</span></code></a>(invoker, words)</p></td>
+<td><p>Set team tickets</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.show_admins" title="fh2ad.bang.show_admins"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show_admins</span></code></a>(_invoker, _words=None)</p></td>
+<td><p>Show connected admins</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.show_coord" title="fh2ad.bang.show_coord"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show_coord</span></code></a>(invoker, words)</p></td>
+<td><p>Show current coordinates of a player</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.show_maplist" title="fh2ad.bang.show_maplist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show_maplist</span></code></a>(_invoker, _words)</p></td>
+<td><p>Show the maplist</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.show_next" title="fh2ad.bang.show_next"><code class="xref py py-obj docutils literal notranslate"><span class="pre">show_next</span></code></a>(_invoker, _words=None)</p></td>
+<td><p>Show next map in rotation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.swap" title="fh2ad.bang.swap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swap</span></code></a>(invoker, _words=None)</p></td>
+<td><p>Swap every player to their opposite team</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.switch" title="fh2ad.bang.switch"><code class="xref py py-obj docutils literal notranslate"><span class="pre">switch</span></code></a>(invoker, words)</p></td>
+<td><p>Move player to other team</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.switch_allies" title="fh2ad.bang.switch_allies"><code class="xref py py-obj docutils literal notranslate"><span class="pre">switch_allies</span></code></a>(invoker, words)</p></td>
+<td><p>Move player to Allies team</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.switch_axis" title="fh2ad.bang.switch_axis"><code class="xref py py-obj docutils literal notranslate"><span class="pre">switch_axis</span></code></a>(invoker, words)</p></td>
+<td><p>Move player to Axis team</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.test_all" title="fh2ad.bang.test_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">test_all</span></code></a>(invoker, _words)</p></td>
+<td><p>Run multiple commands at once</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.third_person" title="fh2ad.bang.third_person"><code class="xref py py-obj docutils literal notranslate"><span class="pre">third_person</span></code></a>(_invoker, _words)</p></td>
+<td><p>Enable third person camera</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.tk_hist" title="fh2ad.bang.tk_hist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">tk_hist</span></code></a>(_invoker, _words)</p></td>
+<td><p>Show how many times a player has been kicked</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.unban" title="fh2ad.bang.unban"><code class="xref py py-obj docutils literal notranslate"><span class="pre">unban</span></code></a>(invoker, words)</p></td>
+<td><p>Unban player</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bang.warn" title="fh2ad.bang.warn"><code class="xref py py-obj docutils literal notranslate"><span class="pre">warn</span></code></a>(invoker, words)</p></td>
+<td><p>Warn player</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bang.whisper" title="fh2ad.bang.whisper"><code class="xref py py-obj docutils literal notranslate"><span class="pre">whisper</span></code></a>(invoker, words)</p></td>
+<td><p>Send message to one player only</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py data">
+<dt id="fh2ad.bang.LOG">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">LOG</code><a class="headerlink" href="#fh2ad.bang.LOG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.ban">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">ban</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.ban" title="Permalink to this definition">¶</a></dt>
+<dd><p>Ban player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !ban Pozzo troll
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.cap_flag">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">cap_flag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.cap_flag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Cap flag for team/grey</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of flag to cap, and newteam</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !cap bridge_fla
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.dissolve_squad">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">dissolve_squad</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.dissolve_squad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dissolve a squad, like a locked/naziname one</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>squad number</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !dissolve 2
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.first_person">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">first_person</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.first_person" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable first person camera</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !1p
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.free_camera">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">free_camera</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.free_camera" title="Permalink to this definition">¶</a></dt>
+<dd><p>Switch to free camera</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of object to spawn</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !camera
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.give_me">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">give_me</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.give_me" title="Permalink to this definition">¶</a></dt>
+<dd><p>Spawn GPO next the invoker</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of GPO to spawn</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !giveme panth
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.hash_player">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">hash_player</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.hash_player" title="Permalink to this definition">¶</a></dt>
+<dd><p>Warn player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !hash Pozzo
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.help_atgun">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">help_atgun</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.help_atgun" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help message to fix broken AT gun controls</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !help_atgun
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.help_para">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">help_para</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.help_para" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help message to fix broken AT gun controls</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !help_para
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.help_voice">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">help_voice</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.help_voice" title="Permalink to this definition">¶</a></dt>
+<dd><p>Print help message to fix broken voice commands</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !help_voice
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.kick">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">kick</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.kick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kick player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !kick Pozzo
+&gt;&gt;&gt; !kick Pozzo nazi
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.kill">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">kill</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.kill" title="Permalink to this definition">¶</a></dt>
+<dd><p>Kill a player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !kill Pozzo
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.num_kicks">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">num_kicks</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.num_kicks" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show how many times a player has been kicked</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.report">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">report</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.report" title="Permalink to this definition">¶</a></dt>
+<dd><p>Report player to admins</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>report text</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !r Pozzo fc
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.resign">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">resign</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.resign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resign commander/squaddie</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !resign Pozzo
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.restart">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">restart</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">_words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.restart" title="Permalink to this definition">¶</a></dt>
+<dd><p>Re-run current map</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>mapname, layer, gamemode</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !restart
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.run_next">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">run_next</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">_words</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.run_next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run next map in rotation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !runnext
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.say">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">say</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.say" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send ingame message to everyone</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !say Hi there
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.say_enemy">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">say_enemy</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.say_enemy" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send ingame message to enemy team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !se you suck
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.say_team">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">say_team</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.say_team" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send ingame message to own team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !st Careful guys!
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.scramble">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">scramble</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">_words</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.scramble" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assign each player to a random team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !scramble
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.set_bleed">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">set_bleed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.set_bleed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set ticket bleed</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !bleed BLEED_AXIS BLEED_ALLIES
+&gt;&gt;&gt; !bleed TEAMNAME BLEED
+&gt;&gt;&gt; !bleed both BLEED
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.set_next">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">set_next</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.set_next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set next map in rotation</p>
+<p>If layer or gamemode are not specified, default to 64 and gpm_cq</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>mapname, layer, gamemode</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !setnext tunis 32
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.set_spawn_time">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">set_spawn_time</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.set_spawn_time" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set spawn time</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>spawn time in seconds</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !spawntime 2
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.set_tickets">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">set_tickets</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.set_tickets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set team tickets</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !tickets 999
+&gt;&gt;&gt; !tickets 900 800
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.show_admins">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">show_admins</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.show_admins" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show connected admins</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !admins
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.show_coord">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">show_coord</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.show_coord" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show current coordinates of a player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>spawn time in seconds</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !coord
+&gt;&gt;&gt; !coord Pozzo
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.show_maplist">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">show_maplist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.show_maplist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show the maplist</p>
+<p>Output like: “Maps: lenino (16, 64), ramelle (32), arad (64)”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !maps
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.show_next">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">show_next</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.show_next" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show next map in rotation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !shownext
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.swap">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">swap</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">_words</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.swap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Swap every player to their opposite team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !swap
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.switch">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">switch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.switch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move player to other team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !switch Pozzo
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.switch_allies">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">switch_allies</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.switch_allies" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move player to Allies team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !allies Pozzo
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.switch_axis">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">switch_axis</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.switch_axis" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move player to Axis team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !axis Pozzo
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.test_all">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">test_all</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">_words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.test_all" title="Permalink to this definition">¶</a></dt>
+<dd><p>Run multiple commands at once</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !test
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.third_person">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">third_person</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.third_person" title="Permalink to this definition">¶</a></dt>
+<dd><p>Enable third person camera</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !3p
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.tk_hist">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">tk_hist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_invoker</span></em>, <em class="sig-param"><span class="n">_words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.tk_hist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Show how many times a player has been kicked</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>ignored</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.unban">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">unban</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.unban" title="Permalink to this definition">¶</a></dt>
+<dd><p>Unban player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !unban Pozzo
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.warn">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">warn</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.warn" title="Permalink to this definition">¶</a></dt>
+<dd><p>Warn player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>name of target player</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !warn Pozzo
+&gt;&gt;&gt; !warn Pozzo tk
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bang.whisper">
+<code class="sig-prename descclassname">fh2ad.bang.</code><code class="sig-name descname">whisper</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bang.whisper" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send message to one player only</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FHPlayer</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>message</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span>&gt;&gt;&gt; !whisper Pozzo hi cutie
+</pre></div>
+</div>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">fh2ad</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pozzo for the FH2 community.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/autoapi/fh2ad/bang/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

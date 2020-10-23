@@ -1,0 +1,383 @@
+Chat commands
+-------------
+
+Just like you're used to, you can send certain ``!bang`` commands in the
+game chat
+
+When supplying a player name, partial names will work as well. (the line
+``!warn oz`` will probably resolve to ``!warn Pozzo``). If there are
+multiple name matches, it will tell you that
+
+“Reason” Shortcuts
+~~~~~~~~~~~~~~~~~~
+
+Some commands like ``!report`` also can have abbreviations, so
+``!report poz fc`` will be printed as
+``!report Pozzo Fighting Commander``. See the current list:
+
+.. code:: python
+
+   "afk": "Being AFK",
+   "fc": "Fighting Commander",
+   "ftk": "Forcing Teamkills",
+   "gp": "Disrupting Gameplay",
+   "lang": "Offensive Language",
+   "locked": "Locked squad",
+   "name": "Bad Nickname",
+   "nazi": "Nazi bullshit",
+   "spam": "Spamming",
+   "steal": "Asset stealing",
+   "tk": "Teamkilling",
+   "troll": "Trolling",
+
+History Shortcuts
+~~~~~~~~~~~~~~~~~
+
+Shortcuts reusing command history are also available:
+
+-  ``!!``: repeat entire input
+-  ``!0``: repeat command
+-  ``!@``: repeat all arguments
+-  ``!$``: repeat last argument
+
+Example:
+
+::
+
+   [Chat]: !warn Pozzo afk
+   !! -> "!warn Pozzo afk"
+   !0 -> "!warn"
+   !@ -> "Pozzo afk"
+   !$ -> "afk"
+
+Summary of Commands
+~~~~~~~~~~~~~~~~~~~
+
++-------+----------------+----------+----------------------------------+
+| Co    | Usage          | Who can  | Explanation                      |
+| mmand |                | Run      |                                  |
++=======+================+==========+==================================+
+| !sho  |                | everyone | Show next map in rotation        |
+| wnext |                |          |                                  |
+| !sn   |                |          |                                  |
+| !ne   |                |          |                                  |
+| xtmap |                |          |                                  |
+| !nm   |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !a    |                | everyone | Show admins online. Shown to     |
+| dmins |                |          | whole server                     |
++-------+----------------+----------+----------------------------------+
+| !r    | !r USER REASON | everyone | Report to admins                 |
+| eport |                |          |                                  |
+| !r    |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !     |                | everyone | Explain AT gun fix (can’t move   |
+| help_ |                |          | gun to aim)                      |
+| atgun |                |          |                                  |
+| !h_at |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !     |                | everyone | Explain voice fix (soldier       |
+| help_ |                |          | shouts randomly)                 |
+| voice |                |          |                                  |
+| !h_vo |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !help |                | everyone | Explain parachute                |
+| _para |                |          |                                  |
+| !h_pa |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !dis  | !dissolve      | low-lvl  | Disband squad on your **own**    |
+| solve | SQUADNUMBER    | Admins   | team (locked, naziname, …)       |
++-------+----------------+----------+----------------------------------+
+| !kill | !kill PLAYER   | low-lvl  | Murder player                    |
+|       |                | Admins   |                                  |
++-------+----------------+----------+----------------------------------+
+| !kick | !kick PLAYER   | low-lvl  | Kick player                      |
+|       |                | Admins   |                                  |
++-------+----------------+----------+----------------------------------+
+| !r    | !resign PLAYER | low-lvl  | Resign commander/remove from     |
+| esign |                | Admins   | squad                            |
++-------+----------------+----------+----------------------------------+
+| !say  | !say MESSAGE   | low-lvl  | Write BIG GREEN MESSAGE          |
+| !s    |                | Admins   |                                  |
++-------+----------------+----------+----------------------------------+
+| !sa   | !sayteam       | low-lvl  | Write message to own team        |
+| yteam | MESSAGE        | Admins   |                                  |
+| !st   |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !say  | !sayenemy      | low-lvl  | Write message to enemy team      |
+| enemy | MESSAGE        | Admins   |                                  |
+| !se   |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !scr  |                | low-lvl  | Scramble the teams randomly      |
+| amble |                | Admins   |                                  |
+| !     |                |          |                                  |
+| scram |                |          |                                  |
+| !sh   |                |          |                                  |
+| uffle |                |          |                                  |
+| !shuf |                |          |                                  |
+| !r    |                |          |                                  |
+| andom |                |          |                                  |
+| !rand |                |          |                                  |
+| omize |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !swap |                | low-lvl  | Move everyone to opposite team   |
+|       |                | Admins   |                                  |
++-------+----------------+----------+----------------------------------+
+| !s    | !switch PLAYER | low-lvl  | Move player to opposite team NOW |
+| witch | !axis PLAYER   | Admins   | Move player to Axis NOW          |
+| !sw   | !allies PLAYER |          | Move player to Allies NOW        |
+| !axis |                |          |                                  |
+| !a    |                |          |                                  |
+| llies |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !warn | !warn PLAYER   | low-lvl  | Warn Player IN BIG ORANGE        |
+| !w    | REASON         | Admins   |                                  |
++-------+----------------+----------+----------------------------------+
+| !ru   |                | mid-lvl  | Run next map                     |
+| nnext |                | Admins   |                                  |
++-------+----------------+----------+----------------------------------+
+| !se   | !setnext MAP   | mid-lvl  | Set next map. Layer defaults to  |
+| tnext | !setnext MAP   | Admins   | 64                               |
+|       | LAYER          |          |                                  |
+|       | !setnext MAP   |          |                                  |
+|       | LAYER GAMEMODE |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !re   |                | mid-lvl  | Restart map                      |
+| start |                | Admins   |                                  |
++-------+----------------+----------+----------------------------------+
+| !hash | !hash PLAYER   | beta     | Show player hash, on dedicted    |
+|       |                | users    | internet server                  |
++-------+----------------+----------+----------------------------------+
+| !maps |                | beta     | Show map list                    |
+| !ma   |                | users    |                                  |
+| plist |                |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !g    | !giveme OBJECT | beta     | Spawn object next to you, e.g. a |
+| iveme |                | users    | tank                             |
++-------+----------------+----------+----------------------------------+
+| !spaw | !spawntime     | beta     | Set spawntime in seconds         |
+| ntime | SECONDS        | users    |                                  |
++-------+----------------+----------+----------------------------------+
+| !c    |                | beta     | Spawn the filmcamera <3          |
+| amera |                | users    |                                  |
++-------+----------------+----------+----------------------------------+
+| !cap  | !cap FLAGNAME  | beta     | Give flag to team (“axis”,       |
+|       | TEAMNAME       | users    | “allies”, “grey”)                |
++-------+----------------+----------+----------------------------------+
+| !3p   |                | beta     | Force 3rd person soldier camera  |
+|       |                | users    |                                  |
++-------+----------------+----------+----------------------------------+
+| !1p   |                | beta     | Force 1st person soldier camera  |
+|       |                | users    |                                  |
++-------+----------------+----------+----------------------------------+
+| !     |                | beta     | Show player position and         |
+| coord |                | users    | direction                        |
++-------+----------------+----------+----------------------------------+
+| !ti   | !tickets BOTH  | beta     | Set tickets                      |
+| ckets | !tickets AXIS  | users    |                                  |
+|       | ALLIES         |          |                                  |
+|       | !tickets 1000  |          |                                  |
+|       | !tickets 800   |          |                                  |
+|       | 600            |          |                                  |
++-------+----------------+----------+----------------------------------+
+| !     | !bleed         | beta     | Set bleed rate (per minute).     |
+| bleed | TEAMNAME       | users    | bleed of 60 would mean 1 ticket  |
+|       | AMOUNT         |          | lost per second                  |
+|       | !bleed AXIS    |          |                                  |
+|       | ALLIES         |          |                                  |
+|       | !bleed 30 50   |          |                                  |
+|       | !bleed axis 40 |          |                                  |
+|       | !bleed both 60 |          |                                  |
++-------+----------------+----------+----------------------------------+
+
+Map Shortnames
+~~~~~~~~~~~~~~
+
+*Some* maps have short abbreviations defined, so you can
+
+::
+
+   !setnext sfakia
+
+instead of typing out
+
+::
+
+   !setnext the_battle_for_sfakia
+
+Currently there is **no** partial name match, so you **CANNOT**
+``!setnext sfa``!
+
+-  anctoville -> anctoville_1944
+-  stonne -> stonne
+-  brest -> battle_of_brest
+-  keren -> battle_of_keren
+-  berlin -> cmp_berlin
+-  irrawaddy -> cmp_irrawaddy_river
+-  midway -> cmp_midway_1942
+-  cabantuan -> cmp_raid_on_cabantuan
+-  tarawa -> cmp_tarawa
+-  tulagi -> cmp_tulagi
+-  wake -> cmp_wake_island
+-  crete -> crete_1941
+-  dukla -> dukla_pass
+-  el_ala -> el_alamein
+-  alamein -> el_alamein
+-  falaise -> falaise_pocket
+-  fot -> fall_of_tobruk
+-  gold -> gold_beach
+-  horgne -> la_horgne
+-  hurtgen -> hurtgen_forest
+-  mareth -> mareth_line
+-  mersa -> mersa_matruh
+-  meuse -> meuse_river
+-  motovskiy -> motovskiy_bay
+-  moto -> motovskiy_bay
+-  olympus -> mount_olympus
+-  omaha -> omaha_beach
+-  cobra -> operation_cobra
+-  goodwood -> operation_goodwood
+-  hyacinth -> operation_hyacinth
+-  luttich -> operation_luttich
+-  lettuce -> operation_luttich
+-  opmars -> operation_mars
+-  mars -> operation_mars
+-  totalize -> operation_totalize
+-  pdh -> pointe_du_hoc
+-  bessin -> port_en_bessin
+-  peb -> port_en_bessin
+-  phl -> purple_heart_lane
+-  sidi_bou -> sidi_bou_zid
+-  zid -> sidi_bou_zid
+-  sbz -> sidi_bou_zid
+-  rezegh -> sidi_rezegh
+-  sidi_rez -> sidi_rezegh
+-  sot -> siege_of_tobruk
+-  st_lo -> st_lo_breakthrough
+-  stlo -> st_lo_breakthrough
+-  stvith -> st_vith
+-  vith -> st_vith
+-  tali -> tali
+-  sfakia -> the_battle_for_sfakia
+-  tunis -> tunis_1943
+-  villers -> villers_bocage
+-  ferte -> villy_la_ferte
+-  villy -> villy_la_ferte
+-  zuyd -> zuydcoote
+
+Configuration
+-------------
+
+Installation
+~~~~~~~~~~~~
+
+Plugins are enabled by default, see ``game/gameplayPlugin.py``:
+
+.. code:: python
+
+   standard = '[...] BangBang BookKeeper SteamRoller Bouncer Carousel'.split(
+
+BangBang and BookKeeper should be always on, SteamRoller is team
+balance/shuffling, Bouncer is autobanning nazi nicknames, Carousel is
+map rotation.
+
+For map rotation to work, all maps need to have a ``meta.toml`` metadata
+file in the level basedir (outside of the .zip files). See example for
+berlin:
+
+.. code:: toml
+
+   layers = [ 16, 32, 64,]
+   intervals = [ [ 0, 22,], [ 23, 44,], [ 45, 100,],]
+   front = [ "east", "urban",]
+   themes = [ "cmp", "urban",]
+   date = "1945-04-16"
+   teams = [ "Germany", "Russia",]
+
+“layers” is all the existing layers that a map has – if a map is missing
+layers in your installation, remove those!
+
+“intervals” means on 0-22 players it will pick 16p layer next, on 23-44
+it will pick 32p layer, etc. these can be adjusted per map. E.g. if the
+last layer is ``[45, 75]``, the map will not get picked on a full (100
+ppl) server.
+
+General
+~~~~~~~
+
+Configuration is done in the ``config.toml`` config file.
+
+Set debug (for more aggressive logs/warnings), and beta (to enable beta
+commands)
+
+.. code:: toml
+
+   [general]
+   debug = true
+   beta = true
+
+Configure admins
+~~~~~~~~~~~~~~~~
+
+Add the ``admins_high``, ``_low``, and ``_mid`` lists to the ``[users]``
+section, with the hashes of the admins. Example below:
+
+.. code:: toml
+
+   [users]
+   # if the admin arrays are empty, defaults to "everything is allowed"
+   admins_high = [
+       "d722905f13f2e89553837ab9bbe42302",       # some user
+   ]
+   admins_mid = [
+       "732753cd11d331e64867057cfdc7ecd5",       # who is this?
+       "74598b621924620609b37a12a2473819",       # another
+   ]
+   admins_low = [
+       "45d8218d92cd1c3de9508ad5133a1693",       # some lowly mod
+   ]
+
+Autobalancer
+~~~~~~~~~~~~
+
+The ``SteamRoller`` plugin handles both auto-balancing players *during*
+the round, and scrambles the teams just before round start. Commands to
+swap or scramble the teams are available as ``!bang`` commands as well
+
+.. code:: toml
+
+   [balance]
+   shuffle_on_start = true
+   swap_on_start = false
+   protect_commander = true
+   protect_squadmembers = true
+   protect_squadleader = true
+
+Rotation
+~~~~~~~~
+
+How many maps to remember when avoiding duplications
+
+.. code:: toml
+
+     [maps.rotation]
+     n_last_played = 8             # don't repeat maps
+     n_last_categories = 1         # don't repeat theatres (africa, winter, urban, ...)
+
+Auto-Ban
+~~~~~~~~
+
+Define forbidden words for usernames/squads, and keep a textual banlist
+
+.. code:: toml
+
+
+   # usernames/squadnames that get you autokicked
+   words = [
+   "adolf",  "sieg heil", "siegheil",
+   "waffen_ss", 
+   ]
+
+   # known offenders
+   [users]
+   a_nazi_user = "a_sample_hashajdhsdje1judbe1dbte"
