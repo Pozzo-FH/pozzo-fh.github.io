@@ -166,7 +166,6 @@ instead of typing out
 Currently there is **no** partial name match, so you **CANNOT** `!setnext sfa`!
 
 - anctoville -> anctoville_1944
-- stonne -> stonne
 - brest -> battle_of_brest
 - keren -> battle_of_keren
 - berlin -> cmp_berlin
@@ -183,7 +182,6 @@ Currently there is **no** partial name match, so you **CANNOT** `!setnext sfa`!
 - falaise -> falaise_pocket
 - fot -> fall_of_tobruk
 - gold -> gold_beach
-- horgne -> la_horgne
 - hurtgen -> hurtgen_forest
 - mareth -> mareth_line
 - mersa -> mersa_matruh
@@ -218,9 +216,6 @@ Currently there is **no** partial name match, so you **CANNOT** `!setnext sfa`!
 - sfakia -> the_battle_for_sfakia
 - tunis -> tunis_1943
 - villers -> villers_bocage
-- ferte -> villy_la_ferte
-- villy -> villy_la_ferte
-- zuyd -> zuydcoote
 
 Configuration
 -------------
