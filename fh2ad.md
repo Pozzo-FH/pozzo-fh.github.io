@@ -56,6 +56,9 @@ Example:
 ------------------------------------------------------------------------------------------------------------------------
 Command       Usage                         Who can Run       Explanation
 ------------- ---------------------------- ------------------ ----------------------------------------------------------
+                                                         
+!help                                       everyone          Show available commands
+                                                         
 !shownext\                                  everyone          Show next map in rotation
 !sn\                                                     
 !nextmap\                                                
@@ -74,6 +77,8 @@ Command       Usage                         Who can Run       Explanation
 
 !help_para\                                 everyone          Explain parachute 
 !h_pa
+
+!cmp                                        everyone          Show Link to CMP
 
 !dissolve     !dissolve SQUADNUMBER         low-lvl Admins    Disband squad on your **own** team (locked, naziname, ...)
 

@@ -227,246 +227,61 @@ word-wrap: normal;
 !$ -&gt; &quot;afk&quot;</code></pre>
 <h3 id="summary-of-commands">Summary of Commands</h3>
 <table>
-<colgroup>
-<col style="width: 11%" />
-<col style="width: 23%" />
-<col style="width: 15%" />
-<col style="width: 48%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Command</th>
-<th style="text-align: left;">Usage</th>
-<th style="text-align: center;">Who can Run</th>
-<th style="text-align: left;">Explanation</th>
-</tr>
-</thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">!shownext<br />
-!sn<br />
-!nextmap<br />
-!nm<br />
-</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">everyone</td>
-<td style="text-align: left;">Show next map in rotation</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!admins</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">everyone</td>
-<td style="text-align: left;">Show admins online. Shown to whole server</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!report<br />
-!r<br />
-</td>
-<td style="text-align: left;">!r USER REASON</td>
-<td style="text-align: center;">everyone</td>
-<td style="text-align: left;">Report to admins</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!help_atgun<br />
-!h_at</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">everyone</td>
-<td style="text-align: left;">Explain AT gun fix (can’t move gun to aim)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!help_voice<br />
-!h_vo</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">everyone</td>
-<td style="text-align: left;">Explain voice fix (soldier shouts randomly)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!help_para<br />
-!h_pa</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">everyone</td>
-<td style="text-align: left;">Explain parachute</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!dissolve</td>
-<td style="text-align: left;">!dissolve SQUADNUMBER</td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Disband squad on your <strong>own</strong> team (locked, naziname, …)</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!kill</td>
-<td style="text-align: left;">!kill PLAYER</td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Murder player</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!kick</td>
-<td style="text-align: left;">!kick PLAYER</td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Kick player</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!resign</td>
-<td style="text-align: left;">!resign PLAYER</td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Resign commander/remove from squad</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!say<br />
-!s</td>
-<td style="text-align: left;">!say MESSAGE</td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Write BIG GREEN MESSAGE</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!sayteam<br />
-!st</td>
-<td style="text-align: left;">!sayteam MESSAGE</td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Write message to own team</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!sayenemy<br />
-!se</td>
-<td style="text-align: left;">!sayenemy MESSAGE</td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Write message to enemy team</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!scramble<br />
-!scram<br />
-!shuffle<br />
-!shuf<br />
-!random<br />
-!randomize</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Scramble the teams randomly</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!swap</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Move everyone to opposite team</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!switch<br />
-!sw<br />
-!axis<br />
-!allies</td>
-<td style="text-align: left;">!switch PLAYER<br />
-<br />
-!axis PLAYER<br />
-!allies PLAYER</td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Move player to opposite team NOW<br />
-<br />
-Move player to Axis NOW<br />
-Move player to Allies NOW</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!warn<br />
-!w</td>
-<td style="text-align: left;">!warn PLAYER REASON</td>
-<td style="text-align: center;">low-lvl Admins</td>
-<td style="text-align: left;">Warn Player IN BIG ORANGE</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!runnext</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">mid-lvl Admins</td>
-<td style="text-align: left;">Run next map</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!setnext</td>
-<td style="text-align: left;">!setnext MAP<br />
-!setnext MAP LAYER<br />
-!setnext MAP LAYER GAMEMODE</td>
-<td style="text-align: center;">mid-lvl Admins</td>
-<td style="text-align: left;">Set next map. Layer defaults to 64</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!restart</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">mid-lvl Admins</td>
-<td style="text-align: left;">Restart map</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!hash</td>
-<td style="text-align: left;">!hash PLAYER</td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Show player hash, on dedicted internet server</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!maps<br />
-!maplist</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Show map list</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!giveme</td>
-<td style="text-align: left;">!giveme OBJECT</td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Spawn object next to you, e.g. a tank</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!spawntime</td>
-<td style="text-align: left;">!spawntime SECONDS</td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Set spawntime in seconds</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!camera</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Spawn the filmcamera &lt;3</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!cap</td>
-<td style="text-align: left;">!cap FLAGNAME TEAMNAME</td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Give flag to team (“axis”, “allies”, “grey”)</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!3p</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Force 3rd person soldier camera</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!1p</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Force 1st person soldier camera</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!coord</td>
-<td style="text-align: left;"></td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Show player position and direction</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">!tickets</td>
-<td style="text-align: left;">!tickets BOTH<br />
-!tickets AXIS ALLIES<br />
-!tickets 1000<br />
-!tickets 800 600</td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Set tickets</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">!bleed</td>
-<td style="text-align: left;">!bleed TEAMNAME AMOUNT<br />
-!bleed AXIS ALLIES<br />
-!bleed 30 50<br />
-!bleed axis 40<br />
-!bleed both 60</td>
-<td style="text-align: center;">beta users</td>
-<td style="text-align: left;">Set bleed rate (per minute). bleed of 60 would mean 1 ticket lost per second</td>
+<td style="text-align: left;">Command Usage Who can Run Explanation</td>
 </tr>
 </tbody>
 </table>
+<p>!help everyone Show available commands</p>
+<p>!shownext  everyone Show next map in rotation !sn <br />
+!nextmap <br />
+!nm </p>
+<p>!admins everyone Show admins online. Shown to whole server</p>
+<p>!report  !r USER REASON everyone Report to admins !r </p>
+<p>!help_atgun  everyone Explain AT gun fix (can’t move gun to aim) !h_at</p>
+<p>!help_voice  everyone Explain voice fix (soldier shouts randomly) !h_vo</p>
+<p>!help_para  everyone Explain parachute !h_pa</p>
+<p>!cmp everyone Show Link to CMP</p>
+<p>!dissolve !dissolve SQUADNUMBER low-lvl Admins Disband squad on your <strong>own</strong> team (locked, naziname, …)</p>
+<p>!kill !kill PLAYER low-lvl Admins Murder player</p>
+<p>!kick !kick PLAYER low-lvl Admins Kick player</p>
+<p>!resign !resign PLAYER low-lvl Admins Resign commander/remove from squad</p>
+<p>!say  !say MESSAGE low-lvl Admins Write BIG GREEN MESSAGE !s</p>
+<p>!sayteam  !sayteam MESSAGE low-lvl Admins Write message to own team !st</p>
+<p>!sayenemy  !sayenemy MESSAGE low-lvl Admins Write message to enemy team !se</p>
+<p>!scramble  low-lvl Admins Scramble the teams randomly !scram<br />
+!shuffle<br />
+!shuf<br />
+!random<br />
+!randomize</p>
+<p>!swap low-lvl Admins Move everyone to opposite team</p>
+<p>!switch  !switch PLAYER  low-lvl Admins Move player to opposite team NOW<br />
+!sw   <br />
+!axis  !axis PLAYER  Move player to Axis NOW<br />
+!allies !allies PLAYER Move player to Allies NOW</p>
+<p>!warn  !warn PLAYER REASON low-lvl Admins Warn Player IN BIG ORANGE !w</p>
+<p>!runnext mid-lvl Admins Run next map</p>
+<p>!setnext !setnext MAP  mid-lvl Admins Set next map. Layer defaults to 64 !setnext MAP LAYER<br />
+!setnext MAP LAYER GAMEMODE</p>
+<p>!restart mid-lvl Admins Restart map</p>
+<p>!hash !hash PLAYER beta users Show player hash, on dedicted internet server</p>
+<p>!maps  beta users Show map list !maplist</p>
+<p>!giveme !giveme OBJECT beta users Spawn object next to you, e.g. a tank</p>
+<p>!spawntime !spawntime SECONDS beta users Set spawntime in seconds</p>
+<p>!camera beta users Spawn the filmcamera &lt;3</p>
+<p>!cap !cap FLAGNAME TEAMNAME beta users Give flag to team (“axis”, “allies”, “grey”)</p>
+<p>!3p beta users Force 3rd person soldier camera</p>
+<p>!1p beta users Force 1st person soldier camera</p>
+<p>!coord beta users Show player position and direction</p>
+<p>!tickets !tickets BOTH  beta users Set tickets !tickets AXIS ALLIES<br />
+!tickets 1000<br />
+!tickets 800 600</p>
+<p>!bleed !bleed TEAMNAME AMOUNT  beta users Set bleed rate (per minute). bleed of 60 would mean 1 ticket lost per second !bleed AXIS ALLIES<br />
+!bleed 30 50<br />
+!bleed axis 40<br />
+!bleed both 60</p>
+<hr />
 <h3 id="map-shortnames">Map Shortnames</h3>
 <p><em>Some</em> maps have short abbreviations defined, so you can</p>
 <pre><code>!setnext sfakia</code></pre>
