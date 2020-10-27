@@ -544,7 +544,7 @@ word-wrap: normal;
 <h2 id="configuration">Configuration</h2>
 <h3 id="installation">Installation</h3>
 <p>Plugins are enabled by default, see <code>game/gameplayPlugin.py</code>:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>standard <span class="op">=</span> <span class="st">&#39;[...] BangBang BookKeeper SteamRoller Bouncer Carousel&#39;</span>.split(</span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>standard <span class="op">=</span> <span class="st">&#39;... BangBang BookKeeper SteamRoller Bouncer Carousel&#39;</span></span></code></pre></div>
 <p>BangBang and BookKeeper should be always on, SteamRoller is team balance/shuffling, Bouncer is autobanning nazi nicknames, Carousel is map rotation.</p>
 <p>For map rotation to work, all maps need to have a <code>meta.toml</code> metadata file in the level basedir (outside of the .zip files). See example for berlin:</p>
 <pre class="toml"><code>layers = [ 16, 32, 64,]
@@ -587,14 +587,15 @@ protect_squadleader = true</code></pre>
 <p>How many maps to remember when avoiding duplications</p>
 <pre class="toml"><code>  [maps.rotation]
   n_last_played = 8             # don&#39;t repeat maps
-  n_last_categories = 1         # don&#39;t repeat theatres (africa, winter, urban, ...)</code></pre>
+  n_last_categories = 1         # don&#39;t repeat theatres 
+                                # (africa, winter, urban, ...)</code></pre>
 <h3 id="auto-ban">Auto-Ban</h3>
 <p>Define forbidden words for usernames/squads, and keep a textual banlist</p>
 <pre class="toml"><code>
 # usernames/squadnames that get you autokicked
 words = [
-&quot;adolf&quot;,  &quot;sieg heil&quot;, &quot;siegheil&quot;,
-&quot;waffen_ss&quot;, 
+  &quot;adolf&quot;, &quot;sieg heil&quot;, &quot;siegheil&quot;,
+  &quot;waffen_ss&quot;, 
 ]
 
 # known offenders

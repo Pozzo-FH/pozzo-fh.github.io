@@ -227,7 +227,7 @@ Configuration
 
 Plugins are enabled by default, see `game/gameplayPlugin.py`:
 ```python
-standard = '[...] BangBang BookKeeper SteamRoller Bouncer Carousel'.split(
+standard = '... BangBang BookKeeper SteamRoller Bouncer Carousel'
 ```
 BangBang and BookKeeper should be always on, SteamRoller is team
 balance/shuffling, Bouncer is autobanning nazi nicknames, Carousel
@@ -307,7 +307,8 @@ How many maps to remember when avoiding duplications
 ```toml
   [maps.rotation]
   n_last_played = 8             # don't repeat maps
-  n_last_categories = 1         # don't repeat theatres (africa, winter, urban, ...)
+  n_last_categories = 1         # don't repeat theatres 
+                                # (africa, winter, urban, ...)
 ```
 
 ### Auto-Ban
@@ -318,8 +319,8 @@ Define forbidden words for usernames/squads, and keep a textual banlist
 
 # usernames/squadnames that get you autokicked
 words = [
-"adolf",  "sieg heil", "siegheil",
-"waffen_ss", 
+  "adolf", "sieg heil", "siegheil",
+  "waffen_ss", 
 ]
 
 # known offenders
