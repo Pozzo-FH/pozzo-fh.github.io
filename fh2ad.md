@@ -53,108 +53,106 @@ Example:
 ### Summary of Commands
 
 
-------------------------------------------------------------------------------------------------------------------------
-Command       Usage                         Who can Run       Explanation
-------------- ---------------------------- ------------------ ----------------------------------------------------------
-                                                         
-!help                                       everyone          Show available commands
-                                                         
-!shownext\                                  everyone          Show next map in rotation
-!sn\                                                     
-!nextmap\                                                
-!nm\                                                     
-                                                         
-!admins                                     everyone          Show admins online. Shown to whole server
-                                                         
-!report\      !r USER REASON                everyone          Report to admins
-!r\                          
-                             
-!help_atgun\                                everyone          Explain AT gun fix (can't move gun to aim)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+Command          Usage                           Who can Run          Explanation
+-------------    ----------------------------    -----------------    ------------------------------------------------------------------------------------------
+!help                                            everyone             Show available commands
+                                                              
+!shownext\                                       everyone             Show next map in rotation
+!sn\                                                          
+!nextmap\                                                     
+!nm                                                          
+                                                              
+!admins                                          everyone             Show admins online. Shown to whole server
+                                                              
+!report\         !r USER REASON                  everyone             Report to admins
+!r                             
+                                
+!help_atgun\                                     everyone             Explain AT gun fix (can't move gun to aim)
 !h_at
-                             
-!help_voice\                                everyone          Explain voice fix (soldier shouts randomly)
+                                
+!help_voice\                                     everyone             Explain voice fix (soldier shouts randomly)
 !h_vo
 
-!help_para\                                 everyone          Explain parachute 
+!help_para\                                      everyone             Explain parachute 
 !h_pa
 
-!cmp                                        everyone          Show Link to CMP
+!cmp                                             everyone             Show Link to CMP
 
-!dissolve     !dissolve SQUADNUMBER         low-lvl Admins    Disband squad on your **own** team (locked, naziname, ...)
+!dissolve        !dissolve SQUADNUMBER           low-lvl Admins       Disband squad on your **own** team (locked, naziname, ...)
 
-!kill         !kill PLAYER                  low-lvl Admins    Murder player
+!kill            !kill PLAYER                    low-lvl Admins       Murder player
 
-!kick         !kick PLAYER                  low-lvl Admins    Kick player
+!kick            !kick PLAYER                    low-lvl Admins       Kick player
 
-!resign       !resign PLAYER                low-lvl Admins    Resign commander/remove from squad
+!resign          !resign PLAYER                  low-lvl Admins       Resign commander/remove from squad
 
-!say\         !say MESSAGE                  low-lvl Admins    Write BIG GREEN MESSAGE
+!say\            !say MESSAGE                    low-lvl Admins       Write BIG GREEN MESSAGE
 !s
 
-!sayteam\     !sayteam MESSAGE              low-lvl Admins    Write message to own team
+!sayteam\        !sayteam MESSAGE                low-lvl Admins       Write message to own team
 !st
 
-!sayenemy\    !sayenemy MESSAGE             low-lvl Admins    Write message to enemy team
+!sayenemy\       !sayenemy MESSAGE               low-lvl Admins       Write message to enemy team
 !se
 
-!scramble\                                  low-lvl Admins    Scramble the teams randomly
+!swap                                            low-lvl Admins       Move everyone to opposite team
+
+!scramble\                                       low-lvl Admins       Scramble the teams randomly
 !scram\
 !shuffle\
 !shuf\
 !random\
 !randomize
 
-!swap                                       low-lvl Admins    Move everyone to opposite team
+!switch\         !switch PLAYER\                 low-lvl Admins       Move player to opposite team NOW
+!sw          
 
-!switch\      !switch PLAYER\                low-lvl Admins   Move player to opposite team NOW\
-!sw\          \                                               \
-!axis\        !axis PLAYER\                                   Move player to Axis NOW\
-!allies       !allies PLAYER                                  Move player to Allies NOW
+!axis            !axis PLAYER                    low-lvl Admins       Move player to Axis NOW
 
-!warn\        !warn PLAYER REASON           low-lvl Admins    Warn Player IN BIG ORANGE
+!allies          !allies PLAYER                  low-lvl Admins       Move player to Allies NOW
+
+!warn\           !warn PLAYER REASON             low-lvl Admins       Warn Player IN BIG ORANGE
 !w
 
+!runnext                                         mid-lvl Admins       Run next map
 
-!runnext                                    mid-lvl Admins    Run next map
+!setnext         !setnext MAP\                   mid-lvl Admins       Set next map. Layer defaults to 64
+                 !setnext MAP LAYER\
+                 !setnext MAP LAYER GAMEMODE
 
-!setnext      !setnext MAP\                 mid-lvl Admins    Set next map. Layer defaults to 64
-              !setnext MAP LAYER\
-              !setnext MAP LAYER GAMEMODE
+!restart                                         mid-lvl Admins       Restart map 
 
-!restart                                    mid-lvl Admins    Restart map 
+!hash            !hash PLAYER                    beta users           Show player hash, on dedicted internet server
 
-
-!hash         !hash PLAYER                  beta users        Show player hash, on dedicted internet server
-
-!maps\                                      beta users        Show map list
+!maps\                                           beta users           Show map list
 !maplist
 
-!giveme       !giveme OBJECT                beta users        Spawn object next to you, e.g. a tank
+!giveme          !giveme OBJECT                  beta users           Spawn object next to you, e.g. a tank
 
-!spawntime    !spawntime SECONDS            beta users        Set spawntime in seconds
+!spawntime       !spawntime SECONDS              beta users           Set spawntime in seconds
 
-!camera                                     beta users        Spawn the filmcamera <3
+!camera                                          beta users           Spawn the filmcamera <3
 
-!cap          !cap FLAGNAME TEAMNAME        beta users        Give flag to team ("axis", "allies", "grey")
+!cap             !cap FLAGNAME TEAMNAME          beta users           Give flag to team ("axis", "allies", "grey")
 
-!3p                                         beta users        Force 3rd person soldier camera
+!3p                                              beta users           Force 3rd person soldier camera
 
-!1p                                         beta users        Force 1st person soldier camera
+!1p                                              beta users           Force 1st person soldier camera
 
-!coord                                      beta users        Show player position and direction 
+!coord                                           beta users           Show player position and direction 
 
-!tickets      !tickets BOTH\                beta users        Set tickets
-              !tickets AXIS ALLIES\
-              !tickets 1000\
-              !tickets 800 600
+!tickets         !tickets BOTH\                  beta users           Set tickets
+                 !tickets AXIS ALLIES\
+                 !tickets 1000\
+                 !tickets 800 600
 
-!bleed        !bleed TEAMNAME AMOUNT\       beta users        Set bleed rate (per minute). bleed of 60 would mean 1 ticket lost per second
-              !bleed AXIS ALLIES\
-              !bleed 30 50\
-              !bleed axis 40\
-              !bleed both 60
-
-------------------------------------------------------------------------------------------------------------------------
+!bleed           !bleed TEAMNAME AMOUNT\         beta users           Set bleed rate (per minute). bleed of 60 would mean 1 ticket lost per second
+                 !bleed AXIS ALLIES\
+                 !bleed 30 50\
+                 !bleed axis 40\
+                 !bleed both 60
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 ### Map Shortnames
