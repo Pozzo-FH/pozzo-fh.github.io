@@ -81,9 +81,18 @@ Command          Usage                           Who can Run          Explanatio
 
 !dissolve        !dissolve SQUADNUMBER           low-lvl Admins       Disband squad on your **own** team (locked, naziname, ...)
 
-!kill            !kill PLAYER                    low-lvl Admins       Murder player
+!kill\           !kill PLAYER                    low-lvl Admins       Murder player
+!murder\
+!m
 
-!kick            !kick PLAYER                    low-lvl Admins       Kick player
+!kick\           !kick PLAYER                    low-lvl Admins       Kick player
+!k
+
+!ban\            !ban PLAYER REASON            low-lvl Admins         Ban player for two weeks
+!b
+
+!permaban\       !permaban PLAYER                low-lvl Admins       Perma-ban player 
+!pb
 
 !resign          !resign PLAYER                  low-lvl Admins       Resign commander/remove from squad
 
