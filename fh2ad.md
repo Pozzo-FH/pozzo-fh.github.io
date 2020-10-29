@@ -309,6 +309,13 @@ protect_squadmembers = true
 protect_squadleader = true
 ```
 
+**IMPORTANT:** To enable team swap (without randomization), you **need** to 
+disable shuffling, so it looks like this:
+```toml
+shuffle_on_start = false
+swap_on_start = true
+```
+
 ### Rotation
 
 How many maps to remember when avoiding duplications

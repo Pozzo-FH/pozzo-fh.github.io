@@ -199,18 +199,18 @@ word-wrap: normal;
 <p>When supplying a player name, partial names will work as well. (the line <code>!warn oz</code> will probably resolve to <code>!warn Pozzo</code>). If there are multiple name matches, it will tell you that</p>
 <h3 id="reason-shortcuts">“Reason” Shortcuts</h3>
 <p>Some commands like <code>!report</code> also can have abbreviations, so <code>!report poz fc</code> will be printed as <code>!report Pozzo Fighting Commander</code>. See the current list:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="co">&quot;afk&quot;</span>: <span class="st">&quot;Being AFK&quot;</span>,</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true"></a><span class="co">&quot;fc&quot;</span>: <span class="st">&quot;Fighting Commander&quot;</span>,</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true"></a><span class="co">&quot;ftk&quot;</span>: <span class="st">&quot;Forcing Teamkills&quot;</span>,</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true"></a><span class="co">&quot;gp&quot;</span>: <span class="st">&quot;Disrupting Gameplay&quot;</span>,</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true"></a><span class="co">&quot;lang&quot;</span>: <span class="st">&quot;Offensive Language&quot;</span>,</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true"></a><span class="co">&quot;locked&quot;</span>: <span class="st">&quot;Locked squad&quot;</span>,</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true"></a><span class="co">&quot;name&quot;</span>: <span class="st">&quot;Bad Nickname&quot;</span>,</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true"></a><span class="co">&quot;nazi&quot;</span>: <span class="st">&quot;Nazi bullshit&quot;</span>,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true"></a><span class="co">&quot;spam&quot;</span>: <span class="st">&quot;Spamming&quot;</span>,</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true"></a><span class="co">&quot;steal&quot;</span>: <span class="st">&quot;Asset stealing&quot;</span>,</span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true"></a><span class="co">&quot;tk&quot;</span>: <span class="st">&quot;Teamkilling&quot;</span>,</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true"></a><span class="co">&quot;troll&quot;</span>: <span class="st">&quot;Trolling&quot;</span>,</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;afk&quot;</span>: <span class="st">&quot;Being AFK&quot;</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;fc&quot;</span>: <span class="st">&quot;Fighting Commander&quot;</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;ftk&quot;</span>: <span class="st">&quot;Forcing Teamkills&quot;</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;gp&quot;</span>: <span class="st">&quot;Disrupting Gameplay&quot;</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;lang&quot;</span>: <span class="st">&quot;Offensive Language&quot;</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;locked&quot;</span>: <span class="st">&quot;Locked squad&quot;</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;name&quot;</span>: <span class="st">&quot;Bad Nickname&quot;</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;nazi&quot;</span>: <span class="st">&quot;Nazi bullshit&quot;</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;spam&quot;</span>: <span class="st">&quot;Spamming&quot;</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;steal&quot;</span>: <span class="st">&quot;Asset stealing&quot;</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;tk&quot;</span>: <span class="st">&quot;Teamkilling&quot;</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;troll&quot;</span>: <span class="st">&quot;Trolling&quot;</span>,</span></code></pre></div>
 <h3 id="history-shortcuts">History Shortcuts</h3>
 <p>Shortcuts reusing command history are also available:</p>
 <ul>
@@ -561,62 +561,65 @@ word-wrap: normal;
 <h2 id="configuration">Configuration</h2>
 <h3 id="installation">Installation</h3>
 <p>Plugins are enabled by default, see <code>game/gameplayPlugin.py</code>:</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"></a>standard <span class="op">=</span> <span class="st">&#39;... BangBang BookKeeper SteamRoller Bouncer Carousel&#39;</span></span></code></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>standard <span class="op">=</span> <span class="st">&#39;... BangBang BookKeeper SteamRoller Bouncer Carousel&#39;</span></span></code></pre></div>
 <p>BangBang and BookKeeper should be always on, SteamRoller is team balance/shuffling, Bouncer is autobanning nazi nicknames, Carousel is map rotation.</p>
 <p>For map rotation to work, all maps need to have a <code>meta.toml</code> metadata file in the level basedir (outside of the .zip files). See example for berlin:</p>
-<pre class="toml"><code>layers = [ 16, 32, 64,]
-intervals = [ [ 0, 22,], [ 23, 44,], [ 45, 100,],]
-front = [ &quot;east&quot;, &quot;urban&quot;,]
-themes = [ &quot;cmp&quot;, &quot;urban&quot;,]
-date = &quot;1945-04-16&quot;
-teams = [ &quot;Germany&quot;, &quot;Russia&quot;,]</code></pre>
+<div class="sourceCode" id="cb6"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">layers</span> <span class="op">=</span> <span class="op">[</span> <span class="dv">16</span><span class="op">,</span> <span class="dv">32</span><span class="op">,</span> <span class="dv">64</span><span class="op">,]</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dt">intervals</span> <span class="op">=</span> <span class="op">[</span> <span class="op">[</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">22</span><span class="op">,],</span> <span class="op">[</span> <span class="dv">23</span><span class="op">,</span> <span class="dv">44</span><span class="op">,],</span> <span class="op">[</span> <span class="dv">45</span><span class="op">,</span> <span class="dv">100</span><span class="op">,],]</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="dt">front</span> <span class="op">=</span> <span class="op">[</span> <span class="st">&quot;east&quot;</span><span class="op">,</span> <span class="st">&quot;urban&quot;</span><span class="op">,]</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="dt">themes</span> <span class="op">=</span> <span class="op">[</span> <span class="st">&quot;cmp&quot;</span><span class="op">,</span> <span class="st">&quot;urban&quot;</span><span class="op">,]</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="dt">date</span> <span class="op">=</span> <span class="st">&quot;1945-04-16&quot;</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="dt">teams</span> <span class="op">=</span> <span class="op">[</span> <span class="st">&quot;Germany&quot;</span><span class="op">,</span> <span class="st">&quot;Russia&quot;</span><span class="op">,]</span></span></code></pre></div>
 <p>“layers” is all the existing layers that a map has – if a map is missing layers in your installation, remove those!</p>
 <p>“intervals” means on 0-22 players it will pick 16p layer next, on 23-44 it will pick 32p layer, etc. these can be adjusted per map. E.g. if the last layer is <code>[45, 75]</code>, the map will not get picked on a full (100 ppl) server.</p>
 <h3 id="general">General</h3>
 <p>Configuration is done in the <code>config.toml</code> config file.</p>
 <p>Set debug (for more aggressive logs/warnings), and beta (to enable beta commands)</p>
-<pre class="toml"><code>[general]
-debug = true
-beta = true</code></pre>
+<div class="sourceCode" id="cb7"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="dt">general</span><span class="kw">]</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="dt">debug</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="dt">beta</span> <span class="op">=</span> <span class="cn">true</span></span></code></pre></div>
 <h3 id="configure-admins">Configure admins</h3>
 <p>Add the <code>admins_high</code>, <code>_low</code>, and <code>_mid</code> lists to the <code>[users]</code> section, with the hashes of the admins. Example below:</p>
-<pre class="toml"><code>[users]
-# if the admin arrays are empty, defaults to &quot;everything is allowed&quot;
-admins_high = [
-    &quot;d722905f13f2e89553837ab9bbe42302&quot;,       # some user
-]
-admins_mid = [
-    &quot;732753cd11d331e64867057cfdc7ecd5&quot;,       # who is this?
-    &quot;74598b621924620609b37a12a2473819&quot;,       # another
-]
-admins_low = [
-    &quot;45d8218d92cd1c3de9508ad5133a1693&quot;,       # some lowly mod
-]</code></pre>
+<div class="sourceCode" id="cb8"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="dt">users</span><span class="kw">]</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># if the admin arrays are empty, defaults to &quot;everything is allowed&quot;</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="dt">admins_high</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;d722905f13f2e89553837ab9bbe42302&quot;</span><span class="op">,</span>       <span class="co"># some user</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="op">]</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="dt">admins_mid</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;732753cd11d331e64867057cfdc7ecd5&quot;</span><span class="op">,</span>       <span class="co"># who is this?</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;74598b621924620609b37a12a2473819&quot;</span><span class="op">,</span>       <span class="co"># another</span></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="op">]</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a><span class="dt">admins_low</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;45d8218d92cd1c3de9508ad5133a1693&quot;</span><span class="op">,</span>       <span class="co"># some lowly mod</span></span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="op">]</span></span></code></pre></div>
 <h3 id="autobalancer">Autobalancer</h3>
 <p>The <code>SteamRoller</code> plugin handles both auto-balancing players <em>during</em> the round, and scrambles the teams just before round start. Commands to swap or scramble the teams are available as <code>!bang</code> commands as well</p>
-<pre class="toml"><code>[balance]
-shuffle_on_start = true
-swap_on_start = false
-protect_commander = true
-protect_squadmembers = true
-protect_squadleader = true</code></pre>
+<div class="sourceCode" id="cb9"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="dt">balance</span><span class="kw">]</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="dt">shuffle_on_start</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="dt">swap_on_start</span> <span class="op">=</span> <span class="cn">false</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a><span class="dt">protect_commander</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="dt">protect_squadmembers</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a><span class="dt">protect_squadleader</span> <span class="op">=</span> <span class="cn">true</span></span></code></pre></div>
+<p><strong>IMPORTANT:</strong> To enable team swap (without randomization), you <strong>need</strong> to disable shuffling, so it looks like this:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="dt">shuffle_on_start</span> <span class="op">=</span> <span class="cn">false</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="dt">swap_on_start</span> <span class="op">=</span> <span class="cn">true</span></span></code></pre></div>
 <h3 id="rotation">Rotation</h3>
 <p>How many maps to remember when avoiding duplications</p>
-<pre class="toml"><code>  [maps.rotation]
-  n_last_played = 8             # don&#39;t repeat maps
-  n_last_categories = 1         # don&#39;t repeat theatres 
-                                # (africa, winter, urban, ...)</code></pre>
+<div class="sourceCode" id="cb11"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>  <span class="kw">[</span><span class="dt">maps</span><span class="kw">.</span><span class="dt">rotation</span><span class="kw">]</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">n_last_played</span> <span class="op">=</span> <span class="dv">8</span>             <span class="co"># don&#39;t repeat maps</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="dt">n_last_categories</span> <span class="op">=</span> <span class="dv">1</span>         <span class="co"># don&#39;t repeat theatres </span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>                                <span class="co"># (africa, winter, urban, ...)</span></span></code></pre></div>
 <h3 id="auto-ban">Auto-Ban</h3>
 <p>Define forbidden words for usernames/squads, and keep a textual banlist</p>
-<pre class="toml"><code>
-# usernames/squadnames that get you autokicked
-words = [
-  &quot;adolf&quot;, &quot;sieg heil&quot;, &quot;siegheil&quot;,
-  &quot;waffen_ss&quot;, 
-]
-
-# known offenders
-[users]
-a_nazi_user = &quot;a_sample_hashajdhsdje1judbe1dbte&quot;</code></pre>
+<div class="sourceCode" id="cb12"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># usernames/squadnames that get you autokicked</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="dt">words</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;adolf&quot;</span><span class="op">,</span> <span class="st">&quot;sieg heil&quot;</span><span class="op">,</span> <span class="st">&quot;siegheil&quot;</span><span class="op">,</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;waffen_ss&quot;</span><span class="op">,</span> </span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="op">]</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co"># known offenders</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="dt">users</span><span class="kw">]</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a><span class="dt">a_nazi_user</span> <span class="op">=</span> <span class="st">&quot;a_sample_hashajdhsdje1judbe1dbte&quot;</span></span></code></pre></div>
 </body>
 </html>
