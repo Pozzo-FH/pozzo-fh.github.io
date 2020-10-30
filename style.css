@@ -1,11 +1,3 @@
-@font-face {
-    font-family: 'league_spartanbold';
-    src: url('leaguespartan-bold-webfont.woff2') format('woff2'),
-         url('leaguespartan-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
 body {
   margin: 1em auto;
   /*max-width: 650px; */
@@ -15,7 +7,7 @@ body {
   font-size: 18px;
   color: #000;
   background-color: #fff;
-  font-family: "Roboto", sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 h1, h2, h3 {
@@ -89,7 +81,7 @@ th {
 pre, code{
   background: #f8f8f8;
   color: #000;
-  font-family: "DejaVu Sans Mono", monospace;
+  font-family: "Hack", "Roboto Mono", monospace;
 }
 
 pre code {
