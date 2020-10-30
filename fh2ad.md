@@ -105,15 +105,6 @@ Command          Usage                           Who can Run          Explanatio
 !sayenemy\       !sayenemy MESSAGE               low-lvl Admins       Write message to enemy team
 !se
 
-!swap                                            low-lvl Admins       Move everyone to opposite team
-
-!scramble\                                       low-lvl Admins       Scramble the teams randomly
-!scram\
-!shuffle\
-!shuf\
-!random\
-!randomize
-
 !switch\         !switch PLAYER\                 low-lvl Admins       Move player to opposite team NOW
 !sw          
 
@@ -131,6 +122,15 @@ Command          Usage                           Who can Run          Explanatio
                  !setnext MAP LAYER GAMEMODE
 
 !restart                                         mid-lvl Admins       Restart map 
+
+!swap                                            high-lvl Admins      Move everyone to opposite team
+
+!scramble\                                       high-lvl Admins      Scramble the teams randomly
+!scram\
+!shuffle\
+!shuf\
+!random\
+!randomize
 
 !hash            !hash PLAYER                    beta users           Show player hash, on dedicted internet server
 
