@@ -1,3 +1,23 @@
+---
+title: FH2 Guide
+subtitle: THIS IS A WORK IN PROGRESS! AND THIS IS NOT AN OFFICIAL PAGE!
+---
+
+## Where to Get Help
+
+### Discord, Forums
+
+### CMP Discord, Forums
+
+## Playing Online
+
+### Servers
+
+### Rules
+
+### Chat Commands
+
+
 ## Gameplay
 
 ### Get Started: Youtube Tutorials
@@ -21,13 +41,6 @@
 
 ### Tournament -> Join
 
-## Get Help
-
-### Discord, Forums
-
-### CMP Discord, Forums
-
-
 ## Community
 
 ### Youtube Channels
@@ -35,3 +48,5 @@
 ## Contribute
 
 ### Mapping Series TS4
+
+### FH2 Mapping tutorial 

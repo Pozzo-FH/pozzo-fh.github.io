@@ -1,14 +1,23 @@
+MDFLAGS=markdown+smart+link_attributes+multiline_tables+pipe_tables+definition_lists+backtick_code_blocks+fenced_code_attributes+implicit_figures+tex_math_dollars+header_attributes
+PAGETITLE="FH2 Guide"
+CSS=style.css
+HTMLINCLUDE=fonts.html
+
+MAIN=index
+
+PVIEWER = zathura
+PBROWSER = surf
+OFFICE = abiword
+
 .PHONY: help
 help:
-	@echo "targets: docs api maps"
+	@echo "targets: docs api maps main"
 
 .PHONY: docs
 docs:
 	cp ../fh2ad/doc/guide.md fh2ad.md
-	pandoc --from markdown+smart+link_attributes+grid_tables+multiline_tables+pipe_tables+definition_lists+backtick_code_blocks+fenced_code_attributes+implicit_figures+tex_math_dollars+header_attributes \
-		-s --standalone --self-contained --katex \
-		--toc --metadata title="FH2AD User Manual" \
-		-t html5 --css=style.css -H fonts.html fh2ad.md -o fh2ad.html
+	pandoc --from $(MDFLAGS) \
+		-t html5 --css=$(CSS) -H $(HTMLINCLUDE) fh2ad.md -o fh2ad.html
 
 .PHONY: api
 api:
@@ -19,3 +28,18 @@ api:
 .PHONY: maps
 maps:
 	$(MAKE) -C maps
+
+
+.PHONY: main
+main:
+	pandoc -s --css=$(CSS) -H $(HTMLINCLUDE) \
+		--from $(MDFLAGS)  -t html -o $(MAIN).html $(MAIN).md
+
+.PHONY: view
+view: main
+	$(PBROWSER) $(MAIN).html 2> /dev/null & 
+
+
+.PHONY: clean
+clean:
+	rm $(MAIN).html
