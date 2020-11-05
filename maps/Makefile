@@ -1,21 +1,41 @@
+MDFLAGS=markdown+smart+link_attributes+multiline_tables+pipe_tables+definition_lists+backtick_code_blocks+fenced_code_attributes+implicit_figures+tex_math_dollars+header_attributes
+PAGETITLE="FH2 Maps"
+CSS=../style.css
+HTMLINCLUDE=../fonts.html
 FH2PARSE_REPO=../../fh2parse
 
+PVIEWER = zathura
+PBROWSER = vimb
+OFFICE = abiword
+
+.PHONY: help
+help:
+	@echo "specify a target"
+
 .PHONY: all
-all: copy index
+all: copy maps index
 
 .PHONY: copy
 copy:
 	mkdir -p img
 	mkdir -p img/ico
-	cp $(FH2PARSE_REPO)/pages/*.html ./
+	cp $(FH2PARSE_REPO)/pages/*.md ./
 	cp $(FH2PARSE_REPO)/pages/img/*.webp img/
 	cp $(FH2PARSE_REPO)/data/img/*.webp img/ico
 
 .PHONY: index
 index:
-	find . -maxdepth 1 -name '*.html' -and -not -name 'index.html' -print | sort | grep "^./[[:lower:]]" | awk '$$0="- ["$$0"]("$$0")"' | pandoc -f markdown -t html > templ/BODY.html
-	pandoc -f markdown -t html -o templ/LEGEND.html templ/leg.md
-	cat templ/HEAD.html templ/LEGEND.html templ/BODY.html templ/TAIL.html > index.html
+	pandoc -s --metadata title=$(PAGETITLE) \
+		--css=$(CSS) -H $(HTMLINCLUDE)  --from $(MDFLAGS) -t html \
+		-o index.html templ/leg.md templ/body.md
+
+.PHONY: maps
+maps:
+	@for pg in $(shell ls *.md); do\
+		echo $${pg}; \
+		pandoc -s --css=$(CSS) -H $(HTMLINCLUDE) --toc \
+			--from $(MDFLAGS) -t html -o $${pg%.*}.html $${pg};\
+		done
 
 .PHONY: clean
 clean:

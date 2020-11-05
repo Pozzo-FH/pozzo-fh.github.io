@@ -1,437 +1,479 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
-<head>
-  <meta charset="utf-8" />
-  <meta name="generator" content="pandoc" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <title>Player Thresholds</title>
-  <style>
-    code{white-space: pre-wrap;}
-    span.smallcaps{font-variant: small-caps;}
-    span.underline{text-decoration: underline;}
-    div.column{display: inline-block; vertical-align: top; width: 50%;}
-    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-    ul.task-list{list-style: none;}
-    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
-  </style>
-  <link rel="stylesheet" href="../style.css" />
-  <!--[if lt IE 9]>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
-  <![endif]-->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto+Mono:ital@0;1&family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-<header id="title-block-header">
-<h1 class="title">Player Thresholds</h1>
-</header>
-<p>as you might or might not have seen mentioned on discord, the new soom(tm) to be deployed map rotation system has the ability to set custom limits for each map, which layer gets picked at how many connected players. This also includes the possibility for an upper limit so that a map with, say, a maximum of 75 players will not be picked by the maprotation when the server is full at 100 ppl.</p>
-<p>Currently, the default thresholds are at 22.5 and 44.5 players (22ppl -&gt; 16 layer, 23ppl -&gt; 32 layer, 44ppl-&gt;32 layer, 45++ -&gt; 64 layer)</p>
-<p>Currently, four maps have an upper limit of 75 configured, these are Hyacinth, Bardia, Tunis and Ramelle (see below)</p>
-<p>The full list of all the per-map intervals is this:</p>
-<table>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Mapname</th>
-<th style="text-align: left;">16</th>
-<th style="text-align: left;">32</th>
-<th style="text-align: left;">64</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">Alam_Halfa</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 100, ]</td>
-<td style="text-align: left;">[ 101, 200 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Anctoville_1944</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Arad</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">bardia</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 75 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">bastogne</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">battle_of_brest</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">battle_of_keren</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">bodange</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">cmp_berlin</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 59, ]</td>
-<td style="text-align: left;">[ 60, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">cmp_irrawaddy_river</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">cmp_midway_1942</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">cmp_raid_on_cabantuan</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">cmp_tarawa</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">cmp_tulagi</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">cmp_wake_island</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Crete_1941</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 62, ]</td>
-<td style="text-align: left;">[ 63, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">dukla_pass</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">El_Alamein</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">eppeldorf</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">falaise_pocket</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Fall_of_Tobruk</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">flavion</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">gazala</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 100, ]</td>
-<td style="text-align: left;">[ 101, 200 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Giarabub</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">gold_beach</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">hurtgen_forest</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">ihantala</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 62, ]</td>
-<td style="text-align: left;">[ 63, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">la_horgne</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">lebisey</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">lenino</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Mareth_Line</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Mersa_Matruh</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">meuse_river</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">motovskiy_bay</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">mount_olympus</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ogledow</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">omaha_beach</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">operation_cobra</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 62, ]</td>
-<td style="text-align: left;">[ 63, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Operation_Goodwood</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Operation_Hyacinth</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 75 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">operation_luttich</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">operation_mars</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">operation_totalize</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">pegasus</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">pointe_du_hoc</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">port_en_bessin</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Purple_Heart_Lane</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 75 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">ramelle</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 75 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">sammatus</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">seelow</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Sidi_Bou_Zid</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Sidi_Rezegh</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 62, ]</td>
-<td style="text-align: left;">[ 63, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">Siege_of_Tobruk</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">st_lo_breakthrough</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">stonne</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">studienka</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">st_vith</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Supercharge</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">tali</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">the_battle_for_sfakia</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">tunis_1943</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 75 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">villers_bocage</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 62, ]</td>
-<td style="text-align: left;">[ 63, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">villy_la_ferte</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">Vossenack</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">zuydcoote</td>
-<td style="text-align: left;">[ 0, 22, ]</td>
-<td style="text-align: left;">[ 23, 54, ]</td>
-<td style="text-align: left;">[ 55, 100 ,]</td>
-</tr>
-</tbody>
-</table>
-<hr />
-<p>For the map devs/betatesters: This is set in the new metadata for each map, in the meta.toml, specifically in the “intervals” entry:</p>
-<pre><code>intervals = [ [ 0, 22,], [ 23, 44,], [ 45, 75 ,]</code></pre>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="generator" content="pandoc" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, user-scalable=yes"
+    />
+    <title>Layer Thresholds</title>
+    <style>
+      code {
+        white-space: pre-wrap;
+      }
+      span.smallcaps {
+        font-variant: small-caps;
+      }
+      span.underline {
+        text-decoration: underline;
+      }
+      div.column {
+        display: inline-block;
+        vertical-align: top;
+        width: 50%;
+      }
+      div.hanging-indent {
+        margin-left: 1.5em;
+        text-indent: -1.5em;
+      }
+      ul.task-list {
+        list-style: none;
+      }
+      .display.math {
+        display: block;
+        text-align: center;
+        margin: 0.5rem auto;
+      }
+    </style>
+    <link rel="stylesheet" href="../style.css" />
+    <!--[if lt IE 9]>
+      <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Spartan:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="title-block-header">
+      <h1 class="title">Layer Thresholds</h1>
+    </header>
+    <p>
+      as you might or might not have seen mentioned on discord, the new soom(tm)
+      to be deployed map rotation system has the ability to set custom limits
+      for each map, which layer gets picked at how many connected players. This
+      also includes the possibility for an upper limit so that a map with, say,
+      a maximum of 75 players will not be picked by the maprotation when the
+      server is full at 100 ppl.
+    </p>
+    <p>
+      Currently, the default thresholds are at 22.5 and 44.5 players (22ppl
+      -&gt; 16 layer, 23ppl -&gt; 32 layer, 44ppl-&gt;32 layer, 45++ -&gt; 64
+      layer)
+    </p>
+    <p>
+      Currently, four maps have an upper limit of 75 configured, these are
+      Hyacinth, Bardia, Tunis and Ramelle (see below)
+    </p>
+    <p>The full list of all the per-map intervals is this:</p>
+    <table>
+      <thead>
+        <tr class="header">
+          <th style="text-align: left">Mapname</th>
+          <th style="text-align: left">16</th>
+          <th style="text-align: left">32</th>
+          <th style="text-align: left">64</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="odd">
+          <td style="text-align: left">Alam_Halfa</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 100, ]</td>
+          <td style="text-align: left">[ 101, 200 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Anctoville_1944</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">Arad</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">bardia</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 75 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">bastogne</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">battle_of_brest</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">battle_of_keren</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">bodange</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">cmp_berlin</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 59, ]</td>
+          <td style="text-align: left">[ 60, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">cmp_irrawaddy_river</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">cmp_midway_1942</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">cmp_raid_on_cabantuan</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">cmp_tarawa</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">cmp_tulagi</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">cmp_wake_island</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Crete_1941</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 62, ]</td>
+          <td style="text-align: left">[ 63, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">dukla_pass</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">El_Alamein</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">eppeldorf</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">falaise_pocket</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">Fall_of_Tobruk</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">flavion</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">gazala</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 100, ]</td>
+          <td style="text-align: left">[ 101, 200 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Giarabub</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">gold_beach</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">hurtgen_forest</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">ihantala</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 62, ]</td>
+          <td style="text-align: left">[ 63, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">la_horgne</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">lebisey</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">lenino</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">Mareth_Line</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Mersa_Matruh</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">meuse_river</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">motovskiy_bay</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">mount_olympus</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">ogledow</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">omaha_beach</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">operation_cobra</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 62, ]</td>
+          <td style="text-align: left">[ 63, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">Operation_Goodwood</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Operation_Hyacinth</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 75 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">operation_luttich</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">operation_mars</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">operation_totalize</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">pegasus</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">pointe_du_hoc</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">port_en_bessin</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">Purple_Heart_Lane</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 75 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">ramelle</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 75 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">sammatus</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">seelow</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">Sidi_Bou_Zid</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Sidi_Rezegh</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 62, ]</td>
+          <td style="text-align: left">[ 63, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">Siege_of_Tobruk</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">st_lo_breakthrough</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">stonne</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">studienka</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">st_vith</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Supercharge</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">tali</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">the_battle_for_sfakia</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">tunis_1943</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 75 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">villers_bocage</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 62, ]</td>
+          <td style="text-align: left">[ 63, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">villy_la_ferte</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="even">
+          <td style="text-align: left">Vossenack</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+        <tr class="odd">
+          <td style="text-align: left">zuydcoote</td>
+          <td style="text-align: left">[ 0, 22, ]</td>
+          <td style="text-align: left">[ 23, 54, ]</td>
+          <td style="text-align: left">[ 55, 100 ,]</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr />
+    <p>
+      For the map devs/betatesters: This is set in the new metadata for each
+      map, in the meta.toml, specifically in the “intervals” entry:
+    </p>
+    <pre><code>intervals = [ [ 0, 22,], [ 23, 44,], [ 45, 75 ,]</code></pre>
+  </body>
 </html>
