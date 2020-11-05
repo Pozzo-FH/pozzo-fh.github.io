@@ -17,9 +17,7 @@ html:
 	pandoc -s --metadata title=$(PAGETITLE) --css=$(CSS) \
 		-H $(HTMLINCLUDE)
 		--from $(MDFLAGS) --toc -t html -o $(MAIN).html $(MAIN).md
-	# make html compatible to vimb
-	#sed -i '/xmlns/c\<html>' $(MAIN).html
-
+	prettier -w $(MAIN).html
 .PHONY: clean
 clean:
 	rm *.html
