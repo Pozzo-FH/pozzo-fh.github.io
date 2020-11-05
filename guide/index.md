@@ -1,6 +1,6 @@
 ---
-title: FH2 Guide
-subtitle: THIS IS A WORK IN PROGRESS! AND THIS IS NOT AN OFFICIAL PAGE!
+title: FH2 Guide (Unofficial)
+subtitle: THIS IS A WORK IN PROGRESS! 
 ---
 
 ## Where to Get Help

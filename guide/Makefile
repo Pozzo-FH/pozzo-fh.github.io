@@ -14,9 +14,9 @@ all: html
 
 .PHONY: html
 html:
-	pandoc -s --metadata title=$(PAGETITLE) --css=$(CSS) \
-		-H $(HTMLINCLUDE)
-		--from $(MDFLAGS) --toc -t html -o $(MAIN).html $(MAIN).md
+	pandoc -s --metadata title=$(PAGETITLE) \
+		--css=$(CSS) -H $(HTMLINCLUDE) --toc \
+		--from $(MDFLAGS) -t html -o $(MAIN).html $(MAIN).md
 	prettier -w $(MAIN).html
 .PHONY: clean
 clean:

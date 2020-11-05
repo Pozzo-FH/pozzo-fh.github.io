@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "League Spartan", "Roboto Slab", serif;
+  font-family: "Spartan", sans-serif;
 }
 @media print{
   body{
