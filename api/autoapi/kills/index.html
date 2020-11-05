@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>fh2ad &#8212; fh2ad  documentation</title>
+    <title>kills &#8212; fh2ad  documentation</title>
     <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
@@ -32,19 +32,36 @@
 
           <div class="body" role="main">
             
-  <div class="section" id="module-fh2ad">
-<span id="fh2ad"></span><h1><a class="reference internal" href="#module-fh2ad" title="fh2ad"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad</span></code></a><a class="headerlink" href="#module-fh2ad" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="bang/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.bang</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="bf2_tools/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.bf2_tools</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="constants/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.constants</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="log/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.log</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="settings/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.settings</span></code></a></li>
-<li class="toctree-l1"><a class="reference internal" href="util/index.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.util</span></code></a></li>
-</ul>
+  <div class="section" id="module-kills">
+<span id="kills"></span><h1><a class="reference internal" href="#module-kills" title="kills"><code class="xref py py-mod docutils literal notranslate"><span class="pre">kills</span></code></a><a class="headerlink" href="#module-kills" title="Permalink to this headline">¶</a></h1>
+<p>Kill Logging Plugins</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#kills.TeamKillLogger" title="kills.TeamKillLogger"><code class="xref py py-obj docutils literal notranslate"><span class="pre">TeamKillLogger</span></code></a></p></td>
+<td><p>Track teamkills and log them</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt id="kills.TeamKillLogger">
+<em class="property">class </em><code class="sig-prename descclassname">kills.</code><code class="sig-name descname">TeamKillLogger</code><a class="headerlink" href="#kills.TeamKillLogger" title="Permalink to this definition">¶</a></dt>
+<dd><p>Track teamkills and log them</p>
+<p>Record killer, victim, weapon, vehicles, and distance (time is in logs)</p>
+<dl class="py method">
+<dt id="kills.TeamKillLogger.hook_player_killed">
+<code class="sig-name descname">hook_player_killed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">victim</span></em>, <em class="sig-param"><span class="n">attacker</span></em>, <em class="sig-param"><span class="n">weapon</span></em>, <em class="sig-param"><span class="n">_assists</span></em>, <em class="sig-param"><span class="n">victim_vehicle</span></em><span class="sig-paren">)</span><a class="headerlink" href="#kills.TeamKillLogger.hook_player_killed" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
 </div>
 </div>
 </div>
@@ -107,7 +124,7 @@
       &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
       
       |
-      <a href="../../_sources/autoapi/fh2ad/index.rst.txt"
+      <a href="../../_sources/autoapi/kills/index.rst.txt"
           rel="nofollow">Page source</a>
     </div>
 

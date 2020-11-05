@@ -1,0 +1,216 @@
+:mod:`tracking`
+===============
+
+.. py:module:: tracking
+
+.. autoapi-nested-parse::
+
+   Player Tracking Plugins
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   tracking.IdleTracker
+   tracking.PlayerLogger
+   tracking.PlayerRegistry
+
+
+
+.. py:class:: IdleTracker
+
+
+
+   Log connected/disconnected players
+
+   Player is no longer idle when:
+   a) spawns
+   b) connects
+
+   at round start, check if server almost full
+   if not, don't do anything that round
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: hook_game_status_change(self, new_status)
+
+
+   .. method:: hook_on_timer(self, data)
+
+
+   .. method:: hook_player_connect(self, bf2_ply)
+
+
+   .. method:: hook_player_disconnect(self, bf2_ply)
+
+
+
+.. data:: LOG_CHAT
+   
+
+   
+
+.. py:class:: PlayerLogger
+
+
+
+   Log connected/disconnected players
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: hook_player_connect(self, bf2_ply)
+
+
+   .. method:: hook_player_disconnect(self, bf2_ply)
+
+
+
+.. py:class:: PlayerRegistry
+
+
+
+   Track all connected players
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: clean_registry(cls)
+      :classmethod:
+
+
+   .. method:: fill_registry(cls)
+      :classmethod:
+
+
+   .. method:: find(cls, idx)
+      :classmethod:
+
+
+   .. method:: list_connected(cls)
+      :classmethod:
+
+
+   .. method:: register(cls, ply)
+      :classmethod:
+
+      Add player to registry
+
+
+      :Parameters:
+
+          **ply: FH2Player**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: reset_registry(cls)
+      :classmethod:
+
+
+   .. method:: unregister(cls, idx)
+      :classmethod:
+
+      Remove player from registry
+
+
+      :Parameters:
+
+          **idx: int**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: update_registry(cls)
+      :classmethod:
+
+
+   .. method:: wipe_registry(cls)
+      :classmethod:
+
+
+

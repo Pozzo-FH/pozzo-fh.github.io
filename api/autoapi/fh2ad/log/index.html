@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fh2ad.log &#8212; fh2ad  documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-fh2ad.log">
+<span id="fh2ad-log"></span><h1><a class="reference internal" href="#module-fh2ad.log" title="fh2ad.log"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.log</span></code></a><a class="headerlink" href="#module-fh2ad.log" title="Permalink to this headline">¶</a></h1>
+<p>logging</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.log.setup_logger" title="fh2ad.log.setup_logger"><code class="xref py py-obj docutils literal notranslate"><span class="pre">setup_logger</span></code></a>(name, log_file, level=logging.WARNING, is_chat=False)</p></td>
+<td><p>To setup as many loggers as you want</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py data">
+<dt id="fh2ad.log.LOGLEVEL">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">LOGLEVEL</code><a class="headerlink" href="#fh2ad.log.LOGLEVEL" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="id0">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">LOGLEVEL</code><a class="headerlink" href="#id0" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="id1">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">LOGLEVEL</code><a class="headerlink" href="#id1" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad.log.LOG_DIR">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">LOG_DIR</code><a class="headerlink" href="#fh2ad.log.LOG_DIR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad.log.LOG_FNAME">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">LOG_FNAME</code><a class="headerlink" href="#fh2ad.log.LOG_FNAME" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad.log.LOG_FNAME_CHAT">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">LOG_FNAME_CHAT</code><a class="headerlink" href="#fh2ad.log.LOG_FNAME_CHAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad.log.LOG_FORMAT">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">LOG_FORMAT</code><em class="property"> = %(asctime)s - %(levelname)s: %(message)s</em><a class="headerlink" href="#fh2ad.log.LOG_FORMAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad.log.TIME_NOW">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">TIME_NOW</code><a class="headerlink" href="#fh2ad.log.TIME_NOW" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="id2">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">TIME_NOW</code><a class="headerlink" href="#id2" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad.log.logger_chat">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">logger_chat</code><a class="headerlink" href="#fh2ad.log.logger_chat" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad.log.logger_fh2ad">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">logger_fh2ad</code><a class="headerlink" href="#fh2ad.log.logger_fh2ad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.log.setup_logger">
+<code class="sig-prename descclassname">fh2ad.log.</code><code class="sig-name descname">setup_logger</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">log_file</span></em>, <em class="sig-param"><span class="n">level</span><span class="o">=</span><span class="default_value">logging.WARNING</span></em>, <em class="sig-param"><span class="n">is_chat</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.log.setup_logger" title="Permalink to this definition">¶</a></dt>
+<dd><p>To setup as many loggers as you want</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">fh2ad</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pozzo for the FH2 community.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/autoapi/fh2ad/log/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

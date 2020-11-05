@@ -1,0 +1,54 @@
+:mod:`base`
+===========
+
+.. py:module:: base
+
+.. autoapi-nested-parse::
+
+   Base Plugins
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   base.FH2BaseModule
+
+
+
+.. py:class:: FH2BaseModule
+
+
+
+   .. method:: log_critical(self, msg)
+
+
+   .. method:: log_debug(self, msg)
+
+
+   .. method:: log_error(self, msg)
+
+
+   .. method:: log_exception(self, msg)
+
+
+   .. method:: log_info(self, msg)
+
+
+   .. method:: log_warning(self, msg)
+
+
+
+.. data:: LOG
+   
+
+   
+

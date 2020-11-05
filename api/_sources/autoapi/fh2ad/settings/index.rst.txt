@@ -1,0 +1,179 @@
+:mod:`fh2ad.settings`
+=====================
+
+.. py:module:: fh2ad.settings
+
+.. autoapi-nested-parse::
+
+   settings
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   fh2ad.settings.read_config
+
+
+.. data:: ADMINS_FILE
+   
+
+   
+
+.. data:: ADMINS_FILE
+   
+
+   
+
+.. data:: ADMINS_FNAME
+   :annotation: = admins.toml
+
+   
+
+.. data:: ADMINS_HIGH
+   
+
+   
+
+.. data:: ADMINS_LOW
+   
+
+   
+
+.. data:: ADMINS_MID
+   
+
+   
+
+.. data:: ANNOUNCE_MSGS
+   
+
+   
+
+.. data:: CONFIG
+   
+
+   
+
+.. data:: CONFIG_FILE
+   
+
+   
+
+.. data:: CONFIG_FILE
+   
+
+   
+
+.. data:: CONF_FNAME
+   :annotation: = config.toml
+
+   
+
+.. data:: DEBUG
+   :annotation: = False
+
+   
+
+.. data:: DEBUG
+   :annotation: = True
+
+   
+
+.. data:: IS_BETA
+   :annotation: = False
+
+   
+
+.. data:: IS_BETA
+   :annotation: = True
+
+   
+
+.. data:: LEVEL_DIR
+   
+
+   
+
+.. data:: MAPS_FAVORITES
+   
+
+   
+
+.. data:: MAPS_THEME
+   
+
+   
+
+.. data:: MOD_DIR
+   
+
+   
+
+.. data:: N_LAST_CATEGORIES
+   
+
+   
+
+.. data:: N_LAST_PLAYED
+   
+
+   
+
+.. data:: PROTECT_COMMANDER
+   
+
+   
+
+.. data:: PROTECT_SQUADLEADER
+   
+
+   
+
+.. data:: PROTECT_SQUADMEMBERS
+   
+
+   
+
+.. data:: RANDOM_SEED
+   
+
+   
+
+.. data:: SHOW_DISCONNECT
+   
+
+   
+
+.. data:: SHUFFLE_ON_START
+   
+
+   
+
+.. data:: SWAP_ON_START
+   
+
+   
+
+.. data:: WELCOME_MSG
+   
+
+   
+
+.. data:: adm_conf
+   
+
+   
+
+.. function:: read_config(fname=CONFIG_FILE)
+
+

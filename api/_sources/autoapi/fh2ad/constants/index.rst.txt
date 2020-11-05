@@ -1,0 +1,57 @@
+:mod:`fh2ad.constants`
+======================
+
+.. py:module:: fh2ad.constants
+
+.. autoapi-nested-parse::
+
+   constants
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+.. data:: ADMIN_REASONS
+   
+
+   
+
+.. data:: BANTIME
+   
+
+   
+
+.. data:: MAP_SHORTNAMES
+   
+
+   
+
+.. data:: MAX_MSG_LEN
+   :annotation: = 239
+
+   
+
+.. data:: NUM2TEAM
+   
+
+   
+
+.. data:: SGL_TEXT_ARG2NUM
+   
+
+   
+
+.. data:: SGL_TEXT_NUM2ARG
+   
+
+   
+
+.. data:: TEAM2NUM
+   
+
+   
+

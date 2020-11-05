@@ -1,0 +1,213 @@
+:mod:`chat`
+===========
+
+.. py:module:: chat
+
+.. autoapi-nested-parse::
+
+   Chat Plugins
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   chat.BangBang
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   chat.available_commands
+   chat.can_execute
+   chat.help_available_commands
+
+
+.. data:: BANG_COMMANDS
+   
+
+   
+
+.. py:class:: BangBang(command_symbol='!')
+
+
+
+   Provide !bang commands
+
+
+   :Parameters:
+
+       **command_symbol: str**
+           prefix for chat commands. default: "!"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: hook_chat_message(self, invoker_id, msg, channel, _flags)
+
+      Hook to act on chat messages
+
+
+      :Parameters:
+
+          **invoker_id: int**
+              ..
+
+          **msg: str**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+
+.. data:: COMMAND_TIERS
+   
+
+   
+
+.. data:: LOG
+   
+
+   
+
+.. data:: LOG_CHAT
+   
+
+   
+
+.. function:: available_commands(invoker)
+
+   Find list of commands invoker can run
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FH2Player**
+           player who executed the command
+
+   :Returns:
+
+       list(str)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: can_execute(cmd, invoker)
+
+   Check if player is allowed to execute a command
+
+
+   :Parameters:
+
+       **cmd: str**
+           ..
+
+       **invoker: fh2ad.core.FH2Player**
+           ..
+
+   :Returns:
+
+       can_execute: bool
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: help_available_commands(invoker, _words=None)
+
+   Print Message about all commands available to user
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FH2Player**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !help
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+

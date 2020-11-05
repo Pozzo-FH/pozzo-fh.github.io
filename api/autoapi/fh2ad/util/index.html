@@ -45,22 +45,25 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.format_message" title="fh2ad.util.format_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_message</span></code></a>(msg, big=False, color=None, latin=True)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.distance_3vec" title="fh2ad.util.distance_3vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">distance_3vec</span></code></a>(pos1, pos2)</p></td>
+<td><p>Compute distance between two positions</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.format_message" title="fh2ad.util.format_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">format_message</span></code></a>(msg, big=False, color=None, latin=True)</p></td>
 <td><p>Format and clean text message.</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.insert_elems" title="fh2ad.util.insert_elems"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert_elems</span></code></a>(to_extend, new, marker='!$')</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.insert_elems" title="fh2ad.util.insert_elems"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert_elems</span></code></a>(to_extend, new, marker='!$')</p></td>
 <td><p>Insert + expand list at position of a marker in another list</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.length_3vec" title="fh2ad.util.length_3vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">length_3vec</span></code></a>(vec)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.length_3vec" title="fh2ad.util.length_3vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">length_3vec</span></code></a>(vec)</p></td>
 <td><p>Compute length of a 3-vector</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.normed_3vec" title="fh2ad.util.normed_3vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normed_3vec</span></code></a>(vec)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.normed_3vec" title="fh2ad.util.normed_3vec"><code class="xref py py-obj docutils literal notranslate"><span class="pre">normed_3vec</span></code></a>(vec)</p></td>
 <td><p>Transform vector to unit length</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.parse_reason" title="fh2ad.util.parse_reason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_reason</span></code></a>(message)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.parse_reason" title="fh2ad.util.parse_reason"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_reason</span></code></a>(message)</p></td>
 <td><p>Try to find a reason from the message, which might be a shortcut</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.util.strip_message" title="fh2ad.util.strip_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strip_message</span></code></a>(msg)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.util.strip_message" title="fh2ad.util.strip_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">strip_message</span></code></a>(msg)</p></td>
 <td><p>strip down chat message to actual words</p></td>
 </tr>
 </tbody>
@@ -69,6 +72,25 @@
 <dt id="fh2ad.util.LOG">
 <code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">LOG</code><a class="headerlink" href="#fh2ad.util.LOG" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.util.distance_3vec">
+<code class="sig-prename descclassname">fh2ad.util.</code><code class="sig-name descname">distance_3vec</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">pos1</span></em>, <em class="sig-param"><span class="n">pos2</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.util.distance_3vec" title="Permalink to this definition">¶</a></dt>
+<dd><p>Compute distance between two positions</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>pos1, pos2: list-like</strong></dt><dd><p>list-like of numbers, length 3</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>float</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt id="fh2ad.util.format_message">

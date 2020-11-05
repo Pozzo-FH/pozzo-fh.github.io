@@ -1,0 +1,228 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>carousel &#8212; fh2ad  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/graphviz.css" />
+    <script id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-carousel">
+<span id="carousel"></span><h1><a class="reference internal" href="#module-carousel" title="carousel"><code class="xref py py-mod docutils literal notranslate"><span class="pre">carousel</span></code></a><a class="headerlink" href="#module-carousel" title="Permalink to this headline">¶</a></h1>
+<p>Plugin for map rotation</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#carousel.Carousel" title="carousel.Carousel"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Carousel</span></code></a></p></td>
+<td><p>Map rotation, picking random maps with filtering</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt id="carousel.Carousel">
+<em class="property">class </em><code class="sig-prename descclassname">carousel.</code><code class="sig-name descname">Carousel</code><a class="headerlink" href="#carousel.Carousel" title="Permalink to this definition">¶</a></dt>
+<dd><p>Map rotation, picking random maps with filtering</p>
+<p>New maps are rolled during the <em>start</em> of each round, so the next map
+can be overridden by the <code class="docutils literal notranslate"><span class="pre">!setnext</span></code> command.</p>
+<p>The layer (size) of a map is chosen at the <strong>end</strong> of a map, since
+during a round, alot of players might (dis-)connect</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>n_last_played: int</strong></dt><dd><p>number of last played maps to use in mapname filter</p>
+</dd>
+<dt><strong>n_last_categories: int</strong></dt><dd><p>number of last maps to use in category filter</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Attributes</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>n_connected: int</strong></dt><dd></dd>
+<dt><strong>last_maps: list(str)</strong></dt><dd><p>names of last maps</p>
+</dd>
+<dt><strong>last_cats: list(list(str))</strong></dt><dd><p>list of category-lists from last maps</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl class="py method">
+<dt id="carousel.Carousel.at_end_map">
+<code class="sig-name descname">at_end_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#carousel.Carousel.at_end_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="carousel.Carousel.at_start_map">
+<code class="sig-name descname">at_start_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#carousel.Carousel.at_start_map" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="carousel.Carousel.hook_game_status_change">
+<code class="sig-name descname">hook_game_status_change</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">new_status</span></em><span class="sig-paren">)</span><a class="headerlink" href="#carousel.Carousel.hook_game_status_change" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="carousel.Carousel.hook_player_connect">
+<code class="sig-name descname">hook_player_connect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">_bf2_ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#carousel.Carousel.hook_player_connect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Increase n_connected by one</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="carousel.Carousel.hook_player_disconnect">
+<code class="sig-name descname">hook_player_disconnect</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">_bf2_ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#carousel.Carousel.hook_player_disconnect" title="Permalink to this definition">¶</a></dt>
+<dd><p>Decreate n_connected by one</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="carousel.Carousel.random_map">
+<code class="sig-name descname">random_map</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#carousel.Carousel.random_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Pick a random nextmap</p>
+<p>Map start:
+- roll a map
+- reroll if duplicate theatre
+- reroll if not supporting current playernumber
+- pick layer based on current player num</p>
+<p>Map end:
+- pick new layer based on endgame playernum
+- if not possible, keep previous</p>
+<p>Exceptions are for Favorite maps and map themes (ignoring the
+no-double- theatre rule)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>int, str, int, str</dt><dd><p>idx, mapname, layer, gamemode</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py data">
+<dt id="carousel.LAST_CATS">
+<code class="sig-prename descclassname">carousel.</code><code class="sig-name descname">LAST_CATS</code><a class="headerlink" href="#carousel.LAST_CATS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="carousel.LAST_MAPS">
+<code class="sig-prename descclassname">carousel.</code><code class="sig-name descname">LAST_MAPS</code><a class="headerlink" href="#carousel.LAST_MAPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="carousel.LAST_MAP_UPDATED">
+<code class="sig-prename descclassname">carousel.</code><code class="sig-name descname">LAST_MAP_UPDATED</code><a class="headerlink" href="#carousel.LAST_MAP_UPDATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="carousel.LOG">
+<code class="sig-prename descclassname">carousel.</code><code class="sig-name descname">LOG</code><a class="headerlink" href="#carousel.LOG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="carousel.LOG_CHAT">
+<code class="sig-prename descclassname">carousel.</code><code class="sig-name descname">LOG_CHAT</code><a class="headerlink" href="#carousel.LOG_CHAT" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">fh2ad</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pozzo for the FH2 community.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/autoapi/carousel/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

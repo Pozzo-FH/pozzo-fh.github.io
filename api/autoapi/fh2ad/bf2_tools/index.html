@@ -1,0 +1,1122 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>fh2ad.bf2_tools &#8212; fh2ad  documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-fh2ad.bf2_tools">
+<span id="fh2ad-bf2-tools"></span><h1><a class="reference internal" href="#module-fh2ad.bf2_tools" title="fh2ad.bf2_tools"><code class="xref py py-mod docutils literal notranslate"><span class="pre">fh2ad.bf2_tools</span></code></a><a class="headerlink" href="#module-fh2ad.bf2_tools" title="Permalink to this headline">¶</a></h1>
+<p>Utilities that need the BF2 python bindings</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.BanListRegistry" title="fh2ad.bf2_tools.BanListRegistry"><code class="xref py py-obj docutils literal notranslate"><span class="pre">BanListRegistry</span></code></a></p></td>
+<td><p>Track banned players and write/read</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.FH2Player" title="fh2ad.bf2_tools.FH2Player"><code class="xref py py-obj docutils literal notranslate"><span class="pre">FH2Player</span></code></a></p></td>
+<td><p>Connected FH2Player</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.InfamyTracker" title="fh2ad.bf2_tools.InfamyTracker"><code class="xref py py-obj docutils literal notranslate"><span class="pre">InfamyTracker</span></code></a></p></td>
+<td><p>Track player infamy</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.add_to_banlist" title="fh2ad.bf2_tools.add_to_banlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_to_banlist</span></code></a>(player, duration)</p></td>
+<td><p>Add player to custom banlist</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.admin_message" title="fh2ad.bf2_tools.admin_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">admin_message</span></code></a>(message, **fmtargs)</p></td>
+<td><p>Send message to ingame admins only</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.admins_online" title="fh2ad.bf2_tools.admins_online"><code class="xref py py-obj docutils literal notranslate"><span class="pre">admins_online</span></code></a>()</p></td>
+<td><p>List all admins currently connected</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.capture_flag" title="fh2ad.bf2_tools.capture_flag"><code class="xref py py-obj docutils literal notranslate"><span class="pre">capture_flag</span></code></a>(cp, new_team)</p></td>
+<td><p>Change control point ownership.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.check_if_is_banned" title="fh2ad.bf2_tools.check_if_is_banned"><code class="xref py py-obj docutils literal notranslate"><span class="pre">check_if_is_banned</span></code></a>(player)</p></td>
+<td><p>Check if player is on custom banlist</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.create_object" title="fh2ad.bf2_tools.create_object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">create_object</span></code></a>(template_name, position, rotation, time_to_live, team)</p></td>
+<td><p>Create and object</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.current_map" title="fh2ad.bf2_tools.current_map"><code class="xref py py-obj docutils literal notranslate"><span class="pre">current_map</span></code></a>()</p></td>
+<td><p>Current map</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.find_player_by_index" title="fh2ad.bf2_tools.find_player_by_index"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_player_by_index</span></code></a>(idx)</p></td>
+<td><p>Find player by index</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.find_player_by_name" title="fh2ad.bf2_tools.find_player_by_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">find_player_by_name</span></code></a>(query, invoker, n_print_max=4)</p></td>
+<td><p>Find player by (partial) name</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.game_has_bots" title="fh2ad.bf2_tools.game_has_bots"><code class="xref py py-obj docutils literal notranslate"><span class="pre">game_has_bots</span></code></a>()</p></td>
+<td><p>Check if gamemode with bots is enabled</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.get_fullname" title="fh2ad.bf2_tools.get_fullname"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_fullname</span></code></a>(bf2_ply)</p></td>
+<td><p>Get name + clantag of a BF2 player object</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.get_number_of_maps" title="fh2ad.bf2_tools.get_number_of_maps"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_number_of_maps</span></code></a>()</p></td>
+<td><p>Count number of maps i</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.get_object_spawner_templates" title="fh2ad.bf2_tools.get_object_spawner_templates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_object_spawner_templates</span></code></a>(obj_spawner)</p></td>
+<td><p>Returns a list of template names spawned by objspawner</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.get_team_sizes" title="fh2ad.bf2_tools.get_team_sizes"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_team_sizes</span></code></a>()</p></td>
+<td><p>Count players in each team</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.global_message" title="fh2ad.bf2_tools.global_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">global_message</span></code></a>(message, team=None, **fmtargs)</p></td>
+<td><p>Send ingame message</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.instantiate_spawner" title="fh2ad.bf2_tools.instantiate_spawner"><code class="xref py py-obj docutils literal notranslate"><span class="pre">instantiate_spawner</span></code></a>(spawner, pos, rot, team)</p></td>
+<td><p>Create a spawner and immediately detele</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.is_internet" title="fh2ad.bf2_tools.is_internet"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_internet</span></code></a>()</p></td>
+<td><p>Determine if it’s an “internet” game</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.is_kit_or_pco" title="fh2ad.bf2_tools.is_kit_or_pco"><code class="xref py py-obj docutils literal notranslate"><span class="pre">is_kit_or_pco</span></code></a>(templ_name)</p></td>
+<td><p>Check if template is a kit or a PCO</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.kick_player" title="fh2ad.bf2_tools.kick_player"><code class="xref py py-obj docutils literal notranslate"><span class="pre">kick_player</span></code></a>(target)</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.list_controlpoints" title="fh2ad.bf2_tools.list_controlpoints"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list_controlpoints</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.list_object_spawners" title="fh2ad.bf2_tools.list_object_spawners"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list_object_spawners</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.list_object_templates" title="fh2ad.bf2_tools.list_object_templates"><code class="xref py py-obj docutils literal notranslate"><span class="pre">list_object_templates</span></code></a>()</p></td>
+<td><p></p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.num_players" title="fh2ad.bf2_tools.num_players"><code class="xref py py-obj docutils literal notranslate"><span class="pre">num_players</span></code></a>()</p></td>
+<td><p>Get number of players, from engine directly</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.num_to_team" title="fh2ad.bf2_tools.num_to_team"><code class="xref py py-obj docutils literal notranslate"><span class="pre">num_to_team</span></code></a>(num)</p></td>
+<td><p>Translate Team number to readable</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.parse_playername" title="fh2ad.bf2_tools.parse_playername"><code class="xref py py-obj docutils literal notranslate"><span class="pre">parse_playername</span></code></a>(invoker, words)</p></td>
+<td><p>Try to find a playername from the words array</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.personal_message" title="fh2ad.bf2_tools.personal_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">personal_message</span></code></a>(target, message, channel='Player', prefix='[YOU] ', **fmtargs)</p></td>
+<td><p>Send message to target player only</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.position_infront" title="fh2ad.bf2_tools.position_infront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">position_infront</span></code></a>(player, distance=3.0)</p></td>
+<td><p>Transform vector to unit length</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.rcon" title="fh2ad.bf2_tools.rcon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rcon</span></code></a>(cmd)</p></td>
+<td><p>Call host.rcon_invoke on cleaned input</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.read_badlist" title="fh2ad.bf2_tools.read_badlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_badlist</span></code></a>(_fname='badlist.toml')</p></td>
+<td><p>Read badlist file with bad words and users</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.read_badusers" title="fh2ad.bf2_tools.read_badusers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_badusers</span></code></a>(fname='badlist.toml')</p></td>
+<td><p>Read badlist file with bad words and users</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.read_badwords" title="fh2ad.bf2_tools.read_badwords"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_badwords</span></code></a>(fname='badlist.toml')</p></td>
+<td><p>Read badlist file with bad words</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.read_maplist" title="fh2ad.bf2_tools.read_maplist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_maplist</span></code></a>()</p></td>
+<td><p>Read maplist from server</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.read_metadata" title="fh2ad.bf2_tools.read_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_metadata</span></code></a>(mapname)</p></td>
+<td><p>Read the metadata from a map</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.read_nextmap" title="fh2ad.bf2_tools.read_nextmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_nextmap</span></code></a>()</p></td>
+<td><p>Read next map in rotation from server</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.remove_from_banlist" title="fh2ad.bf2_tools.remove_from_banlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_from_banlist</span></code></a>(_player)</p></td>
+<td><p>Remove player from custom banlist</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.scramble_teams" title="fh2ad.bf2_tools.scramble_teams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scramble_teams</span></code></a>()</p></td>
+<td><p>Assign each player to a random team</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.set_nextmap" title="fh2ad.bf2_tools.set_nextmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_nextmap</span></code></a>(idx, mapname, layer, gamemode='gpm_cq')</p></td>
+<td><p>Try to set nextmap, raise if not in rotation</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.set_team_bleed" title="fh2ad.bf2_tools.set_team_bleed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_team_bleed</span></code></a>(teamname, amount)</p></td>
+<td><p>Set team bleedrate</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.set_team_tickets" title="fh2ad.bf2_tools.set_team_tickets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_team_tickets</span></code></a>(tickets_axis, tickets_allies)</p></td>
+<td><p>Set teack tickets to desired amount</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.spawn_object" title="fh2ad.bf2_tools.spawn_object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spawn_object</span></code></a>(templ_name, pos, rot, team='grey', ttl=None)</p></td>
+<td><p>Spawn object on invoker</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.squad_members" title="fh2ad.bf2_tools.squad_members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">squad_members</span></code></a>(squad_idx, teamname)</p></td>
+<td><p>Get all members of squad #X in a team</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.swap_teams" title="fh2ad.bf2_tools.swap_teams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swap_teams</span></code></a>()</p></td>
+<td><p>Assign each player to the opposite team</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.bf2_tools.team_to_num" title="fh2ad.bf2_tools.team_to_num"><code class="xref py py-obj docutils literal notranslate"><span class="pre">team_to_num</span></code></a>(team)</p></td>
+<td><p>Translate readable Team to number</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt id="fh2ad.bf2_tools.BanListRegistry">
+<em class="property">class </em><code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">BanListRegistry</code><a class="headerlink" href="#fh2ad.bf2_tools.BanListRegistry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Track banned players and write/read</p>
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.BanListRegistry.add">
+<em class="property">classmethod </em><code class="sig-name descname">add</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cls</span></em>, <em class="sig-param"><span class="n">ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.BanListRegistry.add" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add player to registry</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>ply: FH2Player</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.BanListRegistry.has_registered">
+<em class="property">classmethod </em><code class="sig-name descname">has_registered</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cls</span></em>, <em class="sig-param"><span class="n">ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.BanListRegistry.has_registered" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if player is in registry</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>ply: FH2Player</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.BanListRegistry.read_registry">
+<em class="property">abstract classmethod </em><code class="sig-name descname">read_registry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cls</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.BanListRegistry.read_registry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read registry from file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fname: str</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.BanListRegistry.remove">
+<em class="property">classmethod </em><code class="sig-name descname">remove</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cls</span></em>, <em class="sig-param"><span class="n">ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.BanListRegistry.remove" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove player from registry</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>ply: FH2Player</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.BanListRegistry.write_registry">
+<em class="property">abstract classmethod </em><code class="sig-name descname">write_registry</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cls</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.BanListRegistry.write_registry" title="Permalink to this definition">¶</a></dt>
+<dd><p>Write registry to file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fname: str</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fh2ad.bf2_tools.FH2Player">
+<em class="property">class </em><code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">FH2Player</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">idx</span></em>, <em class="sig-param"><span class="n">name</span></em>, <em class="sig-param"><span class="n">key_hash</span></em>, <em class="sig-param"><span class="n">clan</span><span class="o">=</span><span class="default_value">''</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player" title="Permalink to this definition">¶</a></dt>
+<dd><p>Connected FH2Player</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>key_hash: str</strong></dt><dd></dd>
+<dt><strong>name: str</strong></dt><dd></dd>
+<dt><strong>clan: str</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Attributes</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>name: str</strong></dt><dd></dd>
+<dt><strong>key_hash: str</strong></dt><dd></dd>
+<dt><strong>clan: str</strong></dt><dd></dd>
+<dt><strong>idx: int</strong></dt><dd><p>enumeration index. As players connect to the server they
+are assigned playerID numbers from “0” up.</p>
+</dd>
+<dt><strong>is_alive: bool</strong></dt><dd></dd>
+<dt><strong>is_squadleader: bool</strong></dt><dd></dd>
+<dt><strong>is_in_squad: bool</strong></dt><dd></dd>
+<dt><strong>is_commander: bool</strong></dt><dd></dd>
+<dt><strong>is_admin: bool</strong></dt><dd></dd>
+<dt><strong>admin_level: str</strong></dt><dd><p>‘high’, ‘mid’, ‘low’</p>
+</dd>
+<dt><strong>squad_number: int</strong></dt><dd><p>numerical ID of the squad the player is a member of</p>
+</dd>
+<dt><strong>team: str</strong></dt><dd><p>‘axis’ or ‘allies’</p>
+</dd>
+<dt><strong>ip: str</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt id="fh2ad.bf2_tools.FH2Player.instances">
+<code class="sig-name descname">instances</code><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.instances" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.admin_level">
+<em class="property">property </em><code class="sig-name descname">admin_level</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.admin_level" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.from_bf2">
+<em class="property">classmethod </em><code class="sig-name descname">from_bf2</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cls</span></em>, <em class="sig-param"><span class="n">bf2_ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.from_bf2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create from <cite>bf2.playerManager.Player</cite> instance</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>bf2_ply: bf2.playerManager.Player</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.get_position">
+<code class="sig-name descname">get_position</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.get_position" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.get_rotation">
+<code class="sig-name descname">get_rotation</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.get_rotation" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.ip">
+<em class="property">property </em><code class="sig-name descname">ip</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.ip" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.is_admin">
+<em class="property">property </em><code class="sig-name descname">is_admin</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.is_admin" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.is_alive">
+<em class="property">property </em><code class="sig-name descname">is_alive</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.is_alive" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.is_bot">
+<em class="property">property </em><code class="sig-name descname">is_bot</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.is_bot" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.is_commander">
+<em class="property">property </em><code class="sig-name descname">is_commander</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.is_commander" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.is_connected">
+<em class="property">property </em><code class="sig-name descname">is_connected</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.is_connected" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.is_in_majority_team">
+<em class="property">property </em><code class="sig-name descname">is_in_majority_team</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.is_in_majority_team" title="Permalink to this definition">¶</a></dt>
+<dd><p>Checks if player is in the bigger team</p>
+<p>With a gap for uneven numbers</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.is_in_squad">
+<em class="property">property </em><code class="sig-name descname">is_in_squad</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.is_in_squad" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.is_squadleader">
+<em class="property">property </em><code class="sig-name descname">is_squadleader</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.is_squadleader" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.kill">
+<code class="sig-name descname">kill</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.kill" title="Permalink to this definition">¶</a></dt>
+<dd><p>Murder the player</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.mark_switched">
+<code class="sig-name descname">mark_switched</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.mark_switched" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.resign">
+<code class="sig-name descname">resign</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.resign" title="Permalink to this definition">¶</a></dt>
+<dd><p>Resign player from squad/commander position</p>
+<p>Weird hack to resign by double-switching, don’t ask me.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.set_team">
+<code class="sig-name descname">set_team</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em>, <em class="sig-param"><span class="n">team</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.set_team" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move player to a team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>team: str</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.squad_number">
+<em class="property">property </em><code class="sig-name descname">squad_number</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.squad_number" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.switch">
+<code class="sig-name descname">switch</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.switch" title="Permalink to this definition">¶</a></dt>
+<dd><p>Move player to the other team</p>
+</dd></dl>
+
+<dl class="py method">
+<dt id="fh2ad.bf2_tools.FH2Player.team">
+<em class="property">property </em><code class="sig-name descname">team</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">self</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.FH2Player.team" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt id="fh2ad.bf2_tools.InfamyTracker">
+<em class="property">class </em><code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">InfamyTracker</code><a class="headerlink" href="#fh2ad.bf2_tools.InfamyTracker" title="Permalink to this definition">¶</a></dt>
+<dd><p>Track player infamy</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="fh2ad.bf2_tools.LOG">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">LOG</code><a class="headerlink" href="#fh2ad.bf2_tools.LOG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.add_to_banlist">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">add_to_banlist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">duration</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.add_to_banlist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add player to custom banlist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>ply: FH2Player</strong></dt><dd></dd>
+<dt><strong>duration: int or str</strong></dt><dd><p>duration in seconds, or “perma”</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.admin_message">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">admin_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">fmtargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.admin_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send message to ingame admins only</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>message: str</strong></dt><dd></dd>
+<dt><strong>**fmtargs:</strong></dt><dd><p>big, color</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.admins_online">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">admins_online</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.admins_online" title="Permalink to this definition">¶</a></dt>
+<dd><p>List all admins currently connected</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>list(str)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.capture_flag">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">capture_flag</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cp</span></em>, <em class="sig-param"><span class="n">new_team</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.capture_flag" title="Permalink to this definition">¶</a></dt>
+<dd><p>Change control point ownership.</p>
+<p>This does completely ignore the FH2 plugin system, beware!</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>cp</strong></dt><dd><p>control point object</p>
+</dd>
+<dt><strong>new_team: str</strong></dt><dd><p>axis, allies, grey</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.check_if_is_banned">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">check_if_is_banned</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.check_if_is_banned" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if player is on custom banlist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>ply: FH2Player</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.create_object">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">create_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">template_name</span></em>, <em class="sig-param"><span class="n">position</span></em>, <em class="sig-param"><span class="n">rotation</span></em>, <em class="sig-param"><span class="n">time_to_live</span></em>, <em class="sig-param"><span class="n">team</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.create_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create and object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>template_name: str</strong></dt><dd></dd>
+<dt><strong>position: 3-tuple float</strong></dt><dd></dd>
+<dt><strong>rotation: 3-tuple float</strong></dt><dd><p>yaw, pitch, roll</p>
+</dd>
+<dt><strong>time_to_live: int or None</strong></dt><dd></dd>
+<dt><strong>team: str</strong></dt><dd><p>‘axis’, ‘allies’, ‘grey’, ‘gray’, ‘white’, ‘neutral’</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.current_map">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">current_map</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.current_map" title="Permalink to this definition">¶</a></dt>
+<dd><p>Current map</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>str</dt><dd></dd>
+<dt>#dict int-&gt;(str, int, str)</dt><dd></dd>
+<dt>#    idx -&gt; name, layer, gamemode</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.find_player_by_index">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">find_player_by_index</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">idx</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.find_player_by_index" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find player by index</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>idx: int</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>fh2ad.core.FH2Player</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.find_player_by_name">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">find_player_by_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">query</span></em>, <em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">n_print_max</span><span class="o">=</span><span class="default_value">4</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.find_player_by_name" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find player by (partial) name</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>query: str</strong></dt><dd><p>(partial) player name, without clantag</p>
+</dd>
+<dt><strong>invoker: fh2ad.core.Player</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>n_print_max: int</strong></dt><dd><p>if multiple matches, print at most this many</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>fh2ad.core.FH2Player</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.game_has_bots">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">game_has_bots</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.game_has_bots" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if gamemode with bots is enabled</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>bool</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.get_fullname">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">get_fullname</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">bf2_ply</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.get_fullname" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get name + clantag of a BF2 player object</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>bf2_ply: bf2.playerManager.Player</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>clan, name: str, str</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.get_number_of_maps">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">get_number_of_maps</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.get_number_of_maps" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count number of maps i</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>int</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.get_object_spawner_templates">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">get_object_spawner_templates</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">obj_spawner</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.get_object_spawner_templates" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns a list of template names spawned by objspawner
+(BF2 object of dice.hfe.world.ObjectTemplate.ObjectSpawner type)</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.get_team_sizes">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">get_team_sizes</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.get_team_sizes" title="Permalink to this definition">¶</a></dt>
+<dd><p>Count players in each team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>int, int</dt><dd><p>n_axis, n_allies</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.global_message">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">global_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">team</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">fmtargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.global_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send ingame message</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>message: str</strong></dt><dd></dd>
+<dt><strong>team: str</strong></dt><dd><p>either ‘allies’ or ‘axis’</p>
+</dd>
+<dt><strong>**fmtargs:</strong></dt><dd><p>color, big</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.instantiate_spawner">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">instantiate_spawner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">spawner</span></em>, <em class="sig-param"><span class="n">pos</span></em>, <em class="sig-param"><span class="n">rot</span></em>, <em class="sig-param"><span class="n">team</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.instantiate_spawner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create a spawner and immediately detele</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>spawner: str</strong></dt><dd></dd>
+<dt><strong>pos: 3-tuple float</strong></dt><dd></dd>
+<dt><strong>rot: 3-tuple float</strong></dt><dd><p>yaw, pitch, roll</p>
+</dd>
+<dt><strong>team: str</strong></dt><dd><p>‘axis’, ‘allies’, ‘grey’, ‘gray’, ‘white’, ‘neutral’</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.is_internet">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">is_internet</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.is_internet" title="Permalink to this definition">¶</a></dt>
+<dd><p>Determine if it’s an “internet” game</p>
+<p>If not, can’t determine player hashes, and personal messaging won’t work</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.is_kit_or_pco">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">is_kit_or_pco</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">templ_name</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.is_kit_or_pco" title="Permalink to this definition">¶</a></dt>
+<dd><p>Check if template is a kit or a PCO</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.kick_player">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">kick_player</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">target</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.kick_player" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.list_controlpoints">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">list_controlpoints</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.list_controlpoints" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.list_object_spawners">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">list_object_spawners</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.list_object_spawners" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.list_object_templates">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">list_object_templates</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.list_object_templates" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.num_players">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">num_players</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.num_players" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get number of players, from engine directly</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>int</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.num_to_team">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">num_to_team</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">num</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.num_to_team" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translate Team number to readable</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>num: int</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>str</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.parse_playername">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">parse_playername</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">invoker</span></em>, <em class="sig-param"><span class="n">words</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.parse_playername" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to find a playername from the words array</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>invoker: fh2ad.core.FH2Player</strong></dt><dd><p>player who executed the command</p>
+</dd>
+<dt><strong>words: list(str)</strong></dt><dd><p>playername to find</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.personal_message">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">personal_message</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">target</span></em>, <em class="sig-param"><span class="n">message</span></em>, <em class="sig-param"><span class="n">channel</span><span class="o">=</span><span class="default_value">'Player'</span></em>, <em class="sig-param"><span class="n">prefix</span><span class="o">=</span><span class="default_value">'[YOU] '</span></em>, <em class="sig-param"><span class="o">**</span><span class="n">fmtargs</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.personal_message" title="Permalink to this definition">¶</a></dt>
+<dd><p>Send message to target player only</p>
+<p>If not possible to send player messages (on local games),
+falls back to sending global message instead</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>target: fh2ad.core.FH2Player</strong></dt><dd></dd>
+<dt><strong>message: str</strong></dt><dd></dd>
+<dt><strong>**fmtargs:</strong></dt><dd><p>color, big</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.position_infront">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">position_infront</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">distance</span><span class="o">=</span><span class="default_value">3.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.position_infront" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform vector to unit length</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>player: FH2Player</strong></dt><dd></dd>
+<dt><strong>distance: float</strong></dt><dd><p>how many meters infront of the player?</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>pos: (float, float, float)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.rcon">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">rcon</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmd</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.rcon" title="Permalink to this definition">¶</a></dt>
+<dd><p>Call host.rcon_invoke on cleaned input</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>cmd: str</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.read_badlist">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">read_badlist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_fname</span><span class="o">=</span><span class="default_value">'badlist.toml'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.read_badlist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read badlist file with bad words and users
+Parameters
+———-
+fname: str, optional</p>
+<blockquote>
+<div><p>name of the badlist file, without path</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>bad_words, bad_users: list(str), dict(str-&gt;str)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.read_badusers">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">read_badusers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fname</span><span class="o">=</span><span class="default_value">'badlist.toml'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.read_badusers" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read badlist file with bad words and users</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fname: str, optional</strong></dt><dd><p>name of the badlist file, without path</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>bad_words, bad_users: list(str), dict(str-&gt;str)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.read_badwords">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">read_badwords</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fname</span><span class="o">=</span><span class="default_value">'badlist.toml'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.read_badwords" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read badlist file with bad words</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>fname: str, optional</strong></dt><dd><p>name of the badlist file, without path</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>bad_words: list(str)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.read_maplist">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">read_maplist</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.read_maplist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read maplist from server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>dict(int: (str, str, int))</dt><dd><p>map number -&gt; name, layer, gamemode</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.read_metadata">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">read_metadata</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">mapname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.read_metadata" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read the metadata from a map</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>mapname: str</strong></dt><dd><p>all lowercase, with underscores</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>dict</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.read_nextmap">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">read_nextmap</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.read_nextmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Read next map in rotation from server</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>str, int, str</dt><dd><p>name, layer, gamemode</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.remove_from_banlist">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">remove_from_banlist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_player</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.remove_from_banlist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Remove player from custom banlist</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>ply: FH2Player</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.scramble_teams">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">scramble_teams</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.scramble_teams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assign each player to a random team</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.set_nextmap">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">set_nextmap</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">idx</span></em>, <em class="sig-param"><span class="n">mapname</span></em>, <em class="sig-param"><span class="n">layer</span></em>, <em class="sig-param"><span class="n">gamemode</span><span class="o">=</span><span class="default_value">'gpm_cq'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.set_nextmap" title="Permalink to this definition">¶</a></dt>
+<dd><p>Try to set nextmap, raise if not in rotation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>idx: int</strong></dt><dd></dd>
+<dt><strong>mapname: str</strong></dt><dd></dd>
+<dt><strong>layer: int</strong></dt><dd></dd>
+<dt><strong>gamemode: str</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.set_team_bleed">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">set_team_bleed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">teamname</span></em>, <em class="sig-param"><span class="n">amount</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.set_team_bleed" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set team bleedrate</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>teamname: str</strong></dt><dd></dd>
+<dt><strong>amount: int</strong></dt><dd><p>tickets lost per minute</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.set_team_tickets">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">set_team_tickets</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tickets_axis</span></em>, <em class="sig-param"><span class="n">tickets_allies</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.set_team_tickets" title="Permalink to this definition">¶</a></dt>
+<dd><p>Set teack tickets to desired amount</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>tickets_axis, tickets_allies: int</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.spawn_object">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">spawn_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">templ_name</span></em>, <em class="sig-param"><span class="n">pos</span></em>, <em class="sig-param"><span class="n">rot</span></em>, <em class="sig-param"><span class="n">team</span><span class="o">=</span><span class="default_value">'grey'</span></em>, <em class="sig-param"><span class="n">ttl</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.spawn_object" title="Permalink to this definition">¶</a></dt>
+<dd><p>Spawn object on invoker</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>templ_name: str</strong></dt><dd></dd>
+<dt><strong>pos: 3-tuple float</strong></dt><dd></dd>
+<dt><strong>rot: 3-tuple float</strong></dt><dd><p>yaw, pitch, roll. in engine, pitch and roll ALWAYS zero</p>
+</dd>
+<dt><strong>team: str</strong></dt><dd></dd>
+<dt><strong>ttl: int or None</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.squad_members">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">squad_members</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">squad_idx</span></em>, <em class="sig-param"><span class="n">teamname</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.squad_members" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get all members of squad #X in a team</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>squad_idx: int</strong></dt><dd></dd>
+<dt><strong>teamname: str</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>list(fh2ad.core.FH2Player)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.swap_teams">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">swap_teams</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.swap_teams" title="Permalink to this definition">¶</a></dt>
+<dd><p>Assign each player to the opposite team</p>
+</dd></dl>
+
+<dl class="py function">
+<dt id="fh2ad.bf2_tools.team_to_num">
+<code class="sig-prename descclassname">fh2ad.bf2_tools.</code><code class="sig-name descname">team_to_num</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">team</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.bf2_tools.team_to_num" title="Permalink to this definition">¶</a></dt>
+<dd><p>Translate readable Team to number</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>team: str</strong></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>int</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">fh2ad</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pozzo for the FH2 community.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/autoapi/fh2ad/bf2_tools/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

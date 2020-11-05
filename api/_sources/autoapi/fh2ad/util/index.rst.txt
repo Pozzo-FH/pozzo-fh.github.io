@@ -21,6 +21,7 @@ Functions
 
 .. autoapisummary::
 
+   fh2ad.util.distance_3vec
    fh2ad.util.format_message
    fh2ad.util.insert_elems
    fh2ad.util.length_3vec
@@ -33,6 +34,37 @@ Functions
    
 
    
+
+.. function:: distance_3vec(pos1, pos2)
+
+   Compute distance between two positions
+
+
+   :Parameters:
+
+       **pos1, pos2: list-like**
+           list-like of numbers, length 3
+
+   :Returns:
+
+       float
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
 
 .. function:: format_message(msg, big=False, color=None, latin=True)
 

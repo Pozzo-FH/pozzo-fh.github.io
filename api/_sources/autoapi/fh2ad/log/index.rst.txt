@@ -1,0 +1,104 @@
+:mod:`fh2ad.log`
+================
+
+.. py:module:: fh2ad.log
+
+.. autoapi-nested-parse::
+
+   logging
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   fh2ad.log.setup_logger
+
+
+.. data:: LOGLEVEL
+   
+
+   
+
+.. data:: LOGLEVEL
+   
+
+   
+
+.. data:: LOGLEVEL
+   
+
+   
+
+.. data:: LOG_DIR
+   
+
+   
+
+.. data:: LOG_FNAME
+   
+
+   
+
+.. data:: LOG_FNAME_CHAT
+   
+
+   
+
+.. data:: LOG_FORMAT
+   :annotation: = %(asctime)s - %(levelname)s: %(message)s
+
+   
+
+.. data:: TIME_NOW
+   
+
+   
+
+.. data:: TIME_NOW
+   
+
+   
+
+.. data:: logger_chat
+   
+
+   
+
+.. data:: logger_fh2ad
+   
+
+   
+
+.. function:: setup_logger(name, log_file, level=logging.WARNING, is_chat=False)
+
+   To setup as many loggers as you want
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
