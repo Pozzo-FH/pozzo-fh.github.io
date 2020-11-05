@@ -19,7 +19,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Spartan", sans-serif;
+  font-family: "Spartan", "Spartan MB", sans-serif;
+  font-weight: 800;
 }
 @media print{
   body{

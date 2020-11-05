@@ -18,7 +18,6 @@ docs:
 	cp ../fh2ad/doc/guide.md fh2ad.md
 	pandoc --from $(MDFLAGS) \
 		-t html5 --css=$(CSS) -H $(HTMLINCLUDE) fh2ad.md -o fh2ad.html
-	prettier -w fh2ad.html
 
 .PHONY: api
 api:
@@ -38,7 +37,6 @@ guide:
 main:
 	pandoc -s --css=$(CSS) -H $(HTMLINCLUDE) \
 		--from $(MDFLAGS)  -t html -o $(MAIN).html $(MAIN).md
-	prettier -w $(MAIN).html
 
 .PHONY: view
 view: main

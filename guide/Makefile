@@ -17,7 +17,6 @@ html:
 	pandoc -s --metadata title=$(PAGETITLE) \
 		--css=$(CSS) -H $(HTMLINCLUDE) --toc \
 		--from $(MDFLAGS) -t html -o $(MAIN).html $(MAIN).md
-	prettier -w $(MAIN).html
 .PHONY: clean
 clean:
 	rm *.html
