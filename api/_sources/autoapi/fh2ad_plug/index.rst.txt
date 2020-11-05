@@ -31,8 +31,15 @@ Functions
 
 .. autoapisummary::
 
+   fh2ad_plug.available_commands
    fh2ad_plug.can_execute
+   fh2ad_plug.help_available_commands
 
+
+.. data:: ANNOUNCE_MSGS
+   
+
+   
 
 .. data:: BANG_COMMANDS
    
@@ -264,6 +271,37 @@ Functions
 
    
 
+.. function:: available_commands(invoker)
+
+   Find list of commands invoker can run
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+   :Returns:
+
+       list(str)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
 .. function:: can_execute(cmd, invoker)
 
    Check if player is allowed to execute a command
@@ -291,6 +329,39 @@ Functions
 
 
 
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: help_available_commands(invoker, _words=None)
+
+   Print Message about all commands available to user
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !help
 
 
 

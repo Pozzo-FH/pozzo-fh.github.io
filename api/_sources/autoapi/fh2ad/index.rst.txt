@@ -124,6 +124,16 @@ Functions
 
    
 
+.. data:: MAPS_FAVORITES
+   
+
+   
+
+.. data:: MAPS_THEME
+   
+
+   
+
 .. data:: MAP_SHORTNAMES
    
 

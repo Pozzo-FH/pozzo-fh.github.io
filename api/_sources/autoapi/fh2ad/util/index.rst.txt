@@ -21,75 +21,18 @@ Functions
 
 .. autoapisummary::
 
-   fh2ad.util.filter_maps
    fh2ad.util.format_message
-   fh2ad.util.has_shared
-   fh2ad.util.in_range
    fh2ad.util.insert_elems
+   fh2ad.util.length_3vec
+   fh2ad.util.normed_3vec
    fh2ad.util.parse_reason
-   fh2ad.util.recommend_layer
    fh2ad.util.strip_message
-   fh2ad.util.vector_len
-   fh2ad.util.vector_normed
 
 
 .. data:: LOG
    
 
    
-
-.. function:: filter_maps(maps, needed_layer, last_maps, last_cats=None, check_categories=True)
-
-   Keep only valid maps:
-
-   - Correct layer
-   - Not in the last X played
-   - Not the same category as the last Y played (except theme is active)
-   - If server full, supports 100 ppl (except theme is active)
-
-   :Parameters:
-
-       **maps: dict int->(str, int, str)**
-           idx -> name, layer, gamemode
-
-       **needed_layer: int**
-           ..
-
-       **n_connected: int**
-           ..
-
-       **last_maps: list(str)**
-           ..
-
-       **check_categories: bool**
-           if true, last_cats argument must be given
-
-       **last_cats: list(str)**
-           must be given if check_categories is true
-
-       **MAPS_ALL: dict**
-           the big map list
-
-   :Returns:
-
-       dict int->(str, int, str)
-           idx -> name, layer, gamemode
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
-
 
 .. function:: format_message(msg, big=False, color=None, latin=True)
 
@@ -110,74 +53,6 @@ Functions
        **color: bool**
            ..
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
-
-
-.. function:: has_shared(col_1, col_2)
-
-   Check if two collections have a shared element
-
-
-   :Parameters:
-
-       **col_1: iterable**
-           ..
-
-       **col_2: iterable**
-           ..
-
-   :Returns:
-
-       bool
-           ..
-
-
-
-
-
-
-
-
-
-
-
-
-
-   ..
-       !! processed by numpydoc !!
-
-
-.. function:: in_range(num, interval)
-
-   Check if a number is in the range
-
-
-   :Parameters:
-
-       **num: int**
-           ..
-
-       **interval: 2-tuple(int)**
-           ..
-
-   :Returns:
-
-       bool
-           ..
 
 
 
@@ -238,19 +113,19 @@ Functions
        !! processed by numpydoc !!
 
 
-.. function:: parse_reason(message)
+.. function:: length_3vec(vec)
 
-   Try to find a reason from the message, which might be a shortcut
+   Compute length of a 3-vector
 
 
    :Parameters:
 
-       **message: str**
-           reason
+       **vec: list-like**
+           list-like of numbers, length 3
 
    :Returns:
 
-       str
+       float
            ..
 
 
@@ -269,25 +144,50 @@ Functions
        !! processed by numpydoc !!
 
 
-.. function:: recommend_layer(n_players, threshold_upper=45, threshold_lower=22.5)
+.. function:: normed_3vec(vec)
 
-   Give viable map size for current player number
+   Transform vector to unit length
 
 
    :Parameters:
 
-       **n_players: int**
-           ..
-
-       **threshold_upper: int**
-           separation between 32 and 64
-
-       **threshold_lower: int**
-           separation between 16 and 32
+       **vec: list-like**
+           list-like of numbers, length 3
 
    :Returns:
 
-       int
+       (float, float, float)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: parse_reason(message)
+
+   Try to find a reason from the message, which might be a shortcut
+
+
+   :Parameters:
+
+       **message: str**
+           reason
+
+   :Returns:
+
+       str
            ..
 
 
@@ -335,11 +235,5 @@ Functions
 
    ..
        !! processed by numpydoc !!
-
-
-.. function:: vector_len(vec)
-
-
-.. function:: vector_normed(vec)
 
 

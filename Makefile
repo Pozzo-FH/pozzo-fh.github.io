@@ -11,7 +11,7 @@ OFFICE = abiword
 
 .PHONY: help
 help:
-	@echo "targets: docs api maps main"
+	@echo "targets: docs api maps main guide view"
 
 .PHONY: docs
 docs:
@@ -30,6 +30,9 @@ api:
 maps:
 	$(MAKE) -C maps
 
+.PHONY: guide
+guide:
+	$(MAKE) -C guide
 
 .PHONY: main
 main:

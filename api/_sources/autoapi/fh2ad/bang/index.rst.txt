@@ -26,6 +26,7 @@ Functions
 .. autoapisummary::
 
    fh2ad.bang.ban
+   fh2ad.bang.ban_perma
    fh2ad.bang.cap_flag
    fh2ad.bang.dissolve_squad
    fh2ad.bang.first_person
@@ -33,6 +34,7 @@ Functions
    fh2ad.bang.give_me
    fh2ad.bang.hash_player
    fh2ad.bang.help_atgun
+   fh2ad.bang.help_cmp
    fh2ad.bang.help_para
    fh2ad.bang.help_voice
    fh2ad.bang.kick
@@ -41,6 +43,7 @@ Functions
    fh2ad.bang.report
    fh2ad.bang.resign
    fh2ad.bang.restart
+   fh2ad.bang.run_devcheat
    fh2ad.bang.run_next
    fh2ad.bang.say
    fh2ad.bang.say_enemy
@@ -97,6 +100,39 @@ Functions
    .. rubric:: Examples
 
    >>> !ban Pozzo troll
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: ban_perma(invoker, words)
+
+   Perma-Ban player
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           name of target player
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !permaban Pozzo troll
 
 
 
@@ -203,7 +239,7 @@ Functions
        !! processed by numpydoc !!
 
 
-.. function:: free_camera(invoker, words)
+.. function:: free_camera(invoker, _words)
 
    Switch to free camera
 
@@ -328,6 +364,39 @@ Functions
    .. rubric:: Examples
 
    >>> !help_atgun
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: help_cmp(_invoker, _words=None)
+
+   Print Message about CMP maps
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !cmp
 
 
 
@@ -590,6 +659,39 @@ Functions
    .. rubric:: Examples
 
    >>> !restart
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: run_devcheat(invoker, _words=None)
+
+   Print Message about CMP maps
+
+
+   :Parameters:
+
+       **invoker: fh2ad.core.FHPlayer**
+           player who executed the command
+
+       **words: list(str)**
+           ignored
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Examples
+
+   >>> !devcheat
 
 
 
@@ -928,7 +1030,7 @@ Functions
        !! processed by numpydoc !!
 
 
-.. function:: show_coord(invoker, words)
+.. function:: show_coord(invoker, _words)
 
    Show current coordinates of a player
 

@@ -52,7 +52,7 @@
 </table>
 <dl class="py class">
 <dt id="carousel_plug.Carousel">
-<em class="property">class </em><code class="sig-prename descclassname">carousel_plug.</code><code class="sig-name descname">Carousel</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">n_last_played</span><span class="o">=</span><span class="default_value">N_LAST_PLAYED</span></em>, <em class="sig-param"><span class="n">n_last_categories</span><span class="o">=</span><span class="default_value">N_LAST_CATEGORIES</span></em><span class="sig-paren">)</span><a class="headerlink" href="#carousel_plug.Carousel" title="Permalink to this definition">¶</a></dt>
+<em class="property">class </em><code class="sig-prename descclassname">carousel_plug.</code><code class="sig-name descname">Carousel</code><a class="headerlink" href="#carousel_plug.Carousel" title="Permalink to this definition">¶</a></dt>
 <dd><p>Map rotation, picking random maps with filtering</p>
 <p>New maps are rolled during the <em>start</em> of each round, so the next map
 can be overridden by the <code class="docutils literal notranslate"><span class="pre">!setnext</span></code> command.</p>
@@ -121,6 +121,8 @@ during a round, alot of players might (dis-)connect</p>
 <p>Map end:
 - pick new layer based on endgame playernum
 - if not possible, keep previous</p>
+<p>Exceptions are for Favorite maps and map themes (ignoring the
+no-double- theatre rule)</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><dl class="simple">
@@ -134,8 +136,28 @@ during a round, alot of players might (dis-)connect</p>
 </dd></dl>
 
 <dl class="py data">
+<dt id="carousel_plug.LAST_CATS">
+<code class="sig-prename descclassname">carousel_plug.</code><code class="sig-name descname">LAST_CATS</code><a class="headerlink" href="#carousel_plug.LAST_CATS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="carousel_plug.LAST_MAPS">
+<code class="sig-prename descclassname">carousel_plug.</code><code class="sig-name descname">LAST_MAPS</code><a class="headerlink" href="#carousel_plug.LAST_MAPS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="carousel_plug.LAST_MAP_UPDATED">
+<code class="sig-prename descclassname">carousel_plug.</code><code class="sig-name descname">LAST_MAP_UPDATED</code><a class="headerlink" href="#carousel_plug.LAST_MAP_UPDATED" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
 <dt id="carousel_plug.LOG">
 <code class="sig-prename descclassname">carousel_plug.</code><code class="sig-name descname">LOG</code><a class="headerlink" href="#carousel_plug.LOG" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="carousel_plug.LOG_CHAT">
+<code class="sig-prename descclassname">carousel_plug.</code><code class="sig-name descname">LOG_CHAT</code><a class="headerlink" href="#carousel_plug.LOG_CHAT" title="Permalink to this definition">¶</a></dt>
 <dd></dd></dl>
 
 <dl class="py data">

@@ -68,7 +68,7 @@
 <col style="width: 90%" />
 </colgroup>
 <tbody>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.add_to_banlist" title="fh2ad.core.add_to_banlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_to_banlist</span></code></a>(player, duration='permanent')</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.add_to_banlist" title="fh2ad.core.add_to_banlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">add_to_banlist</span></code></a>(player, duration)</p></td>
 <td><p>Add player to custom banlist</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.admin_message" title="fh2ad.core.admin_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">admin_message</span></code></a>(message, **fmtargs)</p></td>
@@ -137,52 +137,55 @@
 <tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.personal_message" title="fh2ad.core.personal_message"><code class="xref py py-obj docutils literal notranslate"><span class="pre">personal_message</span></code></a>(target, message, channel='Player', prefix='[YOU] ', **fmtargs)</p></td>
 <td><p>Send message to target player only</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.rcon" title="fh2ad.core.rcon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rcon</span></code></a>(cmd)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.position_infront" title="fh2ad.core.position_infront"><code class="xref py py-obj docutils literal notranslate"><span class="pre">position_infront</span></code></a>(player, distance=3.0)</p></td>
+<td><p>Transform vector to unit length</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.rcon" title="fh2ad.core.rcon"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rcon</span></code></a>(cmd)</p></td>
 <td><p>Call host.rcon_invoke on cleaned input</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.read_badlist" title="fh2ad.core.read_badlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_badlist</span></code></a>(fname='badlist.toml')</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.read_badlist" title="fh2ad.core.read_badlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_badlist</span></code></a>(_fname='badlist.toml')</p></td>
 <td><p>Read badlist file with bad words and users</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.read_badusers" title="fh2ad.core.read_badusers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_badusers</span></code></a>(fname='badlist.toml')</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.read_badusers" title="fh2ad.core.read_badusers"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_badusers</span></code></a>(fname='badlist.toml')</p></td>
 <td><p>Read badlist file with bad words and users</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.read_badwords" title="fh2ad.core.read_badwords"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_badwords</span></code></a>(fname='badlist.toml')</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.read_badwords" title="fh2ad.core.read_badwords"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_badwords</span></code></a>(fname='badlist.toml')</p></td>
 <td><p>Read badlist file with bad words</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.read_maplist" title="fh2ad.core.read_maplist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_maplist</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.read_maplist" title="fh2ad.core.read_maplist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_maplist</span></code></a>()</p></td>
 <td><p>Read maplist from server</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.read_metadata" title="fh2ad.core.read_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_metadata</span></code></a>(mapname)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.read_metadata" title="fh2ad.core.read_metadata"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_metadata</span></code></a>(mapname)</p></td>
 <td><p>Read the metadata from a map</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.read_nextmap" title="fh2ad.core.read_nextmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_nextmap</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.read_nextmap" title="fh2ad.core.read_nextmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">read_nextmap</span></code></a>()</p></td>
 <td><p>Read next map in rotation from server</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.remove_from_banlist" title="fh2ad.core.remove_from_banlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_from_banlist</span></code></a>(player)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.remove_from_banlist" title="fh2ad.core.remove_from_banlist"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_from_banlist</span></code></a>(_player)</p></td>
 <td><p>Remove player from custom banlist</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.scramble_teams" title="fh2ad.core.scramble_teams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scramble_teams</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.scramble_teams" title="fh2ad.core.scramble_teams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">scramble_teams</span></code></a>()</p></td>
 <td><p>Assign each player to a random team</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.set_nextmap" title="fh2ad.core.set_nextmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_nextmap</span></code></a>(idx, mapname, layer, gamemode='gpm_cq')</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.set_nextmap" title="fh2ad.core.set_nextmap"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_nextmap</span></code></a>(idx, mapname, layer, gamemode='gpm_cq')</p></td>
 <td><p>Try to set nextmap, raise if not in rotation</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.set_team_bleed" title="fh2ad.core.set_team_bleed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_team_bleed</span></code></a>(teamname, amount)</p></td>
-<td><p></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.set_team_bleed" title="fh2ad.core.set_team_bleed"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_team_bleed</span></code></a>(teamname, amount)</p></td>
+<td><p>Set team bleedrate</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.set_team_tickets" title="fh2ad.core.set_team_tickets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_team_tickets</span></code></a>(tickets_axis, tickets_allies)</p></td>
-<td><p></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.set_team_tickets" title="fh2ad.core.set_team_tickets"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_team_tickets</span></code></a>(tickets_axis, tickets_allies)</p></td>
+<td><p>Set teack tickets to desired amount</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.spawn_object" title="fh2ad.core.spawn_object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spawn_object</span></code></a>(templ_name, pos, rot, team='grey', ttl=None, coords_are_invoker=False)</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.spawn_object" title="fh2ad.core.spawn_object"><code class="xref py py-obj docutils literal notranslate"><span class="pre">spawn_object</span></code></a>(templ_name, pos, rot, team='grey', ttl=None)</p></td>
 <td><p>Spawn object on invoker</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.squad_members" title="fh2ad.core.squad_members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">squad_members</span></code></a>(squad_idx, teamname)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.squad_members" title="fh2ad.core.squad_members"><code class="xref py py-obj docutils literal notranslate"><span class="pre">squad_members</span></code></a>(squad_idx, teamname)</p></td>
 <td><p>Get all members of squad #X in a team</p></td>
 </tr>
-<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.swap_teams" title="fh2ad.core.swap_teams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swap_teams</span></code></a>()</p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.swap_teams" title="fh2ad.core.swap_teams"><code class="xref py py-obj docutils literal notranslate"><span class="pre">swap_teams</span></code></a>()</p></td>
 <td><p>Assign each player to the opposite team</p></td>
 </tr>
-<tr class="row-odd"><td><p><a class="reference internal" href="#fh2ad.core.team_to_num" title="fh2ad.core.team_to_num"><code class="xref py py-obj docutils literal notranslate"><span class="pre">team_to_num</span></code></a>(team)</p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="#fh2ad.core.team_to_num" title="fh2ad.core.team_to_num"><code class="xref py py-obj docutils literal notranslate"><span class="pre">team_to_num</span></code></a>(team)</p></td>
 <td><p>Translate readable Team to number</p></td>
 </tr>
 </tbody>
@@ -497,12 +500,14 @@ are assigned playerID numbers from “0” up.</p>
 
 <dl class="py function">
 <dt id="fh2ad.core.add_to_banlist">
-<code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">add_to_banlist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">duration</span><span class="o">=</span><span class="default_value">'permanent'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.add_to_banlist" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">add_to_banlist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">duration</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.add_to_banlist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Add player to custom banlist</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
 <dt><strong>ply: FHPlayer</strong></dt><dd></dd>
+<dt><strong>duration: int or str</strong></dt><dd><p>duration in seconds, or “perma”</p>
+</dd>
 </dl>
 </dd>
 </dl>
@@ -572,8 +577,9 @@ are assigned playerID numbers from “0” up.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><dl class="simple">
-<dt>dict int-&gt;(str, int, str)</dt><dd><p>idx -&gt; name, layer, gamemode</p>
-</dd>
+<dt>str</dt><dd></dd>
+<dt>#dict int-&gt;(str, int, str)</dt><dd></dd>
+<dt>#    idx -&gt; name, layer, gamemode</dt><dd></dd>
 </dl>
 </dd>
 </dl>
@@ -794,6 +800,26 @@ falls back to sending global message instead</p>
 </dd></dl>
 
 <dl class="py function">
+<dt id="fh2ad.core.position_infront">
+<code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">position_infront</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em>, <em class="sig-param"><span class="n">distance</span><span class="o">=</span><span class="default_value">3.0</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.position_infront" title="Permalink to this definition">¶</a></dt>
+<dd><p>Transform vector to unit length</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>player: FHPlayer</strong></dt><dd></dd>
+<dt><strong>distance: float</strong></dt><dd><p>how many meters infront of the player?</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt>pos: (float, float, float)</dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
 <dt id="fh2ad.core.rcon">
 <code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">rcon</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">cmd</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.rcon" title="Permalink to this definition">¶</a></dt>
 <dd><p>Call host.rcon_invoke on cleaned input</p>
@@ -808,7 +834,7 @@ falls back to sending global message instead</p>
 
 <dl class="py function">
 <dt id="fh2ad.core.read_badlist">
-<code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">read_badlist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fname</span><span class="o">=</span><span class="default_value">'badlist.toml'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.read_badlist" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">read_badlist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_fname</span><span class="o">=</span><span class="default_value">'badlist.toml'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.read_badlist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Read badlist file with bad words and users
 Parameters
 ———-
@@ -828,16 +854,16 @@ fname: str, optional</p>
 <dl class="py function">
 <dt id="fh2ad.core.read_badusers">
 <code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">read_badusers</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">fname</span><span class="o">=</span><span class="default_value">'badlist.toml'</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.read_badusers" title="Permalink to this definition">¶</a></dt>
-<dd><p>Read badlist file with bad words and users
-Parameters
-———-
-fname: str, optional</p>
-<blockquote>
-<div><p>name of the badlist file, without path</p>
-</div></blockquote>
+<dd><p>Read badlist file with bad words and users</p>
 <dl class="field-list simple">
-<dt class="field-odd">Returns</dt>
+<dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><dl class="simple">
+<dt><strong>fname: str, optional</strong></dt><dd><p>name of the badlist file, without path</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
 <dt>bad_words, bad_users: list(str), dict(str-&gt;str)</dt><dd></dd>
 </dl>
 </dd>
@@ -912,7 +938,7 @@ fname: str, optional</p>
 
 <dl class="py function">
 <dt id="fh2ad.core.remove_from_banlist">
-<code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">remove_from_banlist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">player</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.remove_from_banlist" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">remove_from_banlist</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">_player</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.remove_from_banlist" title="Permalink to this definition">¶</a></dt>
 <dd><p>Remove player from custom banlist</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -948,16 +974,34 @@ fname: str, optional</p>
 <dl class="py function">
 <dt id="fh2ad.core.set_team_bleed">
 <code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">set_team_bleed</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">teamname</span></em>, <em class="sig-param"><span class="n">amount</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.set_team_bleed" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Set team bleedrate</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>teamname: str</strong></dt><dd></dd>
+<dt><strong>amount: int</strong></dt><dd><p>tickets lost per minute</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt id="fh2ad.core.set_team_tickets">
 <code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">set_team_tickets</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">tickets_axis</span></em>, <em class="sig-param"><span class="n">tickets_allies</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.set_team_tickets" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dd><p>Set teack tickets to desired amount</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>tickets_axis, tickets_allies: int</strong></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py function">
 <dt id="fh2ad.core.spawn_object">
-<code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">spawn_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">templ_name</span></em>, <em class="sig-param"><span class="n">pos</span></em>, <em class="sig-param"><span class="n">rot</span></em>, <em class="sig-param"><span class="n">team</span><span class="o">=</span><span class="default_value">'grey'</span></em>, <em class="sig-param"><span class="n">ttl</span><span class="o">=</span><span class="default_value">None</span></em>, <em class="sig-param"><span class="n">coords_are_invoker</span><span class="o">=</span><span class="default_value">False</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.spawn_object" title="Permalink to this definition">¶</a></dt>
+<code class="sig-prename descclassname">fh2ad.core.</code><code class="sig-name descname">spawn_object</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">templ_name</span></em>, <em class="sig-param"><span class="n">pos</span></em>, <em class="sig-param"><span class="n">rot</span></em>, <em class="sig-param"><span class="n">team</span><span class="o">=</span><span class="default_value">'grey'</span></em>, <em class="sig-param"><span class="n">ttl</span><span class="o">=</span><span class="default_value">None</span></em><span class="sig-paren">)</span><a class="headerlink" href="#fh2ad.core.spawn_object" title="Permalink to this definition">¶</a></dt>
 <dd><p>Spawn object on invoker</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>

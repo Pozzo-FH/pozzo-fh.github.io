@@ -55,6 +55,7 @@ Functions
    fh2ad.core.num_to_team
    fh2ad.core.parse_playername
    fh2ad.core.personal_message
+   fh2ad.core.position_infront
    fh2ad.core.rcon
    fh2ad.core.read_badlist
    fh2ad.core.read_badusers
@@ -658,7 +659,7 @@ Functions
 
 
 
-.. function:: add_to_banlist(player, duration='permanent')
+.. function:: add_to_banlist(player, duration)
 
    Add player to custom banlist
 
@@ -667,6 +668,9 @@ Functions
 
        **ply: FHPlayer**
            ..
+
+       **duration: int or str**
+           duration in seconds, or "perma"
 
 
 
@@ -807,8 +811,14 @@ Functions
 
    :Returns:
 
-       dict int->(str, int, str)
-           idx -> name, layer, gamemode
+       str
+           ..
+
+       #dict int->(str, int, str)
+           ..
+
+       #    idx -> name, layer, gamemode
+           ..
 
 
 
@@ -1221,6 +1231,40 @@ Functions
        !! processed by numpydoc !!
 
 
+.. function:: position_infront(player, distance=3.0)
+
+   Transform vector to unit length
+
+
+   :Parameters:
+
+       **player: FHPlayer**
+           ..
+
+       **distance: float**
+           how many meters infront of the player?
+
+   :Returns:
+
+       pos: (float, float, float)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
 .. function:: rcon(cmd)
 
    Call host.rcon_invoke on cleaned input
@@ -1248,7 +1292,7 @@ Functions
        !! processed by numpydoc !!
 
 
-.. function:: read_badlist(fname='badlist.toml')
+.. function:: read_badlist(_fname='badlist.toml')
 
    Read badlist file with bad words and users
    Parameters
@@ -1282,12 +1326,12 @@ Functions
 .. function:: read_badusers(fname='badlist.toml')
 
    Read badlist file with bad words and users
-   Parameters
-   ----------
-   fname: str, optional
-       name of the badlist file, without path
 
 
+   :Parameters:
+
+       **fname: str, optional**
+           name of the badlist file, without path
 
    :Returns:
 
@@ -1426,7 +1470,7 @@ Functions
        !! processed by numpydoc !!
 
 
-.. function:: remove_from_banlist(player)
+.. function:: remove_from_banlist(_player)
 
    Remove player from custom banlist
 
@@ -1514,11 +1558,62 @@ Functions
 
 .. function:: set_team_bleed(teamname, amount)
 
+   Set team bleedrate
+
+
+   :Parameters:
+
+       **teamname: str**
+           ..
+
+       **amount: int**
+           tickets lost per minute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
 
 .. function:: set_team_tickets(tickets_axis, tickets_allies)
 
+   Set teack tickets to desired amount
 
-.. function:: spawn_object(templ_name, pos, rot, team='grey', ttl=None, coords_are_invoker=False)
+
+   :Parameters:
+
+       **tickets_axis, tickets_allies: int**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: spawn_object(templ_name, pos, rot, team='grey', ttl=None)
 
    Spawn object on invoker
 
