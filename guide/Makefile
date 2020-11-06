@@ -1,4 +1,4 @@
-MDFLAGS=markdown+smart+link_attributes+multiline_tables+pipe_tables+definition_lists+backtick_code_blocks+fenced_code_attributes+implicit_figures+tex_math_dollars+header_attributes
+MDFLAGS=markdown+smart+link_attributes+multiline_tables+pipe_tables+definition_lists+backtick_code_blocks+fenced_code_attributes+implicit_figures+tex_math_dollars+header_attributes+implicit_header_references
 PAGETITLE="FH2 Guide"
 CSS=../style.css
 HTMLINCLUDE=../fonts.html

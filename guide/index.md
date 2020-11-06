@@ -3,32 +3,57 @@ title: FH2 Guide (Unofficial)
 subtitle: THIS IS A WORK IN PROGRESS! 
 ---
 
-## Where to Get Help
+## About this
 
-### Discord, Forums
+This is meant for players who have installed and successfully ran the game, 
+and want to learn more about the mechanics and features to gain an edge
+on the battlefield.
 
-### CMP Discord, Forums
+If you are looking for an installation guide, check these:
+
+- Official Discord
+- Public Forums
+- Official Website
+- CMP Website
 
 ## Playing Online
 
 ### Servers
 
-### Rules
-
-### Chat Commands
-
-You have three ways to talk on the server using text. They are:
-
-- "J" for common chat
-- "K" for team chat
-- "L" squad chat
-
-TODO COMMANDS
+- PlayFH2 (aka Russian Hope)
+- CMP Europe
+- CMP Asia
+- WAW US
+- CMP Tournament
 
 ### General Etiquette
 
-a) Try to avoid killing your teammates. If it happens to you unintentionally, it is common courtesy to apologize to the person(s) you killed.
-b) Wait for your teammates if you are driving an APC, car, truck, or transport plane. There is a good chance your teammates want a ride too, and you will have a better shot at surviving if you move together in force. Sometimes vehicles are very limited, and will not respawn for a period of time.
+#### Apologize for Teamkills
+
+Try to avoid killing your teammates. If it happens to you
+unintentionally, it is common courtesy to apologize to the person(s) you
+killed.
+
+#### Ride Sharing
+Wait for your teammates if you are driving an APC, car, truck, or
+transport plane. There is a good chance your teammates want a ride too,
+and you will have a better shot at surviving if you move together in
+force. Sometimes vehicles are very limited, and will not respawn for a
+period of time.
+
+#### Dealing with Assholes
+
+**IMPORTANT:** If a player is teamkilling or trolling you, DO NOT do a
+revenge teamkill, but report him to the admins with the `!r` command.
+Admins are not all-knowing, and if they see you do a revenge teamkill
+without knowing about the context, they might ban your ass instead!
+
+### Chat Commands
+
+- `!shownext`: What map will be played next
+- `!admins`: Which admins are online?
+- `!r PLAYER REASON`: Report a player to the admins, e.g.: \
+  `!r noobslayer9000 teamkilling`
 
 
 ## Gameplay
@@ -53,11 +78,43 @@ b) Wait for your teammates if you are driving an APC, car, truck, or transport p
 
 ### Tank Ammo Types
 
-AP, APC, APBC, APCBC, HEAT, HE, HVAP
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+Icon                                Name                                      Description
+--------------------------------    ---------------------------------------   -------------------------------------------------------------------------------
+![](img/ammo/37mmCAN.png)           Canister shot                             Giant Shotgun, short ranged, for soft targets
+
+![](img/ammo/57mmAP.png)            Armor Piercing (regular)                  Anti Tank/Vehicles, lots of Ammo. Useless against infantry
+
+![](img/ammo/57mmAPCR.png)          Armor Piercing (special)                  Stronger Anti Tank, limited. Useless against infantry
+
+![](img/ammo/105mmHE_reg.png)       High Explosive                            Explosive, for soft targets, big splash damage
+
+![](img/ammo/75mmHEAT.png)          HEAT High Explosive AT (shaped charge)    Strong Antitank, slight splash damage, medium range due to arced trajectory
+
+![](img/ammo/127mmTimedHE.png)      Timed HE (Airburst)                       Airburst Explosion, for Anti-Aircraft 
+
+![](img/ammo/290mmspigot.png)       Spigot Mortar HE (huge HE)                Short-ranged, *very* powerful Explosive, giant splash damage, breaches some fortifications
+
+![](img/ammo/Flamethrower.png)      Flamethrower                              Fire, massacres infantry
+
+![](img/ammo/MachineGun.png)        Heavy Machinegun                          Very Heavy MG, can kill Trucks, APCs and some light Tanks
+
+![](img/ammo/rockets.png)           Rockets                                   Antitank rockets, usually launched from Airplane
+
+![](img/ammo/SmokeRound.png)        Smoke                                     Big cloud of smoke
+-------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
 
 #### (Upcoming) Sector OOB Areas
 
-## Infantry Gameplay
+### Infantry Gameplay
+
+#### Aiming
+
+FH2 uses a fake sway animation (bullets still come out from the center of the screen) so don't aim where the iron sights are. You need to aim at the center of the screen. To fight the fake sway, instead of aiming a target for like 10 seconds just unzoom and zoom back the iron sights will be set back to the center of the screen, then you shoot where they aim. 
+
+#### Shooting
 
 -If you are an infantry soldier and you go prone, you cannot aim correctly for the first few seconds. This is done to avoid dolphin diving. So lay down, wait till your crosshair becomes smaller, then aim and return fire. Additionally, you can also crouch to get off a quick, accurate shot.
 

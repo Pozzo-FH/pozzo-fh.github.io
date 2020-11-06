@@ -80,7 +80,7 @@ th {
   background-color: #fff;
 }
 pre, code{
-  background: #f8f8f8;
+  background: #f5f5f5;
   color: #000;
   font-family: "Hack", "Roboto Mono", monospace;
 }
@@ -90,4 +90,11 @@ pre code {
   padding: 5px;
   overflow: hidden;
   word-wrap: normal;
+}
+
+p {
+  text-align: justify;
+}
+li{
+  margin: 0.5em 0;
 }

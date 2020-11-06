@@ -13,7 +13,7 @@ help:
 	@echo "specify a target"
 
 .PHONY: all
-all: copy maps index
+all: copy index maps
 
 .PHONY: copy
 copy:
