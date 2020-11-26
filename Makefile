@@ -15,15 +15,17 @@ help:
 
 .PHONY: docs
 docs:
-	cp ../fh2ad/doc/guide.md fh2ad.md
+	cp ../admin/doc/guide.md admin.md
 	pandoc --from $(MDFLAGS) \
-		-t html5 --css=$(CSS) -H $(HTMLINCLUDE) fh2ad.md -o fh2ad.html
+		-t html5 --css=$(CSS) -H $(HTMLINCLUDE) \
+		--metadata title="FH2 Admin Manual" \
+		admin.md -o admin.html
 
 .PHONY: api
 api:
 	mkdir -p api
 	rm -rf api/*
-	cp -r ../fh2ad/doc/_build/html/* api/
+	cp -r ../admin/doc/_build/html/* api/
 
 .PHONY: maps
 maps:

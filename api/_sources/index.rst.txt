@@ -1,4 +1,4 @@
-fh2ad docs
+admin docs
 ==========
 
 .. toctree::

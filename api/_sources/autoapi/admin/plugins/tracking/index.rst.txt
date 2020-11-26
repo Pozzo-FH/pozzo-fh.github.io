@@ -1,0 +1,299 @@
+:mod:`admin.plugins.tracking`
+=============================
+
+.. py:module:: admin.plugins.tracking
+
+.. autoapi-nested-parse::
+
+   Player Tracking Plugins
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   admin.plugins.tracking.IdleTracker
+   admin.plugins.tracking.PlayerLogger
+
+
+
+.. data:: AFK_LIST
+   
+
+   
+
+.. py:class:: IdleTracker(min_players_for_kick=MIN_PLAYERS_FOR_KICK, balance_afks_before_minplayers=BALANCE_AFKS_BEFORE_MINPLAYERS, max_idle_time=MAX_IDLE_TIME, check_interval=IDLE_CHECK_INTERVAL, yaw_threshold=IDLE_YAW_THRESHOLD)
+
+
+
+   Kick/balance players who are AFK
+
+   Player idle time is reset when:
+   a) spawns (event)
+   b) connects (event)
+   c) chat message (event)
+   d) kills/gets killed (event)
+   e) moves -> yaw changes (check)
+
+   Important edge cases:
+   1) commander in commander chair, doing stuff like supply/bomb (keep)
+   1b) commander in commander chair, doing nothing (kick)
+   2) arty, turning yaw  (keep)
+   2b) arty with fixed yaw that scores kills (keep)
+   2c) arty not killing, fixed yaw
+   3) idle when dead (remove)
+   4) idle in vehicle/on foot (remove)
+
+   Depending on number of players, either kick AFKs, spread them, or nothing
+
+   Disable for admins, and entirely on Beta
+
+   POSSIBLE EXTENSIONS to keep in mind:
+   - Possible to disregard the timer reset if you die in the
+     same location that you spawned?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: balance_afks(self)
+
+
+   .. method:: bf2_init(self, hooker)
+
+
+   .. method:: check_if_afk(self, bf2_ply)
+
+
+   .. method:: get_idle_time(self, name)
+
+
+   .. method:: hook_chat_message(self, player_id, _message, channel, _flags)
+
+      If they write, they are not AFK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: hook_player_connect(self, bf2_ply)
+
+      If they just connect, not AFK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: hook_player_killed(self, bf2_victim, bf2_attacker, _w, _a, _s)
+
+      If they get killed, they are (probably?) not afk
+
+      If they are, pushes back the timer, but that's acceptable.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: hook_player_spawn(self, bf2_ply, _)
+
+      If they spawn, they are not AFK
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: hook_timer(self, _data)
+
+
+   .. method:: kick_afk_player(self, ply)
+
+
+   .. method:: mark_afk_for_balance(self, ply)
+
+
+   .. method:: mark_as_active(self, bf2_ply)
+
+
+   .. method:: player_yaw_changed(self, ply)
+
+      Has Yaw changed? Update and check if same as before
+
+
+
+      :Returns:
+
+          bool
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: punish_player(self, ply)
+
+
+   .. method:: reset_idle_time(self, name)
+
+
+   .. method:: update_player_data(self, bf2_ply)
+
+
+   .. method:: update_players(self)
+
+
+   .. method:: warn_player(ply)
+      :staticmethod:
+
+
+
+.. data:: LOG
+   
+
+   
+
+.. data:: LOG_CHAT
+   
+
+   
+
+.. data:: PLAYER_TIME
+   
+
+   
+
+.. data:: PLAYER_YAW
+   
+
+   
+
+.. py:class:: PlayerLogger
+
+
+
+   Log connected/disconnected players
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: bf2_init(self, hooker)
+
+
+   .. method:: hook_player_connect(self, bf2_ply)
+
+
+   .. method:: hook_player_disconnect(self, bf2_ply)
+
+
+
+.. data:: TIMER_INITED
+   :annotation: = False
+
+   
+

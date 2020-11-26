@@ -1,0 +1,100 @@
+:mod:`admin.plugins.balance`
+============================
+
+.. py:module:: admin.plugins.balance
+
+.. autoapi-nested-parse::
+
+   Balance Plugins
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   admin.plugins.balance.SteamRoller
+
+
+
+.. py:class:: SteamRoller(shuffle_on_start=SHUFFLE_ON_START, swap_on_start=SWAP_ON_START, protect_commander=PROTECT_COMMANDER, protect_squadmembers=PROTECT_SQUADMEMBERS, protect_squadleader=PROTECT_SQUADLEADER)
+
+
+
+   Autobalance teams and swap/shuffle on round start
+
+   Note that the protect_X options have nothing to do with teamswap/-shuffle
+   and are ignored for those purposes. they only are used when a player
+   dies during the round
+
+   Note to self:
+
+   Overall Game State Change Pattern
+
+   1. StatusChange (to "PreGame")
+   2. Reset (doesn't happen in the first round after a server starts)
+   3. StatusChange (to "Playing"; stay here until enough players connect)
+   4. StatusChange (to "PreGame", once enough players have connected)
+   5. Reset
+   6. StatusChange (to "Playing"--the real game round now begins)
+   7. (play game, beginning with players spawning in)
+   8. StatusChange (to "EndGame")
+   9. DropKit (for each player still in game at end)
+
+   :Parameters:
+
+       **shuffle_on_start: bool**
+           Reshuffle the teams for each round?
+
+       **swap_on_start: bool**
+           Swap the teams for each round? Ignored if Shuffle is enabled already
+
+       **protect_squadmembers: bool**
+           Exclude players in squad from autobalance?
+
+       **protect_squadleader: bool**
+           Exclude squadleader from autobalance? (ignored if protect_squadmembers
+           is True)
+
+       **protect_commander: bool**
+           Exclude commander from autobalance?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: bf2_init(self, hooker)
+
+
+   .. method:: hook_game_start(self)
+
+
+   .. method:: hook_player_connect(self, bf2_ply)
+
+
+   .. method:: hook_player_death(self, bf2_victim, _bf2_vehicle)
+
+
+   .. method:: hook_team_change(self, bf2_ply, _human_has_spawned)
+
+
+

@@ -1,0 +1,110 @@
+:mod:`admin.plugins.motd`
+=========================
+
+.. py:module:: admin.plugins.motd
+
+.. autoapi-nested-parse::
+
+   message plugins
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   admin.plugins.motd.Announcer
+   admin.plugins.motd.Greeter
+
+
+
+.. py:class:: Announcer(msg_list=ANNOUNCE_MSGS, interval=ANNOUNCE_INTERVAL)
+
+
+
+   Show periodic messages in chat
+
+
+   :Parameters:
+
+       **msg_list: list(str)**
+           if empty, don't show messages
+
+       **interval: int**
+           time between messages in seconds
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: bf2_init(self, _hooker)
+
+
+   .. method:: hook_timer(self, _data)
+
+
+
+.. data:: CURRENT_MSG
+   :annotation: = 0
+
+   
+
+.. py:class:: Greeter(welcome_msg=WELCOME_MSG)
+
+
+
+   Display message to players who just joined, when they first spawn
+
+
+   :Parameters:
+
+       **welcome_msg: str**
+           if if contains '<PLAYER>', will be replaced by actual player name
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: bf2_init(self, hooker)
+
+
+   .. method:: hook_player_spawn(self, bf2_ply, _vehicle)
+
+
+
+.. data:: TIMER_INITED
+   :annotation: = False
+
+   
+

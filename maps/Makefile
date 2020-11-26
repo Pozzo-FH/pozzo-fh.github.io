@@ -2,7 +2,7 @@ MDFLAGS=markdown+smart+link_attributes+multiline_tables+pipe_tables+definition_l
 PAGETITLE="FH2 Maps"
 CSS=../style.css
 HTMLINCLUDE=../fonts.html
-FH2PARSE_REPO=../../fh2parse
+MINIMAPS_REPO=../../minimaps
 
 PVIEWER = zathura
 PBROWSER = vimb
@@ -19,9 +19,9 @@ all: copy index maps
 copy:
 	mkdir -p img
 	mkdir -p img/ico
-	cp $(FH2PARSE_REPO)/pages/*.md ./
-	cp $(FH2PARSE_REPO)/pages/img/*.webp img/
-	cp $(FH2PARSE_REPO)/data/img/*.webp img/ico
+	cp $(MINIMAPS_REPO)/pages/*.md ./
+	cp $(MINIMAPS_REPO)/pages/img/*.webp img/
+	cp $(MINIMAPS_REPO)/data/img/*.webp img/ico
 
 .PHONY: index
 index:

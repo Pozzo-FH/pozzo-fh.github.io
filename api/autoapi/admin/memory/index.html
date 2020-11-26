@@ -1,0 +1,255 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>admin.memory &#8212; admin  documentation</title>
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/graphviz.css" />
+    <script id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-admin.memory">
+<span id="admin-memory"></span><h1><a class="reference internal" href="#module-admin.memory" title="admin.memory"><code class="xref py py-mod docutils literal notranslate"><span class="pre">admin.memory</span></code></a><a class="headerlink" href="#module-admin.memory" title="Permalink to this headline">¶</a></h1>
+<p>Access BF2 memory</p>
+<p>ONLY supports linux</p>
+<div class="section" id="module-contents">
+<h2>Module Contents<a class="headerlink" href="#module-contents" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="classes">
+<h3>Classes<a class="headerlink" href="#classes" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#admin.memory.ActionBuffer" title="admin.memory.ActionBuffer"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActionBuffer</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#admin.memory.ActionBufferNode" title="admin.memory.ActionBufferNode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">ActionBufferNode</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#admin.memory.Order" title="admin.memory.Order"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Order</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#admin.memory.Player" title="admin.memory.Player"><code class="xref py py-obj docutils literal notranslate"><span class="pre">Player</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#admin.memory.PlayerManager" title="admin.memory.PlayerManager"><code class="xref py py-obj docutils literal notranslate"><span class="pre">PlayerManager</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#admin.memory.SquadManager" title="admin.memory.SquadManager"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SquadManager</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#admin.memory.SquadManager_Squad" title="admin.memory.SquadManager_Squad"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SquadManager_Squad</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#admin.memory.SquadManager_Team" title="admin.memory.SquadManager_Team"><code class="xref py py-obj docutils literal notranslate"><span class="pre">SquadManager_Team</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#admin.memory.rbTreeBase" title="admin.memory.rbTreeBase"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rbTreeBase</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#admin.memory.rbTreeNode" title="admin.memory.rbTreeNode"><code class="xref py py-obj docutils literal notranslate"><span class="pre">rbTreeNode</span></code></a></p></td>
+<td><p>Structure base class</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="functions">
+<h3>Functions<a class="headerlink" href="#functions" title="Permalink to this headline">¶</a></h3>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#admin.memory.get_squad_name" title="admin.memory.get_squad_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_squad_name</span></code></a>(squad_id, team_id)</p></td>
+<td><p></p></td>
+</tr>
+</tbody>
+</table>
+<dl class="py class">
+<dt id="admin.memory.ActionBuffer">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">ActionBuffer</code><a class="headerlink" href="#admin.memory.ActionBuffer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="admin.memory.ActionBufferNode">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">ActionBufferNode</code><a class="headerlink" href="#admin.memory.ActionBufferNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="admin.memory.Order">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">Order</code><a class="headerlink" href="#admin.memory.Order" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="admin.memory.PLAYER_MANAGER_PTR_PTR">
+<code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">PLAYER_MANAGER_PTR_PTR</code><em class="property"> = 18017848</em><a class="headerlink" href="#admin.memory.PLAYER_MANAGER_PTR_PTR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="admin.memory.Player">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">Player</code><a class="headerlink" href="#admin.memory.Player" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="admin.memory.PlayerManager">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">PlayerManager</code><a class="headerlink" href="#admin.memory.PlayerManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="admin.memory.SQUADS">
+<code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">SQUADS</code><a class="headerlink" href="#admin.memory.SQUADS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="admin.memory.SQUAD_MANAGER_PTR">
+<code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">SQUAD_MANAGER_PTR</code><a class="headerlink" href="#admin.memory.SQUAD_MANAGER_PTR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py data">
+<dt id="admin.memory.SQUAD_MANAGER_PTR_PTR">
+<code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">SQUAD_MANAGER_PTR_PTR</code><em class="property"> = 17533952</em><a class="headerlink" href="#admin.memory.SQUAD_MANAGER_PTR_PTR" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="admin.memory.SquadManager">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">SquadManager</code><a class="headerlink" href="#admin.memory.SquadManager" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="admin.memory.SquadManager_Squad">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">SquadManager_Squad</code><a class="headerlink" href="#admin.memory.SquadManager_Squad" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="admin.memory.SquadManager_Team">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">SquadManager_Team</code><a class="headerlink" href="#admin.memory.SquadManager_Team" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+<dl class="py data">
+<dt id="admin.memory.TEAMS">
+<code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">TEAMS</code><a class="headerlink" href="#admin.memory.TEAMS" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt id="admin.memory.get_squad_name">
+<code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">get_squad_name</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">squad_id</span></em>, <em class="sig-param"><span class="n">team_id</span></em><span class="sig-paren">)</span><a class="headerlink" href="#admin.memory.get_squad_name" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="py class">
+<dt id="admin.memory.rbTreeBase">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">rbTreeBase</code><a class="headerlink" href="#admin.memory.rbTreeBase" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+<dl class="py class">
+<dt id="admin.memory.rbTreeNode">
+<em class="property">class </em><code class="sig-prename descclassname">admin.memory.</code><code class="sig-name descname">rbTreeNode</code><a class="headerlink" href="#admin.memory.rbTreeNode" title="Permalink to this definition">¶</a></dt>
+<dd><p>Structure base class</p>
+</dd></dl>
+
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">admin</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../index.html">API Reference</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2020, Pozzo for the FH2 community.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.3.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/autoapi/admin/memory/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,96 @@
+:mod:`admin.plugins.base`
+=========================
+
+.. py:module:: admin.plugins.base
+
+.. autoapi-nested-parse::
+
+   Base Plugins
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   admin.plugins.base.FH2BaseModule
+
+
+
+.. py:class:: FH2BaseModule
+
+
+
+   Base class for admin plugins, wrapping the FH2 plugin system
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   .. rubric:: Methods
+
+
+
+   ======================  ==========
+    **hook_game_start()**  Called at the start of every round  
+      **hook_game_end()**  Called at the end of every round  
+     **bf2_init(hooker)**    
+   **bf2_deinit(hooker)**    
+       **log_debug(msg)**    
+        **log_info(msg)**    
+     **log_warning(msg)**    
+       **log_error(msg)**    
+   **log_exception(msg)**    
+    **log_critical(msg)**    
+   ======================  ==========
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: log_critical(self, msg)
+
+
+   .. method:: log_debug(self, msg)
+
+
+   .. method:: log_error(self, msg)
+
+
+   .. method:: log_exception(self, msg)
+
+
+   .. method:: log_info(self, msg)
+
+
+   .. method:: log_warning(self, msg)
+
+
+   .. method:: round_end(self, _hooker, new_status=None)
+
+
+   .. method:: round_start(self, _hooker, new_status=None)
+
+
+
+.. data:: LOG
+   
+
+   
+

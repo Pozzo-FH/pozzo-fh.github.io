@@ -1,0 +1,1784 @@
+:mod:`admin.bf2_tools`
+======================
+
+.. py:module:: admin.bf2_tools
+
+.. autoapi-nested-parse::
+
+   Utilities that need the BF2 python bindings
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   admin.bf2_tools.BanListRegistry
+   admin.bf2_tools.FH2Player
+   admin.bf2_tools.InfamyTracker
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   admin.bf2_tools.add_to_banlist
+   admin.bf2_tools.admin_message
+   admin.bf2_tools.admins_online
+   admin.bf2_tools.balance_player
+   admin.bf2_tools.capture_flag
+   admin.bf2_tools.check_if_is_banned
+   admin.bf2_tools.create_object
+   admin.bf2_tools.current_map
+   admin.bf2_tools.disband_squad
+   admin.bf2_tools.find_player_by_index
+   admin.bf2_tools.find_player_by_name
+   admin.bf2_tools.game_has_bots
+   admin.bf2_tools.get_fullname
+   admin.bf2_tools.get_number_of_maps
+   admin.bf2_tools.get_object_spawner_templates
+   admin.bf2_tools.get_team_sizes
+   admin.bf2_tools.global_message
+   admin.bf2_tools.instantiate_spawner
+   admin.bf2_tools.is_internet
+   admin.bf2_tools.is_kit_or_pco
+   admin.bf2_tools.kick_player
+   admin.bf2_tools.list_controlpoints
+   admin.bf2_tools.list_object_spawners
+   admin.bf2_tools.list_object_templates
+   admin.bf2_tools.num_players
+   admin.bf2_tools.num_to_team
+   admin.bf2_tools.parse_playername
+   admin.bf2_tools.personal_message
+   admin.bf2_tools.position_infront
+   admin.bf2_tools.rcon
+   admin.bf2_tools.read_badlist
+   admin.bf2_tools.read_badusers
+   admin.bf2_tools.read_badwords
+   admin.bf2_tools.read_maplist
+   admin.bf2_tools.read_metadata
+   admin.bf2_tools.read_nextmap
+   admin.bf2_tools.remove_from_banlist
+   admin.bf2_tools.scramble_teams
+   admin.bf2_tools.set_nextmap
+   admin.bf2_tools.set_team_bleed
+   admin.bf2_tools.set_team_tickets
+   admin.bf2_tools.spawn_object
+   admin.bf2_tools.squad_members
+   admin.bf2_tools.swap_teams
+   admin.bf2_tools.team_to_num
+
+
+.. py:class:: BanListRegistry
+
+
+
+   Track banned players and write/read
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. method:: add(cls, ply)
+      :classmethod:
+
+      Add player to registry
+
+
+      :Parameters:
+
+          **ply: FH2Player**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: has_registered(cls, ply)
+      :classmethod:
+
+      Check if player is in registry
+
+
+      :Parameters:
+
+          **ply: FH2Player**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: read_registry(cls)
+      :classmethod:
+      :abstractmethod:
+
+      Read registry from file
+
+
+      :Parameters:
+
+          **fname: str**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: remove(cls, ply)
+      :classmethod:
+
+      Remove player from registry
+
+
+      :Parameters:
+
+          **ply: FH2Player**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: write_registry(cls)
+      :classmethod:
+      :abstractmethod:
+
+      Write registry to file
+
+
+      :Parameters:
+
+          **fname: str**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+
+.. py:class:: FH2Player(idx, name, key_hash, clan='')
+
+
+
+   Connected FH2Player
+
+
+   :Parameters:
+
+       **key_hash: str**
+           ..
+
+       **name: str**
+           ..
+
+       **clan: str**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+   :Attributes:
+
+       **name: str**
+           ..
+
+       **key_hash: str**
+           ..
+
+       **clan: str**
+           ..
+
+       **idx: int**
+           enumeration index. As players connect to the server they
+           are assigned playerID numbers from "0" up.
+
+       **is_alive: bool**
+           ..
+
+       **is_squadleader: bool**
+           ..
+
+       **is_in_squad: bool**
+           ..
+
+       **is_commander: bool**
+           ..
+
+       **is_admin: bool**
+           ..
+
+       **admin_level: str**
+           'high', 'mid', 'low'
+
+       **squad_number: int**
+           numerical ID of the squad the player is a member of
+
+       **team: str**
+           'axis' or 'allies'
+
+       **ip: str**
+           ..
+
+
+   ..
+       !! processed by numpydoc !!
+
+   .. attribute:: instances
+      
+
+      
+
+   .. method:: admin_level(self)
+      :property:
+
+
+   .. method:: from_bf2(cls, bf2_ply)
+      :classmethod:
+
+      Create from `bf2.playerManager.Player` instance
+
+
+      :Parameters:
+
+          **bf2_ply: bf2.playerManager.Player**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: get_position(self)
+
+
+   .. method:: get_rotation(self)
+
+
+   .. method:: ip(self)
+      :property:
+
+
+   .. method:: is_admin(self)
+      :property:
+
+
+   .. method:: is_alive(self)
+      :property:
+
+
+   .. method:: is_bot(self)
+      :property:
+
+
+   .. method:: is_commander(self)
+      :property:
+
+
+   .. method:: is_connected(self)
+      :property:
+
+
+   .. method:: is_in_majority_team(self)
+      :property:
+
+      Checks if player is in the bigger team
+
+      With a gap for uneven numbers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: is_in_squad(self)
+      :property:
+
+
+   .. method:: is_squadleader(self)
+      :property:
+
+
+   .. method:: kill(self)
+
+      Murder the player
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: mark_switched(self)
+
+
+   .. method:: move_to_allies(self)
+
+
+   .. method:: move_to_axis(self)
+
+
+   .. method:: resign(self)
+
+      Resign player from squad/commander position
+
+      Weird hack to resign by double-switching, don't ask me.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: set_team(self, team)
+
+      Move player to a team
+
+
+      :Parameters:
+
+          **team: str**
+              ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: squad_number(self)
+      :property:
+
+
+   .. method:: switch(self)
+
+      Move player to the other team
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      ..
+          !! processed by numpydoc !!
+
+
+   .. method:: team(self)
+      :property:
+
+
+
+.. py:class:: InfamyTracker
+
+
+
+   Track player infamy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. data:: LOG
+   
+
+   
+
+.. function:: add_to_banlist(player, duration)
+
+   Add player to custom banlist
+
+
+   :Parameters:
+
+       **ply: FH2Player**
+           ..
+
+       **duration: int or str**
+           duration in seconds, or "perma"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: admin_message(message, **fmtargs)
+
+   Send message to ingame admins only
+
+
+   :Parameters:
+
+       **message: str**
+           ..
+
+       **\*\*fmtargs:**
+           big, color
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: admins_online()
+
+   List all admins currently connected
+
+
+
+   :Returns:
+
+       list(str)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: balance_player(bf2_ply, protect_commander=True, protect_squadmembers=True, protect_squadleader=True)
+
+
+.. function:: capture_flag(cp, new_team)
+
+   Change control point ownership.
+
+   This does completely ignore the FH2 plugin system, beware!
+
+   :Parameters:
+
+       **cp**
+           control point object
+
+       **new_team: str**
+           axis, allies, grey
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: check_if_is_banned(player)
+
+   Check if player is on custom banlist
+
+
+   :Parameters:
+
+       **ply: FH2Player**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: create_object(template_name, position, rotation, time_to_live, team)
+
+   Create and object
+
+
+   :Parameters:
+
+       **template_name: str**
+           ..
+
+       **position: 3-tuple float**
+           ..
+
+       **rotation: 3-tuple float**
+           yaw, pitch, roll
+
+       **time_to_live: int or None**
+           ..
+
+       **team: str**
+           'axis', 'allies', 'grey', 'gray', 'white', 'neutral'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: current_map()
+
+   Current map
+
+
+
+   :Returns:
+
+       str
+           ..
+
+       #dict int->(str, int, str)
+           ..
+
+       #    idx -> name, layer, gamemode
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: disband_squad(team, squad_num)
+
+   Resign ALL squad members, destroying the squad
+
+
+   :Parameters:
+
+       **team: str**
+           ..
+
+       **squad_num: int**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: find_player_by_index(idx, return_bf2=False)
+
+   Find player by index
+
+
+   :Parameters:
+
+       **idx: int**
+           ..
+
+       **return_bf2: bool**
+           skip wrapping in FH2Player and just return
+
+   :Returns:
+
+       admin.core.FH2Player
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: find_player_by_name(query, invoker, n_print_max=4)
+
+   Find player by (partial) name
+
+
+   :Parameters:
+
+       **query: str**
+           (partial) player name, without clantag
+
+       **invoker: admin.core.Player**
+           player who executed the command
+
+       **n_print_max: int**
+           if multiple matches, print at most this many
+
+   :Returns:
+
+       admin.core.FH2Player
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: game_has_bots()
+
+   Check if gamemode with bots is enabled
+
+
+
+   :Returns:
+
+       bool
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: get_fullname(bf2_ply)
+
+   Get name + clantag of a BF2 player object
+
+
+   :Parameters:
+
+       **bf2_ply: bf2.playerManager.Player**
+           ..
+
+   :Returns:
+
+       clan, name: str, str
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: get_number_of_maps()
+
+   Count number of maps i
+
+
+
+   :Returns:
+
+       int
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: get_object_spawner_templates(obj_spawner)
+
+   Returns a list of template names spawned by objspawner
+   (BF2 object of dice.hfe.world.ObjectTemplate.ObjectSpawner type)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: get_team_sizes()
+
+   Count players in each team
+
+
+
+   :Returns:
+
+       int, int
+           n_axis, n_allies
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: global_message(message, team=None, **fmtargs)
+
+   Send ingame message
+
+
+   :Parameters:
+
+       **message: str**
+           ..
+
+       **team: str**
+           either 'allies' or 'axis'
+
+       **\*\*fmtargs:**
+           color, big
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: instantiate_spawner(spawner, pos, rot, team)
+
+   Create a spawner and immediately detele
+
+
+   :Parameters:
+
+       **spawner: str**
+           ..
+
+       **pos: 3-tuple float**
+           ..
+
+       **rot: 3-tuple float**
+           yaw, pitch, roll
+
+       **team: str**
+           'axis', 'allies', 'grey', 'gray', 'white', 'neutral'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: is_internet()
+
+   Determine if it's an "internet" game
+
+   If not, can't determine player hashes, and personal messaging won't work
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: is_kit_or_pco(templ_name)
+
+   Check if template is a kit or a PCO
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: kick_player(target)
+
+
+.. function:: list_controlpoints()
+
+
+.. function:: list_object_spawners()
+
+
+.. function:: list_object_templates()
+
+
+.. function:: num_players()
+
+   Get number of players, from engine directly
+
+
+
+   :Returns:
+
+       int
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: num_to_team(num)
+
+   Translate Team number to readable
+
+
+   :Parameters:
+
+       **num: int**
+           ..
+
+   :Returns:
+
+       str
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: parse_playername(invoker, words)
+
+   Try to find a playername from the words array
+
+
+   :Parameters:
+
+       **invoker: admin.core.FH2Player**
+           player who executed the command
+
+       **words: list(str)**
+           playername to find
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: personal_message(target, message, channel='Player', prefix='[YOU] ', **fmtargs)
+
+   Send message to target player only
+
+   If not possible to send player messages (on local games),
+   falls back to sending global message instead
+
+   :Parameters:
+
+       **target: admin.core.FH2Player**
+           ..
+
+       **message: str**
+           ..
+
+       **\*\*fmtargs:**
+           color, big
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: position_infront(player, distance=3.0)
+
+   Transform vector to unit length
+
+
+   :Parameters:
+
+       **player: FH2Player**
+           ..
+
+       **distance: float**
+           how many meters infront of the player?
+
+   :Returns:
+
+       pos: (float, float, float)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: rcon(cmd)
+
+   Call host.rcon_invoke on cleaned input
+
+
+   :Parameters:
+
+       **cmd: str**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: read_badlist(_fname='badlist.toml')
+
+   Read badlist file with bad words and users
+   Parameters
+   ----------
+   fname: str, optional
+       name of the badlist file, without path
+
+
+
+   :Returns:
+
+       bad_words, bad_users: list(str), dict(str->str)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: read_badusers(fname='badlist.toml')
+
+   Read badlist file with bad words and users
+
+
+   :Parameters:
+
+       **fname: str, optional**
+           name of the badlist file, without path
+
+   :Returns:
+
+       bad_words, bad_users: list(str), dict(str->str)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: read_badwords(fname='badlist.toml')
+
+   Read badlist file with bad words
+
+
+   :Parameters:
+
+       **fname: str, optional**
+           name of the badlist file, without path
+
+   :Returns:
+
+       bad_words: list(str)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: read_maplist()
+
+   Read maplist from server
+
+
+
+   :Returns:
+
+       dict(int: (str, str, int))
+           map number -> name, layer, gamemode
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: read_metadata(mapname)
+
+   Read the metadata from a map
+
+
+   :Parameters:
+
+       **mapname: str**
+           all lowercase, with underscores
+
+   :Returns:
+
+       dict
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: read_nextmap()
+
+   Read next map in rotation from server
+
+
+
+   :Returns:
+
+       str, int, str
+           name, layer, gamemode
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: remove_from_banlist(_player)
+
+   Remove player from custom banlist
+
+
+   :Parameters:
+
+       **ply: FH2Player**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: scramble_teams()
+
+   Assign each player to a random team
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: set_nextmap(idx, mapname, layer, gamemode='gpm_cq')
+
+   Try to set nextmap, raise if not in rotation
+
+
+   :Parameters:
+
+       **idx: int**
+           ..
+
+       **mapname: str**
+           ..
+
+       **layer: int**
+           ..
+
+       **gamemode: str**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: set_team_bleed(teamname, amount)
+
+   Set team bleedrate
+
+
+   :Parameters:
+
+       **teamname: str**
+           ..
+
+       **amount: int**
+           tickets lost per minute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: set_team_tickets(tickets_axis, tickets_allies)
+
+   Set teack tickets to desired amount
+
+
+   :Parameters:
+
+       **tickets_axis, tickets_allies: int**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: spawn_object(templ_name, pos, rot, team='grey', ttl=None)
+
+   Spawn object on invoker
+
+
+   :Parameters:
+
+       **templ_name: str**
+           ..
+
+       **pos: 3-tuple float**
+           ..
+
+       **rot: 3-tuple float**
+           yaw, pitch, roll. in engine, pitch and roll ALWAYS zero
+
+       **team: str**
+           ..
+
+       **ttl: int or None**
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: squad_members(squad_idx, teamname)
+
+   Get all members of squad #X in a team
+
+
+   :Parameters:
+
+       **squad_idx: int**
+           ..
+
+       **teamname: str**
+           ..
+
+   :Returns:
+
+       list(admin.core.FH2Player)
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: swap_teams()
+
+   Assign each player to the opposite team
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. function:: team_to_num(team)
+
+   Translate readable Team to number
+
+
+   :Parameters:
+
+       **team: str**
+           ..
+
+   :Returns:
+
+       int
+           ..
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+

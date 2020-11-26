@@ -1,0 +1,323 @@
+:mod:`admin.memory`
+===================
+
+.. py:module:: admin.memory
+
+.. autoapi-nested-parse::
+
+   Access BF2 memory
+
+   ONLY supports linux
+
+   ..
+       !! processed by numpydoc !!
+
+
+
+Module Contents
+---------------
+
+Classes
+~~~~~~~
+
+.. autoapisummary::
+
+   admin.memory.ActionBuffer
+   admin.memory.ActionBufferNode
+   admin.memory.Order
+   admin.memory.Player
+   admin.memory.PlayerManager
+   admin.memory.SquadManager
+   admin.memory.SquadManager_Squad
+   admin.memory.SquadManager_Team
+   admin.memory.rbTreeBase
+   admin.memory.rbTreeNode
+
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   admin.memory.get_squad_name
+
+
+.. py:class:: ActionBuffer
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. py:class:: ActionBufferNode
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. py:class:: Order
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. data:: PLAYER_MANAGER_PTR_PTR
+   :annotation: = 18017848
+
+   
+
+.. py:class:: Player
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. py:class:: PlayerManager
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. data:: SQUADS
+   
+
+   
+
+.. data:: SQUAD_MANAGER_PTR
+   
+
+   
+
+.. data:: SQUAD_MANAGER_PTR_PTR
+   :annotation: = 17533952
+
+   
+
+.. py:class:: SquadManager
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. py:class:: SquadManager_Squad
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. py:class:: SquadManager_Team
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. data:: TEAMS
+   
+
+   
+
+.. function:: get_squad_name(squad_id, team_id)
+
+
+.. py:class:: rbTreeBase
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
+.. py:class:: rbTreeNode
+
+
+
+   Structure base class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   ..
+       !! processed by numpydoc !!
+
+
