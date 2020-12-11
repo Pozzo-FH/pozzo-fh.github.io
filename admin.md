@@ -56,6 +56,8 @@ Example:
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Command          Usage                           Who can Run          Explanation
 -------------    ----------------------------    -----------------    ------------------------------------------------------------------------------------------
+!rules                                           everyone             Show link to server ruleset
+
 !help                                            everyone             Show available commands
                                                               
 !shownext\                                       everyone             Show next map in rotation
@@ -88,7 +90,7 @@ Command          Usage                           Who can Run          Explanatio
 !kick\           !kick PLAYER                    low-lvl Admins       Kick player
 !k
 
-!ban\            !ban PLAYER REASON            low-lvl Admins         Ban player for two weeks
+!ban\            !ban PLAYER REASON              low-lvl Admins       Ban player for two weeks
 !b
 
 !permaban\       !permaban PLAYER                low-lvl Admins       Perma-ban player 
@@ -114,6 +116,9 @@ Command          Usage                           Who can Run          Explanatio
 
 !warn\           !warn PLAYER REASON             low-lvl Admins       Warn Player IN BIG ORANGE
 !w
+
+!hist            !hist\                          low-lvl Admins       Show recent TKs, OR show recent TK and Kick summary for a player
+                 !hist PLAYER
 
 !runnext                                         mid-lvl Admins       Run next map
 
@@ -236,11 +241,23 @@ Configuration
 
 Plugins are enabled by default, see `game/gameplayPlugin.py`:
 ```python
-standard = '... BangBang BookKeeper SteamRoller Bouncer Carousel'
+plugins_admin = [
+    'BangBang',  # chat commands
+    'Carousel',  # map rotation and indici
+    'IdleTracker',  # kick afk players
+    'PlayerLogger',  # log player IDs
+    'SteamRoller',  # balance and swap/shuffle
+    'TeamKillLogger',  # log teamkills
+    'Greeter',  # message on first spawn
+    'Announcer',  # messages at regular intervals
+]
+plugins_admin_linux = [
+    'NameChecker',  # purge nazi names
+]
 ```
-BangBang and BookKeeper should be always on, SteamRoller is team
-balance/shuffling, Bouncer is autobanning nazi nicknames, Carousel
-is map rotation. 
+
+On linux servers, you can check for squad names and playernames, if they
+match a (nazi) badlist.
 
 For map rotation to work, all maps need to have a
 `meta.toml` metadata file in the level basedir (outside of the .zip
@@ -277,13 +294,15 @@ beta = true
 
 ### Configure admins
 
-Add the `admins_high`, `_low`, and `_mid` lists to the `[users]` section,
-with the hashes of the admins. Example below:
+In the `admins.toml` file, add the `admins_high`, `_low`, and `_mid`
+lists to the `[users]` section, with the hashes of the admins. Example
+below:
+
 ```toml
 [users]
 # if the admin arrays are empty, defaults to "everything is allowed"
 admins_high = [
-    "d722905f13f2e89553837ab9bbe42302",       # some user
+    "d722905f13f2e89553837ab9bbe42302",       # some very important user
 ]
 admins_mid = [
     "732753cd11d331e64867057cfdc7ecd5",       # who is this?
@@ -316,20 +335,33 @@ shuffle_on_start = false
 swap_on_start = true
 ```
 
-### Rotation
+### Map Rotation
 
-How many maps to remember when avoiding duplications
+How many maps to remember when avoiding duplications. `n_last_played`
+defines how many rounds to wait until a map can be played again.
+`n_last_categories` sets how many maps to wait until a map category
+(winter, urban, eastfront, africa) can repeat itself.
+
+The `theme` makes sure only maps from a certain map theme (cmp, finland, 
+maps with italians, ...) come on. This ignores the `n_last_categories` setting.
+
+The `favorites` list defines maps which are excluded from the 
+`n_last_categories` setting, so these maps will appear in the rotation much more frequently.
 
 ```toml
-  [maps.rotation]
+  [maps]
   n_last_played = 8             # don't repeat maps
   n_last_categories = 1         # don't repeat theatres 
                                 # (africa, winter, urban, ...)
+  theme = ""
+  favorites = []
 ```
 
 ### Auto-Ban
 
-Define forbidden words for usernames/squads, and keep a textual banlist
+Define forbidden words for usernames/squads in the `badnames.toml`: if
+anyone joins with e.g. "adolf" in the name, they get auto-banned. If you
+make a squad named "1488", you get auto-kicked.
 
 ```toml
 
@@ -338,10 +370,69 @@ words = [
   "adolf", "sieg heil", "siegheil",
   "waffen_ss", 
 ]
-
-# known offenders
-[users]
-a_nazi_user = "a_sample_hashajdhsdje1judbe1dbte"
 ```
 
+### Afk Kicking
 
+In this setting, configure the AFK autokicker and ban/kick related things.
+
+The `ban_duration` setting configures how long a temporary ban is. Usually
+set at two weeks.
+
+The AFK tracker checks every `idle_check_interval` seconds if a player has been active. Otherwise it kicks them. On the default settings, below a certain number of players however, players don't get kicked but autobalanced instead, 
+so that the server is not emptied too much.
+
+```toml
+[janitor]
+# don't start kicking AFKs unless at least X players online
+min_players_for_kick = 50
+# if min_players_for_kick has not been reached, at least balance the AFKs?
+balance_afks_before_minplayers = true
+# seconds until you get kicked/balanced
+max_idle_time = 600
+idle_check_interval = 30
+idle_yaw_threshold = 0.5
+# bantime in seconds
+# good default is two weeks: 1209600 = 60 * 60 * 24 * 14
+ban_duration = 1209600
+```
+
+### Messages
+
+Configure which messages are shown.
+
+The `welcome` line is displayed when you first spawn.
+
+The `rules` message is displayed when someone uses the ingame `!rules` command.
+
+The `announce` message list is a set of messages which are displayed
+every `announce_interval` seconds.
+
+The `show_disconnect` setting decides whether to print a line when a
+player disconnects.
+
+```toml
+
+[messages]
+# displayed on first spawn after join
+# the <PLAYER> token will be replaced with the actual player name
+# if you want to disable this, put `welcome = ""`
+welcome = "Welcome <PLAYER> to the FH2 Test Server!"
+# short line pointing to server rules website
+rules = "For Rules visit https://russianhope2.com/stats/?go=server-rules"
+# those will be displayed regularly 
+# if you want to disable these, put `announce = []`
+announce = [
+  "Join us on FH2 Discord",
+  "Check out fhmod.org for news",
+  "We love you all <3",
+  "Jean a une longue mustache honhonhon",
+  "New CMP campaign is now open!",
+  "Join the CMP campaign at cmp-gaming.com",
+]
+# if using announce, this is the interval in seconds
+announce_interval = 300
+# display message on disconnect. recommended to only disable this if another
+# "X has disconnected" print script is active in parallel
+show_disconnect = true
+```
