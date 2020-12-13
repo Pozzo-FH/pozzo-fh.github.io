@@ -387,6 +387,42 @@
 <td style="text-align: left;">Show player position and direction</td>
 </tr>
 <tr class="even">
+<td style="text-align: left;">!maplint</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">beta users</td>
+<td style="text-align: left;">Run the maplint</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!run</td>
+<td style="text-align: left;">!run SCRIPTNAME</td>
+<td style="text-align: left;">beta users</td>
+<td style="text-align: left;">Run a script</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!exec</td>
+<td style="text-align: left;">!exec COMMAND</td>
+<td style="text-align: left;">beta users</td>
+<td style="text-align: left;">Execute a rcon command</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!finish</td>
+<td style="text-align: left;">!finish TEAMNAME</td>
+<td style="text-align: left;">beta users</td>
+<td style="text-align: left;">Quickly bleed a team to death</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!startdemo</td>
+<td style="text-align: left;">!startdemo FILENAME</td>
+<td style="text-align: left;">beta users</td>
+<td style="text-align: left;">Start the battle recorder</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!stopdemo</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">beta users</td>
+<td style="text-align: left;">Stop the batte recorder</td>
+</tr>
+<tr class="even">
 <td style="text-align: left;">!tickets</td>
 <td style="text-align: left;">!tickets BOTH<br />
 !tickets AXIS ALLIES<br />
@@ -563,6 +599,7 @@
 <p>The <code>rules</code> message is displayed when someone uses the ingame <code>!rules</code> command.</p>
 <p>The <code>announce</code> message list is a set of messages which are displayed every <code>announce_interval</code> seconds.</p>
 <p>The <code>show_disconnect</code> setting decides whether to print a line when a player disconnects.</p>
+<p>The <code>show_connect</code> setting decides whether to print a line FOR ADMINS when a player connects.</p>
 <div class="sourceCode" id="cb14"><pre class="sourceCode toml"><code class="sourceCode toml"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="kw">[</span><span class="dt">messages</span><span class="kw">]</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="co"># displayed on first spawn after join</span></span>
@@ -585,6 +622,7 @@
 <span id="cb14-20"><a href="#cb14-20" aria-hidden="true" tabindex="-1"></a><span class="dt">announce_interval</span> <span class="op">=</span> <span class="dv">300</span></span>
 <span id="cb14-21"><a href="#cb14-21" aria-hidden="true" tabindex="-1"></a><span class="co"># display message on disconnect. recommended to only disable this if another</span></span>
 <span id="cb14-22"><a href="#cb14-22" aria-hidden="true" tabindex="-1"></a><span class="co"># &quot;X has disconnected&quot; print script is active in parallel</span></span>
-<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="dt">show_disconnect</span> <span class="op">=</span> <span class="cn">true</span></span></code></pre></div>
+<span id="cb14-23"><a href="#cb14-23" aria-hidden="true" tabindex="-1"></a><span class="dt">show_disconnect</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb14-24"><a href="#cb14-24" aria-hidden="true" tabindex="-1"></a><span class="dt">show_connect</span> <span class="op">=</span> <span class="cn">true</span></span></code></pre></div>
 </body>
 </html>

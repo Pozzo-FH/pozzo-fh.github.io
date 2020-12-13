@@ -156,6 +156,18 @@ Command          Usage                           Who can Run          Explanatio
 
 !coord                                           beta users           Show player position and direction 
 
+!maplint                                         beta users           Run the maplint
+
+!run             !run SCRIPTNAME                 beta users           Run a script
+
+!exec            !exec COMMAND                   beta users           Execute a rcon command
+
+!finish          !finish TEAMNAME                beta users           Quickly bleed a team to death
+
+!startdemo       !startdemo FILENAME             beta users           Start the battle recorder
+
+!stopdemo                                        beta users           Stop the batte recorder
+
 !tickets         !tickets BOTH\                  beta users           Set tickets
                  !tickets AXIS ALLIES\
                  !tickets 1000\
@@ -411,6 +423,9 @@ every `announce_interval` seconds.
 The `show_disconnect` setting decides whether to print a line when a
 player disconnects.
 
+The `show_connect` setting decides whether to print a line FOR ADMINS when a
+player connects.
+
 ```toml
 
 [messages]
@@ -435,4 +450,5 @@ announce_interval = 300
 # display message on disconnect. recommended to only disable this if another
 # "X has disconnected" print script is active in parallel
 show_disconnect = true
+show_connect = true
 ```
