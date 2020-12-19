@@ -95,7 +95,6 @@ title: Pointe du Hoc 1944 (64p)
 | sniper       | kit        | UW_PickUpSniperSpringfield      |  -49.56  |  76.741 |    8.861 |    105 | False       |      0 | 64_OS_bunkers3_DE_US_Sniper                | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | GW_PickUp_K98hZf41              | -160.323 |  81.636 | -402.349 |    108 | False       |      0 | 64_OS_farm2_DE_US_Sniper5                  | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | UW_PickUpSniperSpringfield      |  197.224 |  63.29  |   98.865 |    110 | False       |      0 | 64_OS_Cliffs3_sniper                       | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | britcommradio                   |  131.7   |  10.221 |  431.216 |    101 | False       |      0 | 64_OS_Beachbase_DE_GB_CommRadio            | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_artillery_allied      |  282.371 |  74.944 | -108.319 |    101 | True        |      0 | 64_OS_Beachbase_DE_GB_CommArtillery        | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_artillery_allied      |  282.85  |  75.159 |  -98.453 |    101 | True        |      0 | 64_OS_Beachbase_DE_GB_CommArtillery_0      | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_artillery_allied      |  283.403 |  74.748 |  -90.032 |    101 | True        |      0 | 64_OS_Beachbase_DE_GB_CommArtillery_1      | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -129,6 +128,7 @@ title: Pointe du Hoc 1944 (64p)
 | mg_nest      | static     | mg34_bipod                      |  164.446 |  50.836 |  159.723 |    104 | False       |      0 | 64_OS_bunkers2_DE_MG                       | Static Emplacement | Static MG         |
 | mg_nest      | static     | mg34_bipod                      |   -3.108 |  57.733 |  242.765 |    106 | False       |      0 | 64_OS_observationbunker_MG2                | Static Emplacement | Static MG         |
 | mg_nest      | static     | mg42_bipod                      |  -10.544 |  53.494 |  245.612 |    106 | False       |      0 | 64_OS_observationbunker_MG                 | Static Emplacement | Static MG         |
+| radio        | static     | britcommradio                   |  131.7   |  10.221 |  431.216 |    101 | False       |      0 | 64_OS_Beachbase_DE_GB_CommRadio            | Static Emplacement | Radio             |
 | car          | vehicle    | civcoupe_green                  | -158.129 |  78.446 | -369.326 |    108 | False       |      0 | 64_OS_farm2_DE_CivilianCabrio              | Vehicle            | Car               |
 | car          | vehicle    | civtruck                        | -143.978 |  72.473 | -189.888 |    107 | False       |      0 | 64_OS_farm1_DE_US_CivilianTruck            | Vehicle            | Car               |
 | civilian     | vehicle    | redtractor                      | -160.259 |  80.419 | -389.915 |    108 | False       |      0 | 64_OS_farm2_DE_Tractor                     | Vehicle            | Civilian Vehicle  |

@@ -49,11 +49,6 @@ title: Siege of Giarabub 1941 (32p)
 | mg_dep       | kit        | BA_PickUpVickers303         |  -24.471 |  39.681 |  128.204 |    205 | False       |      0 | CP_32_giarabub_oasis_DE_GB_HSupport        | Pickup Kit         | Deployable MG     |
 | sniper       | kit        | IA_PickUpSniperPattern      |   -1.631 |  53.218 |  -14.184 |    201 | False       |      0 | CP_32_giarabub_mosque_Sniper               | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4          |  -90.412 |  27.708 |  270.147 |    206 | False       |      0 | CP_32_giarabub_AlliedHQ_DE_GB_Sniper       | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | gercommradio                |   32.817 |  41.677 |  -38.109 |    201 | False       |      0 | CP_32_giarabub_mosque_CommRadio            | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio                | -115.317 |  39.371 |  -49.487 |    202 | False       |      0 | CP_32_giarabub_barracks_CommRadio          | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio                |  160.518 |  36.886 | -105.964 |    203 | False       |      0 | CP_32_giarabub_east_0                      | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio                |   54.99  |  41.301 | -141.978 |    204 | False       |      0 | CP_32_giarabub_village_CommRadio           | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio               |   86.701 |  42.68  |  260.359 |    206 | False       |      0 | CP_32_giarabub_AlliedHQ_DE_GB_CommRadio    | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_mortar_allied     |  101.852 |  32.989 | -477.433 |    201 | True        |      0 | CP_32_giarabub_mosque_CommMortar           | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied     |  103.958 |  32.983 | -478.916 |    201 | True        |      0 | CP_32_giarabub_mosque_0                    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied     |  -64.272 |  26.912 |  431.916 |    206 | True        |      0 | CP_32_giarabub_AlliedHQ_DE_GB_CommMortar   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -73,4 +68,9 @@ title: Siege of Giarabub 1941 (32p)
 | mg_nest      | static     | bredam37_bipod              |   -7.746 |  40.039 |  166.341 |    205 | False       |      0 | CP_32_giarabub_oasis_DE_GB_MedMG_0         | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod              |  -31.954 |  39.941 |  135.404 |    205 | False       |      0 | CP_32_giarabub_oasis_DE_GB_MedMG_1         | Static Emplacement | Static MG         |
 | mg_nest      | static     | lewis_bipod                 |  -20.011 |  39.873 |  124.738 |    205 | False       |      0 | CP_32_giarabub_oasis_DE_GB_LightMG         | Static Emplacement | Static MG         |
+| radio        | static     | gercommradio                |   32.817 |  41.677 |  -38.109 |    201 | False       |      0 | CP_32_giarabub_mosque_CommRadio            | Static Emplacement | Radio             |
+| radio        | static     | gercommradio                | -115.317 |  39.371 |  -49.487 |    202 | False       |      0 | CP_32_giarabub_barracks_CommRadio          | Static Emplacement | Radio             |
+| radio        | static     | gercommradio                |  160.518 |  36.886 | -105.964 |    203 | False       |      0 | CP_32_giarabub_east_0                      | Static Emplacement | Radio             |
+| radio        | static     | gercommradio                |   54.99  |  41.301 | -141.978 |    204 | False       |      0 | CP_32_giarabub_village_CommRadio           | Static Emplacement | Radio             |
+| radio        | static     | britcommradio               |   86.701 |  42.68  |  260.359 |    206 | False       |      0 | CP_32_giarabub_AlliedHQ_DE_GB_CommRadio    | Static Emplacement | Radio             |
 

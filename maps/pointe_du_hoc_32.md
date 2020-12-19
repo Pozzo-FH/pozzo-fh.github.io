@@ -86,7 +86,6 @@ title: Pointe du Hoc 1944 (32p)
 | zooka        | kit        | UW_PickUpBazooka            | -132.187 |  73.063 | -203.918 |    205 | False       |      0 | 32_OS_farm1_DE_US_AT                             | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | UW_PickUpBazooka            |  -59.377 |  72.763 |  -44.203 |    203 | False       |      0 | 32_OS_bunkers3_DE_US_AT                          | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | UW_PickUpBazooka            |  -67.112 |  71.502 |   96.398 |    201 | False       |      0 | 32_OS_bunkers1_DE_US_AT                          | Pickup Kit         | HEAT Thrower      |
-| misc         | noidea     | gercommradio                | -137.774 |  78.306 | -357.177 |    206 | False       |      0 | 32_OS_farm2_DE_GB_CommRadio                      | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_mortar_allied     |  225.76  |  73.383 | -215.351 |    206 | True        |      0 | 32_OS_farm2_DE_GB_CommMortar                     | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied     |  226.521 |  73.445 | -208.992 |    206 | True        |      0 | 32_OS_farm2_DE_GB_CommMortar_0                   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_smoke_allied      |  225.961 |  73.395 | -212.105 |    206 | True        |      0 | 32_OS_farm2_DE_GB_CommSmoke                      | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -106,6 +105,7 @@ title: Pointe du Hoc 1944 (32p)
 | mg_nest      | static     | mg34_bipod                  | -115.62  |  72.847 | -172.184 |    205 | False       |      0 | 32_OS_farm1_MG2                                  | Static Emplacement | Static MG         |
 | mg_nest      | static     | mg42_bipod                  | -166.927 |  85.039 | -386.916 |    206 | False       |      0 | 32_OS_farm2_MG                                   | Static Emplacement | Static MG         |
 | mg_nest      | static     | mg42_lafette                | -126.339 |  76.025 | -165.902 |    205 | False       |      0 | 32_OS_farm1_DE_GB_LightMG                        | Static Emplacement | Static MG         |
+| radio        | static     | gercommradio                | -137.774 |  78.306 | -357.177 |    206 | False       |      0 | 32_OS_farm2_DE_GB_CommRadio                      | Static Emplacement | Radio             |
 | apc          | vehicle    | sdkfz251_d                  | -143.376 |  72.436 | -189.55  |    205 | False       |      0 | 32_OS_farm1_CivilianTruck                        | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_d                  | -161.541 |  78.616 | -367.617 |    206 | False       |      0 | 32_OS_farm2_DE_US_ArmCar                         | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_d                  | -133.359 |  80.701 | -404.072 |    206 | False       |      0 | 32_OS_farm2_DE_US_ArmCar_0                       | Vehicle            | APC               |

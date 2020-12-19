@@ -82,8 +82,6 @@ title: Bastogne (64p)
 | zooka        | kit        | UW_PickUpBazookaM9         |   334.687 | 143.361 |  230.379 |    102 | False       |      0 | conq_64_mageret_DE_US_Antitank_0               | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | UW_PickUpBazookaM9         |   341.632 | 151.859 | -342.528 |    101 | False       |      0 | conq_64_wardin_DE_US_Antitank_0                | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | UW_PickUpBazookaM9         |  -679.214 | 140.325 |  -77.721 |    109 | False       |      0 | conq_64_bastogne_outskirts_0_DE_US_Antitank    | Pickup Kit         | HEAT Thrower      |
-| misc         | noidea     | britcommradio              |  -126.07  | 139.143 |   -6.429 |    105 | False       |      0 | conq_64_mont_radio                             | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio              |  -682.01  | 140.888 |   80.316 |    103 | False       |      0 | conq_64_bastogne_trainstation_radio            | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | usair_c47_flyover          | -2257.82  | 256.538 | -669.632 |      1 | False       |      0 | conq_64_allied_airsupport_flyover              | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | usair_c47_flyover          | -1717.61  | 216.028 |  131.838 |      1 | False       |      0 | conq_64_allied_airsupport_0                    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | usair_c47_flyover          | -1702.26  | 219.484 |   56.93  |      1 | False       |      0 | conq_64_allied_airsupport_1                    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -128,6 +126,8 @@ title: Bastogne (64p)
 | pak          | static     | 76mm_m5_atgun_static_win   |  -663.575 | 142.079 |  -61.327 |    109 | False       |      0 | conq_64_bastogne_trainstation_76mm_0           | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 57mm_m1_atgun_win          |  -587.105 | 138.323 |   22.125 |    103 | False       |      0 | conq_64_bastogne_trainstation_57mm             | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 57mm_m1_atgun_win          |  -703.636 | 137.624 | -117.099 |    109 | False       |      0 | conq_64_bastogne_outskirts_0_57mm              | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | britcommradio              |  -126.07  | 139.143 |   -6.429 |    105 | False       |      0 | conq_64_mont_radio                             | Static Emplacement | Radio             |
+| radio        | static     | britcommradio              |  -682.01  | 140.888 |   80.316 |    103 | False       |      0 | conq_64_bastogne_trainstation_radio            | Static Emplacement | Radio             |
 | apc          | vehicle    | sdkfz251_d_win             |   740.537 | 112.152 |  134.193 |      1 | False       |      0 | conq_64_axis_reinforcements_hanomag            | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_d_win             |   558.501 | 142.56  |    9.819 |      1 | False       |      0 | conq_64_lehr_hanomag                           | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_d_win             |   583.721 | 135.812 |  -20.288 |      1 | False       |      0 | conq_64_lehr_hanomag_0                         | Vehicle            | APC               |

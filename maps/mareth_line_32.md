@@ -46,8 +46,6 @@ title: Mareth Line 1943 (32p)
 | commando     | kit        | BA_PickUpCommandoTommyD | -276.387 |  24.821 | 184.179 |    301 | False       |      0 | CP_32_mareth_Mareth_Commando                 | Pickup Kit         | Commando Kit      |
 | sniper       | kit        | BA_PickUpSniperNo4      | -274.192 |  24.469 | 179.914 |    301 | False       |      0 | CP_32_mareth_Mareth_Sniper                   | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | GA_PickUpSniperK98      | -521.849 |  45.452 |   5.118 |    303 | False       |      0 | CP_32_mareth_Mosque_Sniper                   | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | britcommradio           | -218.571 |  25     | 225.927 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_CommRadio          | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio            | -776.104 |  76.356 | 157.227 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_CommRadio         | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_mortar_allied |  133.099 |   9.256 | 313.974 |    301 | True        |      0 | CP_32_mareth_Mareth_DE_GB_CommMortar         | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied |  132.667 |   9.015 | 319.49  |    301 | True        |      0 | CP_32_mareth_Mareth_DE_GB_CommMortar_0       | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied | -990.354 | 104.365 | 360.679 |    302 | True        |      0 | CP_32_mareth_Matmata_DE_GB_CommMortar        | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -67,6 +65,8 @@ title: Mareth Line 1943 (32p)
 | pak          | static     | pak40_static_ws         | -771.042 |  76.409 | 205.672 |    302 | False       |      0 | CP_32_mareth_Matmata_11                      | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak40_static_ws         | -446.224 |  34.823 |  67.941 |    303 | False       |      0 | CP_32_mareth_Mosque_1_1                      | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak40_ws                | -777.403 |  76.285 | 183.394 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_LightArtillery    | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | britcommradio           | -218.571 |  25     | 225.927 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_CommRadio          | Static Emplacement | Radio             |
+| radio        | static     | gercommradio            | -776.104 |  76.356 | 157.227 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_CommRadio         | Static Emplacement | Radio             |
 | apc          | vehicle    | universalcarrier_bren   | -745.913 |  75.527 | 158.724 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_PersonelCarrier2  | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_bren   | -232.428 |  25.06  | 255.23  |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_PersonelCarrier2   | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_bren   | -232.149 |  25.061 | 250.647 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_PersonelCarrier2_0 | Vehicle            | APC               |

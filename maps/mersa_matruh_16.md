@@ -38,10 +38,6 @@ title: Mersa Matruh 1942 (16p)
 | ammo_crate   | ammo_crate | ammo_crate              | -202.094 | 104.676 | -83.148 |      0 | False       |      0 | ammo_crate_8                            | Static Ammo Crate  | Static Ammo Crate |
 | sniper       | kit        | BA_PickUpSniperNo4      |  -32.415 |  44.51  | 656.629 |    201 | False       |      0 | CP_16_MM_West_Matruh_DE_GB_Sniper       | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4      |  513.568 |  43.531 | 724.284 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_Sniper       | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | britcommradio           |  510.192 |  43.396 | 720.214 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_CommRadio    | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio           |  294.167 |  46.326 | 657.482 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_CommRadio_0  | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio           |  187.129 |  44.585 | 747.247 |    201 | False       |      0 | CP_16_MM_Mosquee_DE_GB_CommRadio        | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio           |  -25.152 |  43.406 | 683.866 |    201 | False       |      0 | CP_16_MM_West_Matruh_DE_GB_CommRadio    | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_mortar_allied | -292.93  |  63.304 | 361.107 |    201 | True        |      0 | CP_16_MM_West_Matruh_DE_GB_CommMortar   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied | -286.762 |  63.456 | 355.845 |    201 | True        |      0 | CP_16_MM_West_Matruh_DE_GB_CommMortar_0 | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied | -279.578 |  63.267 | 349.624 |    201 | True        |      0 | CP_16_MM_West_Matruh_DE_GB_CommMortar_1 | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -54,4 +50,8 @@ title: Mersa Matruh 1942 (16p)
 | mg_nest      | static     | mg34_bipod              |   67.653 |  44.312 | 717.865 |    201 | False       |      0 | CP_16_MM_West_Matruh_DE_GB_LightMG      | Static Emplacement | Static MG         |
 | mg_nest      | static     | lewis_bipod             |  456.313 |  46.306 | 770.375 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_LightMG      | Static Emplacement | Static MG         |
 | mg_nest      | static     | lewis_bipod             |  286.235 |  45.398 | 755.092 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_LightMG_0    | Static Emplacement | Static MG         |
+| radio        | static     | britcommradio           |  510.192 |  43.396 | 720.214 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_CommRadio    | Static Emplacement | Radio             |
+| radio        | static     | britcommradio           |  294.167 |  46.326 | 657.482 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_CommRadio_0  | Static Emplacement | Radio             |
+| radio        | static     | britcommradio           |  187.129 |  44.585 | 747.247 |    201 | False       |      0 | CP_16_MM_Mosquee_DE_GB_CommRadio        | Static Emplacement | Radio             |
+| radio        | static     | britcommradio           |  -25.152 |  43.406 | 683.866 |    201 | False       |      0 | CP_16_MM_West_Matruh_DE_GB_CommRadio    | Static Emplacement | Radio             |
 

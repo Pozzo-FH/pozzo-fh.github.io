@@ -48,31 +48,31 @@ title: Operation Hyacinth 1942 (64p)
 | sniper       | kit        | IA_PickUpSniperPattern    |  291.456 |  26.775 | 235.748 |      9 | False       |      0 | CP_64_Hyacinth_Barce_Sniper           | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4        | -306.828 |  14.946 | 180.468 |    201 | False       |      0 | CP_64_Hyacinth_LRDG_Sniper            | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | IA_PickUpSniperPattern    |  199.508 |  19.699 |  30.986 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_Sniper        | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | gercommradio              |  205.779 |  17.58  | 322.445 |      3 | False       |      0 | CP_64_Hyacinth_Station_CommRadio1     | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio             | -300.911 |  14.325 | 208.697 |    201 | False       |      0 | CP_64_Hyacinth_LRDG_CommRadio1        | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio             | -312.916 |  16.099 | 234.512 |    201 | False       |      0 | CP_64_Hyacinth_LRDG_CommRadio2        | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio              |  334.216 |  15.138 | 316.029 |      9 | False       |      0 | CP_64_Hyacinth_Barce_CommRadio1       | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | misc         | noidea     | spotlight                 |  347.486 |  23.687 |  45.843 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_Spotlight1    | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | misc         | noidea     | spotlight                 |  220.242 |  25.21  |  35.57  |      1 | False       |      0 | CP_64_Hyacinth_Airfield_Spotlight2    | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | misc         | noidea     | spotlight                 |   54.693 |  23.052 | 184.554 |    202 | False       |      0 | CP_64_Hyacinth_Forward_Spotlight1     | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | hqradio1                  |  302.725 |  18.216 | 332.583 |      9 | False       |      0 | CP_64_Hyacinth_Barce_RadioObj1        | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | hqradio2                  |  314.928 |  15.286 | 260.364 |      9 | False       |      0 | CP_64_Hyacinth_Barce_RadioObj2        | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio              |  253.245 |  24.891 | 240.11  |      9 | False       |      0 | CP_64_Hyacinth_Barce_CommRadio2       | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | hqradio1                  |  271.961 |  20.044 | 299.438 |      9 | False       |      0 | CP_64_Hyacinth_Barce_RadioObj3        | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | hqradio1                  |  254.45  |  24.842 | 236.023 |      9 | False       |      0 | CP_64_Hyacinth_Barce_RadioObj4        | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | mc202_objective           |  172.162 |  18.785 |  19.192 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_Objective1    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | mc202_objective           |  197.797 |  18.085 |   9.385 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_Objective2    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | mc202_objective           |  352.695 |  16.102 |  12.276 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_Objective3    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | mc202_objective           |  276.848 |  18.58  | -33.336 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_Objective4    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | mc202_objective           |  369.802 |  17.38  |  31.249 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_Objective5    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | mc202_objective           |  291.952 |  18.564 | -36.607 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_Objective6    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | oldradioaxis              |  257.008 |  22.733 | 237.058 |      9 | False       |      0 | CP_64_Hyacinth_Barce_OldRadio         | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | mg_nest      | static     | bredam37_bipod            |   62.937 |  14.916 | 171.158 |    202 | False       |      0 | CP_64_Hyacinth_Forward_mg             | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod            |  217.734 |  18.124 |  35.419 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_MG1           | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod            |  262.089 |  25.627 | 240.921 |      9 | False       |      0 | CP_64_Hyacinth_Barce_MG1              | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod            |  292.249 |  19.788 | 277.809 |      9 | False       |      0 | CP_64_Hyacinth_Barce_MG2              | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod            |  333.795 |  17.568 |  38.428 |      1 | False       |      0 | CP_64_Hyacinth_Airfield_MG2           | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod            |  112.432 |  17.314 | 256.721 |      3 | False       |      0 | CP_64_Hyacinth_Station_MG1            | Static Emplacement | Static MG         |
+| radio        | static     | gercommradio              |  205.779 |  17.58  | 322.445 |      3 | False       |      0 | CP_64_Hyacinth_Station_CommRadio1     | Static Emplacement | Radio             |
+| radio        | static     | britcommradio             | -300.911 |  14.325 | 208.697 |    201 | False       |      0 | CP_64_Hyacinth_LRDG_CommRadio1        | Static Emplacement | Radio             |
+| radio        | static     | britcommradio             | -312.916 |  16.099 | 234.512 |    201 | False       |      0 | CP_64_Hyacinth_LRDG_CommRadio2        | Static Emplacement | Radio             |
+| radio        | static     | gercommradio              |  334.216 |  15.138 | 316.029 |      9 | False       |      0 | CP_64_Hyacinth_Barce_CommRadio1       | Static Emplacement | Radio             |
+| radio        | static     | oldradioaxis              |  257.008 |  22.733 | 237.058 |      9 | False       |      0 | CP_64_Hyacinth_Barce_OldRadio         | Static Emplacement | Radio             |
+| radio        | static     | hqradio1                  |  302.725 |  18.216 | 332.583 |      9 | False       |      0 | CP_64_Hyacinth_Barce_RadioObj1        | Static Emplacement | Radio             |
+| radio        | static     | hqradio2                  |  314.928 |  15.286 | 260.364 |      9 | False       |      0 | CP_64_Hyacinth_Barce_RadioObj2        | Static Emplacement | Radio             |
+| radio        | static     | gercommradio              |  253.245 |  24.891 | 240.11  |      9 | False       |      0 | CP_64_Hyacinth_Barce_CommRadio2       | Static Emplacement | Radio             |
+| radio        | static     | hqradio1                  |  271.961 |  20.044 | 299.438 |      9 | False       |      0 | CP_64_Hyacinth_Barce_RadioObj3        | Static Emplacement | Radio             |
+| radio        | static     | hqradio1                  |  254.45  |  24.842 | 236.023 |      9 | False       |      0 | CP_64_Hyacinth_Barce_RadioObj4        | Static Emplacement | Radio             |
 | car          | vehicle    | fiat626                   |  160.892 |  16.367 | 296.341 |      3 | False       |      0 | CP_64_Hyacinth_Station_Truck          | Vehicle            | Car               |
 | car          | vehicle    | chevy30cwt                | -344.414 |  14.698 | 231.165 |    201 | True        |      0 | CP_64_Hyacinth_LRDG_Chevy1            | Vehicle            | Car               |
 | car          | vehicle    | chevy30cwt                | -333.81  |  13.994 | 192.026 |    201 | True        |      0 | CP_64_Hyacinth_LRDG_Chevy2            | Vehicle            | Car               |

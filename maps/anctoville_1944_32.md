@@ -52,10 +52,6 @@ title: Anctoville 1944 (32p)
 | sniper       | kit        | BW_PickUpSniperNo4           | -239.492 |  25.261 |  -14.302 |    201 | False       |      0 | CP_32_Ancto_OBJ_allied_base_6          | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | GW_PickUpSniperK98           |  165.497 |  36.106 |  175.151 |    203 | False       |      0 | CP_32_Ancto_OBJ_sector_B_sniper        | Pickup Kit         | Sniper Kit        |
 | zooka        | kit        | BW_PickUpAntitankPiat        | -237.028 |  25.774 |   -8.853 |    201 | False       |      0 | CP_32_Ancto_OBJ_allied_base_1          | Pickup Kit         | HEAT Thrower      |
-| misc         | noidea     | hqradio2                     |   37.947 |  35.186 |   21.702 |    203 | False       |      0 | CP_32_Ancto_OBJ_sector_B_obj_0         | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | hqradio2                     |  -12.332 |  27.069 |   86.622 |    203 | False       |      0 | CP_32_Ancto_OBJ_sector_B_obj_2         | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | hqradio1                     |   53.143 |  27.462 | -100.845 |    204 | False       |      0 | CP_32_Ancto_OBJ_sector_C_obj2          | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | hqradio1                     |  100.072 |  23.695 |  -23.314 |    204 | False       |      0 | CP_32_Ancto_OBJ_sector_C_obj_0         | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | Objective_belgian_gate       | -205.7   |  27.837 |  129.889 |    202 | False       |      0 | CP_32_Ancto_OBJ_sector_A_obj           | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | Objective_belgian_gate       |  -91.351 |  25.188 |   31.173 |    202 | False       |      0 | CP_32_Ancto_OBJ_sector_A_obj_0         | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | Objective_belgian_gate       | -148.636 |  25.116 |   27.756 |    202 | False       |      0 | CP_32_Ancto_OBJ_sector_A_obj_1         | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -75,6 +71,10 @@ title: Anctoville 1944 (32p)
 | pak          | static     | pak40                        |   36.356 |  28.978 |  123.061 |    203 | False       |      0 | CP_32_Ancto_OBJ_sector_B_pak           | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak40                        |  135.201 |  20.935 |  -78.221 |    204 | False       |      0 | CP_32_Ancto_OBJ_sector_C_pak           | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak40                        |  193.32  |  35.19  |  156.129 |    205 | False       |      0 | CP_32_Ancto_OBJ_sector_D_pak           | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | hqradio2                     |   37.947 |  35.186 |   21.702 |    203 | False       |      0 | CP_32_Ancto_OBJ_sector_B_obj_0         | Static Emplacement | Radio             |
+| radio        | static     | hqradio2                     |  -12.332 |  27.069 |   86.622 |    203 | False       |      0 | CP_32_Ancto_OBJ_sector_B_obj_2         | Static Emplacement | Radio             |
+| radio        | static     | hqradio1                     |   53.143 |  27.462 | -100.845 |    204 | False       |      0 | CP_32_Ancto_OBJ_sector_C_obj2          | Static Emplacement | Radio             |
+| radio        | static     | hqradio1                     |  100.072 |  23.695 |  -23.314 |    204 | False       |      0 | CP_32_Ancto_OBJ_sector_C_obj_0         | Static Emplacement | Radio             |
 | apc          | vehicle    | m5a1_halftrack               | -285.902 |  24.905 |    0.184 |    202 | False       |      0 | CP_32_Ancto_OBJ_sector_A_apc           | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_france_bren | -295.825 |  24.9   |   -0.738 |    201 | False       |      2 | CP_32_Ancto_OBJ_allied_base_           | Vehicle            | APC               |
 | car          | vehicle    | opelblitz_fr                 |  252.378 |  23.195 |  -17.37  |    205 | False       |      0 | CP_32_Ancto_OBJ_sector_D_truck         | Vehicle            | Car               |

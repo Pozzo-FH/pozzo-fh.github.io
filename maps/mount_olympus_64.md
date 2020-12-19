@@ -76,8 +76,6 @@ title: Mount Olympus 1941 (64p)
 | sniper       | kit        | BA_PickUpSniperNo4          | -307.071 |  65.235 | -205.644 |    107 | False       |      0 | CP_64_Olymp_monastery_Sniper                | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4          | -253.695 |  65.409 | -191.946 |    107 | False       |      0 | CP_64_Olymp_monastery_sniper1               | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4          | -150.828 |  37.643 |   12.056 |    107 | False       |      0 | CP_64_Olymp_monastery_sniper2               | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | britcommradio               |  291.665 |  18.87  | -497.888 |      1 | False       |      0 | CP_64_Olymp_tempi_valley_CommRadio          | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio               | -142.97  |  18.647 |  387.988 |    102 | False       |      0 | CP_64_Olymp_litochoro_CommRadio             | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_smoke_axis        | -532.409 |  39.185 |  997.056 |    102 | True        |      0 | CP_64_Olymp_litochoro_CommSmoke             | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_smoke_axis        | -525.814 |  38.424 |  996.557 |    102 | True        |      0 | CP_64_Olymp_litochoro_0_10                  | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_smoke_allied      | -527.91  |  38.244 |  992.775 |    102 | True        |      0 | CP_64_Olymp_litochoro_6_0                   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -107,6 +105,8 @@ title: Mount Olympus 1941 (64p)
 | pak          | static     | pak35_greece                | -117.334 |  18.143 |  359.539 |    103 | False       |      0 | CP_64_Olymp_leptokaria_LightArtillery2      | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 2pdr                        | -266.994 |  59.54  | -180.384 |    107 | False       |      0 | CP_64_Olymp_monastery_0_6                   | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 2pdr                        | -238.938 |  61.132 | -260.454 |    107 | False       |      0 | CP_64_Olymp_monastery_2_0                   | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | britcommradio               |  291.665 |  18.87  | -497.888 |      1 | False       |      0 | CP_64_Olymp_tempi_valley_CommRadio          | Static Emplacement | Radio             |
+| radio        | static     | britcommradio               | -142.97  |  18.647 |  387.988 |    102 | False       |      0 | CP_64_Olymp_litochoro_CommRadio             | Static Emplacement | Radio             |
 | apc          | vehicle    | universalcarrier_bren       |  311.865 |  17.613 | -595.016 |      1 | False       |      0 | CP_64_Olymp_tempi_valley_Car                | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_1                  | -120.584 |  17.342 |  424.786 |    102 | False       |      0 | CP_64_Olymp_litochoro_2_0                   | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_bren       |  275.405 |  17.662 | -476.57  |      1 | False       |      0 | CP_64_Olymp_tempi_valley_2                  | Vehicle            | APC               |

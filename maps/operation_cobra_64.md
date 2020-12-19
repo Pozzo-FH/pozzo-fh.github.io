@@ -87,8 +87,6 @@ title: Operation Cobra 1944 (64p)
 | sniper       | kit        | UW_PickUpSniperSpringfield  | -607.665 |   9.389 |  299.309 |     10 | False       |      0 | CP_64_cobra_Hebecrevonchurch_kitdesthouse   | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | GW_PickUpSniperK98_GWood    | -612.941 |  23.058 | -541.825 |      5 | False       |      0 | CP_64_cobra_germanbase_sniper_0             | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | UW_PickUpSniperSpringfield  |  681.984 |  27.132 |  735.23  |      1 | False       |      0 | CP_64_cobra_alliedbase_sniper2              | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | gercommradio                | -596.774 |   9.002 |  356.416 |     10 | False       |      0 | CP_64_cobra_Hebecrevonchurch_comandradio    | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio               |  790.821 |  24.851 |  771.721 |      1 | False       |      0 | CP_64_cobra_alliedbase_britradio            | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     |                             |  659.653 |  27.091 |  737.068 |      1 | False       |      0 | CP_64_cobra_alliedbase_greasegun1           | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | arty         | static     | m2a1_howitzer_105mm         |  627.933 |  26.252 |  732.251 |      1 | False       |      0 | CP_64_cobra_alliedbase_arty2                | Static Emplacement | Artillery         |
 | flak         | static     | flak18_fr                   | -587.781 |  25.089 | -462.766 |      5 | False       |      0 | CP_64_cobra_germanbase_88                   | Static Emplacement | Anti-aircraft Gun |
@@ -117,6 +115,8 @@ title: Operation Cobra 1944 (64p)
 | pak          | static     | pak40_static                | -692.955 |   3.01  |  207.18  |      9 | False       |      0 | CP_64_cobra_Hebecrevonairfield_AT           | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak38_static_fr             | -387.444 |  26.353 |  518.497 |    104 | False       |      0 | CP_64_cobra_crossroad_pak                   | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak40_static                |   65.366 |   4.541 |  686.604 |      8 | False       |      0 | CP_64_cobra_watermill_pak                   | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | gercommradio                | -596.774 |   9.002 |  356.416 |     10 | False       |      0 | CP_64_cobra_Hebecrevonchurch_comandradio    | Static Emplacement | Radio             |
+| radio        | static     | britcommradio               |  790.821 |  24.851 |  771.721 |      1 | False       |      0 | CP_64_cobra_alliedbase_britradio            | Static Emplacement | Radio             |
 | apc          | vehicle    | sdkfz7_camo                 | -373.056 |  25     |  697.716 |    104 | False       |      0 | CP_64_cobra_crossroad_apc                   | Vehicle            | APC               |
 | car          | vehicle    | opelblitz_fr_slats          | -682.821 |  25     | -559.352 |      5 | False       |      0 | CP_64_cobra_germanbase_opel2                | Vehicle            | Car               |
 | car          | vehicle    | kettenkrad_fr               | -600.193 |   2.487 |  305.779 |     10 | False       |      0 | CP_64_cobra_Hebecrevonchurch_kettkrad       | Vehicle            | Car               |

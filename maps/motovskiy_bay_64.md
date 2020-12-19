@@ -68,7 +68,6 @@ title: Motovskiy Bay (64p)
 | sniper       | kit        | RE_PickUpSniperSVT40     |  222.232 |  54.941 | 431.484 |    105 | False       |      0 | CP_64_motovskiybay_herzogstein_sniper           | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | RE_PickUpSniperSVT40     |  662.597 |  26.457 | 336.374 |    106 | False       |      0 | CP_64_motovskiybay_alliedmain_sniper            | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | RE_PickUpSniperBramit    |  675.262 |  26.478 | 495.915 |    106 | False       |      0 | CP_64_motovskiybay_alliedmain_sniper2           | Pickup Kit         | Sniper Kit        |
-| noidea       | noidea     | oldradioallied           |  149.192 |  44.413 | 198.874 |    103 | False       |      0 | CP_64_motovskiybay_hill1723_radio               | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | mg_nest      | static     | maxim_mg                 | -236.824 |  59.094 |  16.215 |    101 | False       |      0 | CP_64_motovskiybay_obersteiner_maxim            | Static Emplacement | Static MG         |
 | mg_nest      | static     | dp28_bipod               |   38.888 |  28.76  | -30.471 |    102 | False       |      0 | CP_64_motovskiybay_hill70_dp                    | Static Emplacement | Static MG         |
 | mg_nest      | static     | maxim_mg                 |   91.241 |  52.297 | 186.758 |    103 | False       |      0 | CP_64_motovskiybay_hill1723_maxim               | Static Emplacement | Static MG         |
@@ -76,4 +75,5 @@ title: Motovskiy Bay (64p)
 | pak          | static     | pak35_arctic             |  -22.02  |  53.799 | 630.863 |    107 | False       |      0 | CP_64_motovskiybay_germanmainb_atgun            | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | m1937_45mm_inf           |  655.244 |  25.961 | 337.815 |    106 | False       |      0 | CP_64_motovskiybay_alliedmain_atgun             | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | m1937_45mm_inf           |  320.545 |  26.984 | 232.094 |    104 | False       |      0 | CP_64_motovskiybay_landebucht_atgun             | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | oldradioallied           |  149.192 |  44.413 | 198.874 |    103 | False       |      0 | CP_64_motovskiybay_hill1723_radio               | Static Emplacement | Radio             |
 

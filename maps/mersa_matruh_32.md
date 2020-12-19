@@ -52,10 +52,6 @@ title: Mersa Matruh 1942 (32p)
 | mg           | kit        | GA_PickUpSupportMG34    |  316.85  |  56.922 | 380.72  |    306 | False       |      0 | 32_MM_Station_DE_GB_Support_0            | Pickup Kit         | MG Kit            |
 | sniper       | kit        | BA_PickUpSniperNo4      |  215.339 |  60.943 | 722.922 |    301 | False       |      0 | 32_MM_Matruh_Sniper                      | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | GA_PickUpSniperK98      |  310.399 |  56.922 | 379.672 |    306 | False       |      0 | 32_MM_Station_DE_GB_Sniper               | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | britcommradio           |  187.129 |  44.585 | 747.247 |    301 | False       |      0 | 32_MM_Matruh_CommRadio                   | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio           |  -25.152 |  43.406 | 683.866 |    305 | False       |      0 | 32_MM_West_Matruh_CommRadio              | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio            |  310.141 |  56.927 | 377.197 |    306 | False       |      0 | 32_MM_Station_CommRadio                  | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio           |  510.192 |  43.396 | 720.214 |    307 | False       |      0 | 32_MM_East_Matruh_CommRadio              | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_mortar_allied |  432.116 |  81.418 | 100.396 |    306 | True        |      0 | 32_MM_HQ_CommArtillery                   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied |  427.084 |  81.803 |  99.81  |    306 | True        |      0 | 32_MM_HQ_0_2                             | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied |  421.857 |  82.044 | 100.129 |    306 | True        |      0 | 32_MM_HQ_1_1                             | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -79,6 +75,10 @@ title: Mersa Matruh 1942 (32p)
 | pak          | static     | 6pdr                    |  205.404 |  46.217 | 770.302 |    301 | False       |      0 | 32_MM_Matruh_DE_GB_LightArtillery        | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 6pdr                    |  497.564 |  43.166 | 731.934 |    307 | False       |      0 | 32_MM_East_Matruh_DE_GB_LightArtillery   | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 6pdr                    |   -4.515 |  52.736 | 608.659 |    305 | False       |      0 | 32_MM_West_Matruh_DE_GB_LightArtillery   | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | britcommradio           |  187.129 |  44.585 | 747.247 |    301 | False       |      0 | 32_MM_Matruh_CommRadio                   | Static Emplacement | Radio             |
+| radio        | static     | britcommradio           |  -25.152 |  43.406 | 683.866 |    305 | False       |      0 | 32_MM_West_Matruh_CommRadio              | Static Emplacement | Radio             |
+| radio        | static     | gercommradio            |  310.141 |  56.927 | 377.197 |    306 | False       |      0 | 32_MM_Station_CommRadio                  | Static Emplacement | Radio             |
+| radio        | static     | britcommradio           |  510.192 |  43.396 | 720.214 |    307 | False       |      0 | 32_MM_East_Matruh_CommRadio              | Static Emplacement | Radio             |
 | apc          | vehicle    | sdkfz251_1              |  375.744 |  52.809 | 459.513 |    306 | False       |      0 | 32_MM_Station_DE_GB_PersonelCarrier2     | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_bren   |  527.807 |  43.282 | 727.798 |    307 | False       |      0 | 32_MM_East_Matruh_DE_GB_PersonelCarrier2 | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_bren   |   40.701 |  52.495 | 576.099 |    305 | False       |      0 | 32_MM_West_Matruh_DE_GB_PersonelCarrier2 | Vehicle            | APC               |

@@ -70,8 +70,6 @@ title: Lebisey 1944 (64p)
 | zooka        | kit        | GW_PickUpPanzerschreck       | -141.826 | 106.305 |  -22.169 |    104 | False       |      0 | CP_64_lebisey_3coy_cp_panzershrek      | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | GW_PickUpPanzerschreck       |   34.617 | 105.86  |   37.469 |      1 | False       |      0 | CP_64_lebisey_centre_at_panzershrek    | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | GW_PickUpPanzerschreck       |  -90.867 | 101.813 | -187.153 |    106 | False       |      0 | CP_64_lebisey_caen_panzershreck        | Pickup Kit         | HEAT Thrower      |
-| misc         | noidea     | britcommradio                |  182.105 | 115.712 |  329.945 |    102 | False       |      0 | CP_64_lebisey_staff_yeomanry_commradio | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio                 |   83.912 | 106.746 | -276.239 |    105 | False       |      0 | CP_64_lebisey_hq_commradio             | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | arty         | static     | sgwr34_france                | -149.617 | 105.781 |   50.787 |    103 | False       |      0 | CP_64_lebisey_3coy_cp_Mortar           | Static Emplacement | Artillery         |
 | arty         | static     | 3inchmortar                  |  196.339 | 115.808 |  315.344 |    102 | False       |      0 | CP_64_lebisey_staff_yeomanry_mortar1   | Static Emplacement | Artillery         |
 | arty         | static     | 3inchmortar                  |  199.457 | 115.81  |  314.118 |    102 | False       |      0 | CP_64_lebisey_staff_yeomanry_mortar2   | Static Emplacement | Artillery         |
@@ -86,6 +84,8 @@ title: Lebisey 1944 (64p)
 | pak          | static     | pak40                        |   -4.531 | 105.712 |   23.047 |      1 | False       |      0 | CP_64_lebisey_3coy_cp_pak1             | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak38_fr                     | -192.752 | 105.678 |   40.069 |    103 | False       |      0 | CP_64_lebisey_3coy_cp_MG               | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak40_static                 | -177.938 | 102.236 | -279.99  |    106 | False       |      0 | CP_64_lebisey_caen_atgun               | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | britcommradio                |  182.105 | 115.712 |  329.945 |    102 | False       |      0 | CP_64_lebisey_staff_yeomanry_commradio | Static Emplacement | Radio             |
+| radio        | static     | gercommradio                 |   83.912 | 106.746 | -276.239 |    105 | False       |      0 | CP_64_lebisey_hq_commradio             | Static Emplacement | Radio             |
 | apc          | vehicle    | UniversalCarrier_France      |  197.206 | 115.653 |  336.982 |    102 | False       |      0 | CP_64_lebisey_staff_yeomanry_uni1      | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_d                   |  157.195 | 105.711 | -192.804 |    101 | False       |      0 | CP_64_lebisey_east_at_sdkfz251         | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_france_bren |  193.48  | 115.709 |  331.873 |    102 | False       |      0 | CP_64_lebisey_staff_yeomanry_bren1     | Vehicle            | APC               |

@@ -92,7 +92,6 @@ title: <Unnamed Map> (64p)
 | zooka        | kit        | GW_PickUpPanzerschreck          |   -6.356 |  32.194 | -152.085 |    307 | False       |      0 | cq64_wn56_schreck                        | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | GW_PickUpPanzerschreck          |   24.148 |  12.635 |  -17.523 |    304 | False       |      0 | cq64_shipyard_schreck                    | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | GW_PickUpPanzerschreck          |  160.768 |  11.506 |   59.41  |    303 | False       |      0 | cq64_church_schreck                      | Pickup Kit         | HEAT Thrower      |
-| misc         | noidea     | gercommradio                    |  178.373 |  16.319 | -200.985 |    306 | False       |      0 | cq64_portenbessin_commradio              | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | typhoon_mk1b_late_flyover       |  170.614 |  75.065 | -516.979 |    301 | False       |      0 | cq64_roadtocommes_flyover                | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | typhoon_mk1b_late_flyover       |  190.939 |  85.524 | -519.698 |    301 | False       |      0 | cq64_roadtocommes_flyover_0              | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | typhoon_mk1b_late_flyover       | -459.126 |  56.798 | -292.055 |    301 | False       |      0 | cq64_roadtocommes_flyover_1              | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -117,6 +116,7 @@ title: <Unnamed Map> (64p)
 | pak          | static     | kwk_5cm_fr                      |  433.475 |  39.13  | -212.111 |    308 | False       |      0 | cq64_wn57_kwk5                           | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | kwk_5cm_fr                      |  -15.008 |  32.431 | -155.721 |    307 | False       |      0 | cq64_wn56_kwk5                           | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | kwk_5cm_fr                      |  136.723 |  11.909 | -231.676 |    306 | False       |      0 | cq64_portenbessin_kwk5                   | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | gercommradio                    |  178.373 |  16.319 | -200.985 |    306 | False       |      0 | cq64_portenbessin_commradio              | Static Emplacement | Radio             |
 | apc          | vehicle    | universalcarrier_france_bren    | -187.41  |  12.213 |   98.353 |    301 | True        |      0 | cq64_roadtocommes_universalcarrier       | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_france_bren    |  169.922 |  12.831 |  335.07  |    302 | True        |      0 | cq64_roadtoescures_universalcarrier      | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_france_vickers | -201.51  |  12.328 |   99.888 |    301 | True        |      0 | cq64_roadtocommes_universalcarrier_0     | Vehicle            | APC               |

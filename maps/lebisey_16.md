@@ -55,12 +55,12 @@ title: Lebisey 1944 (16p)
 | mg_dep       | kit        | BA_PickUpVickers303   | -216.408 | 105.717 |   31.261 |    201 | False       |      0 | CP_16_lebisey_west_lebisey_hmg       | Pickup Kit         | Deployable MG     |
 | sniper       | kit        | BW_PickUpSniperNo4    | -226.585 | 106.165 |   24.632 |    201 | False       |      0 | CP_16_lebisey_west_lebisey_sniper    | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | GW_PickUpSniperg43_ZF |  140.457 | 104.281 | -182.179 |    202 | False       |      0 | CP_16_lebisey_hq_sniper              | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | gercommradio          |  152.057 | 104     | -177.273 |    202 | False       |      0 | CP_16_lebisey_hq_commradio           | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio         | -214.968 | 105.712 |   31.06  |    201 | False       |      0 | CP_16_lebisey_west_lebisey_commradio | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | arty         | static     | 3inchmortar           | -213.514 | 105.818 |   56.82  |    201 | False       |      0 | CP_16_lebisey_west_lebisey_mortar    | Static Emplacement | Artillery         |
 | arty         | static     | sgwr34_france         |  159.884 | 105.737 | -190.338 |    206 | False       |      0 | CP_16_lebisey_bunker_mortar          | Static Emplacement | Artillery         |
 | mg_nest      | static     | mg42_bipod            |   85.929 | 111.546 | -264.479 |    202 | False       |      0 | CP_16_lebisey_hq_mg                  | Static Emplacement | Static MG         |
 | pak          | static     | pak40                 |   10.828 | 105.709 | -222.961 |    202 | False       |      0 | CP_16_lebisey_hq_at_gun              | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | gercommradio          |  152.057 | 104     | -177.273 |    202 | False       |      0 | CP_16_lebisey_hq_commradio           | Static Emplacement | Radio             |
+| radio        | static     | britcommradio         | -214.968 | 105.712 |   31.06  |    201 | False       |      0 | CP_16_lebisey_west_lebisey_commradio | Static Emplacement | Radio             |
 | car          | vehicle    | willysmb_france       | -222.893 | 105.522 |   51.937 |    201 | False       |      0 | CP_16_lebisey_west_lebisey_jeep      | Vehicle            | Car               |
 | car          | vehicle    | kubelwagen_fr         |   82.095 | 105.712 | -261.401 |    202 | False       |      0 | CP_16_lebisey_hq_kubel               | Vehicle            | Car               |
 | tank         | vehicle    | sherman_v_mid_olive   | -226.64  | 105.633 |   47.198 |    207 | True        |      0 | CP_16_lebisey_west_lebisey_sherman   | Vehicle            | Tank              |

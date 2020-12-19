@@ -66,7 +66,6 @@ title: Eppeldorf 1944 (64p)
 | zooka        | kit        | UW_PickUpBazookam9         |  119.227 |  70.124 |  -31.007 |      8 | False       |      0 | CQ_64_EPPEL_East_Farm_allies_ATKIT              | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | GW_PickUpPanzerfaust30m    |  144.427 |  65.009 |   -3.349 |      8 | False       |      0 | CQ_64_EPPEL_East_Farm_AXIS_ATKIT                | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | GW_PickUpPanzerschreck     |   49.027 |  94.358 |  156.888 |      5 | False       |      0 | CQ_64_EPPEL_Hill_AXIS_SCHRECK                   | Pickup Kit         | HEAT Thrower      |
-| misc         | noidea     | gercommradio               |  335.213 | 104.067 |  359.618 |      1 | False       |      0 | CQ_64_EPPEL_Axis_main_comm                      | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | arty         | static     | 81mm_mortar_m1             | -341.348 |  70.14  | -272.903 |      2 | False       |      0 | CQ_64_EPPEL_Allied_main_mortar                  | Static Emplacement | Artillery         |
 | arty         | static     | m2a1_howitzer_105mm_win    | -273.788 |  75.913 | -173.382 |      2 | False       |      0 | CQ_64_EPPEL_Allied_main_arty                    | Static Emplacement | Artillery         |
 | arty         | static     | nebelwerfer_win            |  336.076 | 104.515 |  351.937 |      5 | False       |      0 | CQ_64_EPPEL_Axis_main_nebel                     | Static Emplacement | Artillery         |
@@ -87,6 +86,7 @@ title: Eppeldorf 1944 (64p)
 | pak          | static     | 76mm_m5_atgun_win          |  -34.171 |  75.789 | -376.452 |      6 | False       |      0 | CQ_64_EPPEL_South_Farm_pak                      | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 76mm_M5_ATgun_Static_win   |   71.989 |  86.595 |   53.854 |      5 | False       |      0 | CQ_64_EPPEL_Hill_ATGUN                          | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak40_win                  |  449.087 |  70.62  |  171.513 |      1 | False       |      0 | CQ_64_EPPEL_Axis_main_at                        | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | gercommradio               |  335.213 | 104.067 |  359.618 |      1 | False       |      0 | CQ_64_EPPEL_Axis_main_comm                      | Static Emplacement | Radio             |
 | apc          | vehicle    | sdkfz251_d_win             |  431.134 |  71.259 |  164.493 |      1 | False       |      0 | CQ_64_EPPEL_Axis_main_apc                       | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_d_win             |  443.955 |  71.148 |  148.681 |      1 | False       |      0 | CQ_64_EPPEL_Axis_main_apc2                      | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_d_win             |  406.596 |  70.508 |  175.306 |      1 | False       |      0 | CQ_64_EPPEL_Axis_main_251                       | Vehicle            | APC               |

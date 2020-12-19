@@ -43,8 +43,6 @@ title: Siege of Giarabub 1941 (16p)
 | commando     | kit        | BA_PickUpCommandoTommyD     | -114.97  |  40.174 |  -49.835 |    302 | False       |      0 | CP_16_giarabub_AlliedHQ_DE_GB_Commando     | Pickup Kit         | Commando Kit      |
 | sniper       | kit        | IA_PickUpSniperPattern      |  170.567 |  37.018 | -105.345 |    303 | False       |      0 | CP_16_giarabub_mosque_Sniper               | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4          | -113.971 |  39.511 |  -51.461 |    302 | False       |      0 | CP_16_giarabub_AlliedHQ_DE_GB_Sniper       | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | britcommradio               | -115.317 |  39.371 |  -49.487 |    302 | False       |      0 | CP_16_giarabub_AlliedHQ_CommRadio          | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio                |  160.518 |  36.886 | -105.964 |    303 | False       |      0 | CP_16_giarabub_east_0                      | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_mortar_allied     |  340.714 |  27.766 | -250.074 |    303 | True        |      0 | CP_16_giarabub_mosque_CommMortar           | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied     |  342.82  |  27.727 | -251.557 |    303 | True        |      0 | CP_16_giarabub_mosque_0                    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied     | -297.236 |  37.972 |  -43.053 |    302 | True        |      0 | CP_16_giarabub_AlliedHQ_DE_GB_CommMortar   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -56,4 +54,6 @@ title: Siege of Giarabub 1941 (16p)
 | mg_nest      | static     | bredam37_bipod              |  -79.366 |  44.007 |  -46.969 |    302 | False       |      0 | CP_16_giarabub_AlliedHQ_1                  | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod              |  163.79  |  39.246 |  -87.113 |    303 | False       |      0 | CP_16_giarabub_east_MedMG                  | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod              |   55.635 |  39.205 | -141.732 |    303 | False       |      0 | CP_16_giarabub_village_MedMG               | Static Emplacement | Static MG         |
+| radio        | static     | britcommradio               | -115.317 |  39.371 |  -49.487 |    302 | False       |      0 | CP_16_giarabub_AlliedHQ_CommRadio          | Static Emplacement | Radio             |
+| radio        | static     | gercommradio                |  160.518 |  36.886 | -105.964 |    303 | False       |      0 | CP_16_giarabub_east_0                      | Static Emplacement | Radio             |
 

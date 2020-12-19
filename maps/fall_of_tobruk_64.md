@@ -89,8 +89,6 @@ title: Fall of Tobruk 1942 (64p)
 | sniper       | kit        | BA_PickUpSniperNo4          |   -3.958 |  25.499 |  225.382 |      8 | False       |      0 | 64_OS_FT_6_sniperkit             | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4          | -242.628 |  22.835 |  -81.594 |      1 | False       |      0 | 64_OS_FT_Base1_sniperkit         | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4          |   63.547 |  28.252 |  252.602 |      8 | False       |      0 | 64_OS_FT_6_sniper9               | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | britcommradio               |   37.297 |  23.397 |  269.677 |      8 | False       |      0 | 64_OS_FT_6_alliedcommander       | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio                | -217.459 |  20.463 | -153.239 |      1 | False       |      0 | 64_OS_FT_Base1_axiscommander     | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_mortar_allied     |  157.264 |  24.872 |  485.099 |      8 | True        |      0 | 64_OS_FT_6_britcommortar         | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_smoke_allied      |  160.18  |  24.872 |  482.71  |      8 | True        |      0 | 64_OS_FT_6_britcomsmoke          | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_artillery_axis    | -204.736 |  24.872 | -478.005 |      1 | True        |      0 | 64_OS_FT_Base1_gercommortar      | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -121,6 +119,8 @@ title: Fall of Tobruk 1942 (64p)
 | pak          | static     | 2pdr                        |   -9.687 |  20.161 |    9.881 |      5 | False       |      0 | 64_OS_FT_3_at                    | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 6pdr                        |   60.5   |  23.146 |  237.465 |      8 | False       |      0 | 64_OS_FT_6_DE_GB_LightArtillery  | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 6pdr_static                 |  -31.456 |  25.214 |  289.473 |      8 | False       |      0 | 64_OS_FT_6_DE_GB_StaticArtillery | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | britcommradio               |   37.297 |  23.397 |  269.677 |      8 | False       |      0 | 64_OS_FT_6_alliedcommander       | Static Emplacement | Radio             |
+| radio        | static     | gercommradio                | -217.459 |  20.463 | -153.239 |      1 | False       |      0 | 64_OS_FT_Base1_axiscommander     | Static Emplacement | Radio             |
 | apc          | vehicle    | sdkfz251_1                  | -265.937 |  22.208 | -152.965 |      1 | False       |      0 | 64_OS_FT_Base1_hanomag           | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_10                 | -269.64  |  22.075 | -148.294 |      1 | False       |      0 | 64_OS_FT_Base1_hanomag_0         | Vehicle            | APC               |
 | tank         | vehicle    | pziii_je_dak                | -257.415 |  23.283 | -188.751 |    102 | True        |      0 | 64_OS_FT_2_pzIV                  | Vehicle            | Tank              |

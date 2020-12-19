@@ -61,9 +61,6 @@ title: Mareth Line 1943 (64p)
 | parachute    | kit        | BA_PickUpPilotWebley       | -117.692 |  25.517 | -960.759 |      2 | False       |      0 | CP_64_mareth_Medenine_2_1                    | Pickup Kit         | Parachute Kit     |
 | sniper       | kit        | BA_PickUpSniperNo4         | -521.849 |  45.452 |    5.118 |      7 | False       |      0 | CP_64_mareth_Toujane_Sniper                  | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4         | -274.192 |  24.469 |  179.914 |      3 | False       |      0 | CP_64_mareth_Mareth_Sniper                   | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | gercommradio               |  165.564 |  11.03  |  605.88  |      1 | False       |      0 | CP_64_mareth_Lower_Gabes_Radio               | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio               | -123.181 |  24.97  | -425.939 |      2 | False       |      2 | CP_64_mareth_Medenine_Radio                  | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio               | -484.41  |  34.607 |  351.064 |      5 | False       |      1 | CP_64_mareth_Command_Bunker_CommanderRadio   | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | misc         | noidea     | sf14_periscope             | -418.712 |  65.816 |  209.302 |      5 | False       |      0 | CP_64_mareth_Command_Bunker_sf14_3           | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_mortar_axis      | -815.91  | 129.996 | 1015.77  |      5 | True        |      1 | CP_64_mareth_Command_Bunker_CommMortar       | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_artillery_allied |  466.9   |  26.082 | -973.782 |      2 | True        |      2 | CP_64_mareth_Medenine_CommMortar             | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -117,6 +114,9 @@ title: Mareth Line 1943 (64p)
 | pak          | static     | pak38_static               | -346.805 |  32.835 |  118.994 |      3 | False       |      0 | CP_64_mareth_Mareth_cannon                   | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 6pdr                       |  -47.832 |  26.295 |  468.744 |      4 | False       |      0 | CP_64_mareth_second_line_pak38_2             | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | pak38_static               | -400.131 |  61.33  |  209.081 |      5 | False       |      0 | CP_64_mareth_Command_Bunker_kwk5cm           | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | gercommradio               |  165.564 |  11.03  |  605.88  |      1 | False       |      0 | CP_64_mareth_Lower_Gabes_Radio               | Static Emplacement | Radio             |
+| radio        | static     | gercommradio               | -123.181 |  24.97  | -425.939 |      2 | False       |      2 | CP_64_mareth_Medenine_Radio                  | Static Emplacement | Radio             |
+| radio        | static     | gercommradio               | -484.41  |  34.607 |  351.064 |      5 | False       |      1 | CP_64_mareth_Command_Bunker_CommanderRadio   | Static Emplacement | Radio             |
 | apc          | vehicle    | sdkfz251_10                | -503.817 |  34.866 |  326.286 |      5 | False       |      1 | CP_64_mareth_Command_Bunker_                 | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_1                 |   38.751 |  16.219 |  595.857 |      8 | False       |      0 | CP_64_mareth_Upper_Gabes_PersonelCarrier     | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_bren      |  -45.602 |  26.67  | -471.892 |      2 | False       |      2 | CP_64_mareth_Medenine_Scout                  | Vehicle            | APC               |

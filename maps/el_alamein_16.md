@@ -48,8 +48,6 @@ title: El Alamein 1942 (16p)
 | at_rifle     | kit        | BA_PickUpAntitankBoys   |  399.763 |  23.378 |   78.657 |    203 | False       |      0 | CP_16_Alamein_AlliedHQ_DE_GB_ATrifle           | Pickup Kit         | AT Rifle          |
 | mg           | kit        | BA_PickUpSupportBrenMK1 |  407.712 |  27.459 | -129.44  |    202 | False       |      0 | CP_16_Alamein_Pass_DE_GB_Support               | Pickup Kit         | MG Kit            |
 | sniper       | kit        | BA_PickUpSniperNo4      |  403.839 |  28.235 | -128.399 |    202 | False       |      0 | CP_16_Alamein_Pass_DE_GB_Sniper                | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | britcommradio           |  407.438 |  27.431 | -130.945 |    203 | False       |      0 | CP_16_Alamein_AlliedHQ_DE_GB_CommRadio         | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio            |  261.07  |  56.759 | -157.034 |    204 | False       |      0 | CP_16_Alamein_AxisHQ_DE_GB_CommRadio           | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_mortar_allied |  898.11  |  18.522 |  454.029 |    203 | True        |      0 | CP_16_Alamein_AlliedHQ_DE_GB_CommMortar        | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied |  901.673 |  18.591 |  446.165 |    203 | True        |      0 | CP_16_Alamein_AlliedHQ_DE_GB_CommMortar_0      | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_smoke_allied  |  905.515 |  18.494 |  452.841 |    203 | True        |      0 | CP_16_Alamein_AlliedHQ_DE_GB_CommSmoke         | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -62,6 +60,8 @@ title: El Alamein 1942 (16p)
 | mg_nest      | static     | lewis_bipod             |  330.837 |  25.106 |   47.869 |    203 | False       |      0 | CP_16_Alamein_AlliedHQ_DE_GB_LightMG           | Static Emplacement | Static MG         |
 | mg_nest      | static     | mg15_bipod              |  220.628 |  58.432 | -154.285 |    204 | False       |      0 | CP_16_Alamein_AxisHQ_DE_GB_MedMG               | Static Emplacement | Static MG         |
 | mg_nest      | static     | vickers303_tripod       |  339.798 |  24.177 |   49.477 |    203 | False       |      0 | CP_16_Alamein_AlliedHQ_DE_GB_MedMG             | Static Emplacement | Static MG         |
+| radio        | static     | britcommradio           |  407.438 |  27.431 | -130.945 |    203 | False       |      0 | CP_16_Alamein_AlliedHQ_DE_GB_CommRadio         | Static Emplacement | Radio             |
+| radio        | static     | gercommradio            |  261.07  |  56.759 | -157.034 |    204 | False       |      0 | CP_16_Alamein_AxisHQ_DE_GB_CommRadio           | Static Emplacement | Radio             |
 | apc          | vehicle    | universalcarrier_bren   |  396.037 |  24.022 |   75.657 |    202 | False       |      0 | CP_16_Alamein_Pass_DE_GB_PersonelCarrier2      | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_1              |   13.632 |  57.142 |  -54.538 |    201 | False       |      0 | CP_16_Alamein_Miteiriya_DE_GB_PersonelCarrier2 | Vehicle            | APC               |
 

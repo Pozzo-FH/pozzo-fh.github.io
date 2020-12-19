@@ -50,11 +50,6 @@ title: El Alamein 1942 (32p)
 | mg           | kit        | BA_PickUpSupportBrenMK1 |  407.199 |  27.433 | -128.587 |    304 | False       |      0 | CP_32_Alamein_Miteiriya_DE_GB_Support           | Pickup Kit         | MG Kit            |
 | sniper       | kit        | GA_PickUpSniperK98      | -236.343 |  36.778 | -339.745 |    303 | False       |      0 | CP_32_Alamein_AxisHQ_DE_GB_Sniper               | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4      |   -0.099 |  23.093 |  511.825 |    301 | False       |      0 | CP_32_Alamein_AlliedHQ_DE_GB_Sniper             | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | britcommradio           |   -4.077 |  19.84  |  489.788 |    301 | False       |      0 | CP_32_Alamein_AlliedHQ_DE_GB_CommRadio          | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio           | -575.196 |  51.361 |  262.672 |    302 | False       |      0 | CP_32_Alamein_Kidney_DE_GB_CommRadio            | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio            | -239.885 |  36.651 | -336.9   |    303 | False       |      0 | CP_32_Alamein_AxisHQ_DE_GB_CommRadio            | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio            |  407.438 |  27.431 | -130.945 |    304 | False       |      0 | CP_32_Alamein_Miteiriya_DE_GB_CommRadio         | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio            |  261.07  |  56.759 | -157.034 |    304 | False       |      0 | CP_32_Alamein_Miteiriya_DE_GB_CommRadio_0       | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | opelblitz_dak_zw36      | -210.925 |  38.031 | -381.122 |    303 | False       |      0 | CP_32_Alamein_AxisHQ_DE_GB_TruckAA              | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied | -376.566 |  45.435 | -787.8   |    303 | True        |      0 | CP_32_Alamein_AxisHQ_DE_GB_CommMortar           | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied | -372.63  |  45.355 | -788.173 |    303 | True        |      0 | CP_32_Alamein_AxisHQ_DE_GB_CommMortar_0         | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
@@ -94,6 +89,11 @@ title: El Alamein 1942 (32p)
 | pak          | static     | pak38_static            |  281.426 |  35.434 |  -37.855 |    304 | False       |      0 | CP_32_Alamein_Miteiriya_DE_GB_StaticArtillery_0 | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 6pdr                    |  213.373 |  59.765 | -100.473 |    304 | False       |      0 | CP_32_Alamein_Miteiriya_DE_GB_LightArtillery_0  | Static Emplacement | Anti-tank Gun     |
 | pak          | static     | 6pdr_static             | -477.194 |  43.87  |  221.997 |    302 | False       |      0 | CP_32_Alamein_Kidney_DE_GB_StaticArtillery_0    | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | britcommradio           |   -4.077 |  19.84  |  489.788 |    301 | False       |      0 | CP_32_Alamein_AlliedHQ_DE_GB_CommRadio          | Static Emplacement | Radio             |
+| radio        | static     | britcommradio           | -575.196 |  51.361 |  262.672 |    302 | False       |      0 | CP_32_Alamein_Kidney_DE_GB_CommRadio            | Static Emplacement | Radio             |
+| radio        | static     | gercommradio            | -239.885 |  36.651 | -336.9   |    303 | False       |      0 | CP_32_Alamein_AxisHQ_DE_GB_CommRadio            | Static Emplacement | Radio             |
+| radio        | static     | gercommradio            |  407.438 |  27.431 | -130.945 |    304 | False       |      0 | CP_32_Alamein_Miteiriya_DE_GB_CommRadio         | Static Emplacement | Radio             |
+| radio        | static     | gercommradio            |  261.07  |  56.759 | -157.034 |    304 | False       |      0 | CP_32_Alamein_Miteiriya_DE_GB_CommRadio_0       | Static Emplacement | Radio             |
 | apc          | vehicle    | universalcarrier_bren   |  -31.073 |  21.976 |  519.909 |    301 | False       |      0 | CP_32_Alamein_AlliedHQ_DE_GB_PersonelCarrier2   | Vehicle            | APC               |
 | apc          | vehicle    | sdkfz251_1              | -238.334 |  38.107 | -366.734 |    303 | False       |      0 | CP_32_Alamein_AxisHQ_DE_GB_PersonelCarrier2     | Vehicle            | APC               |
 | apc          | vehicle    | universalcarrier_bren   | -559.061 |  54.163 |  250.831 |    302 | False       |      0 | CP_32_Alamein_Kidney_DE_GB_PersonelCarrier2     | Vehicle            | APC               |

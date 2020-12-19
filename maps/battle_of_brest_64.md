@@ -63,9 +63,6 @@ title: Battle of Brest 1944 (64p)
 | sniper       | kit        | GW_PickUpSniperg43_ZF        | -336.197 |  20.091 |  -75.382 |    107 | False       |      0 | Ruins_gewehr43zf           | Pickup Kit         | Sniper Kit        |
 | zooka        | kit        | GW_PickUpPanzerschreck       | -277.428 |  10.306 |   60.132 |      1 | False       |      0 | Harbour_schreck            | Pickup Kit         | HEAT Thrower      |
 | zooka        | kit        | GW_PickUpPanzerschreck       | -243.447 |  25.31  |  -80.561 |    105 | False       |      0 | Flakposition_Panzerschreck | Pickup Kit         | HEAT Thrower      |
-| misc         | noidea     | gercommradio                 | -269.465 |   9.386 |   71.515 |      1 | False       |      0 | Harbour_commander          | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | gercommradio                 |   10.647 |  25.54  |  -98.186 |    101 | False       |      0 | Industry_commander         | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| noidea       | noidea     | oldradioallied               |   29.965 |  25.768 |  -91.17  |    101 | False       |      0 | Industry_radio             | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | flak         | static     | flak18_fr                    | -259.948 |   9.209 |   86.912 |      1 | False       |      0 | Harbour_88                 | Static Emplacement | Anti-aircraft Gun |
 | mg_nest      | static     | mg42_bipod                   | -277.107 |  10.004 |   92.911 |      1 | False       |      0 | Harbour_mg                 | Static Emplacement | Static MG         |
 | mg_nest      | static     | mg42_bipod                   | -364.081 |  14.173 |  -40.612 |    107 | False       |      0 | Ruins_mg                   | Static Emplacement | Static MG         |
@@ -75,6 +72,9 @@ title: Battle of Brest 1944 (64p)
 | mg_nest      | static     | mg34_bipod                   | -243.397 |  28.179 |  -49.145 |    106 | False       |      0 | Boulangerie_mg             | Static Emplacement | Static MG         |
 | mg_nest      | static     | mg34_bipod                   | -322.373 |  15.497 |  -50.373 |    107 | False       |      0 | Ruins_mg3                  | Static Emplacement | Static MG         |
 | pak          | static     | pak40_static                 | -341.593 |  13.901 |   62.9   |      1 | False       |      0 | Harbour_pak                | Static Emplacement | Anti-tank Gun     |
+| radio        | static     | gercommradio                 | -269.465 |   9.386 |   71.515 |      1 | False       |      0 | Harbour_commander          | Static Emplacement | Radio             |
+| radio        | static     | gercommradio                 |   10.647 |  25.54  |  -98.186 |    101 | False       |      0 | Industry_commander         | Static Emplacement | Radio             |
+| radio        | static     | oldradioallied               |   29.965 |  25.768 |  -91.17  |    101 | False       |      0 | Industry_radio             | Static Emplacement | Radio             |
 | apc          | vehicle    | sdkfz251_d                   | -239.611 |   9.21  |  103.68  |      1 | False       |      0 | Harbour_schwimm            | Vehicle            | APC               |
 | car          | vehicle    | willysmb_us                  |   26.247 |  25     |  -61.467 |    101 | False       |      0 | Industry_JEEP              | Vehicle            | Car               |
 | car          | vehicle    | kubelwagen_fr                | -258.729 |   9.207 |   96.281 |      1 | False       |      0 | Harbour_kuebel             | Vehicle            | Car               |

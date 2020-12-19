@@ -45,17 +45,17 @@ title: Bardia 1941 (16p)
 | ammo         | kit        | BA_PickUpAmmokit        |  -82.772 |  38.478 |  169.969 |    203 | False       |      0 | CP_16_bardia_City_Hospital_DE_GB_AmmoCrates | Pickup Kit         | Ammo Kit          |
 | sniper       | kit        | IA_PickUpSniperPattern  | -153.578 |  49.646 |   16.178 |    203 | False       |      0 | CP_16_bardia_Hospital_Sniper                | Pickup Kit         | Sniper Kit        |
 | sniper       | kit        | BA_PickUpSniperNo4      |   18.497 |  24.52  | -150.953 |    204 | False       |      0 | CP_16_bardia_AIF_Sniper                     | Pickup Kit         | Sniper Kit        |
-| misc         | noidea     | gercommradio            | -168.377 |  43.236 |  -25.759 |    203 | False       |      0 | CP_16_bardia_Hospital_CommRadio             | FIXME UNASSIGNED   | MISCELLANEOUS     |
-| misc         | noidea     | britcommradio           |   19.599 |  24.519 | -152.983 |    204 | False       |      0 | CP_16_bardia_AIF_CommRadio                  | FIXME UNASSIGNED   | MISCELLANEOUS     |
 | noidea       | noidea     | commander_smoke_allied  | -247.1   |  82.259 |  221.023 |    203 | True        |      0 | CP_16_bardia_Hospital_CommSmoke             | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied | -247.156 |  81.364 |  215.721 |    203 | True        |      0 | CP_16_bardia_Hospital_CommMortar            | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_mortar_allied |  511.9   |  26     | -146.396 |    204 | True        |      0 | CP_16_bardia_AIF_CommMortar                 | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | noidea       | noidea     | commander_smoke_allied  |  511.9   |  26     | -162.695 |    204 | True        |      0 | CP_16_bardia_AIF_CommSmoke                  | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | oldradioallied          | -174.3   |  43.236 |  -21.388 |    204 | False       |      0 | CP_16_bardia_AIF_DE_GB_OldRadio             | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
 | arty         | static     | 3inchmortar             |   21.302 |  23.715 | -166.064 |    204 | False       |      0 | CP_16_bardia_AIF_LightMortar                | Static Emplacement | Artillery         |
 | mg_nest      | static     | bredam37_bipod          | -118.278 |  37.104 |  -98.199 |    203 | False       |      0 | CP_16_bardia_Barracks_MedMG                 | Static Emplacement | Static MG         |
 | mg_nest      | static     | vickers303_tripod       |   53.081 |  24.032 | -135.664 |    204 | False       |      0 | CP_16_bardia_AIF_DE_GB_MedMG                | Static Emplacement | Static MG         |
 | mg_nest      | static     | lewis_bipod             |   16.555 |  24.815 | -164.214 |    204 | False       |      0 | CP_16_bardia_AIF_DE_GB_LightMG              | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod          |  -81.516 |  39.5   |  176.043 |    203 | False       |      0 | CP_16_bardia_City_Hospital_DE_GB_MedMG      | Static Emplacement | Static MG         |
 | mg_nest      | static     | bredam37_bipod          | -209.388 |  43.669 |   -3.415 |    203 | False       |      0 | CP_16_bardia_Hospital_DE_GB_MedMG           | Static Emplacement | Static MG         |
+| radio        | static     | gercommradio            | -168.377 |  43.236 |  -25.759 |    203 | False       |      0 | CP_16_bardia_Hospital_CommRadio             | Static Emplacement | Radio             |
+| radio        | static     | britcommradio           |   19.599 |  24.519 | -152.983 |    204 | False       |      0 | CP_16_bardia_AIF_CommRadio                  | Static Emplacement | Radio             |
+| radio        | static     | oldradioallied          | -174.3   |  43.236 |  -21.388 |    204 | False       |      0 | CP_16_bardia_AIF_DE_GB_OldRadio             | Static Emplacement | Radio             |
 
