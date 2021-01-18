@@ -11,7 +11,10 @@ OFFICE = abiword
 
 .PHONY: help
 help:
-	@echo "targets: docs api maps main guide view"
+	@echo "targets: all docs maps main view"
+
+.PHONY: all
+all: docs maps main
 
 .PHONY: docs
 docs:
@@ -21,19 +24,9 @@ docs:
 		--metadata title="FH2 Admin Manual" \
 		admin.md -o admin.html
 
-.PHONY: api
-api:
-	mkdir -p api
-	rm -rf api/*
-	cp -r ../admin/doc/_build/html/* api/
-
 .PHONY: maps
 maps:
 	$(MAKE) -C maps
-
-.PHONY: guide
-guide:
-	$(MAKE) -C guide
 
 .PHONY: main
 main:
