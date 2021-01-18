@@ -32,54 +32,54 @@ title: Sidi Bou Zid (32p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name               |    pos_x |   pos_y |    pos_z |   flag | is_locked   |   team | instance                        | gpo_cat_disp       | gpo_subcat_disp   |
-|:-------------|:-----------|:-----------------------|---------:|--------:|---------:|-------:|:------------|-------:|:--------------------------------|:-------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate             |  216.467 |  25.108 | -576.839 |      0 | False       |      0 | ammo_crate_0                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  279.416 |  26.529 | -527.707 |      0 | False       |      0 | ammo_crate_1                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  430.455 |  25.284 |  527.894 |      0 | False       |      0 | ammo_crate_2                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  189.138 |  25.82  |  -62.477 |      0 | False       |      0 | ammo_crate_3                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  116.151 |  25.427 | -451.057 |      0 | False       |      0 | ammo_crate_4                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -205.933 |  30.222 |  252.251 |      0 | False       |      0 | ammo_crate_5                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  201.872 |  27.225 | -466.602 |      0 | False       |      0 | ammo_crate_6                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  118.608 |  26.427 |  -11.786 |      0 | False       |      0 | ammo_crate_7                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  244.229 |  29.175 |  457.761 |      0 | False       |      0 | ammo_crate_8                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  229.317 |  29.164 |  441.407 |      0 | False       |      0 | ammo_crate_9                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  230.05  |  29.164 |  442.418 |      0 | False       |      0 | ammo_crate_10                   | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  121.05  |  27.483 | -386.557 |      0 | False       |      0 | ammo_crate_11                   | Static Ammo Crate  | Static Ammo Crate |
-| ammo         | kit        | UA_PickUpAmmokit       | -533.238 |  27.77  |  631.071 |    201 | False       |      0 | CP_32_bouzid_alliedmain_ammo    | Pickup Kit         | Ammo Kit          |
-| arty_dep     | kit        | UW_PickUpMortar        | -638.932 |  30.282 |  666.01  |    201 | False       |      0 | CP_32_bouzid_alliedmain_mortar  | Pickup Kit         | Deployable Arty   |
-| mg_dep       | kit        | UW_PickUpm1917a1       | -639.121 |  30.291 |  667.53  |    201 | False       |      0 | CP_32_bouzid_alliedmain_hmg     | Pickup Kit         | Deployable MG     |
-| mg_dep       | kit        | UW_PickUp30Cal         | -641.924 |  30.266 |  667.606 |    201 | False       |      0 | CP_32_bouzid_alliedmain_mmg     | Pickup Kit         | Deployable MG     |
-| sniper       | kit        | UA_PickUpScoutEnfield  | -640.096 |  31.075 |  668.107 |    201 | False       |      0 | CP_32_bouzid_alliedmain_sniper  | Pickup Kit         | Sniper Kit        |
-| sniper       | kit        | UA_PickUpScoutEnfield  |  150.449 |  42.127 |  -24.686 |    203 | False       |      0 | CP_32_bouzid_sidibouzid_sniper  | Pickup Kit         | Sniper Kit        |
-| arty         | static     | m2a1_howitzer_105mm    | -530.866 |  28.257 |  623.395 |    201 | False       |      0 | CP_32_bouzid_alliedmain_arti    | Static Emplacement | Artillery         |
-| flak         | static     | flak18                 |  222.799 |  26.293 | -417.383 |    204 | True        |      1 | CP_32_bouzid_fallback_88a       | Static Emplacement | Anti-aircraft Gun |
-| flak         | static     | flak18                 |  151.019 |  26.014 | -473.067 |    204 | True        |      1 | CP_32_bouzid_fallback_88b       | Static Emplacement | Anti-aircraft Gun |
-| mg_nest      | static     | mg34_lafette           | -289.59  |  31.912 |  244.152 |    202 | False       |      0 | CP_32_bouzid_kern_lafette1      | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_lafette           | -160.774 |  29.944 |  367.879 |    202 | False       |      0 | CP_32_bouzid_kern_lafette2      | Static Emplacement | Static MG         |
-| pak          | static     | pak40_static_ws        | -338.61  |  30.155 |  180.737 |    202 | True        |      1 | CP_32_bouzid_kern_atgun1        | Static Emplacement | Anti-tank Gun     |
-| pak          | static     | pak40_static_ws        | -185.834 |  29.663 |  367.079 |    202 | True        |      1 | CP_32_bouzid_kern_atgun2        | Static Emplacement | Anti-tank Gun     |
-| pak          | static     | pak40_static_ws        |   63.931 |  24.272 |  -27.158 |    203 | True        |      1 | CP_32_bouzid_sidibouzid_atgun1  | Static Emplacement | Anti-tank Gun     |
-| pak          | static     | pak40_static_ws        |  150.712 |  26.62  |   72.948 |    203 | True        |      1 | CP_32_bouzid_sidibouzid_atgun2  | Static Emplacement | Anti-tank Gun     |
-| pak          | static     | pak40_static_ws        |  248.939 |  28.636 |    7.424 |    203 | True        |      1 | CP_32_bouzid_sidibouzid_atgun3  | Static Emplacement | Anti-tank Gun     |
-| apc          | vehicle    | gmc_m3_75mm            | -637.145 |  29.71  |  649.092 |    201 | True        |      0 | CP_32_bouzid_alliedmain_m3_75mm | Vehicle            | APC               |
-| apc          | vehicle    | m3_scoutcar            | -636.195 |  29.228 |  640.742 |    201 | False       |      0 | CP_32_bouzid_alliedmain_apc1    | Vehicle            | APC               |
-| apc          | vehicle    | m3_halftrack           | -648.203 |  29.06  |  611.965 |    201 | False       |      0 | CP_32_bouzid_alliedmain_apc2    | Vehicle            | APC               |
-| apc          | vehicle    | m3_halftrack           | -315.639 |  28.958 |  322.999 |    202 | False       |      0 | CP_32_bouzid_kern_apc           | Vehicle            | APC               |
-| apc          | vehicle    | sdkfz251_1             |  210.614 |  25.938 |  -95.624 |    203 | False       |      0 | CP_32_bouzid_sidibouzid_apc     | Vehicle            | APC               |
-| apc          | vehicle    | sdkfz250_3_alt         |  213.967 |  26.047 |  -98.684 |    203 | False       |      0 | CP_32_bouzid_sidibouzid_apc2    | Vehicle            | APC               |
-| apc          | vehicle    | gmc_m3_75mm            |  108.313 |  26.214 |   53.757 |    203 | True        |      0 | CP_32_bouzid_sidibouzid_m3_75mm | Vehicle            | APC               |
-| apc          | vehicle    | m3_scoutcar            |  105.357 |  26.465 |   58.752 |    203 | False       |      0 | CP_32_bouzid_sidibouzid_apc_0   | Vehicle            | APC               |
-| apc          | vehicle    | sdkfz251_1             |  157.903 |  25.418 | -695.506 |    204 | False       |      0 | CP_32_bouzid_fallback_apc       | Vehicle            | APC               |
-| apc          | vehicle    | sdkfz251_10            |  169.75  |  26.235 | -690.006 |    204 | False       |      0 | CP_32_bouzid_fallback_gunapc    | Vehicle            | APC               |
-| car          | vehicle    | gmc                    | -668.851 |  29.06  |  616.443 |    201 | False       |      0 | CP_32_bouzid_alliedmain_truck1  | Vehicle            | Car               |
-| car          | vehicle    | gmc_nocanvas           | -658.081 |  29.06  |  614.099 |    201 | False       |      0 | CP_32_bouzid_alliedmain_truck2  | Vehicle            | Car               |
-| car          | vehicle    | gmc_nocanvas           |  125.759 |  25.795 |   12.165 |    203 | False       |      0 | CP_32_bouzid_sidibouzid_truck1  | Vehicle            | Car               |
-| car          | vehicle    | opelblitz_dak_nocanvas |  161.446 |  25.35  | -704     |    204 | False       |      0 | CP_32_bouzid_fallback_truck     | Vehicle            | Car               |
-| recon        | vehicle    | sdkfz231_1             |  206.365 |  25.935 |  -91.373 |    202 | True        |      0 | CP_32_bouzid_kern_scout         | Vehicle            | Scout Vehicle     |
-| tank         | vehicle    | m3_lee                 | -638.259 |  30.109 |  656.657 |    201 | True        |      0 | CP_32_bouzid_alliedmain_lee1    | Vehicle            | Tank              |
-| tank         | vehicle    | m3_lee                 | -640.006 |  29.06  |  609.825 |    201 | True        |      0 | CP_32_bouzid_alliedmain_lee2    | Vehicle            | Tank              |
-| tank         | vehicle    | m4a1_early             | -629.572 |  28.988 |  607.699 |    201 | True        |      0 | CP_32_bouzid_alliedmain_sherman | Vehicle            | Tank              |
-| tank         | vehicle    | pziii_l_dak            |  154.417 |  25.541 | -684.944 |    204 | True        |      0 | CP_32_bouzid_fallback_pziii     | Vehicle            | Tank              |
-| tank         | vehicle    | pzivf2                 |  152.611 |  25.653 | -675.578 |    204 | True        |      0 | CP_32_bouzid_fallback_pziv      | Vehicle            | Tank              |
+| Icon                       | SubCat            | Cat                | Name                   | Instance                        |   Flag |    X Pos |   Y Pos |    Z Pos |
+|:---------------------------|:------------------|:-------------------|:-----------------------|:--------------------------------|-------:|---------:|--------:|---------:|
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_0                    |      0 |  216.467 |  25.108 | -576.839 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_1                    |      0 |  279.416 |  26.529 | -527.707 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_2                    |      0 |  430.455 |  25.284 |  527.894 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_3                    |      0 |  189.138 |  25.820 |  -62.477 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_4                    |      0 |  116.151 |  25.427 | -451.057 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_5                    |      0 | -205.933 |  30.222 |  252.251 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_6                    |      0 |  201.872 |  27.225 | -466.602 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_7                    |      0 |  118.608 |  26.427 |  -11.786 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_8                    |      0 |  244.229 |  29.175 |  457.761 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_9                    |      0 |  229.317 |  29.164 |  441.407 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_10                   |      0 |  230.050 |  29.164 |  442.418 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_11                   |      0 |  121.050 |  27.483 | -386.557 |
+| ![](img/ico/ammo.webp)     | Ammo Kit          | Pickup Kit         | UA_PickUpAmmokit       | CP_32_bouzid_alliedmain_ammo    |    201 | -533.238 |  27.770 |  631.071 |
+| ![](img/ico/arty_dep.webp) | Deployable Arty   | Pickup Kit         | UW_PickUpMortar        | CP_32_bouzid_alliedmain_mortar  |    201 | -638.932 |  30.282 |  666.010 |
+| ![](img/ico/hmg.webp)      | Deployable MG     | Pickup Kit         | UW_PickUpm1917a1       | CP_32_bouzid_alliedmain_hmg     |    201 | -639.121 |  30.291 |  667.530 |
+| ![](img/ico/hmg.webp)      | Deployable MG     | Pickup Kit         | UW_PickUp30Cal         | CP_32_bouzid_alliedmain_mmg     |    201 | -641.924 |  30.266 |  667.606 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | UA_PickUpScoutEnfield  | CP_32_bouzid_alliedmain_sniper  |    201 | -640.096 |  31.075 |  668.107 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | UA_PickUpScoutEnfield  | CP_32_bouzid_sidibouzid_sniper  |    203 |  150.449 |  42.127 |  -24.686 |
+| ![](img/ico/arty.webp)     | Artillery         | Static Emplacement | m2a1_howitzer_105mm    | CP_32_bouzid_alliedmain_arti    |    201 | -530.866 |  28.257 |  623.395 |
+| ![](img/ico/flak.webp)     | Anti-aircraft Gun | Static Emplacement | flak18                 | CP_32_bouzid_fallback_88a       |    204 |  222.799 |  26.293 | -417.383 |
+| ![](img/ico/flak.webp)     | Anti-aircraft Gun | Static Emplacement | flak18                 | CP_32_bouzid_fallback_88b       |    204 |  151.019 |  26.014 | -473.067 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg34_lafette           | CP_32_bouzid_kern_lafette1      |    202 | -289.590 |  31.912 |  244.152 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg34_lafette           | CP_32_bouzid_kern_lafette2      |    202 | -160.774 |  29.944 |  367.879 |
+| ![](img/ico/pak.webp)      | Anti-tank Gun     | Static Emplacement | pak40_static_ws        | CP_32_bouzid_kern_atgun1        |    202 | -338.610 |  30.155 |  180.737 |
+| ![](img/ico/pak.webp)      | Anti-tank Gun     | Static Emplacement | pak40_static_ws        | CP_32_bouzid_kern_atgun2        |    202 | -185.834 |  29.663 |  367.079 |
+| ![](img/ico/pak.webp)      | Anti-tank Gun     | Static Emplacement | pak40_static_ws        | CP_32_bouzid_sidibouzid_atgun1  |    203 |   63.931 |  24.272 |  -27.158 |
+| ![](img/ico/pak.webp)      | Anti-tank Gun     | Static Emplacement | pak40_static_ws        | CP_32_bouzid_sidibouzid_atgun2  |    203 |  150.712 |  26.620 |   72.948 |
+| ![](img/ico/pak.webp)      | Anti-tank Gun     | Static Emplacement | pak40_static_ws        | CP_32_bouzid_sidibouzid_atgun3  |    203 |  248.939 |  28.636 |    7.424 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | gmc_m3_75mm            | CP_32_bouzid_alliedmain_m3_75mm |    201 | -637.145 |  29.710 |  649.092 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | m3_scoutcar            | CP_32_bouzid_alliedmain_apc1    |    201 | -636.195 |  29.228 |  640.742 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | m3_halftrack           | CP_32_bouzid_alliedmain_apc2    |    201 | -648.203 |  29.060 |  611.965 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | m3_halftrack           | CP_32_bouzid_kern_apc           |    202 | -315.639 |  28.958 |  322.999 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | sdkfz251_1             | CP_32_bouzid_sidibouzid_apc     |    203 |  210.614 |  25.938 |  -95.624 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | sdkfz250_3_alt         | CP_32_bouzid_sidibouzid_apc2    |    203 |  213.967 |  26.047 |  -98.684 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | gmc_m3_75mm            | CP_32_bouzid_sidibouzid_m3_75mm |    203 |  108.313 |  26.214 |   53.757 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | m3_scoutcar            | CP_32_bouzid_sidibouzid_apc_0   |    203 |  105.357 |  26.465 |   58.752 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | sdkfz251_1             | CP_32_bouzid_fallback_apc       |    204 |  157.903 |  25.418 | -695.506 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | sdkfz251_10            | CP_32_bouzid_fallback_gunapc    |    204 |  169.750 |  26.235 | -690.006 |
+| ![](img/ico/car.webp)      | Car               | Vehicle            | gmc                    | CP_32_bouzid_alliedmain_truck1  |    201 | -668.851 |  29.060 |  616.443 |
+| ![](img/ico/car.webp)      | Car               | Vehicle            | gmc_nocanvas           | CP_32_bouzid_alliedmain_truck2  |    201 | -658.081 |  29.060 |  614.099 |
+| ![](img/ico/car.webp)      | Car               | Vehicle            | gmc_nocanvas           | CP_32_bouzid_sidibouzid_truck1  |    203 |  125.759 |  25.795 |   12.165 |
+| ![](img/ico/car.webp)      | Car               | Vehicle            | opelblitz_dak_nocanvas | CP_32_bouzid_fallback_truck     |    204 |  161.446 |  25.350 | -704.000 |
+| ![](img/ico/binoc.webp)    | Scout Vehicle     | Vehicle            | sdkfz231_1             | CP_32_bouzid_kern_scout         |    202 |  206.365 |  25.935 |  -91.373 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | m3_lee                 | CP_32_bouzid_alliedmain_lee1    |    201 | -638.259 |  30.109 |  656.657 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | m3_lee                 | CP_32_bouzid_alliedmain_lee2    |    201 | -640.006 |  29.060 |  609.825 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | m4a1_early             | CP_32_bouzid_alliedmain_sherman |    201 | -629.572 |  28.988 |  607.699 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | pziii_l_dak            | CP_32_bouzid_fallback_pziii     |    204 |  154.417 |  25.541 | -684.944 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | pzivf2                 | CP_32_bouzid_fallback_pziv      |    204 |  152.611 |  25.653 | -675.578 |
 

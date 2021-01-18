@@ -32,46 +32,46 @@ title: Villers-Bocage 1944 (32p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name               |    pos_x |   pos_y |    pos_z |   flag | is_locked   |   team | instance                             | gpo_cat_disp       | gpo_subcat_disp   |
-|:-------------|:-----------|:-----------------------|---------:|--------:|---------:|-------:|:------------|-------:|:-------------------------------------|:-------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate             | -162.222 |  23.838 |   54.719 |      0 | False       |      0 | ammo_crate_0                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -161.89  |  23.845 |   53.956 |      0 | False       |      0 | ammo_crate_1                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  -24.617 |  22.081 |  420.695 |      0 | False       |      0 | ammo_crate_2                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  -24.726 |  22.076 |  419.82  |      0 | False       |      0 | ammo_crate_3                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  330.543 |  31.047 |  -51.572 |      0 | False       |      0 | ammo_crate_4                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  329.812 |  31.052 |  -52.065 |      0 | False       |      0 | ammo_crate_5                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  129.918 |  23.12  | -243.498 |      0 | False       |      0 | ammo_crate_6                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  129.78  |  23.124 | -242.651 |      0 | False       |      0 | ammo_crate_7                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |   83.929 |  21.688 | -226.34  |      0 | False       |      0 | ammo_crate_8                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |   84.163 |  21.633 | -225.514 |      0 | False       |      0 | ammo_crate_9                         | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |   54.923 |  23.6   |  116.927 |      0 | False       |      0 | ammo_crate_10                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  -30.296 |  22.26  |  405.034 |      0 | False       |      0 | ammo_crate_11                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  -70.738 |  23.016 |  400.87  |      0 | False       |      0 | ammo_crate_12                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  279.968 |  26.371 |  231.542 |      0 | False       |      0 | ammo_crate_13                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  -42.353 |  23.221 |  298.295 |      0 | False       |      0 | ammo_crate_14                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -106.536 |  22.501 |  -31.873 |      0 | False       |      0 | ammo_crate_15                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -408.026 |  24.05  |  411.043 |      0 | False       |      0 | ammo_crate_16                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |   -4.961 |  21.575 |  117.568 |      0 | False       |      0 | ammo_crate_17                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |   67.457 |  22.062 |  120.717 |      0 | False       |      0 | ammo_crate_18                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  366.471 |  26.356 | -432.966 |      0 | False       |      0 | ammo_crate_19                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |   92.123 |  24.027 |  257.861 |      0 | False       |      0 | ammo_crate_20                        | Static Ammo Crate  | Static Ammo Crate |
-| ammo         | kit        | BW_PickUpAmmokit       |   68.3   |  21.997 |  116.203 |    204 | False       |      0 | CP_32_farm_DE_GB_Ammo                | Pickup Kit         | Ammo Kit          |
-| ammo         | kit        | BW_PickUpAmmokit       |  331.818 |  30.863 |  -51.06  |    202 | False       |      0 | CP_32_point213_DE_GB_Ammo            | Pickup Kit         | Ammo Kit          |
-| arty_dep     | kit        | BA_PickUpMortar        |   66.824 |  22.033 |  114.858 |    204 | False       |      0 | CP_32_farm_DE_GB_Mortar              | Pickup Kit         | Deployable Arty   |
-| arty_dep     | kit        | BA_PickUpMortar        |  331.918 |  31.622 |  -49.439 |    202 | False       |      0 | CP_32_point213_DE_GB_Mortar          | Pickup Kit         | Deployable Arty   |
-| engineer     | kit        | BW_PickUpEngineer      |  291.144 |  30.215 |  -47.12  |    202 | False       |      0 | CP_32_point213_DE_GB_Engineer        | Pickup Kit         | Engineer Kit      |
-| sniper       | kit        | BW_PickUpSniperNo4     |  308.936 |  41.582 |  -45.199 |    202 | False       |      0 | CP_32_point213_DE_GB_Sniper          | Pickup Kit         | Sniper Kit        |
-| sniper       | kit        | BW_PickUpSniperNo4     |  -19.205 |  39.928 |  307.258 |    203 | False       |      0 | CP_32_tilly_sur_seulles_DE_GB_Sniper | Pickup Kit         | Sniper Kit        |
-| flak         | static     | flak18_fr              |  289.078 |  30.051 |  -49.051 |    202 | False       |      0 | CP_32_point213_88mm                  | Static Emplacement | Anti-aircraft Gun |
-| apc          | vehicle    | sdkfz251_d             |   62.584 |  20.838 | -248.778 |    201 | False       |      0 | CP_32_villers_bocage_hanomag         | Vehicle            | APC               |
-| apc          | vehicle    | sdkfz251_d             |  209.986 |  22.577 | -238.976 |    201 | False       |      0 | CP_32_villers_bocage_hanomag2        | Vehicle            | APC               |
-| apc          | vehicle    | m5a1_halftrack         |   13.918 |  21.948 |  408.749 |    203 | False       |      0 | CP_32_tilly_sur_seulles_m5a1         | Vehicle            | APC               |
-| apc          | vehicle    | m5a1_halftrack         |  -78.958 |  22.022 |  401.663 |    203 | False       |      0 | CP_32_tilly_sur_seulles_m5a1_2       | Vehicle            | APC               |
-| tank         | vehicle    | sherman_vc_early_olive |  -53.064 |  22.187 |  410.221 |    203 | True        |      0 | CP_32_tilly_sur_seulles_firefly      | Vehicle            | Tank              |
-| tank         | vehicle    | cromwell               |  -40.724 |  22.087 |  411.933 |    203 | True        |      0 | CP_32_tilly_sur_seulles_cromwell     | Vehicle            | Tank              |
-| tank         | vehicle    | m5a1_stuart            |  -16.941 |  22.355 |  415.997 |    203 | True        |      0 | CP_32_tilly_sur_seulles_stauartm5    | Vehicle            | Tank              |
-| tank         | vehicle    | tiger_late_222         |  131.17  |  21.89  | -302.597 |    201 | True        |      0 | CP_32_villers_bocage_tiger           | Vehicle            | Tank              |
-| tank         | vehicle    | pzivh_noskirt          |  202.56  |  22.486 | -235.009 |    201 | True        |      0 | CP_32_villers_bocage_panzer4h        | Vehicle            | Tank              |
-| tank         | vehicle    | stug40r                |  193.298 |  22.403 | -235.159 |    202 | True        |      0 | CP_32_point213_stugiv                | Vehicle            | Tank              |
-| tank         | vehicle    | cromwell               |  -68.102 |  22.388 |  409.786 |    204 | True        |      0 | CP_32_farm_cromwell2                 | Vehicle            | Tank              |
+| Icon                       | SubCat            | Cat                | Name                   | Instance                             |   Flag |    X Pos |   Y Pos |    Z Pos |
+|:---------------------------|:------------------|:-------------------|:-----------------------|:-------------------------------------|-------:|---------:|--------:|---------:|
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_0                         |      0 | -162.222 |  23.838 |   54.719 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_1                         |      0 | -161.890 |  23.845 |   53.956 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_2                         |      0 |  -24.617 |  22.081 |  420.695 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_3                         |      0 |  -24.726 |  22.076 |  419.820 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_4                         |      0 |  330.543 |  31.047 |  -51.572 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_5                         |      0 |  329.812 |  31.052 |  -52.065 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_6                         |      0 |  129.918 |  23.120 | -243.498 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_7                         |      0 |  129.780 |  23.124 | -242.651 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_8                         |      0 |   83.929 |  21.688 | -226.340 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_9                         |      0 |   84.163 |  21.633 | -225.514 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_10                        |      0 |   54.923 |  23.600 |  116.927 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_11                        |      0 |  -30.296 |  22.260 |  405.034 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_12                        |      0 |  -70.738 |  23.016 |  400.870 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_13                        |      0 |  279.968 |  26.371 |  231.542 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_14                        |      0 |  -42.353 |  23.221 |  298.295 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_15                        |      0 | -106.536 |  22.501 |  -31.873 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_16                        |      0 | -408.026 |  24.050 |  411.043 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_17                        |      0 |   -4.961 |  21.575 |  117.568 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_18                        |      0 |   67.457 |  22.062 |  120.717 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_19                        |      0 |  366.471 |  26.356 | -432.966 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate             | ammo_crate_20                        |      0 |   92.123 |  24.027 |  257.861 |
+| ![](img/ico/ammo.webp)     | Ammo Kit          | Pickup Kit         | BW_PickUpAmmokit       | CP_32_farm_DE_GB_Ammo                |    204 |   68.300 |  21.997 |  116.203 |
+| ![](img/ico/ammo.webp)     | Ammo Kit          | Pickup Kit         | BW_PickUpAmmokit       | CP_32_point213_DE_GB_Ammo            |    202 |  331.818 |  30.863 |  -51.060 |
+| ![](img/ico/arty_dep.webp) | Deployable Arty   | Pickup Kit         | BA_PickUpMortar        | CP_32_farm_DE_GB_Mortar              |    204 |   66.824 |  22.033 |  114.858 |
+| ![](img/ico/arty_dep.webp) | Deployable Arty   | Pickup Kit         | BA_PickUpMortar        | CP_32_point213_DE_GB_Mortar          |    202 |  331.918 |  31.622 |  -49.439 |
+| ![](img/ico/engineer.webp) | Engineer Kit      | Pickup Kit         | BW_PickUpEngineer      | CP_32_point213_DE_GB_Engineer        |    202 |  291.144 |  30.215 |  -47.120 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | BW_PickUpSniperNo4     | CP_32_point213_DE_GB_Sniper          |    202 |  308.936 |  41.582 |  -45.199 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | BW_PickUpSniperNo4     | CP_32_tilly_sur_seulles_DE_GB_Sniper |    203 |  -19.205 |  39.928 |  307.258 |
+| ![](img/ico/flak.webp)     | Anti-aircraft Gun | Static Emplacement | flak18_fr              | CP_32_point213_88mm                  |    202 |  289.078 |  30.051 |  -49.051 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | sdkfz251_d             | CP_32_villers_bocage_hanomag         |    201 |   62.584 |  20.838 | -248.778 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | sdkfz251_d             | CP_32_villers_bocage_hanomag2        |    201 |  209.986 |  22.577 | -238.976 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | m5a1_halftrack         | CP_32_tilly_sur_seulles_m5a1         |    203 |   13.918 |  21.948 |  408.749 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | m5a1_halftrack         | CP_32_tilly_sur_seulles_m5a1_2       |    203 |  -78.958 |  22.022 |  401.663 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | sherman_vc_early_olive | CP_32_tilly_sur_seulles_firefly      |    203 |  -53.064 |  22.187 |  410.221 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | cromwell               | CP_32_tilly_sur_seulles_cromwell     |    203 |  -40.724 |  22.087 |  411.933 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | m5a1_stuart            | CP_32_tilly_sur_seulles_stauartm5    |    203 |  -16.941 |  22.355 |  415.997 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | tiger_late_222         | CP_32_villers_bocage_tiger           |    201 |  131.170 |  21.890 | -302.597 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | pzivh_noskirt          | CP_32_villers_bocage_panzer4h        |    201 |  202.560 |  22.486 | -235.009 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | stug40r                | CP_32_point213_stugiv                |    202 |  193.298 |  22.403 | -235.159 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | cromwell               | CP_32_farm_cromwell2                 |    204 |  -68.102 |  22.388 |  409.786 |
 

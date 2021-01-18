@@ -25,26 +25,26 @@ title: Mount Olympus 1941 (32p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name                    |    pos_x |   pos_y |    pos_z |   flag | is_locked   |   team | instance                           | gpo_cat_disp       | gpo_subcat_disp   |
-|:-------------|:-----------|:----------------------------|---------:|--------:|---------:|-------:|:------------|-------:|:-----------------------------------|:-------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate                  |  740.556 |  19.341 | -806.939 |      0 | False       |      0 | ammo_crate_0                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  |  289.737 |  18.181 | -501.136 |      0 | False       |      0 | ammo_crate_1                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  |  271.049 |  21.103 | -127.26  |      0 | False       |      0 | ammo_crate_2                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  |  270.67  |  21.355 | -127.401 |      0 | False       |      0 | ammo_crate_3                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  |  168.009 |  21.072 | -111.562 |      0 | False       |      0 | ammo_crate_4                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  | -135.647 |  17.342 |  377.423 |      0 | False       |      0 | ammo_crate_5                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  | -253.974 |  60.86  | -231.675 |      0 | False       |      0 | ammo_crate_6                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  |   23.029 |  18.733 |  -67.455 |      0 | False       |      0 | ammo_crate_7                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  |  195.365 |  21.528 |  -44.379 |      0 | False       |      0 | ammo_crate_8                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  | -478.206 |  18.9   |  717.802 |      0 | False       |      0 | ammo_crate_9                       | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  |   61.864 |  33.222 |   28.857 |      0 | False       |      0 | ammo_crate_10                      | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                  |   59.468 |  31.851 |    8.473 |      0 | False       |      0 | ammo_crate_11                      | Static Ammo Crate  | Static Ammo Crate |
-| antitank     | kit        | BA_PickUpTankHunterNo4Short |  144.522 |  22.085 | -137.845 |    207 | False       |      0 | CP_32_Olymp_town_square_TankHunter | Pickup Kit         | Tankhunter Kit    |
-| antitank     | kit        | GA_PickUpTankHunterK98Short |  145.041 |  22.117 | -136.892 |    207 | False       |      0 | CP_32_Olymp_town_square_1_0        | Pickup Kit         | Tankhunter Kit    |
-| at_rifle     | kit        | BA_PickUpAntitankBoys       |  248.251 |  23.716 | -131.236 |    206 | False       |      0 | CP_32_Olymp_cafe_ATrifle           | Pickup Kit         | AT Rifle          |
-| at_rifle     | kit        | BA_PickUpAntitankBoys       |  177.228 |  21.254 | -116.741 |    207 | False       |      0 | CP_32_Olymp_town_square_ATrifle    | Pickup Kit         | AT Rifle          |
-| mg           | kit        | BA_PickUpSupportBrenMK1     |  259.044 |  22.09  | -121.58  |    206 | False       |      0 | CP_32_Olymp_cafe_Support           | Pickup Kit         | MG Kit            |
-| sniper       | kit        | BA_PickUpSniperNo4          |  275.399 |  21.241 | -125.137 |    206 | False       |      0 | CP_32_Olymp_cafe_Sniper            | Pickup Kit         | Sniper Kit        |
-| sniper       | kit        | BA_PickUpSniperNo4          |  190.301 |  27.11  | -104.951 |    207 | False       |      0 | CP_32_Olymp_town_square_Sniper     | Pickup Kit         | Sniper Kit        |
-| mg_nest      | static     | lewis_bipod                 |  155.963 |  22.172 | -108.102 |    207 | False       |      0 | CP_32_Olymp_town_square_LightMG    | Static Emplacement | Static MG         |
+| Icon                     | SubCat            | Cat                | Name                        | Instance                           |   Flag |    X Pos |   Y Pos |    Z Pos |
+|:-------------------------|:------------------|:-------------------|:----------------------------|:-----------------------------------|-------:|---------:|--------:|---------:|
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_0                       |      0 |  740.556 |  19.341 | -806.939 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_1                       |      0 |  289.737 |  18.181 | -501.136 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_2                       |      0 |  271.049 |  21.103 | -127.260 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_3                       |      0 |  270.670 |  21.355 | -127.401 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_4                       |      0 |  168.009 |  21.072 | -111.562 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_5                       |      0 | -135.647 |  17.342 |  377.423 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_6                       |      0 | -253.974 |  60.860 | -231.675 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_7                       |      0 |   23.029 |  18.733 |  -67.455 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_8                       |      0 |  195.365 |  21.528 |  -44.379 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_9                       |      0 | -478.206 |  18.900 |  717.802 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_10                      |      0 |   61.864 |  33.222 |   28.857 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate                  | ammo_crate_11                      |      0 |   59.468 |  31.851 |    8.473 |
+| ![](img/ico/boom.webp)   | Tankhunter Kit    | Pickup Kit         | BA_PickUpTankHunterNo4Short | CP_32_Olymp_town_square_TankHunter |    207 |  144.522 |  22.085 | -137.845 |
+| ![](img/ico/boom.webp)   | Tankhunter Kit    | Pickup Kit         | GA_PickUpTankHunterK98Short | CP_32_Olymp_town_square_1_0        |    207 |  145.041 |  22.117 | -136.892 |
+| ![](img/ico/pierce.webp) | AT Rifle          | Pickup Kit         | BA_PickUpAntitankBoys       | CP_32_Olymp_cafe_ATrifle           |    206 |  248.251 |  23.716 | -131.236 |
+| ![](img/ico/pierce.webp) | AT Rifle          | Pickup Kit         | BA_PickUpAntitankBoys       | CP_32_Olymp_town_square_ATrifle    |    207 |  177.228 |  21.254 | -116.741 |
+| ![](img/ico/mg.webp)     | MG Kit            | Pickup Kit         | BA_PickUpSupportBrenMK1     | CP_32_Olymp_cafe_Support           |    206 |  259.044 |  22.090 | -121.580 |
+| ![](img/ico/sniper.webp) | Sniper Kit        | Pickup Kit         | BA_PickUpSniperNo4          | CP_32_Olymp_cafe_Sniper            |    206 |  275.399 |  21.241 | -125.137 |
+| ![](img/ico/sniper.webp) | Sniper Kit        | Pickup Kit         | BA_PickUpSniperNo4          | CP_32_Olymp_town_square_Sniper     |    207 |  190.301 |  27.110 | -104.951 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | lewis_bipod                 | CP_32_Olymp_town_square_LightMG    |    207 |  155.963 |  22.172 | -108.102 |
 

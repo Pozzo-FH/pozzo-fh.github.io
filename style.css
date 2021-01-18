@@ -68,7 +68,7 @@ tr, th, td {
   vertical-align: middle;
   padding: 0.5em 0.5em;
   line-height: normal;
-  white-space: normal;
+  white-space: nowrap;
   max-width: none;
   border: none;
 }

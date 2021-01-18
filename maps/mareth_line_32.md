@@ -32,58 +32,58 @@ title: Mareth Line 1943 (32p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name                |    pos_x |   pos_y |   pos_z |   flag | is_locked   |   team | instance                                     | gpo_cat_disp       | gpo_subcat_disp   |
-|:-------------|:-----------|:------------------------|---------:|--------:|--------:|-------:|:------------|-------:|:---------------------------------------------|:-------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate              | -483.537 |  21.317 | 669.351 |      0 | False       |      0 | ammo_crate_0                                 | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -488.288 |  39.077 | 347.332 |      0 | False       |      0 | ammo_crate_1                                 | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -290.931 |  24.716 | 175.975 |      0 | False       |      0 | ammo_crate_2                                 | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -477.693 |  31.017 | -14.273 |      0 | False       |      0 | ammo_crate_3                                 | Static Ammo Crate  | Static Ammo Crate |
-| ammo         | kit        | BA_PickUpAmmokit        | -278.741 |  24.098 | 178.239 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_AmmoCrates         | Pickup Kit         | Ammo Kit          |
-| ammo         | kit        | BA_PickUpAmmokit        | -466.897 |  30.433 | -13.645 |    303 | False       |      0 | CP_32_mareth_Mosque_DE_GB_AmmoCrates         | Pickup Kit         | Ammo Kit          |
-| ammo         | kit        | BA_PickUpAmmokit        | -696.035 |  65.265 | 178.177 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_AmmoCrates        | Pickup Kit         | Ammo Kit          |
-| at_rifle     | kit        | BA_PickUpAntitankBoys   | -419.819 |  26.848 |   8.161 |    304 | False       |      0 | CP_32_mareth_ToujaneCR_DE_GB_ATrifle         | Pickup Kit         | AT Rifle          |
-| at_rifle     | kit        | BA_PickUpAntitankBoys   | -692.824 |  66.568 | 204.169 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_ATrifle           | Pickup Kit         | AT Rifle          |
-| commando     | kit        | BA_PickUpCommandoTommyD | -276.387 |  24.821 | 184.179 |    301 | False       |      0 | CP_32_mareth_Mareth_Commando                 | Pickup Kit         | Commando Kit      |
-| sniper       | kit        | BA_PickUpSniperNo4      | -274.192 |  24.469 | 179.914 |    301 | False       |      0 | CP_32_mareth_Mareth_Sniper                   | Pickup Kit         | Sniper Kit        |
-| sniper       | kit        | GA_PickUpSniperK98      | -521.849 |  45.452 |   5.118 |    303 | False       |      0 | CP_32_mareth_Mosque_Sniper                   | Pickup Kit         | Sniper Kit        |
-| noidea       | noidea     | commander_mortar_allied |  133.099 |   9.256 | 313.974 |    301 | True        |      0 | CP_32_mareth_Mareth_DE_GB_CommMortar         | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | commander_mortar_allied |  132.667 |   9.015 | 319.49  |    301 | True        |      0 | CP_32_mareth_Mareth_DE_GB_CommMortar_0       | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | commander_mortar_allied | -990.354 | 104.365 | 360.679 |    302 | True        |      0 | CP_32_mareth_Matmata_DE_GB_CommMortar        | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | commander_mortar_allied | -990.349 | 103.835 | 355.789 |    302 | True        |      0 | CP_32_mareth_Matmata_DE_GB_CommMortar_0      | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | commander_smoke_allied  |  132.316 |   9.22  | 329.048 |    301 | False       |      0 | CP_32_mareth_Mareth_commanderarty            | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| arty         | static     | 3inchmortar             | -248.634 |  27.143 | 237.965 |    301 | False       |      0 | CP_32_mareth_Mareth_Mortar                   | Static Emplacement | Artillery         |
-| arty         | static     | lefh18                  | -695.083 |  66.952 | 173.826 |    302 | False       |      1 | CP_32_mareth_Matmata_Artillery               | Static Emplacement | Artillery         |
-| arty         | static     | sgwr34                  | -710.016 |  65.635 | 174.815 |    302 | False       |      0 | CP_32_mareth_Matmata_Mortar                  | Static Emplacement | Artillery         |
-| arty         | static     | 3inchmortar             | -261.972 |  24.368 | 208.659 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_Howitzer           | Static Emplacement | Artillery         |
-| flak         | static     | flak18                  | -462.613 |  30.311 | -17.987 |    303 | False       |      0 | CP_32_mareth_Mosque_ATAA                     | Static Emplacement | Anti-aircraft Gun |
-| mg_nest      | static     | mg34_bipod              | -312.983 |  25.289 | 184.58  |    301 | False       |      0 | CP_32_mareth_Mareth_MGbunker                 | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod              | -689.107 |  68.181 | 201.528 |    302 | False       |      1 | CP_32_mareth_Matmata_MG                      | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod              | -762.058 |  82.92  | 180.216 |    302 | False       |      0 | CP_32_mareth_Matmata_12                      | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod              | -774.176 |  80.804 | 157.409 |    302 | False       |      0 | CP_32_mareth_Matmata_LightMG                 | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod              | -419.166 |  27.829 |   7.177 |    303 | False       |      0 | CP_32_mareth_Mosque_MG                       | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod              | -450.515 |  32.547 |  25.419 |    303 | False       |      0 | CP_32_mareth_Mosque_MG2                      | Static Emplacement | Static MG         |
-| pak          | static     | pak40_static_ws         | -771.042 |  76.409 | 205.672 |    302 | False       |      0 | CP_32_mareth_Matmata_11                      | Static Emplacement | Anti-tank Gun     |
-| pak          | static     | pak40_static_ws         | -446.224 |  34.823 |  67.941 |    303 | False       |      0 | CP_32_mareth_Mosque_1_1                      | Static Emplacement | Anti-tank Gun     |
-| pak          | static     | pak40_ws                | -777.403 |  76.285 | 183.394 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_LightArtillery    | Static Emplacement | Anti-tank Gun     |
-| radio        | static     | britcommradio           | -218.571 |  25     | 225.927 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_CommRadio          | Static Emplacement | Radio             |
-| radio        | static     | gercommradio            | -776.104 |  76.356 | 157.227 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_CommRadio         | Static Emplacement | Radio             |
-| apc          | vehicle    | universalcarrier_bren   | -745.913 |  75.527 | 158.724 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_PersonelCarrier2  | Vehicle            | APC               |
-| apc          | vehicle    | universalcarrier_bren   | -232.428 |  25.06  | 255.23  |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_PersonelCarrier2   | Vehicle            | APC               |
-| apc          | vehicle    | universalcarrier_bren   | -232.149 |  25.061 | 250.647 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_PersonelCarrier2_0 | Vehicle            | APC               |
-| apc          | vehicle    | universalcarrier_bren   | -560.581 |  30.131 | -17.718 |    303 | False       |      0 | CP_32_mareth_Mosque_DE_GB_PersonelCarrier2   | Vehicle            | APC               |
-| car          | vehicle    | bedfordoyd              | -208.125 |  25.06  | 254.486 |    301 | False       |      0 | CP_32_mareth_Mareth_Truck                    | Vehicle            | Car               |
-| car          | vehicle    | kubeldak                | -455.362 |  31.518 |  52.131 |    303 | False       |      0 | CP_32_mareth_Mosque_Scout                    | Vehicle            | Car               |
-| car          | vehicle    | chevy30cwt              | -555.408 |  30.043 | -17.151 |    303 | False       |      0 | CP_32_mareth_Mosque_PersonelCarrier          | Vehicle            | Car               |
-| car          | vehicle    | chevy30cwt              | -476.572 |  30.488 |  -3.304 |    303 | False       |      1 | CP_32_mareth_Mosque_Truck                    | Vehicle            | Car               |
-| car          | vehicle    | chevy30cwt              | -233.437 |  25.06  | 265.192 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_TruckAA            | Vehicle            | Car               |
-| car          | vehicle    | willysmbsas             | -232.685 |  25.06  | 259.951 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_CarCommando        | Vehicle            | Car               |
-| car          | vehicle    | kettenkrad_dak          | -790.989 |  76.243 | 217.467 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_CarCommando       | Vehicle            | Car               |
-| recon        | vehicle    | sdkfz222                | -780.291 |  76.285 | 163.839 |    302 | True        |      0 | CP_32_mareth_Matmata_MobileAA                | Vehicle            | Scout Vehicle     |
-| recon        | vehicle    | sahariana               | -780.093 |  75.463 | 240.443 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_Truck_0           | Vehicle            | Scout Vehicle     |
-| supply       | vehicle    | bedfordoyd_ammo         | -783.022 |  76.241 | 216.117 |    302 | False       |      0 | CP_32_mareth_Matmata_DE_GB_TruckAmmo         | Vehicle            | Supply Vehicle    |
-| supply       | vehicle    | bedfordoyd_ammo         | -229.314 |  25.06  | 227.479 |    301 | False       |      0 | CP_32_mareth_Mareth_DE_GB_TruckAmmo          | Vehicle            | Supply Vehicle    |
-| tank         | vehicle    | churchillmkiii          | -233.299 |  25.06  | 280.193 |    301 | True        |      0 | CP_32_mareth_Mareth_DE_GB_MediumTank         | Vehicle            | Tank              |
-| tank         | vehicle    | m4a1                    | -233.306 |  25.06  | 272.104 |    301 | True        |      0 | CP_32_mareth_Mareth_DE_GB_HeavyTank2         | Vehicle            | Tank              |
-| tank         | vehicle    | pziii_l_dak             | -747.892 |  75.611 | 182.818 |    302 | True        |      0 | CP_32_mareth_Matmata_DE_GB_MediumTank3       | Vehicle            | Tank              |
-| tank         | vehicle    | fiatl6_40               | -744.367 |  75.586 | 247.087 |    302 | True        |      0 | CP_32_mareth_Matmata_DE_GB_ItalianMedTank    | Vehicle            | Tank              |
+| Icon                     | SubCat            | Cat                | Name                    | Instance                                     |   Flag |    X Pos |   Y Pos |   Z Pos |
+|:-------------------------|:------------------|:-------------------|:------------------------|:---------------------------------------------|-------:|---------:|--------:|--------:|
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_0                                 |      0 | -483.537 |  21.317 | 669.351 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_1                                 |      0 | -488.288 |  39.077 | 347.332 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_2                                 |      0 | -290.931 |  24.716 | 175.975 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_3                                 |      0 | -477.693 |  31.017 | -14.273 |
+| ![](img/ico/ammo.webp)   | Ammo Kit          | Pickup Kit         | BA_PickUpAmmokit        | CP_32_mareth_Mareth_DE_GB_AmmoCrates         |    301 | -278.741 |  24.098 | 178.239 |
+| ![](img/ico/ammo.webp)   | Ammo Kit          | Pickup Kit         | BA_PickUpAmmokit        | CP_32_mareth_Mosque_DE_GB_AmmoCrates         |    303 | -466.897 |  30.433 | -13.645 |
+| ![](img/ico/ammo.webp)   | Ammo Kit          | Pickup Kit         | BA_PickUpAmmokit        | CP_32_mareth_Matmata_DE_GB_AmmoCrates        |    302 | -696.035 |  65.265 | 178.177 |
+| ![](img/ico/pierce.webp) | AT Rifle          | Pickup Kit         | BA_PickUpAntitankBoys   | CP_32_mareth_ToujaneCR_DE_GB_ATrifle         |    304 | -419.819 |  26.848 |   8.161 |
+| ![](img/ico/pierce.webp) | AT Rifle          | Pickup Kit         | BA_PickUpAntitankBoys   | CP_32_mareth_Matmata_DE_GB_ATrifle           |    302 | -692.824 |  66.568 | 204.169 |
+| ![](img/ico/sword.webp)  | Commando Kit      | Pickup Kit         | BA_PickUpCommandoTommyD | CP_32_mareth_Mareth_Commando                 |    301 | -276.387 |  24.821 | 184.179 |
+| ![](img/ico/sniper.webp) | Sniper Kit        | Pickup Kit         | BA_PickUpSniperNo4      | CP_32_mareth_Mareth_Sniper                   |    301 | -274.192 |  24.469 | 179.914 |
+| ![](img/ico/sniper.webp) | Sniper Kit        | Pickup Kit         | GA_PickUpSniperK98      | CP_32_mareth_Mosque_Sniper                   |    303 | -521.849 |  45.452 |   5.118 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_32_mareth_Mareth_DE_GB_CommMortar         |    301 |  133.099 |   9.256 | 313.974 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_32_mareth_Mareth_DE_GB_CommMortar_0       |    301 |  132.667 |   9.015 | 319.490 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_32_mareth_Matmata_DE_GB_CommMortar        |    302 | -990.354 | 104.365 | 360.679 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_32_mareth_Matmata_DE_GB_CommMortar_0      |    302 | -990.349 | 103.835 | 355.789 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_smoke_allied  | CP_32_mareth_Mareth_commanderarty            |    301 |  132.316 |   9.220 | 329.048 |
+| ![](img/ico/arty.webp)   | Artillery         | Static Emplacement | 3inchmortar             | CP_32_mareth_Mareth_Mortar                   |    301 | -248.634 |  27.143 | 237.965 |
+| ![](img/ico/arty.webp)   | Artillery         | Static Emplacement | lefh18                  | CP_32_mareth_Matmata_Artillery               |    302 | -695.083 |  66.952 | 173.826 |
+| ![](img/ico/arty.webp)   | Artillery         | Static Emplacement | sgwr34                  | CP_32_mareth_Matmata_Mortar                  |    302 | -710.016 |  65.635 | 174.815 |
+| ![](img/ico/arty.webp)   | Artillery         | Static Emplacement | 3inchmortar             | CP_32_mareth_Mareth_DE_GB_Howitzer           |    301 | -261.972 |  24.368 | 208.659 |
+| ![](img/ico/flak.webp)   | Anti-aircraft Gun | Static Emplacement | flak18                  | CP_32_mareth_Mosque_ATAA                     |    303 | -462.613 |  30.311 | -17.987 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | mg34_bipod              | CP_32_mareth_Mareth_MGbunker                 |    301 | -312.983 |  25.289 | 184.580 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | mg34_bipod              | CP_32_mareth_Matmata_MG                      |    302 | -689.107 |  68.181 | 201.528 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | mg34_bipod              | CP_32_mareth_Matmata_12                      |    302 | -762.058 |  82.920 | 180.216 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | mg34_bipod              | CP_32_mareth_Matmata_LightMG                 |    302 | -774.176 |  80.804 | 157.409 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | mg34_bipod              | CP_32_mareth_Mosque_MG                       |    303 | -419.166 |  27.829 |   7.177 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | mg34_bipod              | CP_32_mareth_Mosque_MG2                      |    303 | -450.515 |  32.547 |  25.419 |
+| ![](img/ico/pak.webp)    | Anti-tank Gun     | Static Emplacement | pak40_static_ws         | CP_32_mareth_Matmata_11                      |    302 | -771.042 |  76.409 | 205.672 |
+| ![](img/ico/pak.webp)    | Anti-tank Gun     | Static Emplacement | pak40_static_ws         | CP_32_mareth_Mosque_1_1                      |    303 | -446.224 |  34.823 |  67.941 |
+| ![](img/ico/pak.webp)    | Anti-tank Gun     | Static Emplacement | pak40_ws                | CP_32_mareth_Matmata_DE_GB_LightArtillery    |    302 | -777.403 |  76.285 | 183.394 |
+| ![](img/ico/radio.webp)  | Radio             | Static Emplacement | britcommradio           | CP_32_mareth_Mareth_DE_GB_CommRadio          |    301 | -218.571 |  25.000 | 225.927 |
+| ![](img/ico/radio.webp)  | Radio             | Static Emplacement | gercommradio            | CP_32_mareth_Matmata_DE_GB_CommRadio         |    302 | -776.104 |  76.356 | 157.227 |
+| ![](img/ico/apc.webp)    | APC               | Vehicle            | universalcarrier_bren   | CP_32_mareth_Matmata_DE_GB_PersonelCarrier2  |    302 | -745.913 |  75.527 | 158.724 |
+| ![](img/ico/apc.webp)    | APC               | Vehicle            | universalcarrier_bren   | CP_32_mareth_Mareth_DE_GB_PersonelCarrier2   |    301 | -232.428 |  25.060 | 255.230 |
+| ![](img/ico/apc.webp)    | APC               | Vehicle            | universalcarrier_bren   | CP_32_mareth_Mareth_DE_GB_PersonelCarrier2_0 |    301 | -232.149 |  25.061 | 250.647 |
+| ![](img/ico/apc.webp)    | APC               | Vehicle            | universalcarrier_bren   | CP_32_mareth_Mosque_DE_GB_PersonelCarrier2   |    303 | -560.581 |  30.131 | -17.718 |
+| ![](img/ico/car.webp)    | Car               | Vehicle            | bedfordoyd              | CP_32_mareth_Mareth_Truck                    |    301 | -208.125 |  25.060 | 254.486 |
+| ![](img/ico/car.webp)    | Car               | Vehicle            | kubeldak                | CP_32_mareth_Mosque_Scout                    |    303 | -455.362 |  31.518 |  52.131 |
+| ![](img/ico/car.webp)    | Car               | Vehicle            | chevy30cwt              | CP_32_mareth_Mosque_PersonelCarrier          |    303 | -555.408 |  30.043 | -17.151 |
+| ![](img/ico/car.webp)    | Car               | Vehicle            | chevy30cwt              | CP_32_mareth_Mosque_Truck                    |    303 | -476.572 |  30.488 |  -3.304 |
+| ![](img/ico/car.webp)    | Car               | Vehicle            | chevy30cwt              | CP_32_mareth_Mareth_DE_GB_TruckAA            |    301 | -233.437 |  25.060 | 265.192 |
+| ![](img/ico/car.webp)    | Car               | Vehicle            | willysmbsas             | CP_32_mareth_Mareth_DE_GB_CarCommando        |    301 | -232.685 |  25.060 | 259.951 |
+| ![](img/ico/car.webp)    | Car               | Vehicle            | kettenkrad_dak          | CP_32_mareth_Matmata_DE_GB_CarCommando       |    302 | -790.989 |  76.243 | 217.467 |
+| ![](img/ico/binoc.webp)  | Scout Vehicle     | Vehicle            | sdkfz222                | CP_32_mareth_Matmata_MobileAA                |    302 | -780.291 |  76.285 | 163.839 |
+| ![](img/ico/binoc.webp)  | Scout Vehicle     | Vehicle            | sahariana               | CP_32_mareth_Matmata_DE_GB_Truck_0           |    302 | -780.093 |  75.463 | 240.443 |
+| ![](img/ico/ammo.webp)   | Supply Vehicle    | Vehicle            | bedfordoyd_ammo         | CP_32_mareth_Matmata_DE_GB_TruckAmmo         |    302 | -783.022 |  76.241 | 216.117 |
+| ![](img/ico/ammo.webp)   | Supply Vehicle    | Vehicle            | bedfordoyd_ammo         | CP_32_mareth_Mareth_DE_GB_TruckAmmo          |    301 | -229.314 |  25.060 | 227.479 |
+| ![](img/ico/tank.webp)   | Tank              | Vehicle            | churchillmkiii          | CP_32_mareth_Mareth_DE_GB_MediumTank         |    301 | -233.299 |  25.060 | 280.193 |
+| ![](img/ico/tank.webp)   | Tank              | Vehicle            | m4a1                    | CP_32_mareth_Mareth_DE_GB_HeavyTank2         |    301 | -233.306 |  25.060 | 272.104 |
+| ![](img/ico/tank.webp)   | Tank              | Vehicle            | pziii_l_dak             | CP_32_mareth_Matmata_DE_GB_MediumTank3       |    302 | -747.892 |  75.611 | 182.818 |
+| ![](img/ico/tank.webp)   | Tank              | Vehicle            | fiatl6_40               | CP_32_mareth_Matmata_DE_GB_ItalianMedTank    |    302 | -744.367 |  75.586 | 247.087 |
 

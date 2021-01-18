@@ -11,13 +11,13 @@ title: Arad (16p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name   |    pos_x |   pos_y |    pos_z |   flag | is_locked   |   team | instance     | gpo_cat_disp      | gpo_subcat_disp   |
-|:-------------|:-----------|:-----------|---------:|--------:|---------:|-------:|:------------|-------:|:-------------|:------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate |   14.806 | 152.127 |  158.248 |      0 | False       |      0 | ammo_crate_0 | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate |  -93.47  | 149.25  |  -65.628 |      0 | False       |      0 | ammo_crate_1 | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate |  -97.381 | 148.321 | -241.962 |      0 | False       |      0 | ammo_crate_2 | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate |  -10.024 | 149.857 | -307.566 |      0 | False       |      0 | ammo_crate_3 | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate | -310.471 | 148.892 |   45.666 |      0 | False       |      0 | ammo_crate_4 | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate |  330.683 | 147.98  | -301.76  |      0 | False       |      0 | ammo_crate_5 | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate | -345.073 | 148.429 |  389.721 |      0 | False       |      0 | ammo_crate_6 | Static Ammo Crate | Static Ammo Crate |
+| Icon                   | SubCat            | Cat               | Name       | Instance     |   Flag |    X Pos |   Y Pos |    Z Pos |
+|:-----------------------|:------------------|:------------------|:-----------|:-------------|-------:|---------:|--------:|---------:|
+| ![](img/ico/ammo.webp) | Static Ammo Crate | Static Ammo Crate | ammo_crate | ammo_crate_0 |      0 |   14.806 | 152.127 |  158.248 |
+| ![](img/ico/ammo.webp) | Static Ammo Crate | Static Ammo Crate | ammo_crate | ammo_crate_1 |      0 |  -93.470 | 149.250 |  -65.628 |
+| ![](img/ico/ammo.webp) | Static Ammo Crate | Static Ammo Crate | ammo_crate | ammo_crate_2 |      0 |  -97.381 | 148.321 | -241.962 |
+| ![](img/ico/ammo.webp) | Static Ammo Crate | Static Ammo Crate | ammo_crate | ammo_crate_3 |      0 |  -10.024 | 149.857 | -307.566 |
+| ![](img/ico/ammo.webp) | Static Ammo Crate | Static Ammo Crate | ammo_crate | ammo_crate_4 |      0 | -310.471 | 148.892 |   45.666 |
+| ![](img/ico/ammo.webp) | Static Ammo Crate | Static Ammo Crate | ammo_crate | ammo_crate_5 |      0 |  330.683 | 147.980 | -301.760 |
+| ![](img/ico/ammo.webp) | Static Ammo Crate | Static Ammo Crate | ammo_crate | ammo_crate_6 |      0 | -345.073 | 148.429 |  389.721 |
 

@@ -18,28 +18,28 @@ title: Lenino (16p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name               |    pos_x |   pos_y |    pos_z |   flag | is_locked   |   team | instance                               | gpo_cat_disp      | gpo_subcat_disp   |
-|:-------------|:-----------|:-----------------------|---------:|--------:|---------:|-------:|:------------|-------:|:---------------------------------------|:------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate             |  416.681 |  23.287 |  408.442 |      0 | False       |      0 | ammo_crate_0                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -460.215 |  27.28  |  -62.6   |      0 | False       |      0 | ammo_crate_1                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -403.39  |  29.888 |  -87.279 |      0 | False       |      0 | ammo_crate_2                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -362.059 |  28.8   |  189.305 |      0 | False       |      0 | ammo_crate_3                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -388.07  |  29.918 |  232.084 |      0 | False       |      0 | ammo_crate_4                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |   -7.152 |  27.196 |  288.547 |      0 | False       |      0 | ammo_crate_5                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  -52.931 |  27.911 |  234.685 |      0 | False       |      0 | ammo_crate_6                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  159.304 |  30.668 |  110.232 |      0 | False       |      0 | ammo_crate_7                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  195.79  |  29.286 |   70.117 |      0 | False       |      0 | ammo_crate_8                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |   -0.246 |  24.808 | -113.243 |      0 | False       |      0 | ammo_crate_9                           | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             |  -47.238 |  26.176 | -182.481 |      0 | False       |      0 | ammo_crate_10                          | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -264.452 |  37.35  |  -10.391 |      0 | False       |      0 | ammo_crate_11                          | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -174.497 |  32.723 |   -6.097 |      0 | False       |      0 | ammo_crate_12                          | Static Ammo Crate | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate             | -757.506 |  26.163 | -236.385 |      0 | False       |      0 | ammo_crate_13                          | Static Ammo Crate | Static Ammo Crate |
-| assault      | kit        | RE_PickUpAssaultPps43  |  -45.178 |  29.384 | -131.708 |      3 | False       |      0 | CP_16_lenino_lenino_DE_RE_Assault      | Pickup Kit        | Assault Kit       |
-| assault      | kit        | RE_PickupAssaultSVT40  |  -81.454 |  27.62  | -141.902 |      3 | False       |      0 | CP_16_lenino_lenino_DE_RE_Assault_0    | Pickup Kit        | Assault Kit       |
-| assault      | kit        | RE_PickUpAssaultPps43  |  -15.361 |  27.738 | -123.615 |      3 | False       |      0 | CP_16_lenino_lenino_DE_RE_Pilot        | Pickup Kit        | Assault Kit       |
-| assault      | kit        | RE_PickupAssaultSVT40  |   24.261 |  24.927 | -125.937 |      3 | False       |      0 | CP_16_lenino_lenino_DE_RE_Assault_1    | Pickup Kit        | Assault Kit       |
-| assault      | kit        | GW_PickUpAssaultG41    | -423.266 |  29.03  |  -69.784 |      1 | False       |      0 | CP_16_lenino_trigubova_DE_RE_Assault   | Pickup Kit        | Assault Kit       |
-| assault      | kit        | GW_PickUpAssaultG41    | -468.853 |  27.313 |  -81     |      1 | False       |      0 | CP_16_lenino_trigubova_DE_RE_Assault_0 | Pickup Kit        | Assault Kit       |
-| assault      | kit        | GE_PickupAssaultPPsH41 | -481.105 |  28.155 |  -58.998 |      1 | False       |      0 | CP_16_lenino_trigubova_DE_RE_Pilot     | Pickup Kit        | Assault Kit       |
-| assault      | kit        | GE_PickupAssaultPPsH41 | -436.369 |  28.149 |  -65.867 |      1 | False       |      0 | CP_16_lenino_trigubova_DE_RE_Pilot_0   | Pickup Kit        | Assault Kit       |
+| Icon                      | SubCat            | Cat               | Name                   | Instance                               |   Flag |    X Pos |   Y Pos |    Z Pos |
+|:--------------------------|:------------------|:------------------|:-----------------------|:---------------------------------------|-------:|---------:|--------:|---------:|
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_0                           |      0 |  416.681 |  23.287 |  408.442 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_1                           |      0 | -460.215 |  27.280 |  -62.600 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_2                           |      0 | -403.390 |  29.888 |  -87.279 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_3                           |      0 | -362.059 |  28.800 |  189.305 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_4                           |      0 | -388.070 |  29.918 |  232.084 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_5                           |      0 |   -7.152 |  27.196 |  288.547 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_6                           |      0 |  -52.931 |  27.911 |  234.685 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_7                           |      0 |  159.304 |  30.668 |  110.232 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_8                           |      0 |  195.790 |  29.286 |   70.117 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_9                           |      0 |   -0.246 |  24.808 | -113.243 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_10                          |      0 |  -47.238 |  26.176 | -182.481 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_11                          |      0 | -264.452 |  37.350 |  -10.391 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_12                          |      0 | -174.497 |  32.723 |   -6.097 |
+| ![](img/ico/ammo.webp)    | Static Ammo Crate | Static Ammo Crate | ammo_crate             | ammo_crate_13                          |      0 | -757.506 |  26.163 | -236.385 |
+| ![](img/ico/assault.webp) | Assault Kit       | Pickup Kit        | RE_PickUpAssaultPps43  | CP_16_lenino_lenino_DE_RE_Assault      |      3 |  -45.178 |  29.384 | -131.708 |
+| ![](img/ico/assault.webp) | Assault Kit       | Pickup Kit        | RE_PickupAssaultSVT40  | CP_16_lenino_lenino_DE_RE_Assault_0    |      3 |  -81.454 |  27.620 | -141.902 |
+| ![](img/ico/assault.webp) | Assault Kit       | Pickup Kit        | RE_PickUpAssaultPps43  | CP_16_lenino_lenino_DE_RE_Pilot        |      3 |  -15.361 |  27.738 | -123.615 |
+| ![](img/ico/assault.webp) | Assault Kit       | Pickup Kit        | RE_PickupAssaultSVT40  | CP_16_lenino_lenino_DE_RE_Assault_1    |      3 |   24.261 |  24.927 | -125.937 |
+| ![](img/ico/assault.webp) | Assault Kit       | Pickup Kit        | GW_PickUpAssaultG41    | CP_16_lenino_trigubova_DE_RE_Assault   |      1 | -423.266 |  29.030 |  -69.784 |
+| ![](img/ico/assault.webp) | Assault Kit       | Pickup Kit        | GW_PickUpAssaultG41    | CP_16_lenino_trigubova_DE_RE_Assault_0 |      1 | -468.853 |  27.313 |  -81.000 |
+| ![](img/ico/assault.webp) | Assault Kit       | Pickup Kit        | GE_PickupAssaultPPsH41 | CP_16_lenino_trigubova_DE_RE_Pilot     |      1 | -481.105 |  28.155 |  -58.998 |
+| ![](img/ico/assault.webp) | Assault Kit       | Pickup Kit        | GE_PickupAssaultPPsH41 | CP_16_lenino_trigubova_DE_RE_Pilot_0   |      1 | -436.369 |  28.149 |  -65.867 |
 

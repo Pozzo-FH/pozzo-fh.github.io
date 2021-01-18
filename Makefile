@@ -26,7 +26,7 @@ docs:
 
 .PHONY: maps
 maps:
-	$(MAKE) -C maps
+	$(MAKE) -C maps all
 
 .PHONY: main
 main:

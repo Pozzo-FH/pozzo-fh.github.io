@@ -18,103 +18,103 @@ title: <Unnamed Map> (64p)
 </div>
 
 
-| gpo_subcat   | gpo_cat   | gpo_name                 |     pos_x |   pos_y |     pos_z |   flag | is_locked   |   team | instance                                         | gpo_cat_disp       | gpo_subcat_disp   |
-|:-------------|:----------|:-------------------------|----------:|--------:|----------:|-------:|:------------|-------:|:-------------------------------------------------|:-------------------|:------------------|
-| noidea       | noidea    | midway_hangar            |   995.826 |  40.453 | -1522.54  |    110 | True        |      0 | CP_64_midway1942_hangarobjective_midwayhangar    | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |  1020.61  |  40.454 | -1584.92  |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_silo5          | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |  1008.15  |  40.454 | -1574.62  |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_silo6          | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |  1018.61  |  40.454 | -1562.95  |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_silo7          | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |  1030.43  |  40.454 | -1573.79  |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_silo4          | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |  1047.43  |  40.454 | -1460.63  |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_silo2          | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |  1041.85  |  40.454 | -1474.12  |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_silo3          | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |  1052.39  |  40.454 | -1447.73  |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_Silo1          | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |   959.79  |  45.082 | -1386.52  |    109 | True        |      0 | CP_64_midway1942_hangarobjective_fueltankobj     | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |   945.128 |  45.037 | -1391.58  |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_fueltankobj2   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |   934.385 |  45.239 | -1400.02  |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_fueltankobj2_0 | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |   926.885 |  45.117 | -1389.6   |    109 | True        |      0 | CP_64_midway_1942_Silo_objectives_fueltankobj4   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |   926.995 |  40.925 | -1609.53  |    109 | True        |      0 | CP_64_midway1942_hangarobjective_fuelttankobj5   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |   913.67  |  40.973 | -1614.52  |    109 | True        |      0 | CP_64_midway1942_hangarobjective_fuelttankobj6   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea    | krupp_silo_dest          |   902.475 |  41.258 | -1622.87  |    109 | True        |      0 | CP_64_midway1942_hangarobjective_fuelttankobj7   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| flak         | static    | m1_90mm_aa_radar         |   850.864 |  43.506 | -1673.41  |    111 | True        |      0 | Sand_Island_0_13                                 | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | m1_90mm_aa_radar         |   789.592 |  42.851 | -1402.08  |    111 | True        |      0 | Sand_Island_1_0                                  | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |   734.089 |  48.436 | -1569.93  |      1 | False       |      0 | Sand_Island_m51                                  | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |   647.511 |  45.799 | -1763.64  |      1 | False       |      0 | Sand_Island_1_1                                  | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |   627.586 |  45.385 | -1764.14  |      1 | False       |      0 | Sand_Island_1_2                                  | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |   628.812 |  46.593 | -1748.18  |      1 | False       |      0 | Sand_Island_1_3                                  | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | m1_90mm_aa_radar         |   957.229 |  44.333 | -1579.98  |    111 | True        |      0 | Sand_Island_0_14                                 | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |   913.682 |  46.266 | -1494.45  |      1 | False       |      0 | Sand_Island_1_4                                  | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |  1743.46  |  40.528 | -1498.41  |    101 | False       |      0 | Henderson_Field_m51                              | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |  1711.19  |  40.448 | -1510.12  |    101 | False       |      0 | Henderson_Field_aa                               | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |  1818.24  |  41.339 | -1519.22  |    101 | False       |      0 | Henderson_Field_1_0                              | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |  1745.13  |  41.656 | -1582.46  |    101 | False       |      0 | Henderson_Field_1_1                              | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |  1497.12  |  41.815 | -1593.25  |    101 | False       |      0 | Henderson_Field_bofors40mm                       | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | bofors40mm_eu            |  1655.16  |  41.675 | -1591.25  |    101 | False       |      0 | Henderson_Field_0_10                             | Static Emplacement | Anti-aircraft Gun |
-| flak         | static    | m1_90mm_aa_radar         |  1034.27  |  42.214 | -1410.1   |    111 | True        |      0 | CP_64_midway1942_hangarobjective_radarbattery    | Static Emplacement | Anti-aircraft Gun |
-| mg_nest      | static    | m1917_tripod             |  1731.5   |  40.269 | -1489.1   |    101 | False       |      0 | Henderson_Field_BrowningAA                       | Static Emplacement | Static MG         |
-| mg_nest      | static    | 50cal_watercooled_tripod |   787.314 |  61.536 | -1592.83  |      1 | False       |      0 | Sand_Island_50Caltripod                          | Static Emplacement | Static MG         |
-| pak          | static    | 5inch_coastal            |   755.636 |  54.069 | -1453.12  |      1 | False       |      0 | Sand_Island_8inch                                | Static Emplacement | Anti-tank Gun     |
-| pak          | static    | 8inch_defgun             |   743.222 |  56.184 | -1477.65  |      1 | False       |      0 | Sand_Island_8inch2                               | Static Emplacement | Anti-tank Gun     |
-| pak          | static    | 5inch_coastal            |   659.953 |  49.075 | -1661.31  |      1 | False       |      0 | Sand_Island_8inch3                               | Static Emplacement | Anti-tank Gun     |
-| pak          | static    | 8inch_defgun             |   645.916 |  48.56  | -1678.88  |      1 | False       |      0 | Sand_Island_8inch4                               | Static Emplacement | Anti-tank Gun     |
-| pak          | static    | 5inch_coastal            |   681.696 |  47.77  | -1751.9   |      1 | False       |      0 | Sand_Island_8inch5                               | Static Emplacement | Anti-tank Gun     |
-| pak          | static    | 5inch_coastal            |   707.803 |  47.165 | -1734.82  |      1 | False       |      0 | Sand_Island_8inch7                               | Static Emplacement | Anti-tank Gun     |
-| pak          | static    | 8inch_defgun             |  1555.79  |  41.692 | -1611.17  |    101 | False       |      0 | Henderson_Field_8inch3_0                         | Static Emplacement | Anti-tank Gun     |
-| pak          | static    | 8inch_defgun             |  1571.13  |  41.747 | -1613.32  |    101 | False       |      0 | Henderson_Field_8inch4_0                         | Static Emplacement | Anti-tank Gun     |
-| pak          | static    | 8inch_defgun             |  1767.61  |  42.353 | -1403.02  |    101 | False       |      0 | Henderson_Field_8inch1                           | Static Emplacement | Anti-tank Gun     |
-| pak          | static    | 8inch_defgun             |  1745.9   |  42.556 | -1392.88  |    101 | False       |      0 | Henderson_Field_8inch2_0                         | Static Emplacement | Anti-tank Gun     |
-| car          | vehicle   | willysmb_us              |   657.533 |  44.65  | -1721.73  |      1 | False       |      0 | Sand_Island_jeep                                 | Vehicle            | Car               |
-| car          | vehicle   | gmc_nocanvas             |   811.839 |  49.82  | -1600.63  |      1 | False       |      0 | Sand_Island_gmc                                  | Vehicle            | Car               |
-| plane        | vehicle   | b26                      |  1802.13  |  40.119 | -1497.47  |    101 | True        |      0 | Henderson_Field_b25                              | Vehicle            | Airplane          |
-| plane        | vehicle   | sbd-3                    |  1715.13  |  40.128 | -1449.75  |    101 | True        |      0 | Henderson_Field_sbd                              | Vehicle            | Airplane          |
-| plane        | vehicle   | wildcat                  |  1670.5   |  41.068 | -1498.38  |    101 | True        |      0 | CP_64_midway_1942_Silo_objectives_wildcat        | Vehicle            | Airplane          |
-| plane        | vehicle   | aichi_d3a                | -1853.12  |  53.598 |  1587.63  |    106 | True        |      0 | Japanese_Taskforce_zero                          | Vehicle            | Airplane          |
-| plane        | vehicle   | a6m_zero_early           | -1841.77  |  53.723 |  1596.93  |    106 | True        |      0 | Japanese_Taskforce_5                             | Vehicle            | Airplane          |
-| plane        | vehicle   | wildcat                  |  1768.44  |  41.102 | -1533.91  |    101 | True        |      0 | Henderson_Field_0_11                             | Vehicle            | Airplane          |
-| plane        | vehicle   | wildcat                  |  1545.39  |  57.909 |  1675.48  |    108 | True        |      0 | Taskforce_16_wildcat                             | Vehicle            | Airplane          |
-| plane        | vehicle   | sbd-3                    |  1560.53  |  57.577 |  1668.41  |    108 | True        |      0 | Taskforce_16_dauntless                           | Vehicle            | Airplane          |
-| plane        | vehicle   | a6m_zero_early           | -1587.42  |  52.877 |  1715.12  |    104 | True        |      0 | Japanese_Taskforce_fighter                       | Vehicle            | Airplane          |
-| plane        | vehicle   | aichi_d3a                | -1598.02  |  52.877 |  1703.93  |    104 | True        |      0 | Japanese_Taskforce_aichival                      | Vehicle            | Airplane          |
-| plane        | vehicle   | a6m_zero_early           | -1653.36  |  52.903 |  1097.86  |    102 | True        |      0 | Japanese_Taskforce_6                             | Vehicle            | Airplane          |
-| plane        | vehicle   | aichi_d3a                | -1640.96  |  52.903 |  1107.47  |    102 | True        |      0 | Japanese_Taskforce_aicival                       | Vehicle            | Airplane          |
-| plane        | vehicle   | a6m_zero_early           | -1352.02  |  52.873 |  1325.24  |    107 | True        |      0 | Japanese_Taskforce_0_2                           | Vehicle            | Airplane          |
-| plane        | vehicle   | aichi_d3a                | -1365.21  |  52.987 |  1317.18  |    107 | True        |      0 | Japanese_Taskforce_6_0                           | Vehicle            | Airplane          |
-| plane        | vehicle   | wildcat                  |  1797.19  |  58.662 |  1407.56  |    103 | True        |      0 | Taskforce_16_0_3                                 | Vehicle            | Airplane          |
-| plane        | vehicle   | sbd-3                    |  1812.98  |  58.662 |  1402.8   |    103 | True        |      0 | Taskforce_16_0_4                                 | Vehicle            | Airplane          |
-| plane        | vehicle   | wildcat                  |  1773.31  |  58.662 |  1332.06  |    103 | True        |      0 | Taskforce_16_1                                   | Vehicle            | Airplane          |
-| plane        | vehicle   | sbd-3                    |  1748.63  |  58.256 |  1236.55  |    103 | True        |      0 | Taskforce_16_2                                   | Vehicle            | Airplane          |
-| plane        | vehicle   | wildcat                  |  1515.46  |  58.662 |  1601.96  |    108 | True        |      0 | Taskforce_16_1_0                                 | Vehicle            | Airplane          |
-| plane        | vehicle   | sbd-3                    |  1484.13  |  57.542 |  1506.8   |    108 | True        |      0 | Taskforce_16_2_0                                 | Vehicle            | Airplane          |
-| plane        | vehicle   | a6m_zero_early           | -1317.1   |  52.819 |  1242.6   |    107 | True        |      0 | Japanese_Taskforce_1_1                           | Vehicle            | Airplane          |
-| plane        | vehicle   | aichi_d3a                | -1265.76  |  52.935 |  1180.2   |    107 | True        |      0 | Japanese_Taskforce_7                             | Vehicle            | Airplane          |
-| plane        | vehicle   | a6m_zero_early           | -1811.99  |  52.907 |  1523.68  |    106 | True        |      0 | Japanese_Taskforce_8                             | Vehicle            | Airplane          |
-| plane        | vehicle   | aichi_d3a                | -1754.27  |  52.907 |  1455.86  |    106 | True        |      0 | Japanese_Taskforce_0_3                           | Vehicle            | Airplane          |
-| plane        | vehicle   | a6m_zero_early           | -1551.64  |  52.86  |  1641.81  |    104 | True        |      0 | Japanese_Taskforce_7_0                           | Vehicle            | Airplane          |
-| plane        | vehicle   | kate                     | -1491.29  |  52.922 |  1574.21  |    104 | True        |      0 | Japanese_Taskforce_1_2                           | Vehicle            | Airplane          |
-| plane        | vehicle   | a6m_zero_early           | -1605.66  |  52.817 |  1024.73  |    102 | True        |      0 | Japanese_Taskforce_8_0                           | Vehicle            | Airplane          |
-| plane        | vehicle   | aichi_d3a                | -1552.94  |  53.003 |   961.345 |    102 | True        |      0 | Japanese_Taskforce_2_2                           | Vehicle            | Airplane          |
-| plane        | vehicle   | sbd-3                    |  1762.86  |  40.155 | -1428.09  |    101 | True        |      0 | Henderson_Field_dauntless                        | Vehicle            | Airplane          |
-| plane        | vehicle   | wildcat                  |  1724.48  |  41.139 | -1554.41  |    101 | True        |      0 | CP_64_midway_1942_Silo_objectives_wildcat_0      | Vehicle            | Airplane          |
-| plane        | vehicle   | wildcat                  |  1701.22  |  41.148 | -1466.91  |    101 | True        |      0 | Henderson_Field_wildcat_1                        | Vehicle            | Airplane          |
-| plane        | vehicle   | sbd-3                    |  1656.07  |  41.984 | -1515.26  |    101 | True        |      0 | CP_64_midway_1942_Silo_objectives_sbd3_0         | Vehicle            | Airplane          |
-| plane        | vehicle   | kate                     | -1527.72  |  53.145 |  1611.4   |    104 | True        |      0 | Japanese_Taskforce_2_Kate                        | Vehicle            | Airplane          |
-| plane        | vehicle   | kate                     | -1789.65  |  53.063 |  1493.83  |    106 | True        |      0 | Japanese_Taskforce_3_Kate                        | Vehicle            | Airplane          |
-| plane        | vehicle   | sbd-3                    |  1745.77  |  41.334 | -1544.48  |    101 | True        |      0 | CP_64_midway_1942_Silo_objectives_sbd3           | Vehicle            | Airplane          |
-| plane        | vehicle   | wildcat                  |  1686.26  |  41.781 | -1483.16  |    101 | True        |      0 | Taskforce_16_wildcat_0                           | Vehicle            | Airplane          |
-| plane        | vehicle   | sbd-3                    |  1791.72  |  40.118 | -1547.06  |    101 | True        |      0 | Taskforce_16_sbd3                                | Vehicle            | Airplane          |
-| plane        | vehicle   | catfish                  |   801.721 |  40.731 | -1359.61  |      1 | True        |      0 | Sand_Island_floatplane1                          | Vehicle            | Airplane          |
-| plane        | vehicle   | catfish                  |   785.272 |  41.245 | -1367.42  |      1 | True        |      0 | CP_64_midway1942_aaobjective_floatplane2         | Vehicle            | Airplane          |
-| ship         | vehicle   | fh1_shokaku_dest_2       | -1781.39  |  39.293 |  1500.38  |    106 | True        |      0 | Japanese_Taskforce_carrier                       | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_shokaku_dest_1       | -1520.03  |  39.162 |  1619.85  |    104 | True        |      0 | Japanese_Taskforce_carrier2                      | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_shokaku_dest         | -1581.48  |  39.134 |  1011.04  |    102 | True        |      0 | Japanese_Taskforce_carrier3                      | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_shokaku_dest_3       | -1292.79  |  39.158 |  1229.15  |    107 | True        |      0 | Japanese_Taskforce_5_0                           | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_enterprise_dest_1    |  1507.8   |  37.464 |  1547.83  |    108 | True        |      0 | Taskforce_16_carrier                             | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_enterprise_dest      |  1768.12  |  38.245 |  1275.29  |    103 | True        |      0 | Taskforce_16_attackcarrier2                      | Vehicle            | Ship              |
-| ship         | vehicle   | GleavesClass             |  1802.6   |  38.7   |   386.314 |    112 | True        |      0 | Taskforce_16_3_0_Destroyer                       | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_hatsuzuki            | -1652.43  |  38.7   |   168.036 |    114 | True        |      0 | Japanese_Taskforce_2_destroyer2                  | Vehicle            | Ship              |
-| ship         | vehicle   | mogami                   | -1684.96  |  38.7   |   314.246 |    113 | True        |      0 | Japanese_Taskforce_2_mogami                      | Vehicle            | Ship              |
-| ship         | vehicle   | southdakota              |  1766.88  |  38.7   |   279.727 |    112 | True        |      0 | Taskforce_16_3_0_Destroyer2                      | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_gato                 |  1780.03  |  38.7   |   186.851 |    112 | True        |      0 | Taskforce_16_3_0_Gato                            | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_hatsuzuki            | -1535.78  |  38.7   |   232.903 |    114 | True        |      0 | Japanese_Taskforce_2_destoyer                    | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_pt_boat_jap          | -1673.23  |  38.7   |    63.238 |    115 | True        |      0 | Japanese_Taskforce_2_ptboat                      | Vehicle            | Ship              |
-| ship         | vehicle   | fh1_pt_boat_jap          | -1755.91  |  38.7   |   359.071 |    115 | True        |      0 | Japanese_Taskforce_2_ptboat2                     | Vehicle            | Ship              |
+| Icon                    | SubCat            | Cat                | Name                     | Instance                                         |   Flag |     X Pos |   Y Pos |     Z Pos |
+|:------------------------|:------------------|:-------------------|:-------------------------|:-------------------------------------------------|-------:|----------:|--------:|----------:|
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | midway_hangar            | CP_64_midway1942_hangarobjective_midwayhangar    |    110 |   995.826 |  40.453 | -1522.544 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_silo5          |    109 |  1020.607 |  40.454 | -1584.916 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_silo6          |    109 |  1008.150 |  40.454 | -1574.620 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_silo7          |    109 |  1018.613 |  40.454 | -1562.952 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_silo4          |    109 |  1030.427 |  40.454 | -1573.789 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_silo2          |    109 |  1047.431 |  40.454 | -1460.630 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_silo3          |    109 |  1041.850 |  40.454 | -1474.116 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_Silo1          |    109 |  1052.389 |  40.454 | -1447.735 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway1942_hangarobjective_fueltankobj     |    109 |   959.790 |  45.082 | -1386.523 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_fueltankobj2   |    109 |   945.128 |  45.037 | -1391.580 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_fueltankobj2_0 |    109 |   934.385 |  45.239 | -1400.020 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway_1942_Silo_objectives_fueltankobj4   |    109 |   926.885 |  45.117 | -1389.599 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway1942_hangarobjective_fuelttankobj5   |    109 |   926.995 |  40.925 | -1609.532 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway1942_hangarobjective_fuelttankobj6   |    109 |   913.670 |  40.973 | -1614.524 |
+| ![](img/ico/todo.webp)  | FIXME UNASSIGNED  | FIXME UNASSIGNED   | krupp_silo_dest          | CP_64_midway1942_hangarobjective_fuelttankobj7   |    109 |   902.475 |  41.258 | -1622.872 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | m1_90mm_aa_radar         | Sand_Island_0_13                                 |    111 |   850.864 |  43.506 | -1673.407 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | m1_90mm_aa_radar         | Sand_Island_1_0                                  |    111 |   789.592 |  42.851 | -1402.076 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Sand_Island_m51                                  |      1 |   734.089 |  48.436 | -1569.928 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Sand_Island_1_1                                  |      1 |   647.511 |  45.799 | -1763.637 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Sand_Island_1_2                                  |      1 |   627.586 |  45.385 | -1764.143 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Sand_Island_1_3                                  |      1 |   628.812 |  46.593 | -1748.179 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | m1_90mm_aa_radar         | Sand_Island_0_14                                 |    111 |   957.229 |  44.333 | -1579.980 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Sand_Island_1_4                                  |      1 |   913.682 |  46.266 | -1494.450 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Henderson_Field_m51                              |    101 |  1743.457 |  40.528 | -1498.409 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Henderson_Field_aa                               |    101 |  1711.190 |  40.448 | -1510.115 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Henderson_Field_1_0                              |    101 |  1818.244 |  41.339 | -1519.222 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Henderson_Field_1_1                              |    101 |  1745.132 |  41.656 | -1582.459 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Henderson_Field_bofors40mm                       |    101 |  1497.123 |  41.815 | -1593.254 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | bofors40mm_eu            | Henderson_Field_0_10                             |    101 |  1655.156 |  41.675 | -1591.250 |
+| ![](img/ico/flak.webp)  | Anti-aircraft Gun | Static Emplacement | m1_90mm_aa_radar         | CP_64_midway1942_hangarobjective_radarbattery    |    111 |  1034.268 |  42.214 | -1410.096 |
+| ![](img/ico/hmg.webp)   | Static MG         | Static Emplacement | m1917_tripod             | Henderson_Field_BrowningAA                       |    101 |  1731.497 |  40.269 | -1489.101 |
+| ![](img/ico/hmg.webp)   | Static MG         | Static Emplacement | 50cal_watercooled_tripod | Sand_Island_50Caltripod                          |      1 |   787.314 |  61.536 | -1592.833 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 5inch_coastal            | Sand_Island_8inch                                |      1 |   755.636 |  54.069 | -1453.122 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 8inch_defgun             | Sand_Island_8inch2                               |      1 |   743.222 |  56.184 | -1477.653 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 5inch_coastal            | Sand_Island_8inch3                               |      1 |   659.953 |  49.075 | -1661.308 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 8inch_defgun             | Sand_Island_8inch4                               |      1 |   645.916 |  48.560 | -1678.877 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 5inch_coastal            | Sand_Island_8inch5                               |      1 |   681.696 |  47.770 | -1751.899 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 5inch_coastal            | Sand_Island_8inch7                               |      1 |   707.803 |  47.165 | -1734.824 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 8inch_defgun             | Henderson_Field_8inch3_0                         |    101 |  1555.793 |  41.692 | -1611.168 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 8inch_defgun             | Henderson_Field_8inch4_0                         |    101 |  1571.133 |  41.747 | -1613.322 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 8inch_defgun             | Henderson_Field_8inch1                           |    101 |  1767.606 |  42.353 | -1403.020 |
+| ![](img/ico/pak.webp)   | Anti-tank Gun     | Static Emplacement | 8inch_defgun             | Henderson_Field_8inch2_0                         |    101 |  1745.896 |  42.556 | -1392.885 |
+| ![](img/ico/car.webp)   | Car               | Vehicle            | willysmb_us              | Sand_Island_jeep                                 |      1 |   657.533 |  44.650 | -1721.731 |
+| ![](img/ico/car.webp)   | Car               | Vehicle            | gmc_nocanvas             | Sand_Island_gmc                                  |      1 |   811.839 |  49.820 | -1600.626 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | b26                      | Henderson_Field_b25                              |    101 |  1802.130 |  40.119 | -1497.470 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | sbd-3                    | Henderson_Field_sbd                              |    101 |  1715.130 |  40.128 | -1449.750 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | wildcat                  | CP_64_midway_1942_Silo_objectives_wildcat        |    101 |  1670.501 |  41.068 | -1498.382 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | aichi_d3a                | Japanese_Taskforce_zero                          |    106 | -1853.119 |  53.598 |  1587.626 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | a6m_zero_early           | Japanese_Taskforce_5                             |    106 | -1841.773 |  53.723 |  1596.931 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | wildcat                  | Henderson_Field_0_11                             |    101 |  1768.443 |  41.102 | -1533.912 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | wildcat                  | Taskforce_16_wildcat                             |    108 |  1545.392 |  57.909 |  1675.484 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | sbd-3                    | Taskforce_16_dauntless                           |    108 |  1560.528 |  57.577 |  1668.412 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | a6m_zero_early           | Japanese_Taskforce_fighter                       |    104 | -1587.419 |  52.877 |  1715.116 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | aichi_d3a                | Japanese_Taskforce_aichival                      |    104 | -1598.015 |  52.877 |  1703.932 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | a6m_zero_early           | Japanese_Taskforce_6                             |    102 | -1653.359 |  52.903 |  1097.863 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | aichi_d3a                | Japanese_Taskforce_aicival                       |    102 | -1640.965 |  52.903 |  1107.472 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | a6m_zero_early           | Japanese_Taskforce_0_2                           |    107 | -1352.024 |  52.873 |  1325.243 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | aichi_d3a                | Japanese_Taskforce_6_0                           |    107 | -1365.213 |  52.987 |  1317.178 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | wildcat                  | Taskforce_16_0_3                                 |    103 |  1797.194 |  58.662 |  1407.555 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | sbd-3                    | Taskforce_16_0_4                                 |    103 |  1812.985 |  58.662 |  1402.801 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | wildcat                  | Taskforce_16_1                                   |    103 |  1773.313 |  58.662 |  1332.056 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | sbd-3                    | Taskforce_16_2                                   |    103 |  1748.631 |  58.256 |  1236.549 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | wildcat                  | Taskforce_16_1_0                                 |    108 |  1515.464 |  58.662 |  1601.963 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | sbd-3                    | Taskforce_16_2_0                                 |    108 |  1484.134 |  57.542 |  1506.802 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | a6m_zero_early           | Japanese_Taskforce_1_1                           |    107 | -1317.097 |  52.819 |  1242.597 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | aichi_d3a                | Japanese_Taskforce_7                             |    107 | -1265.760 |  52.935 |  1180.205 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | a6m_zero_early           | Japanese_Taskforce_8                             |    106 | -1811.993 |  52.907 |  1523.679 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | aichi_d3a                | Japanese_Taskforce_0_3                           |    106 | -1754.273 |  52.907 |  1455.859 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | a6m_zero_early           | Japanese_Taskforce_7_0                           |    104 | -1551.636 |  52.860 |  1641.813 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | kate                     | Japanese_Taskforce_1_2                           |    104 | -1491.286 |  52.922 |  1574.207 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | a6m_zero_early           | Japanese_Taskforce_8_0                           |    102 | -1605.663 |  52.817 |  1024.730 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | aichi_d3a                | Japanese_Taskforce_2_2                           |    102 | -1552.939 |  53.003 |   961.345 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | sbd-3                    | Henderson_Field_dauntless                        |    101 |  1762.855 |  40.155 | -1428.089 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | wildcat                  | CP_64_midway_1942_Silo_objectives_wildcat_0      |    101 |  1724.481 |  41.139 | -1554.415 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | wildcat                  | Henderson_Field_wildcat_1                        |    101 |  1701.221 |  41.148 | -1466.915 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | sbd-3                    | CP_64_midway_1942_Silo_objectives_sbd3_0         |    101 |  1656.069 |  41.984 | -1515.257 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | kate                     | Japanese_Taskforce_2_Kate                        |    104 | -1527.724 |  53.145 |  1611.400 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | kate                     | Japanese_Taskforce_3_Kate                        |    106 | -1789.646 |  53.063 |  1493.829 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | sbd-3                    | CP_64_midway_1942_Silo_objectives_sbd3           |    101 |  1745.771 |  41.334 | -1544.483 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | wildcat                  | Taskforce_16_wildcat_0                           |    101 |  1686.255 |  41.781 | -1483.160 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | sbd-3                    | Taskforce_16_sbd3                                |    101 |  1791.719 |  40.118 | -1547.064 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | catfish                  | Sand_Island_floatplane1                          |      1 |   801.721 |  40.731 | -1359.606 |
+| ![](img/ico/plane.webp) | Airplane          | Vehicle            | catfish                  | CP_64_midway1942_aaobjective_floatplane2         |      1 |   785.272 |  41.245 | -1367.424 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_shokaku_dest_2       | Japanese_Taskforce_carrier                       |    106 | -1781.388 |  39.293 |  1500.380 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_shokaku_dest_1       | Japanese_Taskforce_carrier2                      |    104 | -1520.028 |  39.162 |  1619.850 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_shokaku_dest         | Japanese_Taskforce_carrier3                      |    102 | -1581.477 |  39.134 |  1011.044 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_shokaku_dest_3       | Japanese_Taskforce_5_0                           |    107 | -1292.786 |  39.158 |  1229.152 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_enterprise_dest_1    | Taskforce_16_carrier                             |    108 |  1507.804 |  37.464 |  1547.828 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_enterprise_dest      | Taskforce_16_attackcarrier2                      |    103 |  1768.117 |  38.245 |  1275.291 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | GleavesClass             | Taskforce_16_3_0_Destroyer                       |    112 |  1802.602 |  38.700 |   386.314 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_hatsuzuki            | Japanese_Taskforce_2_destroyer2                  |    114 | -1652.431 |  38.700 |   168.036 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | mogami                   | Japanese_Taskforce_2_mogami                      |    113 | -1684.961 |  38.700 |   314.246 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | southdakota              | Taskforce_16_3_0_Destroyer2                      |    112 |  1766.877 |  38.700 |   279.727 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_gato                 | Taskforce_16_3_0_Gato                            |    112 |  1780.034 |  38.700 |   186.851 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_hatsuzuki            | Japanese_Taskforce_2_destoyer                    |    114 | -1535.783 |  38.700 |   232.903 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_pt_boat_jap          | Japanese_Taskforce_2_ptboat                      |    115 | -1673.231 |  38.700 |    63.238 |
+| ![](img/ico/boat.webp)  | Ship              | Vehicle            | fh1_pt_boat_jap          | Japanese_Taskforce_2_ptboat2                     |    115 | -1755.906 |  38.700 |   359.071 |
 

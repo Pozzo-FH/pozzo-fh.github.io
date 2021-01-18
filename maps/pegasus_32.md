@@ -32,33 +32,33 @@ title: Pegasus (32p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name                |    pos_x |   pos_y |    pos_z |   flag | is_locked   |   team | instance                                | gpo_cat_disp       | gpo_subcat_disp   |
-|:-------------|:-----------|:------------------------|---------:|--------:|---------:|-------:|:------------|-------:|:----------------------------------------|:-------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate              |  141.859 |  25.373 | -204.044 |      0 | False       |      0 | ammo_crate_0                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  198.139 |  25.167 |  -66.805 |      0 | False       |      0 | ammo_crate_1                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  113.795 |  25.484 |  -32.196 |      0 | False       |      0 | ammo_crate_2                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |   93.857 |  30.185 | -290.8   |      0 | False       |      0 | ammo_crate_3                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  164.032 |  31.837 | -379.861 |      0 | False       |      0 | ammo_crate_4                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -290.793 |  32.823 | -435.327 |      0 | False       |      0 | ammo_crate_5                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -169.07  |  36.254 | -445.833 |      0 | False       |      0 | ammo_crate_6                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -185.18  |  35.652 | -356.317 |      0 | False       |      0 | ammo_crate_7                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -297.97  |  30.638 | -332.215 |      0 | False       |      0 | ammo_crate_8                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  167.256 |  32.061 | -439.204 |      0 | False       |      0 | ammo_crate_9                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  260.157 |  31.881 | -456.233 |      0 | False       |      0 | ammo_crate_10                           | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  278.773 |  33.52  | -429.977 |      0 | False       |      0 | ammo_crate_11                           | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  -53.091 |  23.659 |  103.015 |      0 | False       |      0 | ammo_crate_12                           | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  -73.974 |  23.082 |   93.678 |      0 | False       |      0 | ammo_crate_13                           | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  -14.279 |  23.409 |  132.972 |      0 | False       |      0 | ammo_crate_14                           | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |   32.669 |  25.02  |  218.903 |      0 | False       |      0 | ammo_crate_15                           | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -257.551 |  27.663 |  357.646 |      0 | False       |      0 | ammo_crate_16                           | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |   55.186 |  27.981 | -134.701 |      0 | False       |      0 | ammo_crate_17                           | Static Ammo Crate  | Static Ammo Crate |
-| arty_dep     | kit        | BA_PickUpMortar         | -268.219 |  27.662 |  396.157 |    304 | False       |      0 | CP_32_pegasus_chateau_benouville_mortar | Pickup Kit         | Deployable Arty   |
-| sniper       | kit        | GW_PickUpSniperK98      | -267.763 |  29.247 |  397.234 |    304 | False       |      0 | CP_32_pegasus_chateau_benouville_sniper | Pickup Kit         | Sniper Kit        |
-| sniper       | kit        | BW_PickUpSniperNo4_colt |  -14.264 |  23.698 |  132.985 |    301 | False       |      0 | CP_32_pegasus_bridge_snipergb           | Pickup Kit         | Sniper Kit        |
-| mg_nest      | static     | mg34_bipod              |   46.521 |  29.273 |  195.374 |    301 | False       |      0 | CP_32_pegasus_bridge_mg                 | Static Emplacement | Static MG         |
-| pak          | static     | kwk_5cm_fr              |   19.273 |  24.097 |  179.742 |    301 | False       |      0 | CP_32_pegasus_bridge_kwk                | Static Emplacement | Anti-tank Gun     |
-| car          | vehicle    | opelblitz_fr            | -284.711 |  27.728 |  394.701 |    304 | False       |      0 | CP_32_pegasus_chateau_benouville_truck1 | Vehicle            | Car               |
-| car          | vehicle    | opelblitz_fr            | -285.542 |  27.516 |  386.642 |    304 | False       |      0 | CP_32_pegasus_chateau_benouville_truck2 | Vehicle            | Car               |
-| tank         | vehicle    | pzivh                   | -273.266 |  28.673 |  410.624 |    304 | True        |      0 | CP_32_pegasus_chateau_benouville_piv    | Vehicle            | Tank              |
-| tank         | vehicle    | marder1_39              | -280.419 |  28.404 |  402.804 |    304 | True        |      0 | CP_32_pegasus_chateau_benouville_marder | Vehicle            | Tank              |
+| Icon                       | SubCat            | Cat                | Name                    | Instance                                |   Flag |    X Pos |   Y Pos |    Z Pos |
+|:---------------------------|:------------------|:-------------------|:------------------------|:----------------------------------------|-------:|---------:|--------:|---------:|
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_0                            |      0 |  141.859 |  25.373 | -204.044 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_1                            |      0 |  198.139 |  25.167 |  -66.805 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_2                            |      0 |  113.795 |  25.484 |  -32.196 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_3                            |      0 |   93.857 |  30.185 | -290.800 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_4                            |      0 |  164.032 |  31.837 | -379.861 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_5                            |      0 | -290.793 |  32.823 | -435.327 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_6                            |      0 | -169.070 |  36.254 | -445.833 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_7                            |      0 | -185.180 |  35.652 | -356.317 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_8                            |      0 | -297.970 |  30.638 | -332.215 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_9                            |      0 |  167.256 |  32.061 | -439.204 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_10                           |      0 |  260.157 |  31.881 | -456.233 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_11                           |      0 |  278.773 |  33.520 | -429.977 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_12                           |      0 |  -53.091 |  23.659 |  103.015 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_13                           |      0 |  -73.974 |  23.082 |   93.678 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_14                           |      0 |  -14.279 |  23.409 |  132.972 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_15                           |      0 |   32.669 |  25.020 |  218.903 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_16                           |      0 | -257.551 |  27.663 |  357.646 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_17                           |      0 |   55.186 |  27.981 | -134.701 |
+| ![](img/ico/arty_dep.webp) | Deployable Arty   | Pickup Kit         | BA_PickUpMortar         | CP_32_pegasus_chateau_benouville_mortar |    304 | -268.219 |  27.662 |  396.157 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | GW_PickUpSniperK98      | CP_32_pegasus_chateau_benouville_sniper |    304 | -267.763 |  29.247 |  397.234 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | BW_PickUpSniperNo4_colt | CP_32_pegasus_bridge_snipergb           |    301 |  -14.264 |  23.698 |  132.985 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg34_bipod              | CP_32_pegasus_bridge_mg                 |    301 |   46.521 |  29.273 |  195.374 |
+| ![](img/ico/pak.webp)      | Anti-tank Gun     | Static Emplacement | kwk_5cm_fr              | CP_32_pegasus_bridge_kwk                |    301 |   19.273 |  24.097 |  179.742 |
+| ![](img/ico/car.webp)      | Car               | Vehicle            | opelblitz_fr            | CP_32_pegasus_chateau_benouville_truck1 |    304 | -284.711 |  27.728 |  394.701 |
+| ![](img/ico/car.webp)      | Car               | Vehicle            | opelblitz_fr            | CP_32_pegasus_chateau_benouville_truck2 |    304 | -285.542 |  27.516 |  386.642 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | pzivh                   | CP_32_pegasus_chateau_benouville_piv    |    304 | -273.266 |  28.673 |  410.624 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | marder1_39              | CP_32_pegasus_chateau_benouville_marder |    304 | -280.419 |  28.404 |  402.804 |
 

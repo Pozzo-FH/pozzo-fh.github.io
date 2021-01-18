@@ -25,33 +25,33 @@ title: Mersa Matruh 1942 (16p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name                |    pos_x |   pos_y |   pos_z |   flag | is_locked   |   team | instance                                | gpo_cat_disp       | gpo_subcat_disp   |
-|:-------------|:-----------|:------------------------|---------:|--------:|--------:|-------:|:------------|-------:|:----------------------------------------|:-------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate              |  898.003 |  57.073 |  41.62  |      0 | False       |      0 | ammo_crate_0                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |   64.09  |  44.486 | 698.477 |      0 | False       |      0 | ammo_crate_1                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  299.262 |  54.879 | 436.108 |      0 | False       |      0 | ammo_crate_2                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  262.67  |  44.837 | 663.838 |      0 | False       |      0 | ammo_crate_3                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  178.66  |  44.588 | 746.862 |      0 | False       |      0 | ammo_crate_4                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              |  513.625 |  43.4   | 725.27  |      0 | False       |      0 | ammo_crate_5                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -549.151 |  48.639 | 607.328 |      0 | False       |      0 | ammo_crate_6                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -204.119 | 104.25  | -48.089 |      0 | False       |      0 | ammo_crate_7                            | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate              | -202.094 | 104.676 | -83.148 |      0 | False       |      0 | ammo_crate_8                            | Static Ammo Crate  | Static Ammo Crate |
-| sniper       | kit        | BA_PickUpSniperNo4      |  -32.415 |  44.51  | 656.629 |    201 | False       |      0 | CP_16_MM_West_Matruh_DE_GB_Sniper       | Pickup Kit         | Sniper Kit        |
-| sniper       | kit        | BA_PickUpSniperNo4      |  513.568 |  43.531 | 724.284 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_Sniper       | Pickup Kit         | Sniper Kit        |
-| noidea       | noidea     | commander_mortar_allied | -292.93  |  63.304 | 361.107 |    201 | True        |      0 | CP_16_MM_West_Matruh_DE_GB_CommMortar   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | commander_mortar_allied | -286.762 |  63.456 | 355.845 |    201 | True        |      0 | CP_16_MM_West_Matruh_DE_GB_CommMortar_0 | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | commander_mortar_allied | -279.578 |  63.267 | 349.624 |    201 | True        |      0 | CP_16_MM_West_Matruh_DE_GB_CommMortar_1 | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | commander_mortar_allied |  892.051 |  45.619 | 661.778 |    204 | True        |      0 | CP_16_MM_East_Matruh_DE_GB_CommMortar   | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | commander_mortar_allied |  891.04  |  45.466 | 651.566 |    204 | True        |      0 | CP_16_MM_East_Matruh_DE_GB_CommMortar_0 | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| noidea       | noidea     | commander_mortar_allied |  888.389 |  45.054 | 642.507 |    204 | True        |      0 | CP_16_MM_East_Matruh_DE_GB_CommMortar_1 | FIXME UNASSIGNED   | FIXME UNASSIGNED  |
-| arty         | static     | 3inchmortar             |  508.346 |  42.881 | 762.408 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_LightMortar  | Static Emplacement | Artillery         |
-| arty         | static     | sgwr34                  |   38.159 |  52.973 | 561.602 |    201 | False       |      0 | CP_16_MM_West_Matruh_DE_GB_LightMortar  | Static Emplacement | Artillery         |
-| mg_nest      | static     | mg34_bipod              |  112.429 |  45.357 | 692.923 |    201 | False       |      0 | CP_16_MM_Mosquee_DE_GB_LightMG          | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod              |   67.653 |  44.312 | 717.865 |    201 | False       |      0 | CP_16_MM_West_Matruh_DE_GB_LightMG      | Static Emplacement | Static MG         |
-| mg_nest      | static     | lewis_bipod             |  456.313 |  46.306 | 770.375 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_LightMG      | Static Emplacement | Static MG         |
-| mg_nest      | static     | lewis_bipod             |  286.235 |  45.398 | 755.092 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_LightMG_0    | Static Emplacement | Static MG         |
-| radio        | static     | britcommradio           |  510.192 |  43.396 | 720.214 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_CommRadio    | Static Emplacement | Radio             |
-| radio        | static     | britcommradio           |  294.167 |  46.326 | 657.482 |    204 | False       |      0 | CP_16_MM_East_Matruh_DE_GB_CommRadio_0  | Static Emplacement | Radio             |
-| radio        | static     | britcommradio           |  187.129 |  44.585 | 747.247 |    201 | False       |      0 | CP_16_MM_Mosquee_DE_GB_CommRadio        | Static Emplacement | Radio             |
-| radio        | static     | britcommradio           |  -25.152 |  43.406 | 683.866 |    201 | False       |      0 | CP_16_MM_West_Matruh_DE_GB_CommRadio    | Static Emplacement | Radio             |
+| Icon                     | SubCat            | Cat                | Name                    | Instance                                |   Flag |    X Pos |   Y Pos |   Z Pos |
+|:-------------------------|:------------------|:-------------------|:------------------------|:----------------------------------------|-------:|---------:|--------:|--------:|
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_0                            |      0 |  898.003 |  57.073 |  41.620 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_1                            |      0 |   64.090 |  44.486 | 698.477 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_2                            |      0 |  299.262 |  54.879 | 436.108 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_3                            |      0 |  262.670 |  44.837 | 663.838 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_4                            |      0 |  178.660 |  44.588 | 746.862 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_5                            |      0 |  513.625 |  43.400 | 725.270 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_6                            |      0 | -549.151 |  48.639 | 607.328 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_7                            |      0 | -204.119 | 104.250 | -48.089 |
+| ![](img/ico/ammo.webp)   | Static Ammo Crate | Static Ammo Crate  | ammo_crate              | ammo_crate_8                            |      0 | -202.094 | 104.676 | -83.148 |
+| ![](img/ico/sniper.webp) | Sniper Kit        | Pickup Kit         | BA_PickUpSniperNo4      | CP_16_MM_West_Matruh_DE_GB_Sniper       |    201 |  -32.415 |  44.510 | 656.629 |
+| ![](img/ico/sniper.webp) | Sniper Kit        | Pickup Kit         | BA_PickUpSniperNo4      | CP_16_MM_East_Matruh_DE_GB_Sniper       |    204 |  513.568 |  43.531 | 724.284 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_16_MM_West_Matruh_DE_GB_CommMortar   |    201 | -292.930 |  63.304 | 361.107 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_16_MM_West_Matruh_DE_GB_CommMortar_0 |    201 | -286.762 |  63.456 | 355.845 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_16_MM_West_Matruh_DE_GB_CommMortar_1 |    201 | -279.578 |  63.267 | 349.624 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_16_MM_East_Matruh_DE_GB_CommMortar   |    204 |  892.051 |  45.619 | 661.778 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_16_MM_East_Matruh_DE_GB_CommMortar_0 |    204 |  891.040 |  45.466 | 651.566 |
+| ![](img/ico/todo.webp)   | FIXME UNASSIGNED  | FIXME UNASSIGNED   | commander_mortar_allied | CP_16_MM_East_Matruh_DE_GB_CommMortar_1 |    204 |  888.389 |  45.054 | 642.507 |
+| ![](img/ico/arty.webp)   | Artillery         | Static Emplacement | 3inchmortar             | CP_16_MM_East_Matruh_DE_GB_LightMortar  |    204 |  508.346 |  42.881 | 762.408 |
+| ![](img/ico/arty.webp)   | Artillery         | Static Emplacement | sgwr34                  | CP_16_MM_West_Matruh_DE_GB_LightMortar  |    201 |   38.159 |  52.973 | 561.602 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | mg34_bipod              | CP_16_MM_Mosquee_DE_GB_LightMG          |    201 |  112.429 |  45.357 | 692.923 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | mg34_bipod              | CP_16_MM_West_Matruh_DE_GB_LightMG      |    201 |   67.653 |  44.312 | 717.865 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | lewis_bipod             | CP_16_MM_East_Matruh_DE_GB_LightMG      |    204 |  456.313 |  46.306 | 770.375 |
+| ![](img/ico/hmg.webp)    | Static MG         | Static Emplacement | lewis_bipod             | CP_16_MM_East_Matruh_DE_GB_LightMG_0    |    204 |  286.235 |  45.398 | 755.092 |
+| ![](img/ico/radio.webp)  | Radio             | Static Emplacement | britcommradio           | CP_16_MM_East_Matruh_DE_GB_CommRadio    |    204 |  510.192 |  43.396 | 720.214 |
+| ![](img/ico/radio.webp)  | Radio             | Static Emplacement | britcommradio           | CP_16_MM_East_Matruh_DE_GB_CommRadio_0  |    204 |  294.167 |  46.326 | 657.482 |
+| ![](img/ico/radio.webp)  | Radio             | Static Emplacement | britcommradio           | CP_16_MM_Mosquee_DE_GB_CommRadio        |    201 |  187.129 |  44.585 | 747.247 |
+| ![](img/ico/radio.webp)  | Radio             | Static Emplacement | britcommradio           | CP_16_MM_West_Matruh_DE_GB_CommRadio    |    201 |  -25.152 |  43.406 | 683.866 |
 

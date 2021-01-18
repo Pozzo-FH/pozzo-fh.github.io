@@ -32,54 +32,54 @@ title: Battle of Brest 1944 (64p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name                     |    pos_x |   pos_y |    pos_z |   flag | is_locked   |   team | instance                   | gpo_cat_disp       | gpo_subcat_disp   |
-|:-------------|:-----------|:-----------------------------|---------:|--------:|---------:|-------:|:------------|-------:|:---------------------------|:-------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate                   | -332.616 |  17.048 |  -47.657 |      0 | False       |      0 | ammo_crate_0               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -265.554 |  20.84  |  -82.135 |      0 | False       |      0 | ammo_crate_1               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -191.623 |  25     |  -24.811 |      0 | False       |      0 | ammo_crate_2               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -254.123 |  21.219 | -116.796 |      0 | False       |      0 | ammo_crate_3               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -306.641 |  17.132 | -105.757 |      0 | False       |      0 | ammo_crate_4               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -378.686 |  16.959 |  -82.262 |      0 | False       |      0 | ammo_crate_5               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -269.178 |   9.395 |   61.176 |      0 | False       |      0 | ammo_crate_6               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -330.944 |  14.062 |   42.248 |      0 | False       |      0 | ammo_crate_7               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |   14.595 |  25.026 |  -90.719 |      0 | False       |      0 | ammo_crate_8               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |  -58.84  |  26.152 |  -98.108 |      0 | False       |      0 | ammo_crate_9               | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -179.999 |  26.119 | -106.378 |      0 | False       |      0 | ammo_crate_10              | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -274.233 |  19.385 |  -29.497 |      0 | False       |      0 | ammo_crate_11              | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -369.643 |  13.377 |  -33.791 |      0 | False       |      0 | ammo_crate_12              | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |  -27.368 |  41.945 |  -68.337 |      0 | False       |      0 | ammo_crate_13              | Static Ammo Crate  | Static Ammo Crate |
-| arty_dep     | kit        | UW_PickupMortar              |   40.94  |  25.751 | -101.816 |    101 | False       |      0 | Industry_mortar            | Pickup Kit         | Deployable Arty   |
-| commando     | kit        | GW_PickUpCommandoStG44       | -276.281 |  10.166 |   59.832 |      1 | False       |      0 | Harbour_stg44              | Pickup Kit         | Commando Kit      |
-| commando     | kit        | UW_PickUpCommandoM3Greasegun |   14.402 |  26.009 |  -92.231 |    101 | False       |      0 | Industry_grease1           | Pickup Kit         | Commando Kit      |
-| commando     | kit        | UW_PickUpCommandoM3Greasegun |  -32.576 |  37.124 |  -67.132 |    101 | False       |      0 | Industry_grease2           | Pickup Kit         | Commando Kit      |
-| commando     | kit        | GW_PickUpCommandoStG44       | -275.423 |  10.167 |   59.81  |      1 | False       |      0 | Harbour_stg442             | Pickup Kit         | Commando Kit      |
-| medic        | kit        | GW_PickUpMedicP08            | -252.465 |   9.974 |   63.656 |      1 | False       |      0 | Harbour_gwkit              | Pickup Kit         | Medic Kit         |
-| mg_dep       | kit        | UW_PickUpm1917a1             |   32.272 |  24.962 |  -79.015 |    101 | False       |      0 | Industry_pickupmg2         | Pickup Kit         | Deployable MG     |
-| mg_dep       | kit        | UW_PickUp30Cal               |   50.957 |  26.165 |  -73.926 |    101 | False       |      0 | Industry_pickupmg          | Pickup Kit         | Deployable MG     |
-| mg_dep       | kit        | UW_PickUpm1917a1             | -197.508 |  26.822 | -102.15  |    103 | False       |      0 | NavyHQ_PickupMG            | Pickup Kit         | Deployable MG     |
-| mg_dep       | kit        | UW_PickUpm1917a1             | -369.436 |  13.417 |  -34.591 |    107 | False       |      0 | Ruins_PickupMG             | Pickup Kit         | Deployable MG     |
-| sniper       | kit        | UW_PickUpSniperSpringfield   |   34.905 |  25.93  |  -91.237 |    101 | False       |      0 | Industry_pickupsniper      | Pickup Kit         | Sniper Kit        |
-| sniper       | kit        | GW_PickUpSniperg43_ZF        | -325.025 |   9.962 |   93.172 |      1 | False       |      0 | Harbour_sniperhafen        | Pickup Kit         | Sniper Kit        |
-| sniper       | kit        | GW_PickUpSniperg43_ZF        | -336.197 |  20.091 |  -75.382 |    107 | False       |      0 | Ruins_gewehr43zf           | Pickup Kit         | Sniper Kit        |
-| zooka        | kit        | GW_PickUpPanzerschreck       | -277.428 |  10.306 |   60.132 |      1 | False       |      0 | Harbour_schreck            | Pickup Kit         | HEAT Thrower      |
-| zooka        | kit        | GW_PickUpPanzerschreck       | -243.447 |  25.31  |  -80.561 |    105 | False       |      0 | Flakposition_Panzerschreck | Pickup Kit         | HEAT Thrower      |
-| flak         | static     | flak18_fr                    | -259.948 |   9.209 |   86.912 |      1 | False       |      0 | Harbour_88                 | Static Emplacement | Anti-aircraft Gun |
-| mg_nest      | static     | mg42_bipod                   | -277.107 |  10.004 |   92.911 |      1 | False       |      0 | Harbour_mg                 | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg42_bipod                   | -364.081 |  14.173 |  -40.612 |    107 | False       |      0 | Ruins_mg                   | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg42_bipod                   | -349.099 |  14.08  |   38.325 |      1 | False       |      0 | Harbour_mg2                | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod                   | -376.233 |  14.446 |  -53.363 |    107 | False       |      0 | Ruins_mg2                  | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod                   | -168.165 |  25.777 |  -69.891 |    103 | False       |      0 | NavyHQ_mg                  | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod                   | -243.397 |  28.179 |  -49.145 |    106 | False       |      0 | Boulangerie_mg             | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod                   | -322.373 |  15.497 |  -50.373 |    107 | False       |      0 | Ruins_mg3                  | Static Emplacement | Static MG         |
-| pak          | static     | pak40_static                 | -341.593 |  13.901 |   62.9   |      1 | False       |      0 | Harbour_pak                | Static Emplacement | Anti-tank Gun     |
-| radio        | static     | gercommradio                 | -269.465 |   9.386 |   71.515 |      1 | False       |      0 | Harbour_commander          | Static Emplacement | Radio             |
-| radio        | static     | gercommradio                 |   10.647 |  25.54  |  -98.186 |    101 | False       |      0 | Industry_commander         | Static Emplacement | Radio             |
-| radio        | static     | oldradioallied               |   29.965 |  25.768 |  -91.17  |    101 | False       |      0 | Industry_radio             | Static Emplacement | Radio             |
-| apc          | vehicle    | sdkfz251_d                   | -239.611 |   9.21  |  103.68  |      1 | False       |      0 | Harbour_schwimm            | Vehicle            | APC               |
-| car          | vehicle    | willysmb_us                  |   26.247 |  25     |  -61.467 |    101 | False       |      0 | Industry_JEEP              | Vehicle            | Car               |
-| car          | vehicle    | kubelwagen_fr                | -258.729 |   9.207 |   96.281 |      1 | False       |      0 | Harbour_kuebel             | Vehicle            | Car               |
-| pak_sp       | vehicle    | m4a1_76mm                    |   37.337 |  25     |  -97.224 |    101 | True        |      0 | Industry_sherman           | Vehicle            | Mobile PaK        |
-| tank         | vehicle    | pzivh                        | -273.971 |   9.207 |   65.598 |      1 | True        |      0 | Harbour_panzer4            | Vehicle            | Tank              |
-| tank         | vehicle    | m5a1_stuart                  |   38.455 |  25     |  -80.707 |    101 | True        |      0 | Industry_Stuart            | Vehicle            | Tank              |
-| tank         | vehicle    | m3a1                         |   56.021 |  25     |  -77.054 |    101 | False       |      0 | Industry_apc               | Vehicle            | Tank              |
+| Icon                       | SubCat            | Cat                | Name                         | Instance                   |   Flag |    X Pos |   Y Pos |    Z Pos |
+|:---------------------------|:------------------|:-------------------|:-----------------------------|:---------------------------|-------:|---------:|--------:|---------:|
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_0               |      0 | -332.616 |  17.048 |  -47.657 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_1               |      0 | -265.554 |  20.840 |  -82.135 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_2               |      0 | -191.623 |  25.000 |  -24.811 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_3               |      0 | -254.123 |  21.219 | -116.796 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_4               |      0 | -306.641 |  17.132 | -105.757 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_5               |      0 | -378.686 |  16.959 |  -82.262 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_6               |      0 | -269.178 |   9.395 |   61.176 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_7               |      0 | -330.944 |  14.062 |   42.248 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_8               |      0 |   14.595 |  25.026 |  -90.719 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_9               |      0 |  -58.840 |  26.152 |  -98.108 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_10              |      0 | -179.999 |  26.119 | -106.378 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_11              |      0 | -274.233 |  19.385 |  -29.497 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_12              |      0 | -369.643 |  13.377 |  -33.791 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_13              |      0 |  -27.368 |  41.945 |  -68.337 |
+| ![](img/ico/arty_dep.webp) | Deployable Arty   | Pickup Kit         | UW_PickupMortar              | Industry_mortar            |    101 |   40.940 |  25.751 | -101.816 |
+| ![](img/ico/sword.webp)    | Commando Kit      | Pickup Kit         | GW_PickUpCommandoStG44       | Harbour_stg44              |      1 | -276.281 |  10.166 |   59.832 |
+| ![](img/ico/sword.webp)    | Commando Kit      | Pickup Kit         | UW_PickUpCommandoM3Greasegun | Industry_grease1           |    101 |   14.402 |  26.009 |  -92.231 |
+| ![](img/ico/sword.webp)    | Commando Kit      | Pickup Kit         | UW_PickUpCommandoM3Greasegun | Industry_grease2           |    101 |  -32.576 |  37.124 |  -67.132 |
+| ![](img/ico/sword.webp)    | Commando Kit      | Pickup Kit         | GW_PickUpCommandoStG44       | Harbour_stg442             |      1 | -275.423 |  10.167 |   59.810 |
+| ![](img/ico/medic.webp)    | Medic Kit         | Pickup Kit         | GW_PickUpMedicP08            | Harbour_gwkit              |      1 | -252.465 |   9.974 |   63.656 |
+| ![](img/ico/hmg.webp)      | Deployable MG     | Pickup Kit         | UW_PickUpm1917a1             | Industry_pickupmg2         |    101 |   32.272 |  24.962 |  -79.015 |
+| ![](img/ico/hmg.webp)      | Deployable MG     | Pickup Kit         | UW_PickUp30Cal               | Industry_pickupmg          |    101 |   50.957 |  26.165 |  -73.926 |
+| ![](img/ico/hmg.webp)      | Deployable MG     | Pickup Kit         | UW_PickUpm1917a1             | NavyHQ_PickupMG            |    103 | -197.508 |  26.822 | -102.150 |
+| ![](img/ico/hmg.webp)      | Deployable MG     | Pickup Kit         | UW_PickUpm1917a1             | Ruins_PickupMG             |    107 | -369.436 |  13.417 |  -34.591 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | UW_PickUpSniperSpringfield   | Industry_pickupsniper      |    101 |   34.905 |  25.930 |  -91.237 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | GW_PickUpSniperg43_ZF        | Harbour_sniperhafen        |      1 | -325.025 |   9.962 |   93.172 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | GW_PickUpSniperg43_ZF        | Ruins_gewehr43zf           |    107 | -336.197 |  20.091 |  -75.382 |
+| ![](img/ico/rocket.webp)   | HEAT Thrower      | Pickup Kit         | GW_PickUpPanzerschreck       | Harbour_schreck            |      1 | -277.428 |  10.306 |   60.132 |
+| ![](img/ico/rocket.webp)   | HEAT Thrower      | Pickup Kit         | GW_PickUpPanzerschreck       | Flakposition_Panzerschreck |    105 | -243.447 |  25.310 |  -80.561 |
+| ![](img/ico/flak.webp)     | Anti-aircraft Gun | Static Emplacement | flak18_fr                    | Harbour_88                 |      1 | -259.948 |   9.209 |   86.912 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg42_bipod                   | Harbour_mg                 |      1 | -277.107 |  10.004 |   92.911 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg42_bipod                   | Ruins_mg                   |    107 | -364.081 |  14.173 |  -40.612 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg42_bipod                   | Harbour_mg2                |      1 | -349.099 |  14.080 |   38.325 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg34_bipod                   | Ruins_mg2                  |    107 | -376.233 |  14.446 |  -53.363 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg34_bipod                   | NavyHQ_mg                  |    103 | -168.165 |  25.777 |  -69.891 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg34_bipod                   | Boulangerie_mg             |    106 | -243.397 |  28.179 |  -49.145 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg34_bipod                   | Ruins_mg3                  |    107 | -322.373 |  15.497 |  -50.373 |
+| ![](img/ico/pak.webp)      | Anti-tank Gun     | Static Emplacement | pak40_static                 | Harbour_pak                |      1 | -341.593 |  13.901 |   62.900 |
+| ![](img/ico/radio.webp)    | Radio             | Static Emplacement | gercommradio                 | Harbour_commander          |      1 | -269.465 |   9.386 |   71.515 |
+| ![](img/ico/radio.webp)    | Radio             | Static Emplacement | gercommradio                 | Industry_commander         |    101 |   10.647 |  25.540 |  -98.186 |
+| ![](img/ico/radio.webp)    | Radio             | Static Emplacement | oldradioallied               | Industry_radio             |    101 |   29.965 |  25.768 |  -91.170 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | sdkfz251_d                   | Harbour_schwimm            |      1 | -239.611 |   9.210 |  103.680 |
+| ![](img/ico/car.webp)      | Car               | Vehicle            | willysmb_us                  | Industry_JEEP              |    101 |   26.247 |  25.000 |  -61.467 |
+| ![](img/ico/car.webp)      | Car               | Vehicle            | kubelwagen_fr                | Harbour_kuebel             |      1 | -258.729 |   9.207 |   96.281 |
+| ![](img/ico/pak.webp)      | Mobile PaK        | Vehicle            | m4a1_76mm                    | Industry_sherman           |    101 |   37.337 |  25.000 |  -97.224 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | pzivh                        | Harbour_panzer4            |      1 | -273.971 |   9.207 |   65.598 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | m5a1_stuart                  | Industry_Stuart            |    101 |   38.455 |  25.000 |  -80.707 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | m3a1                         | Industry_apc               |    101 |   56.021 |  25.000 |  -77.054 |
 

@@ -32,47 +32,47 @@ title: Anctoville 1944 (64p)
 </div>
 
 
-| gpo_subcat   | gpo_cat    | gpo_name                     |    pos_x |   pos_y |    pos_z |   flag | is_locked   |   team | instance                                        | gpo_cat_disp       | gpo_subcat_disp   |
-|:-------------|:-----------|:-----------------------------|---------:|--------:|---------:|-------:|:------------|-------:|:------------------------------------------------|:-------------------|:------------------|
-| ammo_crate   | ammo_crate | ammo_crate                   |   -5.635 |  24.933 |   21.874 |      0 | False       |      0 | ammo_crate_0                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -239.484 |  25     |  -14.346 |      0 | False       |      0 | ammo_crate_1                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   | -167.657 |  28.04  |  111.296 |      0 | False       |      0 | ammo_crate_2                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |  -38.197 |  30.201 |  176.382 |      0 | False       |      0 | ammo_crate_3                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |  -10.048 |  27.068 |   86.177 |      0 | False       |      0 | ammo_crate_4                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |  197.327 |  35.185 |  169.203 |      0 | False       |      0 | ammo_crate_5                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |   48.886 |  22.707 |  -79.103 |      0 | False       |      0 | ammo_crate_6                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |   43.496 |  25.695 |   15.69  |      0 | False       |      0 | ammo_crate_7                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |  187.084 |  20.997 |  -54.786 |      0 | False       |      0 | ammo_crate_8                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |  249.973 |  24.17  |    5.033 |      0 | False       |      0 | ammo_crate_9                                    | Static Ammo Crate  | Static Ammo Crate |
-| ammo_crate   | ammo_crate | ammo_crate                   |  203.345 |  38.482 |  178.683 |      0 | False       |      0 | ammo_crate_10                                   | Static Ammo Crate  | Static Ammo Crate |
-| ammo         | kit        | BW_PickUpAmmokit             | -178.206 |  25.568 |   29.15  |    104 | False       |      0 | Rue_de_la_Fontaine_UKAmmo                       | Pickup Kit         | Ammo Kit          |
-| arty_dep     | kit        | GW_PickUpMortar              |  164.434 |  36.119 |  173.925 |    108 | False       |      0 | CP_64_Anctoville_Les_Ecuries_MORTAR             | Pickup Kit         | Deployable Arty   |
-| assault      | kit        | GW_PickUpAssaultStG44        |   13.089 |  23.775 |  -96.962 |    107 | False       |      0 | Mairie_STG44                                    | Pickup Kit         | Assault Kit       |
-| assault      | kit        | GW_PickUpAssaultG43          |  -96.102 |  25.862 |   15.492 |    104 | False       |      0 | Rue_de_la_Fontaine_G43                          | Pickup Kit         | Assault Kit       |
-| assault      | kit        | GW_PickUpAssaultG43          |   25.125 |  33.899 |  151.181 |    102 | False       |      0 | G43_2                                           | Pickup Kit         | Assault Kit       |
-| assault      | kit        | GW_PickUpAssaultG43          |  164.651 |  36.108 |  175.521 |    108 | False       |      0 | G43_3                                           | Pickup Kit         | Assault Kit       |
-| assault      | kit        | GW_PickUpAssaultG43          |  232.858 |  23.576 |    1.082 |    101 | False       |      0 | G43_4                                           | Pickup Kit         | Assault Kit       |
-| assault      | kit        | GW_PickUpAssaultG43          |   39.385 |  26.295 |   17.051 |    106 | False       |      0 | CP_64_Anctoville_L_Eglise_g43                   | Pickup Kit         | Assault Kit       |
-| assault      | kit        | GW_PickUpAssaultG43          |  100.226 |  21.626 | -102.625 |    107 | False       |      0 | CP_64_Anctoville_Mairie_g43                     | Pickup Kit         | Assault Kit       |
-| mg           | kit        | BW_PickUpSupportBrenMK1      |  -29.116 |  22.85  |  -99.415 |    107 | False       |      0 | Mairie_Bren                                     | Pickup Kit         | MG Kit            |
-| mg           | kit        | GW_PickUpSupportMG42         |  252.029 |  26.985 |   -2.549 |    101 | False       |      0 | les_Fermes_a_l_Est_Mg42                         | Pickup Kit         | MG Kit            |
-| mg_dep       | kit        | BA_PickUpVickers303          | -238.08  |  26.001 |  -17.203 |    105 | False       |      0 | Britmain_deployMG                               | Pickup Kit         | Deployable MG     |
-| mg_dep       | kit        | BA_PickUpVickers303          | -143.689 |  28.091 |  126.003 |    104 | False       |      0 | Rue_de_la_Fontaine_Bren                         | Pickup Kit         | Deployable MG     |
-| sniper       | kit        | GW_PickUpSniperK98           |  165.497 |  36.106 |  175.151 |    108 | False       |      0 | CP_64_Anctoville_Les_Ecuries_SNIPER             | Pickup Kit         | Sniper Kit        |
-| sniper       | kit        | BW_PickUpSniperNo4           | -239.355 |  25.978 |  -16.642 |    105 | False       |      0 | BritMain_sniper                                 | Pickup Kit         | Sniper Kit        |
-| zooka        | kit        | BW_PickUpAntitankPiat        | -238.971 |  25.972 |  -15.873 |    105 | False       |      0 | BritMain_PIAT                                   | Pickup Kit         | HEAT Thrower      |
-| zooka        | kit        | GW_PickUpPanzerfaust30m      |  -12.182 |  27.078 |   86.671 |    106 | False       |      0 | north_faust                                     | Pickup Kit         | HEAT Thrower      |
-| zooka        | kit        | GW_PickUpPanzerfaust30m      |   40.455 |  25.101 |   14.912 |    106 | False       |      0 | CP_64_Anctoville_L_Eglise_faust                 | Pickup Kit         | HEAT Thrower      |
-| mg_nest      | static     | mg34_bipod                   | -167.25  |  28.878 |  109.317 |    104 | False       |      0 | Rue_de_la_Fontaine_axis_mg34                    | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg42_bipod                   |   37.075 |  41.742 |   23.636 |    106 | False       |      0 | CP_64_Anctoville_L_Eglise_mg42                  | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg34_bipod                   |   43.351 |  29.892 |  116.988 |    102 | False       |      0 | Secteur_Nord_mg34                               | Static Emplacement | Static MG         |
-| mg_nest      | static     | lewis_bipod                  |   43.713 |  41.964 |   23.682 |    106 | False       |      0 | CP_64_Anctoville_L_Eglise_lewis                 | Static Emplacement | Static MG         |
-| mg_nest      | static     | mg42_bipod                   |   96.221 |  27.282 |  -33.495 |    101 | False       |      0 | CP_64_Anctoville_les_Fermes_a_l_Est_mg42        | Static Emplacement | Static MG         |
-| apc          | vehicle    | universalcarrier_france_bren | -297.754 |  24.9   |   -0.954 |    105 | False       |      2 | CP_64_Anctoville_Quartiers_Britanniques_carrier | Vehicle            | APC               |
-| apc          | vehicle    | m5a1_halftrack               | -310.141 |  24.899 |   -2.446 |    105 | False       |      0 | Britanniques_m5a1_spawn                         | Vehicle            | APC               |
-| apc          | vehicle    | sdkfz251_d                   |  209.397 |  35.185 |  157.208 |    108 | False       |      0 | CP_64_Anctoville_Les_Ecuries_spawn_hanomag      | Vehicle            | APC               |
-| car          | vehicle    | opelblitz_fr                 |  271.999 |  22.502 |  -21.334 |    101 | False       |      0 | German_Counterattackdummy_TRUCK                 | Vehicle            | Car               |
-| supply       | vehicle    | opelblitz_fr_ammo            |  281.236 |  22.057 |  -41.525 |    101 | False       |      0 | German_Counterattackdummy_AMMO                  | Vehicle            | Supply Vehicle    |
-| tank         | vehicle    | m4a1mid_eu_brit              | -278.859 |  25     |  -12.085 |    105 | True        |      2 | CP_64_Anctoville_Quartiers_Britanniques_tank    | Vehicle            | Tank              |
-| tank         | vehicle    | pzivh_811                    |  236.482 |  23.195 |   22.354 |    101 | True        |      0 | CP_64_Anctoville_les_Fermes_a_l_Est_pz          | Vehicle            | Tank              |
+| Icon                       | SubCat            | Cat                | Name                         | Instance                                        |   Flag |    X Pos |   Y Pos |    Z Pos |
+|:---------------------------|:------------------|:-------------------|:-----------------------------|:------------------------------------------------|-------:|---------:|--------:|---------:|
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_0                                    |      0 |   -5.635 |  24.933 |   21.874 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_1                                    |      0 | -239.484 |  25.000 |  -14.346 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_2                                    |      0 | -167.657 |  28.040 |  111.296 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_3                                    |      0 |  -38.197 |  30.201 |  176.382 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_4                                    |      0 |  -10.048 |  27.068 |   86.177 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_5                                    |      0 |  197.327 |  35.185 |  169.203 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_6                                    |      0 |   48.886 |  22.707 |  -79.103 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_7                                    |      0 |   43.496 |  25.695 |   15.690 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_8                                    |      0 |  187.084 |  20.997 |  -54.786 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_9                                    |      0 |  249.973 |  24.170 |    5.033 |
+| ![](img/ico/ammo.webp)     | Static Ammo Crate | Static Ammo Crate  | ammo_crate                   | ammo_crate_10                                   |      0 |  203.345 |  38.482 |  178.683 |
+| ![](img/ico/ammo.webp)     | Ammo Kit          | Pickup Kit         | BW_PickUpAmmokit             | Rue_de_la_Fontaine_UKAmmo                       |    104 | -178.206 |  25.568 |   29.150 |
+| ![](img/ico/arty_dep.webp) | Deployable Arty   | Pickup Kit         | GW_PickUpMortar              | CP_64_Anctoville_Les_Ecuries_MORTAR             |    108 |  164.434 |  36.119 |  173.925 |
+| ![](img/ico/assault.webp)  | Assault Kit       | Pickup Kit         | GW_PickUpAssaultStG44        | Mairie_STG44                                    |    107 |   13.089 |  23.775 |  -96.962 |
+| ![](img/ico/assault.webp)  | Assault Kit       | Pickup Kit         | GW_PickUpAssaultG43          | Rue_de_la_Fontaine_G43                          |    104 |  -96.102 |  25.862 |   15.492 |
+| ![](img/ico/assault.webp)  | Assault Kit       | Pickup Kit         | GW_PickUpAssaultG43          | G43_2                                           |    102 |   25.125 |  33.899 |  151.181 |
+| ![](img/ico/assault.webp)  | Assault Kit       | Pickup Kit         | GW_PickUpAssaultG43          | G43_3                                           |    108 |  164.651 |  36.108 |  175.521 |
+| ![](img/ico/assault.webp)  | Assault Kit       | Pickup Kit         | GW_PickUpAssaultG43          | G43_4                                           |    101 |  232.858 |  23.576 |    1.082 |
+| ![](img/ico/assault.webp)  | Assault Kit       | Pickup Kit         | GW_PickUpAssaultG43          | CP_64_Anctoville_L_Eglise_g43                   |    106 |   39.385 |  26.295 |   17.051 |
+| ![](img/ico/assault.webp)  | Assault Kit       | Pickup Kit         | GW_PickUpAssaultG43          | CP_64_Anctoville_Mairie_g43                     |    107 |  100.226 |  21.626 | -102.625 |
+| ![](img/ico/mg.webp)       | MG Kit            | Pickup Kit         | BW_PickUpSupportBrenMK1      | Mairie_Bren                                     |    107 |  -29.116 |  22.850 |  -99.415 |
+| ![](img/ico/mg.webp)       | MG Kit            | Pickup Kit         | GW_PickUpSupportMG42         | les_Fermes_a_l_Est_Mg42                         |    101 |  252.029 |  26.985 |   -2.549 |
+| ![](img/ico/hmg.webp)      | Deployable MG     | Pickup Kit         | BA_PickUpVickers303          | Britmain_deployMG                               |    105 | -238.080 |  26.001 |  -17.203 |
+| ![](img/ico/hmg.webp)      | Deployable MG     | Pickup Kit         | BA_PickUpVickers303          | Rue_de_la_Fontaine_Bren                         |    104 | -143.689 |  28.091 |  126.003 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | GW_PickUpSniperK98           | CP_64_Anctoville_Les_Ecuries_SNIPER             |    108 |  165.497 |  36.106 |  175.151 |
+| ![](img/ico/sniper.webp)   | Sniper Kit        | Pickup Kit         | BW_PickUpSniperNo4           | BritMain_sniper                                 |    105 | -239.355 |  25.978 |  -16.642 |
+| ![](img/ico/rocket.webp)   | HEAT Thrower      | Pickup Kit         | BW_PickUpAntitankPiat        | BritMain_PIAT                                   |    105 | -238.971 |  25.972 |  -15.873 |
+| ![](img/ico/rocket.webp)   | HEAT Thrower      | Pickup Kit         | GW_PickUpPanzerfaust30m      | north_faust                                     |    106 |  -12.182 |  27.078 |   86.671 |
+| ![](img/ico/rocket.webp)   | HEAT Thrower      | Pickup Kit         | GW_PickUpPanzerfaust30m      | CP_64_Anctoville_L_Eglise_faust                 |    106 |   40.455 |  25.101 |   14.912 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg34_bipod                   | Rue_de_la_Fontaine_axis_mg34                    |    104 | -167.250 |  28.878 |  109.317 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg42_bipod                   | CP_64_Anctoville_L_Eglise_mg42                  |    106 |   37.075 |  41.742 |   23.636 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg34_bipod                   | Secteur_Nord_mg34                               |    102 |   43.351 |  29.892 |  116.988 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | lewis_bipod                  | CP_64_Anctoville_L_Eglise_lewis                 |    106 |   43.713 |  41.964 |   23.682 |
+| ![](img/ico/hmg.webp)      | Static MG         | Static Emplacement | mg42_bipod                   | CP_64_Anctoville_les_Fermes_a_l_Est_mg42        |    101 |   96.221 |  27.282 |  -33.495 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | universalcarrier_france_bren | CP_64_Anctoville_Quartiers_Britanniques_carrier |    105 | -297.754 |  24.900 |   -0.954 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | m5a1_halftrack               | Britanniques_m5a1_spawn                         |    105 | -310.141 |  24.899 |   -2.446 |
+| ![](img/ico/apc.webp)      | APC               | Vehicle            | sdkfz251_d                   | CP_64_Anctoville_Les_Ecuries_spawn_hanomag      |    108 |  209.397 |  35.185 |  157.208 |
+| ![](img/ico/car.webp)      | Car               | Vehicle            | opelblitz_fr                 | German_Counterattackdummy_TRUCK                 |    101 |  271.999 |  22.502 |  -21.334 |
+| ![](img/ico/ammo.webp)     | Supply Vehicle    | Vehicle            | opelblitz_fr_ammo            | German_Counterattackdummy_AMMO                  |    101 |  281.236 |  22.057 |  -41.525 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | m4a1mid_eu_brit              | CP_64_Anctoville_Quartiers_Britanniques_tank    |    105 | -278.859 |  25.000 |  -12.085 |
+| ![](img/ico/tank.webp)     | Tank              | Vehicle            | pzivh_811                    | CP_64_Anctoville_les_Fermes_a_l_Est_pz          |    101 |  236.482 |  23.195 |   22.354 |
 
