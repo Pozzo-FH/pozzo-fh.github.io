@@ -28,6 +28,10 @@ docs:
 maps:
 	$(MAKE) -C maps all
 
+.PHONY: tutorial
+tutorial:
+	$(MAKE) -C tutorial all
+
 .PHONY: main
 main:
 	pandoc -s --css=$(CSS) -H $(HTMLINCLUDE) \

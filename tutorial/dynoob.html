@@ -104,24 +104,24 @@
 <p>We will see how exactly the gameplay works in a simple sectorpush example, then we’ll have a look at how to setup the plugin for this. (Note that while the example is about sectorpush, this can work aswell in a setup with objective destruction and sectors, like on hyacinth and anctoville).</p>
 <p>Let’s say we want to add the dynamic OOBs to a sector push map with two sectors. The blue team (allies) has a mainbase on the left and is attacking the red team (axis). At the start of the game the first sector has two open flags and three locked flags in the rear.</p>
 <p><img src="img/stage1_blank.svg" style="width:100.0%" /></p>
-<p>They way to achieve this is to define “yesgo-areas” for a team. Players can move inside their yesgo area, but get the “you’re leaving the battle” warning if they leave it.</p>
+<p>To add OOB areas to the locked flags, we will define “yesgo-areas” for a team. Players can move freely inside their yesgo area, but will get the “you’re leaving the battle” warning if they leave it.</p>
 <p>In this case, the first yesgo area for the attackers includes their mainbase and the two flags of the open sector they are attacking. It does not include the rear two flags. Let’s call this area <code>yesgo_blue_A</code>.</p>
-<p>The second yesgo area for the attackers covers the 3 locked flags at the second sector. We will configure the plugin in such a way that this combatarea is <strong>disabled</strong> at the start of the round, so the attackers cannot go there. We will call this <code>yesgo_blue_B</code>.</p>
+<p>The second yesgo area for the attackers covers the 3 locked flags at the second sector. We will configure the plugin in such a way that this combatarea is <em>disabled</em> at the start of the round, so the attackers cannot go there (yet). We will call this <code>yesgo_blue_B</code>.</p>
 <p><img src="img/stage1_oob_b.svg" style="width:100.0%" /></p>
-<p>The defenders have two yesgo areas: one covering their 3 rear flags (<code>yesgo_red_2</code>, and another one covering the front 2 flags (<code>yesgo_red_1</code>). Note how their yesgo areas does not cover the enemy mainbase, otherwise they could enter it and camp there.</p>
+<p>The defenders have two yesgo areas: one covering their 3 rear flags (<code>yesgo_red_2</code>, and another one covering the front 2 flags (<code>yesgo_red_1</code>). Note how their yesgo areas don’t cover the enemy mainbase, otherwise they could enter it and camp there.</p>
 <p><img src="img/stage1_oob_r.svg" style="width:100.0%" /></p>
 <p>Now the 1st sector has been capped, the 1st line flags lock for the defenders, and the 2nd line flags unlock for the attackers.</p>
 <p><img src="img/stage2_blank.svg" style="width:100.0%" /></p>
 <p>The attackers’ yesgo area for the rear flags now becomes active, so they can go there.</p>
 <p><img src="img/stage2_oob_b.svg" style="width:100.0%" /></p>
-<p>The defender’s yesgo area for the first line now gets <strong>disabled</strong>, so they have to retreat to the 2nd line if they don’t want to die!</p>
+<p>The defender’s yesgo area for the first line now gets <em>disabled</em>, so they have to retreat to the 2nd line if they don’t want to die!</p>
 <p><img src="img/stage2_oob_r.svg" style="width:100.0%" /></p>
 <h2 id="setting-up-the-code">Setting up the code</h2>
-<p>In the game, the yesgo areas are created by defining <code>CombatAreas</code>. Draw them in the editor like sketched above, and give them good names that immediately make it clear where they are supposed to go e.g. <code>MYMAP_yesgo_axis_sector1</code> or <code>MYMAP_yesgo_allies_northvillage</code>.</p>
+<p>In the game, the yesgo areas are created by defining <code>CombatAreas</code>. Draw them in the editor like sketched above, and give them good names that immediately make it clear where they are supposed to go, like <code>MYMAP_yesgo_axis_sector1</code> or <code>MYMAP_yesgo_allies_northvillage</code>.</p>
 <h3 id="sector-push-setup">Sector push setup</h3>
 <p>I’m assuming that you have the sector push system setup already, with an associated dummyflag called <code>'MYMAP_sector_lock_dummy'</code>.</p>
 <p>The sectorpush configuration probably looks like this (taking front flags locks the sector, and unlocks the 3 flags in the rear):</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>linkCPs <span class="op">=</span> [</span>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>linkCPs_64 <span class="op">=</span> [</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    plugin(</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>        linkCPs,</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>        target<span class="op">=</span><span class="st">&#39;MYMAP_sector_lock_dummy&#39;</span>,</span>
@@ -129,7 +129,7 @@
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    )</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>]</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>push <span class="op">=</span> [</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>push_64 <span class="op">=</span> [</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    plugin(</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>        push,</span>
 <span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>        source<span class="op">=</span><span class="st">&#39;MYMAP_front_south, MYMAP_front_north&#39;</span>,</span>
@@ -148,7 +148,7 @@
 <span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div>
 <h3 id="sector-oob-configuration">Sector OOB configuration</h3>
 <p>Now the code for the actual dynamicOOB plugin. Remember that the allies (blue) are the attackers, and their yesgo areas (CombatAreas) are called <code>yesgo_blue_A</code> and <code>yesgo_blue_B</code>. Axis (red) are defending, and their yesgo areas are called <code>yesgo_red_1</code> and <code>yesgo_red_2</code>.</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dynamicoob <span class="op">=</span> [</span>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>dynamicoob_64 <span class="op">=</span> [</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>    plugin(</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>        dynamicOOB,</span>
 <span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>        dynamic_flags<span class="op">=</span>{</span>
@@ -178,5 +178,56 @@
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>        ],</span></code></pre></div>
 <p>The delay for the team is how long it takes until the area locks/unlocks. In this example, allies have zero delay, so their yesgo area in the rear unlocks instantly. Axis have a 45 second delay, so they some time to retreat, before their yesgo area in the front is gone, and they get the desertion warning.</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>        delay_allies<span class="op">=</span><span class="dv">0</span>, delay_axis<span class="op">=</span><span class="dv">45</span>,</span></code></pre></div>
+<h3 id="everything-together">Everything together</h3>
+<p>The whole code will look like this, roughly:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> game.plugins <span class="im">import</span> plugin, push, linkCPs, dynamicOOB, ...</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>linkCPs_64 <span class="op">=</span> [</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    plugin(</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>        linkCPs,</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>        target<span class="op">=</span><span class="st">&#39;MYMAP_sector_lock_dummy&#39;</span>,</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>        source<span class="op">=</span><span class="st">&#39;MYMAP_front_south, MYMAP_front_north&#39;</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a>push_64 <span class="op">=</span> [</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    plugin(</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        push,</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        source<span class="op">=</span><span class="st">&#39;MYMAP_front_south, MYMAP_front_north&#39;</span>,</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        target<span class="op">=</span><span class="st">&#39;MYMAP_sector_lock_dummy&#39;</span>,</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        attacker<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>        display_arrow<span class="op">=</span><span class="va">False</span>,</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>        wants_target_marker<span class="op">=</span><span class="va">False</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    plugin(</span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a>        push,</span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a>        source<span class="op">=</span><span class="st">&#39;MYMAP_sector_lock_dummy&#39;</span>,</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>        target<span class="op">=</span><span class="st">&#39;MYMAP_rear_north, MYMAP_rear_center, MYMAP_rear_south&#39;</span>,</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a>        attacker<span class="op">=</span><span class="dv">2</span>,</span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a>        display_arrow<span class="op">=</span><span class="va">False</span></span>
+<span id="cb6-26"><a href="#cb6-26" aria-hidden="true" tabindex="-1"></a>    ),</span>
+<span id="cb6-27"><a href="#cb6-27" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb6-28"><a href="#cb6-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-29"><a href="#cb6-29" aria-hidden="true" tabindex="-1"></a>dynamicoob_64 <span class="op">=</span> [</span>
+<span id="cb6-30"><a href="#cb6-30" aria-hidden="true" tabindex="-1"></a>    plugin(</span>
+<span id="cb6-31"><a href="#cb6-31" aria-hidden="true" tabindex="-1"></a>        dynamicOOB,</span>
+<span id="cb6-32"><a href="#cb6-32" aria-hidden="true" tabindex="-1"></a>        dynamic_flags<span class="op">=</span>{</span>
+<span id="cb6-33"><a href="#cb6-33" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;MYMAP_sector_lock_dummy&#39;</span>: {</span>
+<span id="cb6-34"><a href="#cb6-34" aria-hidden="true" tabindex="-1"></a>                <span class="st">&#39;allies&#39;</span>: {</span>
+<span id="cb6-35"><a href="#cb6-35" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&#39;creates&#39;</span>: [<span class="st">&#39;yesgo_blue_B&#39;</span>],</span>
+<span id="cb6-36"><a href="#cb6-36" aria-hidden="true" tabindex="-1"></a>                    <span class="st">&#39;destroys&#39;</span>: [<span class="st">&#39;yesgo_red_1&#39;</span>],</span>
+<span id="cb6-37"><a href="#cb6-37" aria-hidden="true" tabindex="-1"></a>                },</span>
+<span id="cb6-38"><a href="#cb6-38" aria-hidden="true" tabindex="-1"></a>            },</span>
+<span id="cb6-39"><a href="#cb6-39" aria-hidden="true" tabindex="-1"></a>        },</span>
+<span id="cb6-40"><a href="#cb6-40" aria-hidden="true" tabindex="-1"></a>        inactive_at_start<span class="op">=</span>[</span>
+<span id="cb6-41"><a href="#cb6-41" aria-hidden="true" tabindex="-1"></a>            <span class="st">&#39;yesgo_blue_B&#39;</span></span>
+<span id="cb6-42"><a href="#cb6-42" aria-hidden="true" tabindex="-1"></a>        ],</span>
+<span id="cb6-43"><a href="#cb6-43" aria-hidden="true" tabindex="-1"></a>        delay_allies<span class="op">=</span><span class="dv">0</span>, delay_axis<span class="op">=</span><span class="dv">45</span>,</span>
+<span id="cb6-44"><a href="#cb6-44" aria-hidden="true" tabindex="-1"></a>    )</span>
+<span id="cb6-45"><a href="#cb6-45" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb6-46"><a href="#cb6-46" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-47"><a href="#cb6-47" aria-hidden="true" tabindex="-1"></a>...</span>
+<span id="cb6-48"><a href="#cb6-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-49"><a href="#cb6-49" aria-hidden="true" tabindex="-1"></a>gpm_cq <span class="op">=</span> {<span class="dv">64</span>: push_64 <span class="op">+</span> linkCPs_64 <span class="op">+</span> dynamicoob_64 <span class="op">+</span> ...}</span></code></pre></div>
 </body>
 </html>

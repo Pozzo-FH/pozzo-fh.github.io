@@ -35,9 +35,9 @@ and three locked flags in the rear.
 
 ![](img/stage1_blank.svg){width=100%} 
 
-They way to achieve this is to define "yesgo-areas" for a team. Players can
-move inside their yesgo area, but get the "you're leaving the battle" warning
-if they leave it.
+To add OOB areas to the locked flags, we will define "yesgo-areas" for a
+team. Players can move freely inside their yesgo area, but will get the
+"you're leaving the battle" warning if they leave it.
 
 In this case, the first yesgo area for the attackers includes their
 mainbase and the two flags of the open sector they are attacking.
@@ -46,14 +46,14 @@ It does not include the rear two flags. Let's call this area
 
 The second yesgo area for the attackers covers the 3 locked flags at
 the second sector. We will configure the plugin in such a way that this
-combatarea is **disabled** at the start of the round, so the attackers
-cannot go there. We will call this `yesgo_blue_B`.
+combatarea is *disabled* at the start of the round, so the attackers
+cannot go there (yet). We will call this `yesgo_blue_B`.
 
 ![](img/stage1_oob_b.svg){width=100%} 
 
 The defenders have two yesgo areas: one covering their 3 rear
 flags (`yesgo_red_2`, and another one covering the front 2 flags
-(`yesgo_red_1`). Note how their yesgo areas does not cover the enemy mainbase,
+(`yesgo_red_1`). Note how their yesgo areas don't cover the enemy mainbase,
 otherwise they could enter it and camp there.
 
 ![](img/stage1_oob_r.svg){width=100%} 
@@ -68,7 +68,7 @@ can go there.
 
 ![](img/stage2_oob_b.svg){width=100%} 
 
-The defender's yesgo area for the first line now gets **disabled**, so they
+The defender's yesgo area for the first line now gets *disabled*, so they
 have to retreat to the 2nd line if they don't want to die!
 
 ![](img/stage2_oob_r.svg){width=100%} 
@@ -77,8 +77,8 @@ have to retreat to the 2nd line if they don't want to die!
 
 In the game, the yesgo areas are created by defining `CombatAreas`.
 Draw them in the editor like sketched above, and give them good names
-that immediately make it clear where they are supposed to go
-e.g. `MYMAP_yesgo_axis_sector1` or `MYMAP_yesgo_allies_northvillage`.
+that immediately make it clear where they are supposed to go, like
+`MYMAP_yesgo_axis_sector1` or `MYMAP_yesgo_allies_northvillage`.
 
 ### Sector push setup
 
@@ -89,7 +89,7 @@ The sectorpush configuration probably looks like this (taking front
 flags locks the sector, and unlocks the 3 flags in the rear):
 
 ```python
-linkCPs = [
+linkCPs_64 = [
     plugin(
         linkCPs,
         target='MYMAP_sector_lock_dummy',
@@ -97,7 +97,7 @@ linkCPs = [
     )
 ]
 
-push = [
+push_64 = [
     plugin(
         push,
         source='MYMAP_front_south, MYMAP_front_north',
@@ -124,7 +124,7 @@ are called `yesgo_blue_A` and `yesgo_blue_B`. Axis (red) are defending,
 and their yesgo areas are called `yesgo_red_1` and `yesgo_red_2`.
 
 ```python
-dynamicoob = [
+dynamicoob_64 = [
     plugin(
         dynamicOOB,
         dynamic_flags={
@@ -172,4 +172,61 @@ they get the desertion warning.
 
 ```python
         delay_allies=0, delay_axis=45,
+```
+
+
+### Everything together
+
+The whole code will look like this, roughly:
+
+```python
+from game.plugins import plugin, push, linkCPs, dynamicOOB, ...
+
+linkCPs_64 = [
+    plugin(
+        linkCPs,
+        target='MYMAP_sector_lock_dummy',
+        source='MYMAP_front_south, MYMAP_front_north'
+    )
+]
+
+push_64 = [
+    plugin(
+        push,
+        source='MYMAP_front_south, MYMAP_front_north',
+        target='MYMAP_sector_lock_dummy',
+        attacker=2,
+        display_arrow=False,
+        wants_target_marker=False
+    )
+    plugin(
+        push,
+        source='MYMAP_sector_lock_dummy',
+        target='MYMAP_rear_north, MYMAP_rear_center, MYMAP_rear_south',
+        attacker=2,
+        display_arrow=False
+    ),
+]
+
+dynamicoob_64 = [
+    plugin(
+        dynamicOOB,
+        dynamic_flags={
+            'MYMAP_sector_lock_dummy': {
+                'allies': {
+                    'creates': ['yesgo_blue_B'],
+                    'destroys': ['yesgo_red_1'],
+                },
+            },
+        },
+        inactive_at_start=[
+            'yesgo_blue_B'
+        ],
+        delay_allies=0, delay_axis=45,
+    )
+]
+
+...
+
+gpm_cq = {64: push_64 + linkCPs_64 + dynamicoob_64 + ...}
 ```
