@@ -35,7 +35,7 @@ and three locked flags in the rear.
 
 ![](img/stage1_blank.svg){width=100%} 
 
-To add OOB areas to the locked flags, we will define "yesgo-areas" for a
+To add OOB areas to the locked flags, we will define "yesgo-areas" for each 
 team. Players can move freely inside their yesgo area, but will get the
 "you're leaving the battle" warning if they leave it.
 
