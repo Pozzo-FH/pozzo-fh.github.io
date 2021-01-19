@@ -30,8 +30,8 @@ anctoville).
 
 Let's say we want to add the dynamic OOBs to a sector push map with two
 sectors. The blue team (allies) has a mainbase on the left and is attacking the
-red team (axis). At the start of the game the first sector has two open flags
-and three locked flags in the rear.
+red team (axis). At the start of the game the first sector has two open flags,
+and the second sector has three locked flags in the rear.
 
 ![](img/stage1_blank.svg){width=100%} 
 
@@ -166,7 +166,7 @@ move into the second (rear) sector yet:
 
 The delay for the team is how long it takes until the area
 locks/unlocks. In this example, allies have zero delay, so their yesgo
-area in the rear unlocks instantly. Axis have a 45 second delay, so they
+area in the rear unlocks instantly. Axis have a 45 second delay, so they have
 some time to retreat, before their yesgo area in the front is gone, and
 they get the desertion warning.
 
