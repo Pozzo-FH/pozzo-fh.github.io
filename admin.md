@@ -67,8 +67,8 @@ Command          Usage                           Who can Run          Explanatio
                                                               
 !admins                                          everyone             Show admins online. Shown to whole server
                                                               
-!report\         !r USER REASON                  everyone             Report to admins
-!r                             
+!report\         !r USER REASON\                 everyone             Report to admins
+!r               !r pozzo troll
                                 
 !help_atgun\                                     everyone             Explain AT gun fix (can't move gun to aim)
 !h_at
@@ -81,24 +81,25 @@ Command          Usage                           Who can Run          Explanatio
 
 !cmp                                             everyone             Show Link to CMP
 
-!dissolve        !dissolve SQUADNUMBER           low-lvl Admins       Disband squad on your **own** team (locked, naziname, ...)
+!dissolve        !dissolve SQUADNUMBER\          low-lvl Admins       Disband squad on your **own** team 
+                 !dissolve 2
 
 !kill\           !kill PLAYER                    low-lvl Admins       Murder player
 !murder\
 !m
 
-!kick\           !kick PLAYER                    low-lvl Admins       Kick player
+!kick\           !kick PLAYER REASON             low-lvl Admins       Kick player
 !k
 
 !ban\            !ban PLAYER REASON              low-lvl Admins       Ban player for two weeks
 !b
 
-!permaban\       !permaban PLAYER                low-lvl Admins       Perma-ban player 
+!permaban\       !permaban PLAYER REASON         low-lvl Admins       Perma-ban player 
 !pb
 
 !resign          !resign PLAYER                  low-lvl Admins       Resign commander/remove from squad
 
-!say\            !say MESSAGE                    low-lvl Admins       Write BIG GREEN MESSAGE
+!say\            !say MESSAGE                    low-lvl Admins       Write global message
 !s
 
 !sayteam\        !sayteam MESSAGE                low-lvl Admins       Write message to own team
@@ -114,17 +115,20 @@ Command          Usage                           Who can Run          Explanatio
 
 !allies          !allies PLAYER                  low-lvl Admins       Move player to Allies NOW
 
-!warn\           !warn PLAYER REASON             low-lvl Admins       Warn Player IN BIG ORANGE
+!warn\           !warn PLAYER REASON             low-lvl Admins       Warn Player 
 !w
 
-!hist            !hist\                          low-lvl Admins       Show recent TKs, OR show recent TK and Kick summary for a player
+!hist            !hist\                          low-lvl Admins       Show global TKs, OR player TKs and Kicks
                  !hist PLAYER
 
 !runnext                                         mid-lvl Admins       Run next map
 
 !setnext         !setnext MAP\                   mid-lvl Admins       Set next map. Layer defaults to 64
                  !setnext MAP LAYER\
-                 !setnext MAP LAYER GAMEMODE
+                 !setnext MAP LAYER MODE\
+                 !setnext brest \
+                 !setnext brest 64\
+                 !setnext brest 64 gpm_cq\
 
 !restart                                         mid-lvl Admins       Restart map 
 
@@ -137,7 +141,7 @@ Command          Usage                           Who can Run          Explanatio
 !random\
 !randomize
 
-!hash            !hash PLAYER                    beta users           Show player hash, on dedicted internet server
+!hash            !hash PLAYER                    beta users           Show player hash (on internet servers)
 
 !maps\                                           beta users           Show map list
 !maplist
@@ -173,7 +177,7 @@ Command          Usage                           Who can Run          Explanatio
                  !tickets 1000\
                  !tickets 800 600
 
-!bleed           !bleed TEAMNAME AMOUNT\         beta users           Set bleed rate (per minute). bleed of 60 would mean 1 ticket lost per second
+!bleed           !bleed TEAMNAME AMOUNT\         beta users           Set bleed rate (tickets per minute)
                  !bleed AXIS ALLIES\
                  !bleed 30 50\
                  !bleed axis 40\
