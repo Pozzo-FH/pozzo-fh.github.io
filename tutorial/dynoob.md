@@ -35,6 +35,8 @@ and the second sector has three locked flags in the rear.
 
 ![](img/stage1_blank.svg){width=100%} 
 
+### OOB Areas at the start
+
 To add OOB areas to the locked flags, we will define "yesgo-areas" for each 
 team. Players can move freely inside their yesgo area, but will get the
 "you're leaving the battle" warning if they leave it.
@@ -57,6 +59,8 @@ flags (`yesgo_red_2`, and another one covering the front 2 flags
 otherwise they could enter it and camp there.
 
 ![](img/stage1_oob_r.svg){width=100%} 
+
+### Capturing a sector
 
 Now the 1st sector has been capped, the 1st line flags lock for the
 defenders, and the 2nd line flags unlock for the attackers.

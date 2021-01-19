@@ -104,12 +104,14 @@
 <p>We will see how exactly the gameplay works in a simple sectorpush example, then we’ll have a look at how to setup the plugin for this. (Note that while the example is about sectorpush, this can work aswell in a setup with objective destruction and sectors, like on hyacinth and anctoville).</p>
 <p>Let’s say we want to add the dynamic OOBs to a sector push map with two sectors. The blue team (allies) has a mainbase on the left and is attacking the red team (axis). At the start of the game the first sector has two open flags, and the second sector has three locked flags in the rear.</p>
 <p><img src="img/stage1_blank.svg" style="width:100.0%" /></p>
+<h3 id="oob-areas-at-the-start">OOB Areas at the start</h3>
 <p>To add OOB areas to the locked flags, we will define “yesgo-areas” for each team. Players can move freely inside their yesgo area, but will get the “you’re leaving the battle” warning if they leave it.</p>
 <p>In this case, the first yesgo area for the attackers includes their mainbase and the two flags of the open sector they are attacking. It does not include the rear two flags. Let’s call this area <code>yesgo_blue_A</code>.</p>
 <p>The second yesgo area for the attackers covers the 3 locked flags at the second sector. We will configure the plugin in such a way that this combatarea is <em>disabled</em> at the start of the round, so the attackers cannot go there (yet). We will call this <code>yesgo_blue_B</code>.</p>
 <p><img src="img/stage1_oob_b.svg" style="width:100.0%" /></p>
 <p>The defenders have two yesgo areas: one covering their 3 rear flags (<code>yesgo_red_2</code>, and another one covering the front 2 flags (<code>yesgo_red_1</code>). Note how their yesgo areas don’t cover the enemy mainbase, otherwise they could enter it and camp there.</p>
 <p><img src="img/stage1_oob_r.svg" style="width:100.0%" /></p>
+<h3 id="capturing-a-sector">Capturing a sector</h3>
 <p>Now the 1st sector has been capped, the 1st line flags lock for the defenders, and the 2nd line flags unlock for the attackers.</p>
 <p><img src="img/stage2_blank.svg" style="width:100.0%" /></p>
 <p>The attackers’ yesgo area for the rear flags now becomes active, so they can go there.</p>
