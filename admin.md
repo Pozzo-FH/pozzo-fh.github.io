@@ -86,7 +86,7 @@ Command          Usage                           Who can Run          Explanatio
                  !dissolve 2\
                  !dissolve 2 nazi
 
-!kill\           !kill PLAYER                    low-lvl Admins       Murder player
+!kill\           !kill PLAYER\                   low-lvl Admins       Murder player
 !murder\         !kill PLAYER REASON
 !m
 
