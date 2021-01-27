@@ -82,10 +82,12 @@ Command          Usage                           Who can Run          Explanatio
 !cmp                                             everyone             Show Link to CMP
 
 !dissolve        !dissolve SQUADNUMBER\          low-lvl Admins       Disband squad on your **own** team 
-                 !dissolve 2
+                 !dissolve SQUADNUMBER REASON\
+                 !dissolve 2\
+                 !dissolve 2 nazi
 
 !kill\           !kill PLAYER                    low-lvl Admins       Murder player
-!murder\
+!murder\         !kill PLAYER REASON
 !m
 
 !kick\           !kick PLAYER REASON             low-lvl Admins       Kick player
@@ -97,7 +99,8 @@ Command          Usage                           Who can Run          Explanatio
 !permaban\       !permaban PLAYER REASON         low-lvl Admins       Perma-ban player 
 !pb
 
-!resign          !resign PLAYER                  low-lvl Admins       Resign commander/remove from squad
+!resign          !resign PLAYER\                 low-lvl Admins       Resign commander/remove from squad
+                 !resign PLAYER REASON
 
 !say\            !say MESSAGE                    low-lvl Admins       Write global message
 !s
