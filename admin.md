@@ -201,57 +201,140 @@ instead of typing out
 
 Currently there is **no** partial name match, so you **CANNOT** `!setnext sfa`!
 
-- anctoville -> anctoville_1944
-- brest -> battle_of_brest
-- keren -> battle_of_keren
-- berlin -> cmp_berlin
-- irrawaddy -> cmp_irrawaddy_river
-- midway -> cmp_midway_1942
-- cabantuan -> cmp_raid_on_cabantuan
-- tarawa -> cmp_tarawa
-- tulagi -> cmp_tulagi
-- wake -> cmp_wake_island
-- crete -> crete_1941
-- dukla -> dukla_pass
-- el_ala -> el_alamein
-- alamein -> el_alamein
-- falaise -> falaise_pocket
-- fot -> fall_of_tobruk
-- gold -> gold_beach
-- hurtgen -> hurtgen_forest
-- mareth -> mareth_line
-- mersa -> mersa_matruh
-- meuse -> meuse_river
-- motovskiy -> motovskiy_bay
-- moto -> motovskiy_bay
-- olympus -> mount_olympus
-- omaha -> omaha_beach
-- cobra -> operation_cobra
-- goodwood -> operation_goodwood
-- hyacinth -> operation_hyacinth
-- luttich -> operation_luttich
-- lettuce -> operation_luttich
-- opmars -> operation_mars
-- mars -> operation_mars
-- totalize -> operation_totalize
-- pdh -> pointe_du_hoc
-- bessin -> port_en_bessin
-- peb -> port_en_bessin
-- phl -> purple_heart_lane
-- sidi_bou -> sidi_bou_zid
-- zid -> sidi_bou_zid
-- sbz -> sidi_bou_zid
-- rezegh -> sidi_rezegh
-- sidi_rez -> sidi_rezegh
-- sot -> siege_of_tobruk
-- st_lo -> st_lo_breakthrough
-- stlo -> st_lo_breakthrough
-- stvith -> st_vith
-- vith -> st_vith
-- tali -> tali
-- sfakia -> the_battle_for_sfakia
-- tunis -> tunis_1943
-- villers -> villers_bocage
+Shortname              Name
+---------------------  ---------------------
+alam_halfa             alam_halfa
+alam                   alam_halfa
+halfa                  alam_halfa
+anctoville_1944        anctoville_1944
+anctoville             anctoville_1944
+ancto                  anctoville_1944
+arad                   arad
+bardia                 bardia
+bastogne               bastogne
+battle_of_brest        battle_of_brest
+brest                  battle_of_brest
+breast                 battle_of_brest
+battle_of_keren        battle_of_keren
+keren                  battle_of_keren
+karen                  battle_of_keren
+cmp_berlin             cmp_berlin
+berlin                 cmp_berlin
+cmp_irrawaddy_river    cmp_irrawaddy_river
+irrawaddy              cmp_irrawaddy_river
+irra                   cmp_irrawaddy_river
+cmp_midway_1942        cmp_midway_1942
+midway                 cmp_midway_1942
+midway_1942            cmp_midway_1942
+cmp_raid_on_cabantuan  cmp_raid_on_cabantuan
+cabantuan              cmp_raid_on_cabantuan
+caba                   cmp_raid_on_cabantuan
+cmp_tarawa             cmp_tarawa
+tarawa                 cmp_tarawa
+cmp_tulagi             cmp_tulagi
+tulagi                 cmp_tulagi
+cmp_wake_island        cmp_wake_island
+wake                   cmp_wake_island
+crete_1941             crete_1941
+crete                  crete_1941
+dukla_pass             dukla_pass
+dukla                  dukla_pass
+valley_of_death        dukla_pass
+el_alamein             el_alamein
+el_ala                 el_alamein
+alamein                el_alamein
+ala                    el_alamein
+eppeldorf              eppeldorf
+eppel                  eppeldorf
+falaise_pocket         falaise_pocket
+falaise                falaise_pocket
+fall_of_tobruk         fall_of_tobruk
+fot                    fall_of_tobruk
+flavion                flavion
+flav                   flavion
+flavortown             flavion
+gazala                 gazala
+giarabub               giarabub
+viagraboob             giarabub
+gold_beach             gold_beach
+gold                   gold_beach
+hurtgen_forest         hurtgen_forest
+hurtgen                hurtgen_forest
+ihantala               ihantala
+iha                    ihantala
+lebisey                lebisey
+lenino                 lenino
+mareth_line            mareth_line
+mareth                 mareth_line
+mersa_matruh           mersa_matruh
+mathruh                mersa_matruh
+mersa                  mersa_matruh
+meuse_river            meuse_river
+meuse                  meuse_river
+motovskiy_bay          motovskiy_bay
+motovskiy              motovskiy_bay
+moto                   motovskiy_bay
+mount_olympus          mount_olympus
+olympus                mount_olympus
+ogledow                ogledow
+omaha_beach            omaha_beach
+omaha                  omaha_beach
+operation_cobra        operation_cobra
+cobra                  operation_cobra
+operation_goodwood     operation_goodwood
+goodwood               operation_goodwood
+operation_hyacinth     operation_hyacinth
+hyacinth               operation_hyacinth
+operation_luttich      operation_luttich
+luttich                operation_luttich
+lettuce                operation_luttich
+operation_mars         operation_mars
+opmars                 operation_mars
+mars                   operation_mars
+totalize               operation_totalize
+operation_totalize     operation_totalize
+pegasus                pegasus
+pointe_du_hoc          pointe_du_hoc
+pdh                    pointe_du_hoc
+port_en_bessin         port_en_bessin
+bessin                 port_en_bessin
+peb                    port_en_bessin
+purple_heart_lane      purple_heart_lane
+phl                    purple_heart_lane
+ramelle                ramelle
+ryan                   ramelle
+sammatus               sammatus
+seelow                 seelow
+sidi_bou_zid           sidi_bou_zid
+sidi_bou               sidi_bou_zid
+zid                    sidi_bou_zid
+sbz                    sidi_bou_zid
+sidi_rezegh            sidi_rezegh
+rezegh                 sidi_rezegh
+rez                    sidi_rezegh
+sidi_rez               sidi_rezegh
+siege_of_tobruk        siege_of_tobruk
+sot                    siege_of_tobruk
+st_lo_breakthrough     st_lo_breakthrough
+st_lo                  st_lo_breakthrough
+stlo                   st_lo_breakthrough
+st_vith                st_vith
+stvith                 st_vith
+vith                   st_vith
+studienka              studienka
+supercharge            supercharge
+tali                   tali
+the_battle_for_sfakia  the_battle_for_sfakia
+sfakia                 the_battle_for_sfakia
+tomarovka              tomarovka
+tunis_1943             tunis_1943
+tunis                  tunis_1943
+villers_bocage         villers_bocage
+villers                villers_bocage
+village_bukkake        villers_bocage
+bukkake                villers_bocage
+vossenack              vossenack
+vosse                  vossenack
 
 Configuration
 -------------
