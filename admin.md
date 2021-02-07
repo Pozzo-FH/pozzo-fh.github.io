@@ -96,8 +96,13 @@ Command          Usage                           Who can Run          Explanatio
 !ban\            !ban PLAYER REASON              low-lvl Admins       Ban player for two weeks
 !b
 
+!banround\       !banround PLAYER REASON         low-lvl Admins       Ban player until next round
+!br
+!rb
+
 !permaban\       !permaban PLAYER REASON         low-lvl Admins       Perma-ban player 
-!pb
+!pb\
+!bp
 
 !resign          !resign PLAYER\                 low-lvl Admins       Resign commander/remove from squad
                  !resign PLAYER REASON
