@@ -331,7 +331,6 @@ supercharge            supercharge
 tali                   tali
 the_battle_for_sfakia  the_battle_for_sfakia
 sfakia                 the_battle_for_sfakia
-tomarovka              tomarovka
 tunis_1943             tunis_1943
 tunis                  tunis_1943
 villers_bocage         villers_bocage
