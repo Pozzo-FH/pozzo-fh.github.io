@@ -129,7 +129,9 @@ Command          Usage                           Who can Run          Explanatio
 !hist            !hist\                          low-lvl Admins       Show global TKs, OR player TKs and Kicks
                  !hist PLAYER
 
-!runnext                                         mid-lvl Admins       Run next map
+!hash            !hash PLAYER                    low-lvl Admins       Show player hash (on internet servers)
+
+!runnext                                         low-lvl Admins       Run next map
 
 !setnext         !setnext MAP\                   mid-lvl Admins       Set next map. Layer defaults to 64
                  !setnext MAP LAYER\
@@ -138,7 +140,7 @@ Command          Usage                           Who can Run          Explanatio
                  !setnext brest 64\
                  !setnext brest 64 gpm_cq\
 
-!restart                                         mid-lvl Admins       Restart map 
+!restart                                         high-lvl Admins       Restart map 
 
 !swap                                            high-lvl Admins      Move everyone to opposite team
 
@@ -149,7 +151,10 @@ Command          Usage                           Who can Run          Explanatio
 !random\
 !randomize
 
-!hash            !hash PLAYER                    beta users           Show player hash (on internet servers)
+!tickets         !tickets BOTH\                  high-lvl Admins      Set tickets
+                 !tickets AXIS ALLIES\
+                 !tickets 1000\
+                 !tickets 800 600
 
 !maps\                                           beta users           Show map list
 !maplist
@@ -179,11 +184,6 @@ Command          Usage                           Who can Run          Explanatio
 !startdemo       !startdemo FILENAME             beta users           Start the battle recorder
 
 !stopdemo                                        beta users           Stop the batte recorder
-
-!tickets         !tickets BOTH\                  beta users           Set tickets
-                 !tickets AXIS ALLIES\
-                 !tickets 1000\
-                 !tickets 800 600
 
 !bleed           !bleed TEAMNAME AMOUNT\         beta users           Set bleed rate (tickets per minute)
                  !bleed AXIS ALLIES\
