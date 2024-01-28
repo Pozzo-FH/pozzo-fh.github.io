@@ -15,14 +15,4 @@
 | ![](ico/n_para.png)         Para       | ![](ico/n_bayonet.png)      Rifle     | | ![](ico/n_scout.png)        Scout     | | ![](ico/n_assault.png)      SMG       |
 | ![](ico/n_sniper.png)       Sniper     | ![](ico/n_tanker.png)       Tanker    | |   | |   |
 
-### Player Controlled Objects
-
-|                                        |                                       | |                                       | |                                       |
-|----------------------------------------|---------------------------------------|-|---------------------------------------|-|---------------------------------------|
-| ![](ico/n_flak.png)         AA Gun     | ![](ico/n_hmg.png)          MG Nest   | | ![](ico/n_pak.png)          AT Gun    | | ![](ico/n_radio.png)        Radio     |
-| ![](ico/n_apc.png)          APC        | ![](ico/n_armoredcar.png)   Scout     | | ![](ico/n_arty_sp.png)      SP Arty   | | ![](ico/n_car.png)          Jeep      |
-| ![](ico/n_arty.png)         Arty       | ![](ico/n_flak_sp.png)      SP FlaK   | | ![](ico/n_pak_sp.png)       SP PaK    | | ![](ico/n_plane.png)        Plane     |
-| ![](ico/n_boat.png)         Ship       | ![](ico/n_supply.png)       Supply    | | ![](ico/n_truck.png)        Truck     | | ![](ico/n_tank_heavy.png)   Heavy T.  |
-| ![](ico/n_tank_light.png)   Light T.   | ![](ico/n_tank_medium.png)  Medium T. | |                                       | |                                       |
-
 ## Map list
