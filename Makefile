@@ -43,7 +43,7 @@ main:
 
 .PHONY: view
 view: main
-	$(PBROWSER) $(MAIN).html 2> /dev/null & 
+	$(PBROWSER) $(MAIN).html 2> /dev/null &
 
 
 .PHONY: clean

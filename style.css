@@ -10,9 +10,9 @@ html {
   box-sizing: border-box;
 
   max-width: 100vw;
-  font-size: 3.2vw;
 
-  background: white;
+  /* background: white; */
+  background: #fff9f2;
   color: black;
   font-family: "Atkinson Hyperlegible", sans-serif;
   font-feature-settings: "zero";
@@ -86,13 +86,14 @@ h4 {
 }
 
 a {
-  color: #3971ed;
+  color: #804389;
   text-decoration: underline dotted;
   display: inline-block;
 }
 a:hover {
   color: #50a14f;
-  background-color: #eee;
+  /* background-color: #eee; */
+  background-color: #00c2bb; 
   text-decoration: underline;
 }
 
