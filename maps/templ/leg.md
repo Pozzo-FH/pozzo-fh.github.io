@@ -15,4 +15,10 @@
 | ![](ico/n_para.png)         Para       | ![](ico/n_bayonet.png)      Rifle     | | ![](ico/n_scout.png)        Scout     | | ![](ico/n_assault.png)      SMG       |
 | ![](ico/n_sniper.png)       Sniper     | ![](ico/n_tanker.png)       Tanker    | |   | |   |
 
+### Grid Lines
+
+The Thick Grid Cross marks `(0, 0)`, the center of the map.
+
+The distance between grid lines is 200 m.
+
 ## Map list
