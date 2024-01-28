@@ -19,7 +19,7 @@
 
 The Thick Grid Cross marks `(0, 0)`, the center of the map.
 
-The distance between grid lines is 200 m.
+The distance between grid lines is 100 m.
 
 ## Map list
 +----------------------------+---------------------------------------+---------------------------------------+--------------------------------------------+-----------------------+
