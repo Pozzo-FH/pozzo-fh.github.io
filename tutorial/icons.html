@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Minimap Icon Categories</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Minimap Icon Categories</h1>
+</header>
+<p>This is a guide for a consistent naming and organization scheme for
+the minimap icons.</p>
+<p><em>IMPORTANT</em>: The existing old files (that dont quite follow a
+strict convention) are still in the build, otherwise we break
+external/custom maps/vehicles. This is to document the new ones and
+encourage vehicle makers to use these</p>
+<table>
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 26%" />
+<col style="width: 13%" />
+<col style="width: 39%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">category name<br />
+(== icon name)</th>
+<th style="text-align: left;">icon</th>
+<th style="text-align: left;">definition</th>
+<th style="text-align: left;">examples</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;"><code>jeep</code></td>
+<td style="text-align: left;"><img src="ico/jeep.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"><br />
+</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>jeep_mg</code></td>
+<td style="text-align: left;"><img src="ico/jeep_mg.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">SAS Willy ,<br />
+Kübelwagen with MG34</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>jeep_rockets</code></td>
+<td style="text-align: left;"><img src="ico/jeep_rockets.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Jeep Calliope</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>jeep_amphib</code></td>
+<td style="text-align: left;"><img src="ico/amphib_jeep.png" /></td>
+<td style="text-align: left;">aka <code>amphib_jeep</code></td>
+<td style="text-align: left;">Schwimmwagen, Fort GPA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>truck</code></td>
+<td style="text-align: left;"><img src="ico/truck.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"><br />
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>truck_mg</code></td>
+<td style="text-align: left;"><img src="ico/truck_mg.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Sahariana, LRDG Chevy</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>truck_ammo</code></td>
+<td style="text-align: left;"><img src="ico/truck_ammo.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"><br />
+</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>truck_aa</code></td>
+<td style="text-align: left;"><img src="ico/truck_aa.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Chevy Breda Portee,<br />
+Fiat Breda 35,<br />
+Studebaker ZPU,<br />
+Opel ZW MG34</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>truck_cannon</code></td>
+<td style="text-align: left;"><img src="ico/truck_cannon.png" /></td>
+<td style="text-align: left;">mounted/portee</td>
+<td style="text-align: left;">2pdr Portee</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>truck_rockets</code></td>
+<td style="text-align: left;"><img src="ico/truck_rockets.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Katyusha</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>apc</code></td>
+<td style="text-align: left;"><img src="ico/apc.png" /></td>
+<td style="text-align: left;">big, unarmed</td>
+<td style="text-align: left;">Lorraine 38L, SdKfz 7</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>apc_mg</code></td>
+<td style="text-align: left;"><img src="ico/apc_mg.png" /></td>
+<td style="text-align: left;">(H)MG</td>
+<td style="text-align: left;">Hanomag, M3 halftrack</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>apc_ammo</code></td>
+<td style="text-align: left;"><img src="ico/apc_ammo.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Lorraine 37L</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>apc_aa</code></td>
+<td style="text-align: left;"><img src="ico/apc_aa.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">M16 MGMC, AEC Bofors Portee,<br />
+SdKfz 7/1 Vierling</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>apc_cannon</code></td>
+<td style="text-align: left;"><img src="ico/apc_cannon.png" /></td>
+<td style="text-align: left;">mounted/portee</td>
+<td style="text-align: left;">SdKfz 251/10 (mounted 37mm),<br />
+M3 GMC, Deacon</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>apc_arty</code></td>
+<td style="text-align: left;"><img src="ico/apc_arty.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">T19 HMC</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>apc_flame</code></td>
+<td style="text-align: left;"><img src="ico/apc_flame.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Wasp Unicarrier</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>apc_rockets</code></td>
+<td style="text-align: left;"><img src="ico/apc_rockets.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Stuka zu Fuß</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>apc_commander</code></td>
+<td style="text-align: left;"><img src="ico/apc_commander.png" /></td>
+<td style="text-align: left;">radio</td>
+<td style="text-align: left;">Dorchester, SdKfz 250/3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>amphib_jeep</code></td>
+<td style="text-align: left;"><img src="ico/amphib_jeep.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Schwimmwagen, Fort GPA</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>amphib_apc</code></td>
+<td style="text-align: left;"><img src="ico/amphib_apc.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">LVT Buffalo</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>amphib_apc_flame</code></td>
+<td style="text-align: left;"><img
+src="ico/amphib_apc_flame.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">LVT Buffalo Flamer</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>amphib_apc_ammo</code></td>
+<td style="text-align: left;"><img src="ico/amphib_apc_ammo.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>amphib_tank</code></td>
+<td style="text-align: left;"><img src="ico/amphib_tank.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">LVT(A) 4</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>amphib_tank_flame</code></td>
+<td style="text-align: left;"><img
+src="ico/amphib_tank_flame.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>scoutcar</code></td>
+<td style="text-align: left;"><img src="ico/scoutcar.png" /></td>
+<td style="text-align: left;">lightly armed</td>
+<td style="text-align: left;">Dingo, BA-64</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>scoutcar_cannon</code></td>
+<td style="text-align: left;"><img src="ico/scoutcar_cannon.png" /></td>
+<td style="text-align: left;">(auto)cannon</td>
+<td style="text-align: left;">Panhard, Daimler,<br />
+Marmon-Herrington,<br />
+Puma, SdKfz 222+231,<br />
+M8 Scoutcar, Staghound</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_light</code></td>
+<td style="text-align: left;"><img src="ico/tank_light.png" /></td>
+<td style="text-align: left;">“vanilla”<br />
+autocannon or<br />
+basic cannon</td>
+<td style="text-align: left;">Stuart, PzII, Fiat L6, T-60<br />
+Valentine (Soviet), Chaffee</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_light_mg</code></td>
+<td style="text-align: left;"><img src="ico/tank_light_mg.png" /></td>
+<td style="text-align: left;">(heavy MG)/tankette</td>
+<td style="text-align: left;">Vickers Mk VI, CV35, PzI,<br />
+TKS, Type94, FT17(mg)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_light_aa</code></td>
+<td style="text-align: left;"><img src="ico/tank_light_aa.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">M19 MGMC, FlaKpanzer 38(t),<br />
+Type 98 20mm AAG</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_light_casemate</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_light_casemate.png" /></td>
+<td style="text-align: left;">closed-top casemate</td>
+<td style="text-align: left;">Hetzer, Semovente 47/32</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_light_opentop</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_light_opentop.png" /></td>
+<td style="text-align: left;">turreted or<br />
+open case mate</td>
+<td style="text-align: left;">Marder, M18 TD, SU76,<br />
+Panzerselbstfahrlafette Ic</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_light_short</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_light_short.png" /></td>
+<td style="text-align: left;">turreted,<br />
+low-velocity<br />
+close-support gun</td>
+<td style="text-align: left;">M8 HMC, BT-42</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_light_flame</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_light_flame.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">M3A1 Stuart “Satan”</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_light_arty</code></td>
+<td style="text-align: left;"><img src="ico/tank_light_arty.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Wespe, Bison, Grille</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_light_noturret</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_light_noturret.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Stuart Recce,<br />
+light Kangoroos (M3/M5)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_medium</code></td>
+<td style="text-align: left;"><img src="ico/tank_medium.png" /></td>
+<td style="text-align: left;">“vanilla”</td>
+<td style="text-align: left;">PzIII, T34, Cruiser, Sherman,<br />
+Carro Armato m13/40, S35</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_medium_aa</code></td>
+<td style="text-align: left;"><img src="ico/tank_medium_aa.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Möbelwagen, Crusader AA</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_medium_arty</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_arty.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Priest, Sexton, Hummel,<br />
+Type 4 Ho-Ro</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_medium_casemate</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_casemate.png" /></td>
+<td style="text-align: left;">closed casemate,<br />
+high-velocity gun</td>
+<td style="text-align: left;">StuG (late), SU85,<br />
+SU100, Jagdpanzer</td>
+</tr>
+<tr class="odd">
+<td
+style="text-align: left;"><code>tank_medium_casemate_long</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_casemate_long.png" /></td>
+<td style="text-align: left;">closed casemate,<br />
+upgunned</td>
+<td style="text-align: left;">Jagdpanther</td>
+</tr>
+<tr class="even">
+<td
+style="text-align: left;"><code>tank_medium_casemate_short</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_casemate_short.png" /></td>
+<td style="text-align: left;">closed casemate,<br />
+low-velocity<br />
+close-support gun</td>
+<td style="text-align: left;">Brummbär/StuPa, StuG (early),<br />
+StuH, Semovente 75/18</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_medium_opentop</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_opentop.png" /></td>
+<td style="text-align: left;">turreted OR<br />
+open case mate<br />
+usually HV gun</td>
+<td style="text-align: left;">M10 TD, M36 TD, Achilles</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_medium_flame</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_flame.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Flammpanzer III, OT34,<br />
+Flame Sherman</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_medium_long</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_long.png" /></td>
+<td style="text-align: left;">upgunned medium</td>
+<td style="text-align: left;">T34 85, Panther,<br />
+Firefly, Sherman 76</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_medium_multiturret</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_multiturret.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">M3 Grant/Lee, Fiat M11/39, T28</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_medium_noturret</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_noturret.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Priest Kangoroo</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_medium_rockets</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_rockets.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Sherman Calliope</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_medium_short</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_medium_short.png" /></td>
+<td style="text-align: left;">turreted,<br />
+low-velocity<br />
+close-support gun</td>
+<td style="text-align: left;">PzIV (early), PzIII N,<br />
+Centaur Mk IV, Sherman 105</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;"></td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_heavy</code></td>
+<td style="text-align: left;"><img src="ico/tank_heavy.png" /></td>
+<td style="text-align: left;">“vanilla”</td>
+<td style="text-align: left;">Tiger, Churchill, KV1,<br />
+Valentine (british), Jumbo, Matilda</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_heavy_arty</code></td>
+<td style="text-align: left;"><img src="ico/tank_heavy_arty.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Bishop</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_heavy_casemate</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_heavy_casemate.png" /></td>
+<td style="text-align: left;">casemate<br />
+close-top<br />
+HV</td>
+<td style="text-align: left;">Jagdtiger, Elephant, ISU</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_heavy_opentop</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_heavy_opentop.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Nashorn</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_heavy_flame</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_heavy_flame.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Churchill Croc</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_heavy_short</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_heavy_short.png" /></td>
+<td style="text-align: left;">turreted,<br />
+low-velocity<br />
+close-support gun</td>
+<td style="text-align: left;">Churchill AVRE, KV2</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_heavy_long</code></td>
+<td style="text-align: left;"><img src="ico/tank_heavy_long.png" /></td>
+<td style="text-align: left;">upgunned/stronger</td>
+<td style="text-align: left;">Jumbo 76</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><code>tank_heavy_multiturret</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_heavy_multiturret.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Char B1, T35</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;"><code>tank_heavy_noturret</code></td>
+<td style="text-align: left;"><img
+src="ico/tank_heavy_noturret.png" /></td>
+<td style="text-align: left;"><br />
+</td>
+<td style="text-align: left;">Churchill Kangoroo</td>
+</tr>
+</tbody>
+</table>
+</body>
+</html>

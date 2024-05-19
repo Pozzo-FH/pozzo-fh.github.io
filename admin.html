@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>FH2 Admin Manual</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+    /* CSS for syntax highlighting */
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="style.css" />
+  <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">FH2 Admin Manual</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#chat-commands" id="toc-chat-commands">Chat commands</a>
+<ul>
+<li><a href="#reason-shortcuts" id="toc-reason-shortcuts">“Reason”
+Shortcuts</a></li>
+<li><a href="#history-shortcuts" id="toc-history-shortcuts">History
+Shortcuts</a></li>
+<li><a href="#command-summary" id="toc-command-summary">Command
+Summary</a></li>
+<li><a href="#map-shortnames" id="toc-map-shortnames">Map
+Shortnames</a></li>
+</ul></li>
+<li><a href="#setup" id="toc-setup">Setup</a>
+<ul>
+<li><a href="#plugin-system" id="toc-plugin-system">Plugin
+System</a></li>
+<li><a href="#carousel" id="toc-carousel">Map Randomizer</a></li>
+<li><a href="#admin-rights" id="toc-admin-rights">Admin Rights</a></li>
+<li><a href="#nazi-word-blacklist" id="toc-nazi-word-blacklist">Nazi
+Word Blacklist</a></li>
+</ul></li>
+<li><a href="#main-configuration" id="toc-main-configuration">Main
+Configuration</a>
+<ul>
+<li><a href="#messages" id="toc-messages">Messages</a></li>
+<li><a href="#bans-and-afk-kicks" id="toc-bans-and-afk-kicks">Bans and
+(AFK) Kicks</a></li>
+<li><a href="#map-rotation" id="toc-map-rotation">Map Rotation</a></li>
+<li><a href="#autobalancer" id="toc-autobalancer">Autobalancer</a></li>
+<li><a href="#hud" id="toc-hud">HUD</a></li>
+<li><a href="#stats-api" id="toc-stats-api">Stats API</a></li>
+<li><a href="#voting" id="toc-voting">Voting</a></li>
+</ul></li>
+</ul>
+</nav>
+<h2 id="chat-commands">Chat commands</h2>
+<p>Just like you're used to, you can send certain <code>!bang</code>
+commands in the game chat</p>
+<p>When supplying a player name, partial names will work as well. (the
+line <code>!warn oz</code> will probably resolve to
+<code>!warn pozzo</code>). If there are multiple name matches, it will
+tell you that</p>
+<h3 id="reason-shortcuts">“Reason” Shortcuts</h3>
+<p>Some commands like <code>!report</code> also can have abbreviations,
+so <code>!report poz fc</code> will be printed as
+<code>!report pozzo Fighting Commander</code>. See the current list:</p>
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;afk&quot;</span>: <span class="st">&quot;Being AFK&quot;</span>,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;fc&quot;</span>: <span class="st">&quot;Fighting Commander&quot;</span>,</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;ftk&quot;</span>: <span class="st">&quot;Forcing Teamkills&quot;</span>,</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;gp&quot;</span>: <span class="st">&quot;Disrupting Gameplay&quot;</span>,</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;lang&quot;</span>: <span class="st">&quot;Offensive Language&quot;</span>,</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;locked&quot;</span>: <span class="st">&quot;Locked squad&quot;</span>,</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;name&quot;</span>: <span class="st">&quot;Bad Nickname&quot;</span>,</span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;nazi&quot;</span>: <span class="st">&quot;Nazi bullshit&quot;</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;spam&quot;</span>: <span class="st">&quot;Spamming&quot;</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;steal&quot;</span>: <span class="st">&quot;Asset stealing&quot;</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;tk&quot;</span>: <span class="st">&quot;Teamkilling&quot;</span>,</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="co">&quot;troll&quot;</span>: <span class="st">&quot;Trolling&quot;</span>,</span></code></pre></div>
+<h3 id="history-shortcuts">History Shortcuts</h3>
+<p>Shortcuts reusing command history are also available:</p>
+<ul>
+<li><code>!!</code>: repeat entire input</li>
+<li><code>!0</code>: repeat command</li>
+<li><code>!@</code>: repeat all arguments</li>
+<li><code>!$</code>: repeat last argument</li>
+</ul>
+<p>Example:</p>
+<pre><code>[Chat]: !warn pozzo afk
+!! -&gt; &quot;!warn pozzo afk&quot;
+!0 -&gt; &quot;!warn&quot;
+!@ -&gt; &quot;pozzo afk&quot;
+!$ -&gt; &quot;afk&quot;</code></pre>
+<h3 id="command-summary">Command Summary</h3>
+<table>
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 17%" />
+<col style="width: 13%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;">Command</th>
+<th style="text-align: left;">Usage</th>
+<th style="text-align: left;">Who?</th>
+<th style="text-align: left;">Explanation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">!rules</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Show link to server ruleset</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!help</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Show available commands</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!shownext<br />
+!sn<br />
+!nextmap<br />
+!nm</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Show next map in rotation</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!admins</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Show admins online</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!yes</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Vote YES (if vote is ongoing)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!no</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Vote NO (if vote is ongoing)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!report<br />
+!r</td>
+<td style="text-align: left;">!r USER WHY<br />
+!r pozzo troll</td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Report to admins</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!help_atgun<br />
+!h_at</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Explain AT gun fix<br />
+(can’t move gun to aim)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!help_voice<br />
+!h_vo</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Explain voice fix<br />
+(soldier shouts randomly)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!help_para<br />
+!h_pa</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Explain parachute</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!cmp</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">all</td>
+<td style="text-align: left;">Show Link to CMP</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!reroll<br />
+!rr</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Re-pick random nextmap<br />
+(only ONCE per round!)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!vote_reroll<br />
+!vrr</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Start vote to re-roll</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!vote_runnext<br />
+!vrn</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Start vote to runnext</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!dissolve<br />
+!disband</td>
+<td style="text-align: left;">!dissolve NUM<br />
+!dissolve NUM WHY<br />
+!dissolve 2<br />
+!dissolve 2 nazi</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Disband squad<br />
+on your <strong>own</strong> team</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!kill<br />
+!murder<br />
+!m</td>
+<td style="text-align: left;">!kill PLY<br />
+!kill PLY WHY</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Murder player</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!kick<br />
+!k</td>
+<td style="text-align: left;">!kick PLY WHY<br />
+!kick -n NUM WHY</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Kick player</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!ban<br />
+!b</td>
+<td style="text-align: left;">!ban PLY WHY<br />
+!ban -n NUM WHY</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Ban player for two weeks</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!banround<br />
+!br<br />
+!rb<br />
+!roundban</td>
+<td style="text-align: left;">!banround PLY WHY</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Ban player for 1h</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!banday<br />
+!bd<br />
+!db<br />
+!dayban</td>
+<td style="text-align: left;">!banday PLY WHY</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Ban player for 24h</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!permaban<br />
+!pb<br />
+!bp</td>
+<td style="text-align: left;">!permaban PLY WHY</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Perma-ban player</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!resign</td>
+<td style="text-align: left;">!resign PLY<br />
+!resign PLY WHY</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Resign commander/<br />
+remove from squad</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!say<br />
+!s</td>
+<td style="text-align: left;">!say MSG</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Write global message</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!sayteam<br />
+!st</td>
+<td style="text-align: left;">!sayteam MSG</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Write to own team</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!sayenemy<br />
+!se</td>
+<td style="text-align: left;">!sayenemy MSG</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Write to enemy team</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!sayadmin<br />
+!sa</td>
+<td style="text-align: left;">!sayadmin MSG</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Write to admins</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!switch<br />
+!sw</td>
+<td style="text-align: left;">!switch PLAYER<br />
+</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Move player</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!axis</td>
+<td style="text-align: left;">!axis PLAYER</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Move player to Axis</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!allies</td>
+<td style="text-align: left;">!allies PLAYER</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Move player to Allies</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!warn<br />
+!w</td>
+<td style="text-align: left;">!warn PLAYER WHY</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Warn Player</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!hist</td>
+<td style="text-align: left;">!hist<br />
+!hist PLAYER</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Show global TKs,<br />
+OR player TKs and Kicks</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!hash</td>
+<td style="text-align: left;">!hash PLAYER</td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Show player hash<br />
+(on internet servers)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!runnext<br />
+!rn</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Run next map</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!fixsquadbug</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Try fixing broken squads</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!version</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">low-lvl</td>
+<td style="text-align: left;">Show admin tools version</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!scramble<br />
+!scram<br />
+!shuffle<br />
+!shuf</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">mid-lvl</td>
+<td style="text-align: left;">Scramble teams on next map</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!unscramble</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">mid-lvl</td>
+<td style="text-align: left;">Cancel the scramble request</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!setnext</td>
+<td style="text-align: left;">!setnext MAP<br />
+!setnext MAP LY<br />
+!setnext brest<br />
+!setnext brest 64<br />
+</td>
+<td style="text-align: left;">mid-lvl</td>
+<td style="text-align: left;">Set next map (default 64p)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!restart</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">mid-lvl</td>
+<td style="text-align: left;">Restart map</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!tickets</td>
+<td style="text-align: left;">!tickets BOTH<br />
+!tickets AXIS ALLIES<br />
+!tickets 1000<br />
+!tickets 800 600</td>
+<td style="text-align: left;">high-lvl</td>
+<td style="text-align: left;">Set tickets</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!maps<br />
+!maplist</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Show map list</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!giveme</td>
+<td style="text-align: left;">!giveme OBJECT</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Spawn object next to you</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!fly<br />
+!fling</td>
+<td style="text-align: left;">!fly<br />
+!fly HEIGHT<br />
+!fly HEIGHT PLAYER<br />
+!fly 400 pozzo</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Launch into the air<br />
+(default is yourself and 100m)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!spawntime</td>
+<td style="text-align: left;">!spawntime NUM</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Set spawntime in seconds</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!camera</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Spawn the filmcamera &lt;3</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!cap</td>
+<td style="text-align: left;">!cap TEAM NAME<br />
+!cap -l TEAM NAME</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Give flag to team<br />
+Adding ‘-l’ makes it<br />
+search localizations, like<br />
+“outskirts” on tobruk<br />
+(actual flagname is<br />
+<code>64_CP_FT_2</code>)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!3p</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Force 3rd person camera</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!1p</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Force 1st person camera</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!coord</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Show position &amp; direction</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!maplint</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Run the maplint</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!speed</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Show your current speed</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!oob</td>
+<td style="text-align: left;">!oob ON<br />
+!oob OFF</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Turn OOB on/off,</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!run</td>
+<td style="text-align: left;">!run SCRIPTNAME</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Run a script</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!exec</td>
+<td style="text-align: left;">!exec COMMAND</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Execute a rcon command</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!finish</td>
+<td style="text-align: left;">!finish TEAMNAME</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Bleed out a team</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!startdemo</td>
+<td style="text-align: left;">!startdemo FILENAME</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Start battle recorder</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">!stopdemo</td>
+<td style="text-align: left;"></td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Stop batte recorder</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">!bleed</td>
+<td style="text-align: left;">!bleed TEAM NUM<br />
+!bleed AX AL<br />
+!bleed 30 50<br />
+!bleed axis 40<br />
+!bleed both 60</td>
+<td style="text-align: left;">betatest</td>
+<td style="text-align: left;">Set bleed rate<br />
+(tickets per minute)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="map-shortnames">Map Shortnames</h3>
+<p><em>Some</em> maps have short abbreviations defined (see <a
+href="https://pozzo-fh.github.io/maps/index.html">the map table</a> ),
+so you can</p>
+<pre><code>!setnext sfakia</code></pre>
+<p>instead of typing out</p>
+<pre><code>!setnext the_battle_for_sfakia</code></pre>
+<p>Currently there is <strong>no</strong> partial name match, so you
+<strong>CANNOT</strong> <code>!setnext sfa</code>!</p>
+<h2 id="setup">Setup</h2>
+<h3 id="plugin-system">Plugin System</h3>
+<p>Plugins are enabled by default, see
+<code>game/gameplayPlugin.py</code>:</p>
+<div class="sourceCode" id="cb5"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>plugins_admin <span class="op">=</span> [</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;BangBang&#39;</span>,  <span class="co"># chat commands</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;IdleTracker&#39;</span>,  <span class="co"># kick afk players</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;PlayerLogger&#39;</span>,  <span class="co"># log player IDs</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;SteamRoller&#39;</span>,  <span class="co"># balance and swap/shuffle</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;TeamKillLogger&#39;</span>,  <span class="co"># log teamkills</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Greeter&#39;</span>,  <span class="co"># message on first spawn</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Announcer&#39;</span>,  <span class="co"># messages at regular intervals</span></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;VoteChat&#39;</span>,  <span class="co"># messages at regular intervals</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>plugins_admin_nobots <span class="op">=</span> [</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;Carousel&#39;</span>,  <span class="co"># map rotation</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>plugins_admin_linux <span class="op">=</span> [</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;NameChecker&#39;</span>,  <span class="co"># purge nazi names</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>]</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>plugins_admin_beta <span class="op">=</span> [</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>    <span class="st">&#39;CamSetup&#39;</span>,  <span class="co"># enable chasecams</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>]</span></code></pre></div>
+<p>On linux servers, you can check for squad names and playernames, if
+they match a (nazi) badlist.</p>
+<p>On betatest servers, chasecams are enabled.</p>
+<p>On servers with bots (singleplayer and coop), randomized map rotation
+is not available.</p>
+<h3 id="carousel">Map Randomizer</h3>
+<p>Maps are picked randomly from the server maplist. It will avoid
+running the same map twice in a row, and it will avoid running two maps
+of the same theatre (e.g. africa) back to back.</p>
+<p>For randomized map rotation to work, all maps need to have a
+<code>meta.toml</code> metadata file in the level basedir (outside of
+the .zip files). See example for <strong>Arad</strong>:</p>
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="dt">layers</span> <span class="op">=</span> <span class="op">[</span> <span class="dv">16</span><span class="op">,</span> <span class="dv">32</span><span class="op">,</span> <span class="dv">64</span><span class="op">,]</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dt">intervals</span> <span class="op">=</span> <span class="op">[</span> <span class="op">[</span> <span class="dv">0</span><span class="op">,</span> <span class="dv">22</span><span class="op">,],</span> <span class="op">[</span> <span class="dv">23</span><span class="op">,</span> <span class="dv">44</span><span class="op">,],</span> <span class="op">[</span> <span class="dv">45</span><span class="op">,</span> <span class="dv">100</span><span class="op">,],]</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="dt">front</span> <span class="op">=</span> <span class="op">[</span> <span class="st">&quot;east&quot;</span><span class="op">,]</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="dt">date</span> <span class="op">=</span> <span class="st">&quot;1944-09-14&quot;</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="dt">teams</span> <span class="op">=</span> <span class="op">[</span> <span class="st">&quot;Germany&quot;</span><span class="op">,</span> <span class="st">&quot;Russia&quot;</span><span class="op">,]</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="dt">version_added</span> <span class="op">=</span> <span class="st">&quot;2.56&quot;</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="dt">authors</span> <span class="op">=</span> <span class="op">[</span> <span class="st">&quot;hitm4k3r&quot;</span><span class="op">,]</span></span></code></pre></div>
+<p>“layers” is all the existing layers that a map has – if a map is
+missing layers in your installation (or they are WIP), remove those! You
+can remove them from the maplist, too, of course.</p>
+<p>“intervals” means on 0-22 players it will pick 16p layer next, on
+23-44 it will pick 32p layer, etc. these can be adjusted per map. E.g.
+if the last layer is <code>[45, 75]</code>, the map will not get picked
+on a full (100 ppl) server.</p>
+<h3 id="admin-rights">Admin Rights</h3>
+<p>In the <code>admins.toml</code> file, add the
+<code>admins_high</code>, <code>_low</code>, and <code>_mid</code> lists
+to the <code>[users]</code> section, with the hashes of the admins.
+Example below:</p>
+<div class="sourceCode" id="cb7"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[users]</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="co"># if the admin arrays are empty, </span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="co"># defaults to &quot;everything is allowed&quot;</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="dt">admins_high</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;d722905f13f2e89553837ab9bbe42302&quot;</span><span class="op">,</span>  <span class="co"># user a</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="op">]</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="dt">admins_mid</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;732753cd11d331e64867057cfdc7ecd5&quot;</span><span class="op">,</span>  <span class="co"># who this?</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;74598b621924620609b37a12a2473819&quot;</span><span class="op">,</span>  <span class="co"># another</span></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="op">]</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span class="dt">admins_low</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a>    <span class="st">&quot;45d8218d92cd1c3de9508ad5133a1693&quot;</span><span class="op">,</span>  <span class="co"># some mod</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="op">]</span></span></code></pre></div>
+<h3 id="nazi-word-blacklist">Nazi Word Blacklist</h3>
+<p>Define forbidden words for usernames/squads in the
+<code>badnames.toml</code>: if anyone joins with e.g. “adolf” in the
+name, they get auto-banned. If you make a squad named “1488”, you get
+auto-kicked.</p>
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="co"># usernames/squadnames that get you autokicked</span></span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="dt">words</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;adolf&quot;</span><span class="op">,</span> <span class="st">&quot;sieg heil&quot;</span><span class="op">,</span> <span class="st">&quot;siegheil&quot;</span><span class="op">,</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;waffen_ss&quot;</span><span class="op">,</span> </span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="op">]</span></span></code></pre></div>
+<h2 id="main-configuration">Main Configuration</h2>
+<p>Configuration is done in the <code>config.toml</code> config
+file.</p>
+<p>Set debug (for more aggressive logs/warnings), and beta (to enable
+beta commands)</p>
+<div class="sourceCode" id="cb9"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[general]</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="dt">debug</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="dt">beta</span> <span class="op">=</span> <span class="cn">true</span></span></code></pre></div>
+<h3 id="messages">Messages</h3>
+<p>Configure which messages are shown.</p>
+<p>The <code>welcome</code> line is displayed when you first spawn.</p>
+<p>The <code>rules</code> message is displayed when someone uses the
+ingame <code>!rules</code> command.</p>
+<p>The <code>announce</code> message list is a set of messages which are
+displayed every <code>announce_interval</code> seconds.</p>
+<p>The <code>show_disconnect</code> setting decides whether to print a
+line when a player disconnects.</p>
+<p>The <code>show_connect</code> setting decides whether to print a line
+FOR ADMINS when a player connects.</p>
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[messages]</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="co"># displayed on first spawn after join</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="co"># the &lt;PLAYER&gt; token will be replaced </span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># with the actual player name</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="co"># if you want to disable this, put `welcome = &quot;&quot;`</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="dt">welcome</span> <span class="op">=</span> <span class="st">&quot;Welcome &lt;PLAYER&gt; to the FH2 Test Server!&quot;</span></span>
+<span id="cb10-8"><a href="#cb10-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-9"><a href="#cb10-9" aria-hidden="true" tabindex="-1"></a><span class="co"># short line pointing to server rules website</span></span>
+<span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="dt">rules</span> <span class="op">=</span> <span class="st">&quot;For Rules visit XXX&quot;</span></span>
+<span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-12"><a href="#cb10-12" aria-hidden="true" tabindex="-1"></a><span class="co"># those will be displayed regularly </span></span>
+<span id="cb10-13"><a href="#cb10-13" aria-hidden="true" tabindex="-1"></a><span class="co"># if you want to disable these, put `announce = []`</span></span>
+<span id="cb10-14"><a href="#cb10-14" aria-hidden="true" tabindex="-1"></a><span class="dt">announce</span> <span class="op">=</span> <span class="op">[</span></span>
+<span id="cb10-15"><a href="#cb10-15" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Join us on FH2 Discord&quot;</span><span class="op">,</span></span>
+<span id="cb10-16"><a href="#cb10-16" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Check out fhmod.org for news&quot;</span><span class="op">,</span></span>
+<span id="cb10-17"><a href="#cb10-17" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;We love you all &lt;3&quot;</span><span class="op">,</span></span>
+<span id="cb10-18"><a href="#cb10-18" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Jean a une longue mustache honhonhon&quot;</span><span class="op">,</span></span>
+<span id="cb10-19"><a href="#cb10-19" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;New CMP campaign is now open!&quot;</span><span class="op">,</span></span>
+<span id="cb10-20"><a href="#cb10-20" aria-hidden="true" tabindex="-1"></a>  <span class="st">&quot;Join the CMP campaign at cmp-gaming.com&quot;</span><span class="op">,</span></span>
+<span id="cb10-21"><a href="#cb10-21" aria-hidden="true" tabindex="-1"></a><span class="op">]</span></span>
+<span id="cb10-22"><a href="#cb10-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-23"><a href="#cb10-23" aria-hidden="true" tabindex="-1"></a><span class="co"># if using announce, this is the interval in seconds</span></span>
+<span id="cb10-24"><a href="#cb10-24" aria-hidden="true" tabindex="-1"></a><span class="dt">announce_interval</span> <span class="op">=</span> <span class="dv">300</span></span>
+<span id="cb10-25"><a href="#cb10-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-26"><a href="#cb10-26" aria-hidden="true" tabindex="-1"></a><span class="co"># display message on disconnect. </span></span>
+<span id="cb10-27"><a href="#cb10-27" aria-hidden="true" tabindex="-1"></a><span class="co"># recommended to only disable this if another</span></span>
+<span id="cb10-28"><a href="#cb10-28" aria-hidden="true" tabindex="-1"></a><span class="co"># &quot;X has disconnected&quot; print script is active in parallel</span></span>
+<span id="cb10-29"><a href="#cb10-29" aria-hidden="true" tabindex="-1"></a><span class="dt">show_disconnect</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb10-30"><a href="#cb10-30" aria-hidden="true" tabindex="-1"></a><span class="dt">show_connect</span> <span class="op">=</span> <span class="cn">true</span></span></code></pre></div>
+<h3 id="bans-and-afk-kicks">Bans and (AFK) Kicks</h3>
+<p>In this setting, configure the AFK autokicker and ban/kick related
+things.</p>
+<p>The <code>ban_duration</code> setting configures how long a temporary
+ban is. Usually set at two weeks.</p>
+<p>The AFK tracker checks every <code>idle_check_interval</code> seconds
+if a player has been active. Otherwise it kicks them. On the default
+settings, below a certain number of players however, players don’t get
+kicked but autobalanced instead, so that the server is not emptied too
+much.</p>
+<div class="sourceCode" id="cb11"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[janitor]</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="co"># don&#39;t start kicking AFKs unless at least X players online</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="dt">min_players_for_kick</span> <span class="op">=</span> <span class="dv">50</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co"># if min_players_for_kick has not been reached, </span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a><span class="co"># at least balance the AFKs?</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="dt">balance_afks_before_minplayers</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="co"># seconds until you get kicked/balanced</span></span>
+<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a><span class="dt">max_idle_time</span> <span class="op">=</span> <span class="dv">600</span></span>
+<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a><span class="dt">idle_check_interval</span> <span class="op">=</span> <span class="dv">30</span></span>
+<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a><span class="dt">idle_yaw_threshold</span> <span class="op">=</span> <span class="fl">0.5</span></span>
+<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a><span class="co"># bantime in seconds</span></span>
+<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a><span class="co"># good default is two weeks: 1209600 = 60 * 60 * 24 * 14</span></span>
+<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a><span class="dt">ban_duration</span> <span class="op">=</span> <span class="dv">1209600</span></span></code></pre></div>
+<h3 id="map-rotation">Map Rotation</h3>
+<p>How many maps to remember when avoiding duplications.
+<code>n_last_played</code> defines how many rounds to wait until a map
+can be played again.</p>
+<p><code>n_last_categories</code> sets how many maps to wait until a map
+category (winter, urban, eastfront, africa) can repeat itself. These are
+setup in the <a href="#carousel">per-map configuration</a>. NOTE: it is
+recommended to make this at least 2 smaller than the number of available
+fronts!</p>
+<p>The <code>favorites</code> list defines maps which maps will appear
+in the rotation much more frequently, e.g. newly released ones.</p>
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[maps]</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># favorite maps that should </span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="co"># appear more often in the rotation</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="co"># e.g. newly released maps; </span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co">#   favorites = [&#39;stonne&#39;, &#39;flavion&#39;]</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="dt">favorites</span> <span class="op">=</span> <span class="op">[]</span>    </span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="co"># don&#39;t repeat maps</span></span>
+<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="dt">n_last_played</span> <span class="op">=</span> <span class="dv">12</span></span>
+<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a><span class="co"># don&#39;t repeat theatres (africa, winter, urban, ...)</span></span>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="dt">n_last_fronts</span> <span class="op">=</span> <span class="dv">1</span></span></code></pre></div>
+<h3 id="autobalancer">Autobalancer</h3>
+<p>The <code>SteamRoller</code> plugin handles both auto-balancing
+players <em>during</em> the round, and swaps the teams just before round
+start. It’s possible to exclude certain players from being affected by
+autobalance:</p>
+<div class="sourceCode" id="cb13"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[balance]</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="dt">swap_on_start</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="dt">protect_commander</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="dt">protect_squadmembers</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="dt">protect_squadleader</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="dt">protect_admins</span> <span class="op">=</span> <span class="cn">false</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="dt">smb_difference</span> <span class="op">=</span> <span class="dv">1</span></span></code></pre></div>
+<p>The <code>smb_difference</code> tells how big the difference between
+teams needs to be to trigger balancing.</p>
+<h3 id="hud">HUD</h3>
+<p>FH2.6 introduces a new message system, where admin/gameplay messages
+are <em>no longer buried in the killfeed</em>. Important messages are
+also localized. If you would like the old behavior, or are running this
+on a pre-2.6 server, disable this.</p>
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[hud]</span></span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="dt">use_new_format</span> <span class="op">=</span> <span class="cn">true</span></span></code></pre></div>
+<h3 id="stats-api">Stats API</h3>
+<p>Config for the stats API that the PlayFH2 server uses (contact them
+for questions)</p>
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[stats_api]</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a><span class="dt">enabled</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="dt">backend_url</span> <span class="op">=</span> <span class="st">&quot;&quot;</span></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="dt">token</span> <span class="op">=</span> <span class="st">&quot;&quot;</span></span></code></pre></div>
+<h3 id="voting">Voting</h3>
+<p>You can start votes to reroll the next map, or run the nextmap. To
+cast a vote, write <code>!yes</code> or <code>!no</code> in chat.</p>
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode toml"><code class="sourceCode toml"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="kw">[voting]</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="dt">vote_runnext_allowed</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="dt">vote_reroll_allowed</span> <span class="op">=</span> <span class="cn">true</span></span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="co"># vote duration and time between notifications (all seconds)</span></span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="dt">notify_period</span> <span class="op">=</span> <span class="dv">14</span></span>
+<span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="dt">vote_duration</span> <span class="op">=</span> <span class="dv">60</span></span></code></pre></div>
+</body>
+</html>

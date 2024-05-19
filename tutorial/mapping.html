@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Mapping hints</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <link rel="stylesheet" href="../style.css" />
+  <link rel='stylesheet' href='//cdn.jsdelivr.net/npm/hack-font@3.3.0/build/web/hack-subset.css'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/comic-mono@0.0.1/index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Mapping hints</h1>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#opening-heightmap-.raw-files-in-gimp"
+id="toc-opening-heightmap-.raw-files-in-gimp">Opening Heightmap .raw
+files in GIMP</a></li>
+</ul>
+</nav>
+<h2 id="opening-heightmap-.raw-files-in-gimp">Opening Heightmap .raw
+files in GIMP</h2>
+<p>This is how you open .raw files in GIMP without any plugin:
+(e.g. <code>HeightmapPrimary.raw</code>)</p>
+<p><img src="img/gimp_raw.png" /></p>
+<ul>
+<li>click “select filetype” -&gt; tell it to open the .raw file as
+filetype “Raw Image Data”
+<ul>
+<li>click “show all files” if it doesnt show the file in the folder</li>
+</ul></li>
+<li>then tell it the image type, and the Width/height, explicitly
+<ul>
+<li>open as 16bit unsigned grayscale image (Little Endian)</li>
+<li>you get the width/height from heightdata.con, usually 1025x1025 or
+513x513</li>
+</ul></li>
+<li>remember to flip the picture in GIMP afterwards!
+<ul>
+<li>in the preview pic, the heightmap is upside-down</li>
+</ul></li>
+<li>save as .xcf/export as PNG, to avoid introducing undesired image
+compression artifacts into the heightmap</li>
+</ul>
+</body>
+</html>

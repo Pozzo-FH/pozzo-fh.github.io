@@ -1,0 +1,268 @@
+/* Target size for "normal" display
+ * Use viewport percentage so it looks
+ * the same on small 300px phone screen
+ * font-size: 20px;
+ * max-width: 768px;
+ */
+html {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+
+  max-width: 100vw;
+
+  /* background: white; */
+  background: #ffffff;
+  color: black;
+  font-family: "Atkinson Hyperlegible", sans-serif;
+  font-feature-settings: "zero";
+
+
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Don't keep enlarging fonts and body
+ * when the viewport gets bigger than 768px
+ */
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 20px;
+    max-width: 768px;
+  }
+}
+@media print {
+  html {
+    font-size: 20px;
+    max-width: 768px;
+  }
+  .pagebreak {
+    clear: both;
+    page-break-after: always;
+  }
+}
+
+body {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+  line-height: 140%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 120%;
+  margin-top: 2.5em;
+  color: black;
+}
+
+h1 {
+  border-bottom: 12px double #666;
+  padding-bottom: 8px;
+}
+
+h2 {
+  border-bottom: 1px solid #666;
+  padding-bottom: 5px;
+}
+h3 {
+}
+
+h1, h3 { 
+  font-weight: bold;
+}
+
+h2 { 
+  font-weight: normal;
+}
+
+h4 { 
+  font-style: italic;
+}
+
+a {
+  color: #804389;
+  text-decoration: underline dotted;
+  display: inline-block;
+}
+a:hover {
+  color: #50a14f;
+  /* background-color: #eee; */
+  background-color: #00c2bb; 
+  text-decoration: underline;
+}
+
+code {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 0 0.3em;
+  font-family: "Comic Mono", monospace;
+  font-feature-settings: "ss01", "cv02";
+  font-variant-ligatures: none;
+  font-size: 0.8rem;
+  color: #1d1f21;
+}
+pre {
+  font-family: "Comic Mono", monospace;
+  font-feature-settings: "ss01", "cv02";
+  font-variant-ligatures: none;
+  width: 95%;
+  display: block;
+  margin: 0;
+  padding: 1ch;
+  border-left: 2px solid #1177aa;
+  background-color: #ffffff;
+  color: black;
+}
+pre code {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-size: 0.75rem;
+  line-height: 120%;
+  font-weight: normal;
+  color: black;
+  background-color: #ffffff;
+}
+td code {
+  font-family: "Comic Mono", monospace;
+  font-variant-ligatures: none;
+  font-feature-settings: "ss01", "cv02";
+  color: black;
+  background-color: #ffffff;
+  font-size: 0.9rem;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  overflow-wrap: break-word;
+}
+li {
+  margin: 0.5em 0;
+}
+
+figure {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  max-width: 100%;
+}
+figcaption {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.8rem;
+}
+figure img {
+  max-width: 100%;
+  text-align: center;
+}
+img {
+  max-width: 100%;
+  text-align: center;
+}
+
+hr {
+  width: 100%;
+  border-top: 2px solid #1177aa;
+}
+
+table {
+  border: none;
+  border-collapse: collapse;
+  border-spacing: 0;
+  margin: 0 auto;
+  max-width: none;
+  font-feature-settings: "zero" 1, "tnum" 1 "lnum" 1;
+  font-variant-numeric: tabular-nums;
+}
+tr,
+th,
+td {
+  vertical-align: middle;
+  padding: 0.5em 0.5em;
+  line-height: 120%;
+  white-space: nowrap;
+  border: none;
+}
+tr,
+td {
+  font-size: 0.95rem;
+}
+tr {
+  border-bottom: 1px solid #80d4ff;
+}
+tr:nth-child(odd) {
+}
+tr:hover {
+  background-color: #d9edfd;
+}
+th {
+  text-align: left;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #999;
+  background-color: #ffffff;
+}
+td img {
+  /*max-width: auto;*/
+  /*max-height: 1.5em;*/
+  max-height: 32px;
+  max-width: 32px;
+  vertical-align: middle;
+  padding-right: 0.5em;
+}
+
+nav {
+  display: block;
+  line-height: 166%;
+}
+nav ul {
+  margin: 0;
+  padding-left: 0.5em;
+  margin-bottom: 10px;
+}
+nav ul ul {
+  padding-left: 2em;
+  margin-bottom: 10px;
+}
+nav li {
+  list-style: none;
+  display: block;
+}
+nav a {
+  text-decoration: underline dotted;
+  display: block;
+}
+
+/* mainpage nav, not the per-page TOC */
+#main {
+  font-size: 1.5rem;
+}
+#main ul ul {
+  padding-bottom: 0;
+}
+#main li {
+  padding-top: 0.3em;
+}
+#main ul li ul {
+  padding-top: 0.2em;
+}
+
+/* TOC styling */
+#TOC {
+  border-left: 2px solid #999;
+}
+#TOC ul ul {
+  padding-bottom: 0.3em;
+}
+#TOC li {
+  margin: 0;
+  padding: 0em;
+}
